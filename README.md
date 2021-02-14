@@ -1,4 +1,4 @@
-# Nome do Projeto
+# EnCare
 
 **Código da Disciplina**: FGA0208
 **Número do Grupo**: 02
@@ -7,12 +7,12 @@
 |Matrícula | Aluno |
 | -- | -- |
 | 18/0033743  | João Pedro Silva de Carvalho |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0027239  |  Renato Britto Araújo |
+| 18/0033646  |  João Luís Baraky |
+| 18/0029177  |  Wagner Martins da Cunha |
+| 16/0124581  |  Hugo Aragão de Oliveira |
+| 16/0016169  |  Nícalo Ribeiro Dourado de Araujo |
+| 17/0144259  |  Gustavo Nogueira Rodrigues |
 
 ## Sobre 
 Será um projeto que tem como objetivo facilitar a busca por procedimentos estéticos não-cirurgicos, como cortes de cabelo, serviços de manicure e pedicure, maquiagem, entre outros. Para isso, o nosso projeto tem como proposta oferecer as ofertas disponíveis na região, de acordo com o serviço desejado e com a localização do usuário. 
