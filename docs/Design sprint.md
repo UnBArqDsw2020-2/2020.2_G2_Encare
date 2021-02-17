@@ -10,6 +10,7 @@
 ## Decisão.
 ## Protótipo.
 ## Vesionamento:
-| Data | Nome | Versão |
-|-----|--------|-------|
-| 16/02/2020 | João Pedro Silva de Carvalho | 0.1 |
+| Data | Nome | Versão | Descrição|
+|-----|--------|-------|----------|
+| 16/02/2021 | João Pedro Silva de Carvalho | 0.1 | Adicionando Esboço
+| 17/02/2021 | Wagner Martins da Cunha | 0.2 | Adicionando storyboard
