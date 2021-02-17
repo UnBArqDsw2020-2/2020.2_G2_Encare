@@ -10,6 +10,9 @@
 ### Renato Britto:
 ![Esboço Renato](imagens/esboço_renato_britto.jpeg)
 
+### João Baraky:
+![Esboço Baraky](imagens/esboco_joao_baraky.jpeg)
+
 ## Decisão.
 ## Protótipo.
 ## Vesionamento:
@@ -18,3 +21,4 @@
 | 16/02/2021 | João Pedro Silva de Carvalho | 0.1 | Adicionando Esboço | 
 | 17/02/2021 | Wagner Martins da Cunha | 0.2 | Adicionando storyboard |
 | 17/02/2021 | Renato Britto Araujo | 0.3 | Adicionando Esboço |
+| 17/02/2021 | João Luis Baraky | 0.4 | Adicionando Esboço |
