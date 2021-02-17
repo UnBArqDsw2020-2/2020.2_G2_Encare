@@ -9,3 +9,7 @@
 
 ## Decisão.
 ## Protótipo.
+## Vesionamento:
+| Data | Nome | Versão |
+|-----|--------|-------|
+| 16/02/2020 | João Pedro Silva de Carvalho | 0.1 |
