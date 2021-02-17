@@ -25,8 +25,7 @@ Esses modelos podem ser separados a partir de métricas, sendo elas:
 - orientadas à função: as estimativas são feitas atribuindo-se pontos de funcionalidade a partir da identificação de complexidade para diferentes tipos de arquivos, entradas e saídas;
 - orientadas a complexidade: as estimativas levam em conta características como a quantidade de operadores e operandos presentes no código, ou o fluxo de controle de um programa.
 
-Para as estimativas iniciais do projeto Encare, será utilizada uma técnica
-de métricas orientadas ao tamanho, conhecida como COCOMO.
+Para as estimativas iniciais do projeto Encare, será utilizada uma técnica de métricas orientadas ao tamanho, conhecida como COCOMO.
 
 ## COCOMO - COnstructive COst MOdel
 
@@ -57,9 +56,11 @@ a: um coeficiente fornecido na figura 1.
 b: um expoente fornecido na figura 1.
 fae: o Fator de Ajustamento do Esforço (multiplicação de cada um dos Multiplicadores de Esforço fornecidos pela figura 2.)
 
-// Figura 1
+![Coeficientes do COCOMO Intermediário](imagens/coeficientes_cocomo_inter.png)
+<p align="center">Figura 1. Coeficientes do COCOMO Intermediário. Fonte: [2]</p>
 
-// Figura 2
+![Direcionadores de custo](imagens/direcionadores_de_custo.png)
+<p align="center">Figura 2. Direcionadores de custo do COCOMO Intermediário. Fonte: [2]</p>
 
 Para a estimativa de tempo, segue-se a seguinte equação:
 
@@ -72,14 +73,15 @@ E: o esforço aplicado (em pessoas-mês).
 c: um coeficiente fornecido na figura 3.
 d: um expoente fornecido na figura 3.
 
-// figura 3
+![Coeficientes do COCOMO básico](imagens/coeficientes_cocomo_basico.png)
+<p align="center">Figura 3. Coeficientes do COCOMO básico. Fonte: [2]</p>
 
 ## Cálculos das estimativas
 
 O fator de ajustamento de esforço foi calculado conforme os seguintes multiplicadores:
 
 - Atributos do produto
-	- Confiabilidade exigida do software:
+	- Confiabilidade exigida do software: 
 	- Tamanho do Banco de Dados:
 	- Complexidade do produto:
 - Atributos do hardware
@@ -125,5 +127,5 @@ T = ...
 
 ## Referências
 
-- Documento de estimativas de custo do repositório **A Monitoria**. Disponível em: https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/estimativas_de_custo/
-- Meller, Maristela Corrêa. Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte. 2002. Disponível em: https://repositorio.ufsc.br/xmlui/handle/123456789/82351
+- [1] Documento de estimativas de custo do repositório **A Monitoria**. Disponível em: https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/estimativas_de_custo/
+- [2] Meller, Maristela Corrêa. Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte. 2002. Disponível em: https://repositorio.ufsc.br/xmlui/handle/123456789/82351
