@@ -1,6 +1,6 @@
 # Rich Picture
 
-Rich Picture é um artefato construido, muitas vezes de maneira informal, a fim de ilustrar e trazer uma melhor compreensão do problema a ser resolvido pela equipe. 
+Rich Picture é um artefato construído, muitas vezes de maneira informal, a fim de ilustrar e trazer uma melhor compreensão do problema a ser resolvido pela equipe. 
 
 
 ![Rich_Picture](imagens/rich_picture.png)
