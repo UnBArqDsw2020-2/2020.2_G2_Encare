@@ -1,0 +1,13 @@
+site_name: ArqDsw - EnCare
+
+repo_name: "2020.2_G2_Encare"
+repo_url: "https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare"
+
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+  language: pt
+  palette:
+    primary: blue
