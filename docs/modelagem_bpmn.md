@@ -26,9 +26,21 @@ A notação BPMN permite que você desenhe e conheça todas as tarefas operacion
 
 ## Sprint Review
 
+<p align="center">
+    <img src="assets/imagens/bpmn-06.png">
+</p>
+
 ## Daily
 
+<p align="center">
+    <img src="assets/imagens/bpmn-05.png">
+</p>
+
 ## Coleta de Dados
+
+<p align="center">
+    <img src="assets/imagens/bpmn-04.png">
+</p>
 
 ## Referências
 
@@ -40,3 +52,4 @@ CASTRO, Bruna. Notação BPMN: O que é e quando usar? Guia completo. Blog SML B
 | ------ | ---------- | --------------------------------------------- | ------------------------- |
 | 0.1    | 17/02/2021 | Adição da página                              | Gustavo Nogueira & Renato |
 | 0.2    | 17/02/2021 | Adição dos diagramas geral, sprint e planning | Gustavo Nogueira          |
+| 1.0    | 18/02/2021 | Adição da análise da Coleta de Dados, Daily e Sprint Review | Renato Britto Araujo |
