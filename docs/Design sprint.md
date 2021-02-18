@@ -13,6 +13,9 @@
 ### João Baraky:
 ![Esboço Baraky](imagens/esboco_joao_baraky.jpeg)
 
+### Hugo Aragão:
+![Esboço Hugo](imagens/esboco_Hugo.jpg)
+
 ## Decisão.
 ## Protótipo.
 ## Vesionamento:
@@ -22,3 +25,4 @@
 | 17/02/2021 | Wagner Martins da Cunha | 0.2 | Adicionando storyboard |
 | 17/02/2021 | Renato Britto Araujo | 0.3 | Adicionando Esboço |
 | 17/02/2021 | João Luis Baraky | 0.4 | Adicionando Esboço |
+| 18/02/2021 | Hugo Aragão | 0.5 | Adicionando Esboço |
