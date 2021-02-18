@@ -12,7 +12,7 @@ A fim de poder economizar tempo e ser mais produtivo, a equipe definiu as metodo
 
 O Scrum é uma metodologia ágil para gestão e planejamento de projetos de software [2] e é a base da escolha metodológica de trabalho da equipe. Os principais procedimentos do Scrum a serem adotados pela equipe são:
 
- - **Daily meeting**: Reuniões diárias que tem por objetivo resumir o que a pessoa fez no dia e falar o que planeja fazer no próximo, além de citar quais são os seus impedimentos. Isso ajuda a toda a equipe estar ciente do andamento do projeto como um todo, além de poder identificar dependências.
+ - **Daily meeting**: Reuniões diárias que têm por objetivo resumir o que a pessoa fez no dia e falar o que planeja fazer no próximo, além de citar quais são os seus impedimentos. Isso ajuda a equipe toda a estar ciente do andamento do projeto como um todo, além de poder identificar dependências.
  - **Sprints**: Sprints são ciclos que serão semanais - iniciando e terminando às terças, observando dias de entregas também.
  - **Plannig**: É uma reunião semanal que acontece no início de cada sprint e nela ocorre o planejamento da sprint e divisão das tarefas.
  - **Product Backlog**: É uma lista de tarefas e funcionalidades que serão implementadas futuramente.
@@ -20,9 +20,9 @@ O Scrum é uma metodologia ágil para gestão e planejamento de projetos de soft
 
 ### XP
 
-O XP (extreme programming) é uma metodologia focada no desenvolvimento de software que possui valores e princípios que são fundamentados principalmente por um conjunto de práticas. Além disso é uma metodologia leve que pode ser adotada por diferentes níveis de programadores. A principal caracteristica do XP adotada pela equipe é a programação em pares.[3]
+O XP (extreme programming) é uma metodologia focada no desenvolvimento de software que possui valores e princípios que são fundamentados principalmente por um conjunto de práticas. Além disso é uma metodologia leve que pode ser adotada por diferentes níveis de programadores. A principal característica do XP adotada pela equipe é a programação em pares.[3]
 
- - **Programação em pares**: É a programção em duplas em um unico computador, o que melhora o desenvolvimento em vários aspectos, como a descoberta de falhas. Além disso contribui possitivamente para o trabalho em equipe.
+ - **Programação em pares**: É a programação em duplas em um único computador, o que melhora o desenvolvimento em vários aspectos, como a descoberta de falhas. Além disso contribui positivamente para o trabalho em equipe.
 
 ### Kanban
 
@@ -32,7 +32,7 @@ O Kanban é um sistema ágil e visual de gestão de tarefas dividindo-as em colu
 
 ### Telegram
 
-É um aplicativo de messagens que serve como principal meio de comunicação de toda a equipe. Por ele que ocorre as notificações sobre o projeto, além das dailies de forma assíncrona.
+É um aplicativo de mensagens que serve como principal meio de comunicação de toda a equipe. É por ele que ocorrem as notificações sobre o projeto, além das dailies de forma assíncrona.
 
 ### Google drive
 
