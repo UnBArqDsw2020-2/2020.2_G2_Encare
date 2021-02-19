@@ -1,5 +1,6 @@
 # Desing sprint
 ## Geração de ideias
+Para gerar as ideias de como seria a palicação a equipe realizou uma reunião onde usamos a técnica de brainstorm, após isso cada membro teve que gerar o seu próprio esboço para validar as ideias discutidas.
 ## Esboço das ideias
 
 Os esboços são representações de uma sessão de brainstorming realizada pela
