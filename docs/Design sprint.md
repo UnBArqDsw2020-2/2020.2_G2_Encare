@@ -1,6 +1,17 @@
-# Desing sprint.
-## Geração de ideias.
-## Esboço das ideias.
+# Desing sprint
+## Geração de ideias
+## Esboço das ideias
+
+Os esboços são representações de uma sessão de brainstorming realizada pela
+equipe, de forma assíncrona, onde todos apresentaram suas ideias de como o 
+Encare deve ser. Os documentos a seguir são feitos em formato livre, sem
+compromisso com o estilo específico, haja visto que o propósito do brainstorm
+era capturar as ideias da equipe de forma crua.
+
+Após o processo dessa captura de ideias, nós selecionamos uma delas para
+guiar o processo de prototipagem do projeto Encare. A decisão está descrita
+abaixo dos esboços.
+
 ### João Pedro:
 ![Esboço João Pedro](imagens/Esboço_joao_Pedro.png)
 
@@ -19,8 +30,28 @@
 ### Nícalo Ribeiro
 ![Esboço Nícalo](imagens/esboco_nicalo.jpg)
 
-## Decisão.
-## Protótipo.
+## Decisão
+
+Foi feita de decisão de se selecionar o esboço de João Baraky, visto que
+este captura a essência do que o Encare deve ser. Boa parte da ideia será
+usada, mas algumas mudanças foram feitas para alinhar com o resto do time
+os planos.
+
+### Divergências do esboço
+
+Foi feita a decisão de abandonar o feature representado no esboço selecionado
+relacionado aos preços de cada estabelecimento. No esboço é possível ver um
+feature semelhante ao IFood, onde os preços de um estabelecimento são
+representados com cifrões ($).
+
+A ideia foi abandonada pois se julgou que fosse um dado difícil de se
+procurar, e caso houvesse continuidade nessa ideia, teríamos que não apenas
+coletar esses dados manualmente para cada estabelecimento mas também usar
+juízos de valor para definir em qual das 5 categorias de preço um dado
+estabelecimento pertence.
+
+## Protótipo
+
 O protótipo de baixa fidelidade foi produzido a partir do artefatos gerados, onde pudemos
 revisar os elementos acordados da aplicação e geramos a versão final da ideia prototipada.
 
