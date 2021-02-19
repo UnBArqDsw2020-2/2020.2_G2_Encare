@@ -80,4 +80,4 @@ revisar os elementos acordados da aplicação e geramos a versão final da ideia
 | 18/02/2021 | Hugo Aragão | 0.5 | Adicionando Esboço |
 | 19/02/2021 | Nícalo Ribeiro | 0.6 | Adicionando Esboço |
 | 19/02/2021 | Hugo, João Pedro, Renato | 0.7 | Adicionando Prototipo de Baixa Fidelidade |
-| 19/02/2021 | Renato Britto Araujo | 0.8 | Adiciona decisão, explicação das mudanças dela e esboço. |
+| 19/02/2021 | Renato Britto Araujo | 1.0 | Adiciona decisão, explicação das mudanças dela, esboço e geração de ideias. |
