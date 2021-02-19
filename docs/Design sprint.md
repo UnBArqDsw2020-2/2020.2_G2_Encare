@@ -16,6 +16,9 @@
 ### Hugo Aragão:
 ![Esboço Hugo](imagens/esboco_Hugo.jpg)
 
+### Nícalo Ribeiro
+![Esboço Nícalo](imagens/esboco_nicalo.jpg)
+
 ## Decisão.
 ## Protótipo.
 ## Vesionamento:
@@ -26,3 +29,4 @@
 | 17/02/2021 | Renato Britto Araujo | 0.3 | Adicionando Esboço |
 | 17/02/2021 | João Luis Baraky | 0.4 | Adicionando Esboço |
 | 18/02/2021 | Hugo Aragão | 0.5 | Adicionando Esboço |
+| 19/02/2021 | Nícalo Ribeiro | 0.6 | Adicionando Esboço |
