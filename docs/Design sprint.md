@@ -13,23 +13,47 @@ Após o processo dessa captura de ideias, nós selecionamos uma delas para
 guiar o processo de prototipagem do projeto Encare. A decisão está descrita
 abaixo dos esboços.
 
-### João Pedro:
-![Esboço João Pedro](imagens/Esboço_joao_Pedro.png)
+### João Pedro
 
-### Wagner Martins:
-![Esboço Wagner](imagens/esboco_storyboard_wagner.jpg)
+<p align="center">
+    <img src='imagens/esboco_Joao_Pedro.png' />
+</p>
 
-### Renato Britto:
-![Esboço Renato](imagens/esboço_renato_britto.jpeg)
+### Wagner Martins
 
-### João Baraky:
-![Esboço Baraky](imagens/esboco_joao_baraky.jpeg)
+<p align="center">
+    <img src='imagens/esboco_storyboard_wagner.jpg' />
+</p>
 
-### Hugo Aragão:
-![Esboço Hugo](imagens/esboco_Hugo.jpg)
+### Renato Britto
+
+<p align="center">
+    <img src='imagens/esboço_renato_britto.jpeg' />
+</p>
+
+### João Baraky
+
+<p align="center">
+    <img src='imagens/esboco_joao_baraky.jpeg' />
+</p>
+
+### Hugo Aragão
+
+<p align="center">
+    <img src='imagens/esboco_Hugo.jpg' />
+</p>
 
 ### Nícalo Ribeiro
-![Esboço Nícalo](imagens/esboco_nicalo.jpg)
+
+<p align="center">
+    <img src='imagens/esboco_nicalo.jpg' />
+</p>
+
+### Gustavo Nogueira
+
+<p align="center">
+    <img src='imagens/esboco_gustavo.png' />
+</p>
 
 ## Decisão
 
@@ -80,6 +104,7 @@ revisar os elementos acordados da aplicação e geramos a versão final da ideia
 | 17/02/2021 | João Luis Baraky | 0.4 | Adicionando Esboço |
 | 18/02/2021 | Hugo Aragão | 0.5 | Adicionando Esboço |
 | 19/02/2021 | Nícalo Ribeiro | 0.6 | Adicionando Esboço |
-| 19/02/2021 | Hugo, João Pedro, Renato | 0.7 | Adicionando Prototipo de Baixa Fidelidade |
-| 19/02/2021 | Renato Britto Araujo | 0.8 | Adiciona decisão, explicação das mudanças dela, esboço e geração de ideias. |
+| 19/02/2021 | Gustavo Nogueira  | 0.7    | Adicionando Esboço |
+| 19/02/2021 | Hugo, João Pedro, Renato | 0.8 | Adicionando Prototipo de Baixa Fidelidade |
+| 19/02/2021 | Renato Britto Araujo | 0.9 | Adiciona decisão, explicação das mudanças dela, esboço e geração de ideias. |
 | 19/02/2021 | João Pedro Silva de Carvalho | 1.0 | Adiciona geração de ideias |
