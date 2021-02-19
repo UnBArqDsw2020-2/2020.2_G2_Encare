@@ -4,31 +4,31 @@
 
 ## Esboço das ideias.
 
-### João Pedro:
+### João Pedro
 
 <p align="center">
     <img src='imagens/esboco_Joao_Pedro.png' />
 </p>
 
-### Wagner Martins:
+### Wagner Martins
 
 <p align="center">
     <img src='imagens/esboco_storyboard_wagner.jpg' />
 </p>
 
-### Renato Britto:
+### Renato Britto
 
 <p align="center">
     <img src='imagens/esboço_renato_britto.jpeg' />
 </p>
 
-### João Baraky:
+### João Baraky
 
 <p align="center">
     <img src='imagens/esboco_joao_baraky.jpeg' />
 </p>
 
-### Hugo Aragão:
+### Hugo Aragão
 
 <p align="center">
     <img src='imagens/esboco_Hugo.jpg' />
@@ -60,4 +60,4 @@
 | 17/02/2021 | João Luis Baraky             | 0.4    | Adicionando Esboço |
 | 18/02/2021 | Hugo Aragão                  | 0.5    | Adicionando Esboço |
 | 19/02/2021 | Nícalo Ribeiro               | 0.6    | Adicionando Esboço |
-| 19/02/2021 | Gustavo Nogueira             | 0.6    | Adicionando Esboço |
+| 19/02/2021 | Gustavo Nogueira             | 0.7    | Adicionando Esboço |
