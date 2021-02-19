@@ -81,17 +81,17 @@ O protótipo de baixa fidelidade foi produzido a partir do artefatos gerados, on
 revisar os elementos acordados da aplicação e geramos a versão final da ideia prototipada.
 
 <figure>
-<img align=center width="600" src="imagens/encare_feed.png">
+<img align=center width="450" src="imagens/encare_feed.png">
 <figcaption>Figura 1. Feed inicial</figcaption>
 </figure>
 
 <figure>
-<img align=center width="600" src="imagens/encare_filtros.png">
+<img align=center width="450" src="imagens/encare_filtros.png">
 <figcaption>Figura 2. Filtragem de Opções</figcaption>
 </figure>
 
 <figure>
-<img align=center width="600" src="imagens/encare_filtros.png">
+<img align=center width="450" src="imagens/encare_estabelecimento.png">
 <figcaption>Figura 3. Perfil do estabelecimento</figcaption>
 </figure>
 
