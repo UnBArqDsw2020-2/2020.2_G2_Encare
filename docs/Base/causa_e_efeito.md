@@ -5,7 +5,7 @@ Trata-se de uma ferramenta da qualidade que ajuda a levantar as causas-raízes d
 ## Diagrama
 
 <p align="center">
-    <img src="imagens/causa_e_efeito.png">
+    <img src="../imagens/causa_e_efeito.png">
 </p>
 
 ## Referências
