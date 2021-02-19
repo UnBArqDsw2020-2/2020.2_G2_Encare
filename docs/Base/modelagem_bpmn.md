@@ -9,37 +9,37 @@ A notação BPMN permite que você desenhe e conheça todas as tarefas operacion
 ## Geral
 
 <p align="center">
-    <img src="assets/imagens/bpmn-01.png">
+    <img src="../assets/imagens/bpmn-01.png">
 </p>
 
 ## Sprint
 
 <p align="center">
-    <img src="assets/imagens/bpmn-02.png">
+    <img src="../assets/imagens/bpmn-02.png">
 </p>
 
 ## Planning
 
 <p align="center">
-    <img src="assets/imagens/bpmn-03.png">
+    <img src="../assets/imagens/bpmn-03.png">
 </p>
 
 ## Sprint Review
 
 <p align="center">
-    <img src="assets/imagens/bpmn-06.png">
+    <img src="../assets/imagens/bpmn-06.png">
 </p>
 
 ## Daily
 
 <p align="center">
-    <img src="assets/imagens/bpmn-05.png">
+    <img src="../assets/imagens/bpmn-05.png">
 </p>
 
 ## Coleta de Dados
 
 <p align="center">
-    <img src="assets/imagens/bpmn-04.png">
+    <img src="../assets/imagens/bpmn-04.png">
 </p>
 
 ## Referências
