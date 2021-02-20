@@ -18,7 +18,12 @@
 Será um projeto que tem como objetivo facilitar a busca por procedimentos estéticos não-cirurgicos, como cortes de cabelo, serviços de manicure e pedicure, maquiagem, entre outros. Para isso, o nosso projeto tem como proposta oferecer as ofertas disponíveis na região, de acordo com o serviço desejado e com a localização do usuário. 
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.
+
+![Design Sprint](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_design_spring.png)
+
+![Mapa Mental](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_mapa_mental.png)
+
+![Modelagem BPMN](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_modelagemBPMN.png)
 
 ## Vídeo(s) Primeira Entrega <<FOCO: DSW(Base)>>
 Adicione o(s)s vídeo(s) da Primeira Entrega.
