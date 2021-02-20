@@ -26,9 +26,10 @@ Será um projeto que tem como objetivo facilitar a busca por procedimentos esté
 ![Modelagem BPMN](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_modelagemBPMN.png)
 
 ## Vídeo(s) Primeira Entrega <<FOCO: DSW(Base)>>
-Adicione o(s)s vídeo(s) da Primeira Entrega.
+Link do Video da apresentação do Módulo Projeto Não Orientado a Abordagens Específicas: https://youtu.be/OqCiTozAYR8  
+Link do Video da apresentação do Módulo Processos/Metodologias/Abordagens:  https://youtu.be/UjFOLxKm9jY  
 
-## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
+<!-- ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
@@ -44,18 +45,18 @@ Adicione o(s)s vídeo(s) da Terceira Entrega.
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Vídeo(s) Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione o(s)s vídeo(s) da Entrega Final.
+Adicione o(s)s vídeo(s) da Entrega Final. -->
 
 ## Descritivo dos Principais Aspectos Técnicos 
 **Principal(is) Metodologia(s) Adotada(s)**: Scrum<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: Pretendidas : JavaScript e Python<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: A Definir<br>
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: A Definir<br>
 
-## O Projeto está rodando?
+<!-- ## O Projeto está rodando?
 ( ) SIM
 ( ) NÃO
 Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.
 
 ## Informações Complementares 
-Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.
+Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção. -->

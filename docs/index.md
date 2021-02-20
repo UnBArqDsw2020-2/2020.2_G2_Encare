@@ -16,9 +16,9 @@
 
 ## Sobre 
 Será um projeto que tem como objetivo facilitar a busca por procedimentos estéticos não-cirurgicos, como cortes de cabelo, serviços de manicure e pedicure, maquiagem, entre outros. Para isso, o nosso projeto tem como proposta oferecer as ofertas disponíveis na região, de acordo com o serviço desejado e com a localização do usuário. 
-
-## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
-
+- - -
+# Primeira entrega  
+## Screenshots Primeira Entrega <<DSW(Base)>>
 
 ![Design Sprint](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_design_spring.png)
 
@@ -26,10 +26,18 @@ Será um projeto que tem como objetivo facilitar a busca por procedimentos esté
 
 ![Modelagem BPMN](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_modelagemBPMN.png)
 
-## Vídeo(s) Primeira Entrega <<FOCO: DSW(Base)>>
-Adicione o(s)s vídeo(s) da Primeira Entrega.
+## Vídeo(s) Primeira Entrega <<DSW(Base)>>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OqCiTozAYR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
-## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
+Link do Video da apresentação do Módulo Projeto Não Orientado a Abordagens Específicas: https://youtu.be/OqCiTozAYR8  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UjFOLxKm9jY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Link do Video da apresentação do Módulo Processos/Metodologias/Abordagens:  https://youtu.be/UjFOLxKm9jY  
+
+- - -
+
+<!-- ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
@@ -45,18 +53,18 @@ Adicione o(s)s vídeo(s) da Terceira Entrega.
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Vídeo(s) Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione o(s)s vídeo(s) da Entrega Final.
+Adicione o(s)s vídeo(s) da Entrega Final. -->
 
 ## Descritivo dos Principais Aspectos Técnicos 
 **Principal(is) Metodologia(s) Adotada(s)**: Scrum<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: Pretendidas : JavaScript e Python<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: A Definir<br>
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: A Definir<br>
 
-## O Projeto está rodando?
+<!-- ## O Projeto está rodando?
 ( ) SIM
 ( ) NÃO
-Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.
+Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto. -->
 
-## Informações Complementares 
-Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.
+<!-- ## Informações Complementares 
+Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção. -->
