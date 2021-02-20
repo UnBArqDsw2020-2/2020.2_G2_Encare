@@ -16,43 +16,43 @@ abaixo dos esboços.
 ### João Pedro
 
 <p align="center">
-    <img src='imagens/esboco_Joao_Pedro.png' />
+    <img src='../imagens/esboco_Joao_Pedro.png' />
 </p>
 
 ### Wagner Martins
 
 <p align="center">
-    <img src='imagens/esboco_storyboard_wagner.jpg' />
+    <img src='../imagens/esboco_storyboard_wagner.jpg' />
 </p>
 
 ### Renato Britto
 
 <p align="center">
-    <img src='imagens/esboço_renato_britto.jpeg' />
+    <img src='../imagens/esboço_renato_britto.jpeg' />
 </p>
 
 ### João Baraky
 
 <p align="center">
-    <img src='imagens/esboco_joao_baraky.jpeg' />
+    <img src='../imagens/esboco_joao_baraky.jpeg' />
 </p>
 
 ### Hugo Aragão
 
 <p align="center">
-    <img src='imagens/esboco_Hugo.jpg' />
+    <img src='../imagens/esboco_Hugo.jpg' />
 </p>
 
 ### Nícalo Ribeiro
 
 <p align="center">
-    <img src='imagens/esboco_nicalo.jpg' />
+    <img src='../imagens/esboco_nicalo.jpg' />
 </p>
 
 ### Gustavo Nogueira
 
 <p align="center">
-    <img src='imagens/esboco_gustavo.png' />
+    <img src='../imagens/esboco_gustavo.png' />
 </p>
 
 ## Decisão
@@ -81,17 +81,17 @@ O protótipo de baixa fidelidade foi produzido a partir do artefatos gerados, on
 revisar os elementos acordados da aplicação e geramos a versão final da ideia prototipada.
 
 <figure>
-<img align=center width="450" src="imagens/encare_feed.png">
+<img align=center width="450" src="../imagens/encare_feed.png">
 <figcaption>Figura 1. Feed inicial</figcaption>
 </figure>
 
 <figure>
-<img align=center width="450" src="imagens/encare_filtros.png">
+<img align=center width="450" src="../imagens/encare_filtros.png">
 <figcaption>Figura 2. Filtragem de Opções</figcaption>
 </figure>
 
 <figure>
-<img align=center width="450" src="imagens/encare_estabelecimento.png">
+<img align=center width="450" src="../imagens/encare_estabelecimento.png">
 <figcaption>Figura 3. Perfil do estabelecimento</figcaption>
 </figure>
 

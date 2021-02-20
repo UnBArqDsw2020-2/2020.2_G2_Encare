@@ -5,7 +5,18 @@ repo_url: "https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare"
 
 nav:
   - Home: index.md
-
+  - Base:
+    - Projeto Não Orientado a Abordagens Específicas:
+      - Glossário: Base/glossario/glossario.md
+      - Design Sprint: Base/design_sprint.md
+      - Rich Picture: Base/rich_picture.md
+      - Estimativas: Base/estimativas.md
+      - Mapa mental: Base/mapa_mental.md
+      - Causa e efeito: Base/causa_e_efeito.md
+      - Plano de Ação: Base/planodeacao/5w2g.md
+    - Processos/Metodologias/Abordagens:
+      - Modelagem BPMN: Base/modelagem_bpmn.md
+      - Metodologia: Base/metodologia.md
 theme:
   name: material
   language: pt
