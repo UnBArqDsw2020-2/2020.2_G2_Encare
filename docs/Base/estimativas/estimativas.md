@@ -63,8 +63,7 @@ sendo:
 O Fator de Ajustamento do esforço é calculado multiplicando os atributos dos Direcionadores de custo. Os valores da multiplicação são escolhidos a partir de valores que devem ser dados entre "muito baixo" e "extremamente elevado". Esses atributos podem ser visualizados na Figura 2.
 
 ![Coeficientes do COCOMO Intermediário](imagens/coeficientes_cocomo_inter.png)
-<p align="center">Figura 1. Coeficientes do COCOMO Intermediário. Fonte: [2]</p>
-<br>
+<p align="center">Figura 1. Coeficientes do COCOMO Intermediário. Fonte: [2]</p>  
 
 ![Direcionadores de custo](imagens/direcionadores_de_custo.png)
 <p align="center">Figura 2. Direcionadores de custo do COCOMO Intermediário. Fonte: [2]</p>
