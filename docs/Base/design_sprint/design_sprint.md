@@ -15,45 +15,27 @@ abaixo dos esboços.
 
 ### João Pedro
 
-<p align="center">
-    <img src='../imagens/esboco_Joao_Pedro.png' />
-</p>
+![Esboço_JoaoPedro](imagens/esboco_Joao_Pedro.png)
+
 
 ### Wagner Martins
-
-<p align="center">
-    <img src='../imagens/esboco_storyboard_wagner.jpg' />
-</p>
+![Esboço_Wagner](imagens/esboco_storyboard_wagner.jpg)
 
 ### Renato Britto
-
-<p align="center">
-    <img src='../imagens/esboço_renato_britto.jpeg' />
-</p>
+![Esboço_Renato](imagens/esboço_renato_britto.jpeg)
 
 ### João Baraky
-
-<p align="center">
-    <img src='../imagens/esboco_joao_baraky.jpeg' />
-</p>
+![Esboço_Baraky](imagens/esboco_joao_baraky.jpeg)
 
 ### Hugo Aragão
-
-<p align="center">
-    <img src='../imagens/esboco_Hugo.jpg' />
-</p>
+![Esboço_Hugo](imagens/esboco_Hugo.jpg)
 
 ### Nícalo Ribeiro
-
 <p align="center">
-    <img src='../imagens/esboco_nicalo.jpg' />
+    ![Esboço_Nícalo](imagens/esboco_nicalo.jpg)
 </p>
-
 ### Gustavo Nogueira
-
-<p align="center">
-    <img src='../imagens/esboco_gustavo.png' />
-</p>
+![Esboço_Gustavo](imagens/esboco_gustavo.png)
 
 ## Decisão
 
@@ -79,21 +61,15 @@ estabelecimento pertence.
 
 O protótipo de baixa fidelidade foi produzido a partir do artefatos gerados, onde pudemos
 revisar os elementos acordados da aplicação e geramos a versão final da ideia prototipada.
+<p align="center">
+![Figura1](imagens/encare_feed.png)  
+*Figura 1. Feed inicial*    
+![Figura2](imagens/encare_filtros.png)  
+*Figura 2. Filtragem de Opções*  
+![Figura3](imagens/encare_estabelecimento.png)  
+*Figura 3. Perfil do estabelecimento*  
+</p>  
 
-<figure>
-<img align=center width="450" src="../imagens/encare_feed.png">
-<figcaption>Figura 1. Feed inicial</figcaption>
-</figure>
-
-<figure>
-<img align=center width="450" src="../imagens/encare_filtros.png">
-<figcaption>Figura 2. Filtragem de Opções</figcaption>
-</figure>
-
-<figure>
-<img align=center width="450" src="../imagens/encare_estabelecimento.png">
-<figcaption>Figura 3. Perfil do estabelecimento</figcaption>
-</figure>
 
 ## Vesionamento:
 | Data | Nome | Versão | Descrição |
