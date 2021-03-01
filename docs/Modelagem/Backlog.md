@@ -101,3 +101,6 @@
 </table>
 
 ## Versionamento:
+| Data | Nome | Descrição | Versão |
+|------|------|-----------|--------|
+| 01/03/2020 | João Pedro Silva de Carvalho | Documentando Brainstorm | 0.1 |
