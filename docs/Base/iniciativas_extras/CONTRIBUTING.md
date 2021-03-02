@@ -35,6 +35,7 @@
 * O título e o comentário devem ser claros.
 * O pull request deve ser relacionado a alguma issue.
 * Adicione labels que representem o tipo de artefato.
+* O template pode ser visto em [pull requests](pull_requests.md).
 
 ```
 [#número_da_issue] <título da issue fonte>.
