@@ -3,7 +3,7 @@
 
 Esse período engloba todo o tempo após o início da matéria e formação do grupo e antes da primeira sprint. Essas reuniões serviram principalmente para alinhar a ideia do projeto, além de definir os papéis de cada integrante. 
 
-### Reunião 10/02:
+### Reunião 10/02
 
 Essa foi a primeira reunião da equipe e definiu muitos tópicos dentre eles:
 * O projeto a ser desenvolvido de uma visão geral, sem muitos detalhes.
@@ -12,7 +12,7 @@ Essa foi a primeira reunião da equipe e definiu muitos tópicos dentre eles:
 * Foi escolhido um método de mapa de calor para definir o horário ideal da planning.
 
 ## Sprint 0
-### Planning (Excepcionalmente segunda 15/02):
+### Planning (Excepcionalmente segunda 15/02)
 
 Essa foi a primeira planning do projeto e discutiu-se além disso:
 * Debate para os primeiros passos do projeto.
@@ -76,20 +76,20 @@ Essa foi a primeira planning do projeto e discutiu-se além disso:
     </tr>
 </table>
 
-### Review: 
+### Review
 
 Todas as issues foram entregues com excessão de alguns erros de português que ocorerram em alguns documentos.
 
 Na reunião de review, os membros da equipe colocaram alguns pontos de destaque da sprint e votaram os mais relevantes:
 
-#### Elogios:
+#### Elogios
 
 | Frase | Pontuação |
 |-------|-----------|
 | Deu tempo :D | 0 |
 | O gestor foi top! O time parece estar comprometido com o produto. | 0 |
 
-#### Críticas:
+#### Críticas
 
 | Frase | Pontuação |
 |-------|-----------|
@@ -98,7 +98,7 @@ Na reunião de review, os membros da equipe colocaram alguns pontos de destaque 
 | Demora pra decidir e separar as tarefas na primeira sprint | 0 |
 | Organização individual | 0 |
 
-#### Sugestões:
+#### Sugestões
 
 | Frase | Pontuação |
 |-------|-----------|
@@ -107,8 +107,35 @@ Na reunião de review, os membros da equipe colocaram alguns pontos de destaque 
 | Melhorar pareamento | 0 |
 | Iniciar as tarefas mais cedo | 0 |
 
+## Sprint 1
+### Planning
+
+Nesse planejamento distribuímos as tarefas de acordo com a entrega da etapa de Modelagem, dentre os tópicos abordados nas reuniões estão:
+* Leitura e interpretação dos documentos a serem produzidos
+* Distribuição de pontos de dificuldade de execução usando a ferramenta PlanitPoker
+* O resultado do levantamnento dos principais documentos a serem entregues:
+    * Diagramas estáticos
+    * Diagramas dinâmicos
+    * Modelagem ágil
+    * Extras como:
+        * Guia de Estilo
+        * Políticas de Contribuição
+
+#### Relacionamento entre documentos e seus criadores
+|      Documento |Pontuação|      Participantes     |
+|---------------------|--|---------------------------------------------|
+|Diagrama de Atividades|7|Hugo Aragão / Gustavo Nogueira|
+|Diagrama de Componentes|10|Gustavo Nogueira / Wagner Martins|
+|Diagrama de Classe|13|Renato Britto / João Baraky|
+|Backlog do Produto|8|João Pedro / Nicalo Ribeiro|
+|Documentar Sprints|4|Hugo Aragão / João Pedro|
+|Refatorar Documentos da Primeira Entrega|4|João Baraky / Nicalo Ribeiro|
+|Doc de Política de Contrib|4|Renato Britto / Wagner Martins|
+
+
 ## Versionamento
 
 | Data | Nome | Detalhes | Versão |
 |-----|-------|---------|---------|
 | 01/03/2020 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
+| 01/03/2020 | Hugo Aragão | Documentação da Sprint 1 | 0.2 |
