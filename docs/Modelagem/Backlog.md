@@ -98,9 +98,82 @@
         <td>O sistema deverá consumir a api do google maps para calculo de distância</td>
         <td>----</td>
     </tr>
+    <tr>
+        <td>User storie</td>
+        <td>US03</td>
+        <td>Eu como usuário gostaria de obter feedbacks sobre os estabelecimentos.</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RF06</td>
+        <td>O sistema deverá disponibilizar comentários feitos por outros usuários sobre os estabelecimentos.</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RF07</td>
+        <td>O sistema deverá permitir visualizar a nota média de avaliação do estabelecimento</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RNF04</td>
+        <td>O sistema deverá recuperar do banco de dados os comentários respectivos ao estabelecimento</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RNF05</td>
+        <td>O sistema deverá recuperar do banco de dados as notas respectivos ao estabelecimento e calcular uma média</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>User storie</td>
+        <td>US04</td>
+        <td>Eu como usuário gostaria de compartilhar minha experiência no estabelecimento.</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RF08</td>
+        <td>O sistema deverá permitir avaliar o estabelecimento com uma nota</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RNF06</td>
+        <td>O sistema deverá recuperar do banco de dados as notas respectivos ao estabelecimento e calcular uma média</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>User storie</td>
+        <td>US05</td>
+        <td>Eu como usuário gostaria de ver fotos do estabelecimento e de seus serviços.</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RF09</td>
+        <td>O sistema deverá permitir visualizar fotos dos estabelecimentos</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RF10</td>
+        <td>O sistema deverá permitir visualizar fotos dos resultados dos serviços oferecidos</td>
+        <td>----</td>
+    </tr>
+    <tr>
+        <td>Requisito</td>
+        <td>RNF07</td>
+        <td>O sistema deverá buscar fotos do estabelecimento no Instagram</td>
+        <td>----</td>
+    </tr>
 </table>
 
 ## Versionamento:
 | Data | Nome | Descrição | Versão |
 |------|------|-----------|--------|
 | 01/03/2020 | João Pedro Silva de Carvalho | Documentando Brainstorm | 0.1 |
+| 01/03/2020 | Nícalo Ribeiro | Complementando a documentação | 0.2 |
