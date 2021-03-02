@@ -29,6 +29,81 @@
 ### User Stories:
 ### Requisitos:
 ### Tarefas:
+
+|  Backlog    |                   01           |
+|-------------|--------------------------------|  
+|**Tarefa**|Entrar em contato com estabelecimentos| 
+|**Descrição**| Entrar em contato (por meio de redes sociais preferencialmente) com estabelecimentos a fim de obter autorização e as informações necessárias para cadastrá-los no sistema|  
+
+|  Backlog    |                   02           |
+|-------------|--------------------------------|  
+|**Tarefa**|Cadastrar serviços| 
+|**Descrição**| Fazer o cadastro de serviços gerais para que possam ser reaproveitados no cadastro dos estabelecimentos|  
+
+|  Backlog    |                   03           |
+|-------------|--------------------------------|  
+|**Tarefa**|Implementar um filtro de busca| 
+|**Descrição**| Pensar e implementar a melhor maneira para se realizar a busca|  
+
+|  Backlog    |                   04           |
+|-------------|--------------------------------|  
+|**Tarefa**|Elaborar um termo te poítica de privacidade| 
+|**Descrição**| Para seguir os padrões da Lei Geral de Proteção de Dados Pessoais (LGPD), é importante criar esta política para deixar claro ao usuário e aos estabelecimentos o que faremos com seus dados. Em especial ao usuário, já que será requisitado a sua localização|  
+
+|  Backlog    |                   05           |
+|-------------|--------------------------------|  
+|**Tarefa**|Ter acesso à localização do usuário| 
+|**Descrição**| Solicitar acesso à localização do usuário, além de deixar claro as intenções da solicitação|  
+
+|  Backlog    |                   06           |
+|-------------|--------------------------------|  
+|**Tarefa**|Definir a melhor opção para o mapa| 
+|**Descrição**| Verificar se utilizar a api do google maps é viável, pois ela não é gratuita. É interessante buscar novas apis, apesar da do goole ser mais completa|  
+
+|  Backlog    |                   07           |
+|-------------|--------------------------------|  
+|**Tarefa**|Planejar e elaborar o backend| 
+|**Descrição**| Definir as tecnologias e o padrão a ser usado para a construção do backend|  
+
+|  Backlog    |                   08           |
+|-------------|--------------------------------| 
+|**Tarefa**|Definir, modelar e implementar o banco de dados| 
+|**Descrição**| Definir qual será o banco de dados utilizado, assim como realizar sua modelagem e implementação |  
+
+|  Backlog    |                   09           |
+|-------------|--------------------------------|
+|**Tarefa**|Integrar o backend ao banco de dados| 
+|**Descrição**| Realizar a integração do backend com o banco de dados, permitindo realizar as consultas, além de criar permissões para evitar problemas |  
+
+|  Backlog    |                   10           |
+|-------------|--------------------------------|  
+|**Tarefa**|Disponibilizar uma API| 
+|**Descrição**| Após a integração entre o backend e banco de dados, disponiblizar uma api para ser consumida pelo frontend |  
+
+|  Backlog    |                   11           |
+|-------------|--------------------------------| 
+|**Tarefa**|Definir o guia de estilo| 
+|**Descrição**| Definir o guia de estilo da aplicação para a criação da interface |  
+
+|  Backlog    |                   12           |
+|-------------|--------------------------------| 
+|**Tarefa**|Elaborar as interfaces da aplicação| 
+|**Descrição**| Criar as interfaces do sistema, seguindo os padrões estabelecidos no guia de estilo |  
+
+|  Backlog    |                   13          |
+|-------------|-------------------------------| 
+|**Tarefa**|Implementar as interfaces| 
+|**Descrição**| Implementar o frontend conforme planejado |  
+
+|  Backlog    |                   14          |
+|-------------|-------------------------------| 
+|**Tarefa**|Integrar backend com frontend| 
+|**Descrição**| Essa integração poderá ser feita durante ou após a implementação do frontend | 
+
+|  Backlog    |                   15          |
+|-------------|-------------------------------| 
+|**Tarefa**|Tornar o site responsivo| 
+|**Descrição**| Caso seja possível, tornar o site mais responsivo possível, a fim de não limitar o uso para usuários Web |  
 ## Tabela do backlog
 
 <table>
@@ -177,3 +252,4 @@
 |------|------|-----------|--------|
 | 01/03/2020 | João Pedro Silva de Carvalho | Documentando Brainstorm | 0.1 |
 | 01/03/2020 | Nícalo Ribeiro | Complementando a documentação | 0.2 |
+| 02/03/2020 | Nícalo Ribeiro | Adição de tarefas para o backlog | 0.3 |
