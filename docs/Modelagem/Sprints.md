@@ -132,6 +132,17 @@ Nesse planejamento distribuímos as tarefas de acordo com a entrega da etapa de 
 |Refatorar Documentos da Primeira Entrega|4|João Baraky / Nicalo Ribeiro|
 |Doc de Política de Contrib|4|Renato Britto / Wagner Martins|
 
+### Review:
+
+Como nenhuma issue foi entregue, não foi possível fazer a review com o quadro de críticas, elogios e sugestões. 
+
+## Sprint 2:
+### Plannining:
+
+Todas as issues que da sprint 1 foram movidas para dívida técnica. Além dela foi atríbuida mais uma issue.
+
+#### Relacionamento entre documentos e seus criadores
+|Diagrama de sequência|8|João Pedro S. de Carvalho / Wagner Martins|
 
 ## Versionamento
 
@@ -139,3 +150,5 @@ Nesse planejamento distribuímos as tarefas de acordo com a entrega da etapa de 
 |-----|-------|---------|---------|
 | 01/03/2020 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
 | 01/03/2020 | Hugo Aragão | Documentação da Sprint 1 | 0.2 |
+| 03/03/2020 | João Pedro Silva de Carvalho | Adicionando reunião 02/03 | 0.3 |
+
