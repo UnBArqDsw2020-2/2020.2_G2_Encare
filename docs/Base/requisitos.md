@@ -1,15 +1,24 @@
 # Requisitos do produto
 
-### Storytelling  
+## Storytelling  
 Storytelling é um termo em inglês. "Story" significa história e "telling", contar. Mais que uma mera narrativa, Storytelling é a arte de contar histórias usando técnicas inspiradas em roteiristas e escritores para transmitir uma mensagem de forma inesquecível.
 
-#### Cliente procura novo estilo
+### Cliente procura novo estilo
 Um cliente desejava mudar seu estilo, para isso procurou seu barbeiro de confiança, mas ao chegar ao estabelecimento percebeu que o mesmo estava fechado. O cliente então teve que procurar outro estabelecimento e informou ao barbeiro sua ideia de novo corte de cabelo. Após o procedimento, o cliente se sentiu frustrado, pois o resultado não era nem um pouco parecido com o pedido. 
 
-----
-
-#### Cliente procura um procedimento estético já existe
+### Cliente procura um procedimento estético já existe
 Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da arte nas unhas dela. Buscando melhorar sua autoestima, e se sentir renovada, a jovem procurou em seu bairro um estabelecimento que a oferecesse o mesmo corte e arte nas unhas, que a deixassem bonita como a atriz nas fotos. A jovem então navegou pelo Google Maps buscando por um salão que parecesse competente, escolheu um que possuía boas avaliações e se dirigiu ao local para executar o mesmo procedimento estético. Mas como o procedimento era novo, as profissionais do salão não conseguiram atingir o resultado que a cliente desejou, as ferramentas de busca também não traziam informações que a dessem certeza de que as profissionais conseguiriam obter tal resultado.  
+
+#### Resumo  
+|Identificador|Descrição|
+|-------------|---------|
+|ST01| Deve ser possível saber o horário de funcionamento do estabelecimento|
+|ST02| O sistema deve informar os serviços prestados pelo estabelecimento|
+|ST03| O usuário deve ser capaz de analisar fotos de resultados de procedimentos feitos em outros clientes|
+|ST04| O usuário deve conseguir buscar estabalecimentos que ofereçam o serviço desejado|
+|ST05| O sistema deve fornecer um mapa para navegação e encontrar estabelecimentos|
+|ST06| O usuário deve poder conseguir visualizar fotos do estabelecimento em si|
+|ST07| O estabelecimento poderia informar quem são seus funcionários e suas capacidades técnicas|  
 
 - - -  
 
@@ -51,7 +60,7 @@ Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da 
 
 #### Resumo
 
-|Identificador|Requisito|
+|Identificador|Descrição|
 |-------------|---------|
 |INT01|Usuário deve ser capaz de visualizar o mapa a partir de sua localização|
 |INT02|Usuário deve ser capaz de visualizar o mapa sem fornecer sua localização|
@@ -79,3 +88,4 @@ Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da 
 |------|-------|--------|--------|
 | 05/03/2021 | Hugo Aragão| Criação do documento e Storytelling | 0.1 |
 | 05/03/2021 | Nícalo Ribeiro | Adição da introspecção e definição do storytelling | 0.2 |
+|06/03/2021| Nícalo Ribeiro | Adição do resumo dos requisitos do storytelling| 0.3|
