@@ -9,7 +9,7 @@ Um cliente desejava mudar seu estilo, para isso procurou seu barbeiro de confian
 ### Cliente procura um procedimento estético já existe
 Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da arte nas unhas dela. Buscando melhorar sua autoestima, e se sentir renovada, a jovem procurou em seu bairro um estabelecimento que a oferecesse o mesmo corte e arte nas unhas, que a deixassem bonita como a atriz nas fotos. A jovem então navegou pelo Google Maps buscando por um salão que parecesse competente, escolheu um que possuía boas avaliações e se dirigiu ao local para executar o mesmo procedimento estético. Mas como o procedimento era novo, as profissionais do salão não conseguiram atingir o resultado que a cliente desejou, as ferramentas de busca também não traziam informações que a dessem certeza de que as profissionais conseguiriam obter tal resultado.  
 
-#### Resumo  
+### Resumo  
 |Identificador|Descrição|
 |-------------|---------|
 |ST01| Deve ser possível saber o horário de funcionamento do estabelecimento|
@@ -22,7 +22,7 @@ Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da 
 
 - - -  
 
-### Introspecção  
+## Introspecção  
 É uma técnica rica e profunda que visa entender quais propriedades o sistema deve possuir. Demanda imaginação de quem está levantando os requisitos para estabelecer o que ele gostaria que estivesse no sistema, a fim de executar uma determinada tarefa. Apesar de ser uma técnica útil, a instrospeccção de um especialista, por exemplo, pode não ser reflitida na experiência real do usuário.  
 
 #### Ao acessar o site  
@@ -58,7 +58,7 @@ Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da 
 - Deve ser possível visualizar fotos do estabelecimento em si;
 - O sistema deve fornecer fotos dos resultados dos serviços realizados pelo estabelecimento;
 
-#### Resumo
+### Resumo
 
 |Identificador|Descrição|
 |-------------|---------|
@@ -81,11 +81,29 @@ Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da 
 |INT17|O estabelecimento deve informar os preços|
 |INT18|O sistema deve possuir uma interface agradável e intuitiva|  
 
+## Brainstorm
+
+Para fazer um brainstorm a equipe se reuniu por video chamada no teams e todos participaram sugerindo requisitos inicialmente e após discutimos as validades de todos para adicionar ao nosso projeto. Foi a primeira técnica usada pela equipe e serviu principalmente para gerar uma lnha base dos requisitos do Mínimo Produto Viável (MVP).
+
+### Resumo:
+
+| Requisito | Descrição |
+|-----------|-----------|
+| RF01 | Ter um feed de serviços |
+| RF02 | Poder filtrar os tabelecimentos por distância e tipo de serviço |
+| RF03 | Solicitar a localização do usuário |
+| RF04 | Ter o perfil do estabelecimento com informações pertinentes |
+| RF05 | Poder acessar a localização do estabelecimento no google maps a partir do perfil |
+| RNF01 | Ter disponível no banco de dados todos os eatabelecimentos |
+| RNF02 | Ter uma api para consumir os dados do estabelecimentos |
+| RNF03 | Consumir a api do google maps para calcular a distância |
+
 - - -  
 ### Histórico de versão  
 
 | Data | Nome | Detalhe | Versão |
 |------|-------|--------|--------|
-| 05/03/2021 | Hugo Aragão| Criação do documento e Storytelling | 0.1 |
+| 05/03/2021 | Hugo Aragão | Criação do documento e Storytelling | 0.1 |
 | 05/03/2021 | Nícalo Ribeiro | Adição da introspecção e definição do storytelling | 0.2 |
-|06/03/2021| Nícalo Ribeiro | Adição do resumo dos requisitos do storytelling| 0.3|
+| 06/03/2021 | Nícalo Ribeiro | Adição do resumo dos requisitos do storytelling | 0.3 |
+| 06/03/2021 | João Pedro Carvalho | Adição do brainstorm e formatação do documento | 0.4 |
