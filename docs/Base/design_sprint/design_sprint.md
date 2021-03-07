@@ -25,6 +25,9 @@ Após o processo dessa captura de ideias, nós selecionamos uma delas para guiar
 ### Gustavo Nogueira
 ![Esboço_Gustavo](imagens/esboco_gustavo.png)
 
+### Nícalo Ribeiro
+![Esboço_Nícalo](imagens/esboco_nicalo.jpg)
+
 ## Decisão
 
 Foi feita de decisão de se selecionar o esboço de João Baraky, visto que
