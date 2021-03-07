@@ -15,7 +15,7 @@
 | 17/0144259  |  Gustavo Nogueira Rodrigues |
 
 ## Sobre 
-Será um projeto que tem como objetivo facilitar a busca por procedimentos estéticos não-cirurgicos, como cortes de cabelo, serviços de manicure e pedicure, maquiagem, entre outros. Para isso, o nosso projeto tem como proposta oferecer as ofertas disponíveis na região, de acordo com o serviço desejado e com a localização do usuário. 
+O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cirurgicos, como cortes de cabelo, serviços de manicure e pedicure, maquiagem, entre outros. Para isso, o nosso projeto tem como proposta oferecer as ofertas disponíveis na região, de acordo com o serviço desejado e com a localização do usuário. 
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 
@@ -26,8 +26,8 @@ Será um projeto que tem como objetivo facilitar a busca por procedimentos esté
 ![Modelagem BPMN](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_modelagemBPMN.png)
 
 ## Vídeo(s) Primeira Entrega <<FOCO: DSW(Base)>>
-Link do Video da apresentação do Módulo Projeto Não Orientado a Abordagens Específicas: https://youtu.be/OqCiTozAYR8  
-Link do Video da apresentação do Módulo Processos/Metodologias/Abordagens:  https://youtu.be/UjFOLxKm9jY  
+[Apresentação do Módulo Projeto Não Orientado a Abordagens Específicas](https://youtu.be/OqCiTozAYR8) 
+[Apresentação do Módulo Processos/Metodologias/Abordagens](https://youtu.be/UjFOLxKm9jY)
 
 <!-- ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
