@@ -1,4 +1,34 @@
 # Requisitos do produto
+Esse documento contém as técnicas de elicitação que foram utilizadas e os requisitos levantados a partir dela.  
+Termos e seus significados :  
+
+|Termo|Significado|  
+|-----|-----------|
+|RF|Requisito Funcional|
+|RNF|Requisito Não Funcional|
+|ST|Storytelling|
+|INT|Introspecção|
+|BS|Brainstorming|
+
+- - -  
+
+## Brainstorming
+Para fazer um brainstorm a equipe se reuniu por video chamada no teams e todos participaram sugerindo requisitos inicialmente e após discutimos as validades de todos para adicionar ao nosso projeto. Foi a primeira técnica usada pela equipe e serviu principalmente para gerar uma linha base dos requisitos do Mínimo Produto Viável (MVP).
+
+### Resumo:
+
+| Requisito | Descrição |
+|-----------|-----------|
+| RF01 | Ter um feed de serviços | BS01
+| RF02 | Poder filtrar os estabelecimentos por distância e tipo de serviço | BS02
+| RF03 | Solicitar a localização do usuário | BS03
+| RF04 | Ter o perfil do estabelecimento com informações pertinentes | BS04
+| RF05 | Poder acessar a localização do estabelecimento no google maps a partir do perfil | BS05
+| RNF01 | Ter disponível no banco de dados todos os eatabelecimentos | BS06
+| RNF02 | Ter uma api para consumir os dados do estabelecimentos | BS07
+| RNF03 | Consumir a api do google maps para calcular a distância | BS08
+
+- - -  
 
 ## Storytelling  
 Storytelling é um termo em inglês. "Story" significa história e "telling", contar. Mais que uma mera narrativa, Storytelling é a arte de contar histórias usando técnicas inspiradas em roteiristas e escritores para transmitir uma mensagem de forma inesquecível.
@@ -15,7 +45,7 @@ Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da 
 |ST01| Deve ser possível saber o horário de funcionamento do estabelecimento|
 |ST02| O sistema deve informar os serviços prestados pelo estabelecimento|
 |ST03| O usuário deve ser capaz de analisar fotos de resultados de procedimentos feitos em outros clientes|
-|ST04| O usuário deve conseguir buscar estabalecimentos que ofereçam o serviço desejado|
+|ST04| O usuário deve conseguir buscar estabelecimentos que ofereçam o serviço desejado|
 |ST05| O sistema deve fornecer um mapa para navegação e encontrar estabelecimentos|
 |ST06| O usuário deve poder conseguir visualizar fotos do estabelecimento em si|
 |ST07| O estabelecimento poderia informar quem são seus funcionários e suas capacidades técnicas|  
@@ -72,8 +102,8 @@ Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da 
 |INT08|Usuário deve filtrar os estabelecimentos no mapa|
 |INT09|Usuário deve filtrar os etabelecimentos na lista|
 |INT10|O sistema deve permitir filtragem por nome dos estabelecimentos, serviços oferecidos e localização|
-|INT11| O usuário deve ser capaz de ver fotos do estabelecimento|
-|INT12| O usuário deve ser capaz de ver fotos dos resultados dos serviços que o estabelecimento realiza|
+|INT11|O usuário deve ser capaz de ver fotos do estabelecimento|
+|INT12|O usuário deve ser capaz de ver fotos dos resultados dos serviços que o estabelecimento realiza|
 |INT13|O usuário deve ser capaz de identificar os detalhes do estabelecimento escolhido|
 |INT14|O sistema deve ser acessado em desktops|
 |INT15|O sistema deve ser acessado em dispositivos móveis|
@@ -81,22 +111,42 @@ Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da 
 |INT17|O estabelecimento deve informar os preços|
 |INT18|O sistema deve possuir uma interface agradável e intuitiva|  
 
-## Brainstorm
+- - -
 
-Para fazer um brainstorm a equipe se reuniu por video chamada no teams e todos participaram sugerindo requisitos inicialmente e após discutimos as validades de todos para adicionar ao nosso projeto. Foi a primeira técnica usada pela equipe e serviu principalmente para gerar uma lnha base dos requisitos do Mínimo Produto Viável (MVP).
+## Requisitos Funcionais e Requisitos não Funcionais  
+A partir da análise do que foi levantado no Storytelling, Introspecção e Brainstorm, foi possível determinar os seguintes requisitos :  
 
-### Resumo:
+### Requisitos Funcionais
 
-| Requisito | Descrição |
-|-----------|-----------|
-| RF01 | Ter um feed de serviços |
-| RF02 | Poder filtrar os tabelecimentos por distância e tipo de serviço |
-| RF03 | Solicitar a localização do usuário |
-| RF04 | Ter o perfil do estabelecimento com informações pertinentes |
-| RF05 | Poder acessar a localização do estabelecimento no google maps a partir do perfil |
-| RNF01 | Ter disponível no banco de dados todos os eatabelecimentos |
-| RNF02 | Ter uma api para consumir os dados do estabelecimentos |
-| RNF03 | Consumir a api do google maps para calcular a distância |
+|Requisito|Descrição|Origem|
+|---------|---------|------|
+|RF01| Feed de serviços | BS01 , ST02|
+|RF02| Feed de estabelecimentos | INT07 |
+|RF03| Fornecer a visualização de um mapa (interno ou externo) | BS05, ST05, INT01, INT02 |
+|RF04| Interação no mapa | ST05, INT04, INT05 |
+|RF05| Identificação dos estabelecimentos no mapa | ST05, INT05 |
+|RF06| Filtrar estabelecimentos por distância | BS02, INT10 |
+|RF07| Filtrar estabelecimentos por serviço | BS02, ST04, INT10|
+|RF08| Filtrar estabelecimento por nome | INT07, INT10 |
+|RF09| Mostar no mapa os estabelecimentos filtrados |BS03, INT08, INT10, ST04
+|RF10| Mostar no feed os estabelecimentos filtrados |RF03, INT09|
+|RF11| Calcular a distância até o estabelecimento desejado | BS08 |
+|RF12| Cadastrar estabelecimentos | BS06 |
+|RF13| Recuperar as informações dos estabelecimentos| BS07, ST01, ST02|
+|RF14| Recuperar fotos do estabelecimento no Instagram| BS04, ST03, ST06, INT11, INT12|
+|RF15| Possuir um perfil para o estabelecimento| BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17|
+|RF16| Exibir no perfil do estabelecimento suas informações básicas (nome, endereço, contato e horário de funcionamento) | BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17|
+|RF17| Exibir no perfil do estabeleceimento os serviços que ele oferece| BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17|
+|RF18| Exibir no perfil do estabelecimento as fotos de seus serviços | BS04, ST03, ST06, INT11, INT12|
+
+### Requisitos Não Funcionais  
+
+|Requisito|Descrição|Origem|
+|---------|---------|------|
+|RNF01| Solicitar acesso à localização do usuário | BS03, INT01, INT02 |
+|RBF02| Informar ao usuário como sua localização será utilizada | BS03, BS08, INT01, INT02 |
+|RNF03| Uso do sistema intuitivo | INT18 |
+|RNF04| Plataforma responsiva | INT14, INT8 |
 
 - - -  
 ### Histórico de versão  
@@ -107,3 +157,4 @@ Para fazer um brainstorm a equipe se reuniu por video chamada no teams e todos p
 | 05/03/2021 | Nícalo Ribeiro | Adição da introspecção e definição do storytelling | 0.2 |
 | 06/03/2021 | Nícalo Ribeiro | Adição do resumo dos requisitos do storytelling | 0.3 |
 | 06/03/2021 | João Pedro Carvalho | Adição do brainstorm e formatação do documento | 0.4 |
+| 07/03/2021 | Nícalo Ribeiro | Separação em requisitos funcionais e não funcionais e formatação do documento | 0.5 |
