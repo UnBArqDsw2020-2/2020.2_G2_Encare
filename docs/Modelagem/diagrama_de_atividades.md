@@ -17,6 +17,10 @@ A partir do que foi definido como escopo do projeto e reuniões com os membros d
 
 ## Geral
 
+<p align="center">
+    <img src="./imagens/diagrama_geral.png">
+</p>
+
 ## Filtrar Estabelecimentos
 
 <p align="center">
@@ -35,3 +39,6 @@ A partir do que foi definido como escopo do projeto e reuniões com os membros d
 | ------ | ---------- | ------------------------------------------ | ------------------------------ |
 | 0.1    | 06/03/2021 | Adição da estrutura da página              | Gustavo Nogueira & Hugo Aragão |
 | 0.2    | 06/03/2021 | Adição do diagrama filtrar estabelecimento | Gustavo Nogueira & Hugo Aragão |
+| 0.3    | 06/03/2021 | Adição do diagrama Geral                   | Gustavo Nogueira & Hugo Aragão |
+
+
