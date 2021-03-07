@@ -1,7 +1,7 @@
 # Requisitos do produto
-Esse documento contém as técnicas de elicitação que foram utilizadas e os requisitos levantados a partir dela.  
-Termos e seus significados :  
+Esse documento contém as técnicas de elicitação que foram utilizadas e os requisitos levantados a partir delas.  
 
+Termos e seus significados :  
 |Termo|Significado|  
 |-----|-----------|
 |RF|Requisito Funcional|
@@ -13,13 +13,13 @@ Termos e seus significados :
 - - -  
 
 ## Brainstorming
-Para fazer um brainstorm a equipe se reuniu por video chamada no teams e todos participaram sugerindo requisitos inicialmente e após discutimos as validades de todos para adicionar ao nosso projeto. Foi a primeira técnica usada pela equipe e serviu principalmente para gerar uma linha base dos requisitos do Mínimo Produto Viável (MVP).
+Para fazer o brainstorm, a equipe se reuniu por video chamada no Teams e, com a participação de todos os membros, inicialmente foram sugeridos requisitos e discutimos a validade de todos para  adicionar ao nosso projeto. Foi a primeira técnica usada pela equipe e serviu principalmente para gerar uma linha base dos requisitos do Mínimo Produto Viável (MVP).
 
 ### Resumo:
 
 | Requisito | Descrição |
 |-----------|-----------|
-| RF01 | Ter um feed de serviços | BS01
+| RF01 | Ter um feed de serviços |
 | RF02 | Poder filtrar os estabelecimentos por distância e tipo de serviço | BS02
 | RF03 | Solicitar a localização do usuário | BS03
 | RF04 | Ter o perfil do estabelecimento com informações pertinentes | BS04
@@ -36,7 +36,7 @@ Storytelling é um termo em inglês. "Story" significa história e "telling", co
 ### Cliente procura novo estilo
 Um cliente desejava mudar seu estilo, para isso procurou seu barbeiro de confiança, mas ao chegar ao estabelecimento percebeu que o mesmo estava fechado. O cliente então teve que procurar outro estabelecimento e informou ao barbeiro sua ideia de novo corte de cabelo. Após o procedimento, o cliente se sentiu frustrado, pois o resultado não era nem um pouco parecido com o pedido. 
 
-### Cliente procura um procedimento estético já existe
+### Cliente procura um procedimento estético já existente
 Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da arte nas unhas dela. Buscando melhorar sua autoestima, e se sentir renovada, a jovem procurou em seu bairro um estabelecimento que a oferecesse o mesmo corte e arte nas unhas, que a deixassem bonita como a atriz nas fotos. A jovem então navegou pelo Google Maps buscando por um salão que parecesse competente, escolheu um que possuía boas avaliações e se dirigiu ao local para executar o mesmo procedimento estético. Mas como o procedimento era novo, as profissionais do salão não conseguiram atingir o resultado que a cliente desejou, as ferramentas de busca também não traziam informações que a dessem certeza de que as profissionais conseguiriam obter tal resultado.  
 
 ### Resumo  
