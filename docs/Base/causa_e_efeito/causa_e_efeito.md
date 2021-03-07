@@ -16,3 +16,4 @@ BASTIANI, Jeison; MARTINS, Rosemary. Diagrama de Ishikawa. Blog da Qualidade. Di
 | ------ | ---------- | ----------------- | ---------------- |
 | 0.1    | 17/02/2021 | Adição da página  | Gustavo Nogueira |
 | 0.2    | 17/02/2021 | Adição de ajustes | Gustavo Nogueira |
+| 0.3    | 01/03/2021 | Melhora terminologia | João Luis Baraky |
