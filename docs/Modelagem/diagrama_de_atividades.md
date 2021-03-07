@@ -19,6 +19,10 @@ A partir do que foi definido como escopo do projeto e reuniões com os membros d
 
 ## Filtrar Estabelecimentos
 
+<p align="center">
+    <img src="./imagens/diagrama_atividades_filtrar.png">
+</p>
+
 ## Referências
 
 - Activity Diagrams. uml-diagrams.org. Disponível em: <https://www.uml-diagrams.org/activity-diagrams.html>. Acesso em: 06 de março de 2021.
@@ -27,6 +31,7 @@ A partir do que foi definido como escopo do projeto e reuniões com os membros d
 
 ## Histórico de versão
 
-| Versão | Data       | Comentários                   | Autor(es)                      |
-| ------ | ---------- | ----------------------------- | ------------------------------ |
-| 0.1    | 06/03/2021 | Adição da estrutura da página | Gustavo Nogueira & Hugo Aragão |
+| Versão | Data       | Comentários                                | Autor(es)                      |
+| ------ | ---------- | ------------------------------------------ | ------------------------------ |
+| 0.1    | 06/03/2021 | Adição da estrutura da página              | Gustavo Nogueira & Hugo Aragão |
+| 0.2    | 06/03/2021 | Adição do diagrama filtrar estabelecimento | Gustavo Nogueira & Hugo Aragão |
