@@ -154,6 +154,7 @@ Todas as issues que da sprint 1 foram movidas para dívida técnica. Além dela 
 
 #### Relacionamento entre documentos e seus criadores
 |Diagrama de sequência|8|João Pedro S. de Carvalho / Wagner Martins|
+|Documento de Requisitos|n/a| A Equipe |
 
 ## Versionamento
 
