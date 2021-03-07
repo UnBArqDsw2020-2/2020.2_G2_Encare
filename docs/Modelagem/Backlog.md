@@ -1,5 +1,7 @@
-# Backlog do produto
+# Priorização e Backlog do produto
 ## Introdução:
+Este documento contém a priorização dos documentos elicitados e, a partir deles, a criação do backlog do produto com base na prioridade dos requisitos.
+
 ### Abreviaçãoes e acrônimos:
 
 <table>
@@ -15,10 +17,10 @@
         <td>RNF</td>
         <td>Requisito não funcional</td>
     </tr>
-    <tr>
+    <!-- <tr>
         <td>US</td>
         <td>User storie</td>
-    </tr>
+    </tr> -->
     <tr>
         <td>T</td>
         <td>Tarefa</td>
@@ -26,18 +28,72 @@
 </table>
 
 ## Níveis:
-### User Stories:
-### Requisitos:
-### Tarefas:
+
+### Priorização dos requisitos por meio do MoSCoW  
+Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade definidos de acordo com as letras que compõem o MoSCoW, sendo eles:  
+
+* **Must**: Nesta categoria são atribuídos os itens que devem necessariamente ser realizados. São considerados obrigatórios, vitais, essenciais e inegociáveis;
+
+* **Should**: Nesta categoria estão os itens necessários, importantes e valorosos; porém não obrigatórios e negociáveis. São itens de segunda prioridade que podem ser realizados num segundo momento;
+
+* **Could**: Nesta categoria estão inseridos os itens desejados, mas com menor impacto ou menor valor para o objetivo estratégico. São itens de terceira prioridade que não apresentam problemas caso não sejam realizados;
+
+* **Would**: São os itens de menor prioridade. Podem ser reconsiderados no futuro, mas não ocuparão os recursos da organização no momento atual.
+
+|Identificador|Descrição|Prioridade|
+|-------------|---------|----------|  
+|RF01| Feed de serviços | **Must** |
+|RF02| Feed de estabelecimentos | **Must** |
+|RF03| Fornecer a visualização de um mapa (interno ou externo) | **Must** |
+|RF04| Interação no mapa | **Could** |
+|RF05| Identificação dos estabelecimentos no mapa | **Should** |
+|RF06| Filtrar estabelecimentos por distância | **Should** |
+|RF07| Filtrar estabelecimentos por serviço | **Must** |
+|RF08| Filtrar estabelecimento por nome | **Should** |
+|RF09| Mostar no mapa os estabelecimentos filtrados | **Could** |
+|RF10| Mostar no feed os estabelecimentos filtrados | **Must** |
+|RF11| Calcular a distância até o estabelecimento desejado | **Would** |
+|RF12| Cadastrar estabelecimentos | **Must** |
+|RF13| Recuperar as informações dos estabelecimentos| **Must** |
+|RF14| Recuperar fotos do estabelecimento no Instagram| **Must** |
+|RF15| Possuir um perfil para o estabelecimento| **Must** | 
+|RF16| Exibir no perfil do estabelecimento suas informações básicas (nome, endereço, contato e horário de funcionamento) | **Must** |
+|RF17| Exibir no perfil do estabeleceimento os serviços que ele oferece| **Must** |
+|RF18| Exibir no perfil do estabelecimento as fotos de seus serviços |  **Must** |
+|RNF01| Solicitar acesso à localização do usuário | **Should** |
+|RBF02| Informar ao usuário como sua localização será utilizada | **Should** |
+|RNF03| Uso do sistema intuitivo |  **Should** |
+|RNF04| Plataforma responsiva |  **Could** |
+
+Resumo :  
+|Prioridade| Quantidade |
+|----------|------------|
+|Must|12|
+|Should|6|
+|Could|3|
+| Would|1|
+
+Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vitais ao sistema para que ele seja concluído.
+
+<!-- ### User Stories:  
+Histórias de usuários são tarefas de desenvolvimento expressas, em geral, como "persona + necessidade + propósito".  É uma explicação informal e geral sobre um recurso de software escrita a partir da perspectiva do usuário final. Seu objetivo é articular como um recurso de software pode gerar valor para o cliente.   -->
+
+### Product Backlog:
+Após analisar os requisitos e suas prioridades, foram definidas as seguintes atividades para que os requisitos essenciais sejam atendidos e entregues.  
+Eventualmente, novas tarefas podem ser criadas.
 
 |Tarefa|Descrição|
 |------|---------|  
+|Criar feed de serviços| Elaborar como será o feed e como as informações estarão dispostas|
 |Entrar em contato com estabelecimentos|Entrar em contato (por meio de redes sociais preferencialmente) com estabelecimentos a fim de obter autorização e as informações necessárias para cadastrá-los no sistema|  
-|Cadastrar serviços|Fazer o cadastro de serviços gerais para que possam ser reaproveitados no cadastro dos estabelecimentos|  
-|Implementar um filtro de busca|Pensar e implementar a melhor maneira para se realizar a busca|  
-|Elaborar um termo te poítica de privacidade|Para seguir os padrões da Lei Geral de Proteção de Dados Pessoais (LGPD), é importante criar esta política para deixar claro ao usuário e aos estabelecimentos o que faremos com seus dados. Em especial ao usuário, já que será requisitado a sua localização|  
-|Ter acesso à localização do usuário|Solicitar acesso à localização do usuário, além de deixar claro as intenções da solicitação|  
-|Definir a melhor opção para o mapa|Verificar se utilizar a api do google maps é viável, pois ela não é gratuita. É interessante buscar novas apis, apesar da do goole ser mais completa|  
+|Cadastrar os serviços | Pode ser considerada uma sub-tarefa do feed de serviços. É necessário cadastrar serviços gerais que serão atribuídos aos estabelecimentos|
+|Atribuir o serviço ao estabelecimento | Pode ser considerada uma sub-tarefa do feed de serviços. Os serviços devem ser atribuídos aos estabelecimentos que a executam|
+|Cadastrar estabelecimentos|Após entrar em contato com o estabelecimento, cadastrá-lo no sistema com base nas informações coletadas|  
+|Criar feed de estabelecimentos| Após cadastrar os estabelecimentos, elaborar como será o feed |
+|Disponibilizar um mapa| Pensar como será a utilização do mapa : Se será feito dentro do sistema ou se será externo (Abrir no google maps p.ex.)|
+|Implementar um filtro de busca|Pensar e implementar a melhor maneira para se realizar a busca que, inicalmente, será por serviço|  
+|Criar componentes para visualizar os estabelecimentos| É importante a criação de componentes que exibam os detalhes do estabelecimento selecionado pelo usuário|  
+|Caso, utilize a localização do usuário, elaborar um termo de poítica de privacidade|Para seguir os padrões da Lei Geral de Proteção de Dados Pessoais (LGPD), é importante criar esta política para deixar claro ao usuário e aos estabelecimentos o que faremos com seus dados. Em especial ao usuário, já que será requisitado a sua localização|  
 |Planejar e elaborar o backend|Definir as tecnologias e o padrão a ser usado para a construção do backend|  
 |Definir, modelar e implementar o banco de dados|Definir qual será o banco de dados utilizado, assim como realizar sua modelagem e implementação |  
 |Integrar o backend ao banco de dados| Realizar a integração do backend com o banco de dados, permitindo realizar as consultas, além de criar permissões para evitar problemas |  
@@ -46,11 +102,9 @@
 |Elaborar as interfaces da aplicação|Criar as interfaces do sistema, seguindo os padrões estabelecidos no guia de estilo |  
 |Implementar as interfaces|Implementar o frontend conforme planejado |  
 |Integrar backend com frontend|Essa integração poderá ser feita durante ou após a implementação do frontend | 
-|Tornar o site responsivo|Caso seja possível, tornar o site mais responsivo possível, a fim de não limitar o uso para usuários Web | 
-|Criar componentes para visualizar os estabelecimentos| É importante a criação de componentes que exibam os detalhes do estabelecimento selecionado pelo usuário|  
-|
 
-## Tabela do backlog
+
+<!-- ## Tabela do backlog
 
 <table>
     <tr>
@@ -63,13 +117,13 @@
         <td>User storie</td>
         <td>US01</td>
         <td>Eu como usuário gostaria de encontrar um estabelecimento que ofereça um serviço de estética que eu busco.</td>
-        <td>----</td>
+        <td>Must</td>
     </tr>
     <tr>
         <td>Requisito</td>
         <td>RF01</td>
         <td>O sistema deverá ter um feed de serviços</td>
-        <td>----</td>
+        <td>Must</td>
     </tr>
     <tr>
         <td>Requisito</td>
@@ -191,7 +245,7 @@
         <td>O sistema deverá buscar fotos do estabelecimento no Instagram</td>
         <td>----</td>
     </tr>
-</table>
+</table> -->
 
 ## Versionamento:
 | Data | Nome | Descrição | Versão |
@@ -200,3 +254,4 @@
 | 01/03/2020 | Nícalo Ribeiro | Complementando a documentação | 0.2 |
 | 02/03/2020 | Nícalo Ribeiro | Adição de tarefas para o backlog | 0.3 |
 | 02/03/2020 | Nícalo Ribeiro | Ajustes na tabela de tarefas e adição de novas | 0.4|
+| 07/03/2020 | Nícalo Ribeiro | Refatoração do documento; Adição da priorização e tarefas do backlog | 0.5|
