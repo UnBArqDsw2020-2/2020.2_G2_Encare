@@ -15,18 +15,22 @@ A partir do que foi definido como escopo do projeto e reuniões com os membros d
 - Geral: representa as atividades da aplicação de um ponto de vista mais amplo.
 - Filtrar: representa as atividades referentes a funcionalidade "filtrar estabelecimentos".
 
+----
 ## Geral
+Esse diagrama busca demonstrar o fluxo principal das atividades do usuário em interação com a aplicação. No fluxo pricipal temos a ação de decisão, onde o usuário pode escolher buscar no Feed de imagens por uma ideia nova ou executar uma busca completa (busca avançada), podendo assim rastrear exatamente o procedimento de estética desejado. A tarefa é finalizada após a visualização do estabelecimento e suas informações principais, onde o usuário decide por finalizar a busca ou retornar à escolha de filtros.
 
 <p align="center">
     <img src="./imagens/diagrama_geral.png">
 </p>
 
 ## Filtrar Estabelecimentos
+No filtro de estabelecimentos, temos aqui representada no diagrama uma visão ampliada da tarefa. Nesse caso mais específico, as ações são referentes às consequências de cada decisão de busca feita pelo usuário. A tarefa é finalizada quando as opções de filtro desejadas são selecionadas e o usuário clica no botão de "executar ação", no caso "Filtrar".
 
 <p align="center">
     <img src="./imagens/diagrama_atividades_filtrar.png">
 </p>
 
+----
 ## Referências
 
 - Activity Diagrams. uml-diagrams.org. Disponível em: <https://www.uml-diagrams.org/activity-diagrams.html>. Acesso em: 06 de março de 2021.
@@ -35,10 +39,9 @@ A partir do que foi definido como escopo do projeto e reuniões com os membros d
 
 ## Histórico de versão
 
-| Versão | Data       | Comentários                                | Autor(es)                      |
-| ------ | ---------- | ------------------------------------------ | ------------------------------ |
-| 0.1    | 06/03/2021 | Adição da estrutura da página              | Gustavo Nogueira & Hugo Aragão |
-| 0.2    | 06/03/2021 | Adição do diagrama filtrar estabelecimento | Gustavo Nogueira & Hugo Aragão |
-| 0.3    | 06/03/2021 | Adição do diagrama Geral                   | Gustavo Nogueira & Hugo Aragão |
-
-
+|    Data    |              Nome              |               Detalhe                         | Versão |
+|------------|--------------------------------|-----------------------------------------------|--------|
+| 06/03/2021 | Gustavo Nogueira & Hugo Aragão | Adição da estrutura da página                 |   0.1  |
+| 06/03/2021 | Gustavo Nogueira & Hugo Aragão | Adição do diagrama filtrar estabelecimento    |   0.2  |
+| 06/03/2021 | Gustavo Nogueira & Hugo Aragão | Adição do diagrama Geral                      |   0.3  |
+| 06/03/2021 | Gustavo Nogueira & Hugo Aragão | Descrição dos diagramas e padronização do doc |   0.4  |
