@@ -51,14 +51,16 @@ Os requisitos do projeto na fase inicial não apresentam grande rigidez, mas tê
 
 O modelo utiliza a seguinte equação para estimativa de esforço:
 
+```
 E = a x S^b x fae
+```
 
 sendo:
-<br>E: o esforço aplicado (em pessoas-mês).
-<br>S: o número (estimado) de linhas de código para o projeto (em milhares).
-<br>a: um coeficiente fornecido na figura 1.
-<br>b: um expoente fornecido na figura 1.
-<br>fae: o Fator de Ajustamento do Esforço
+<br>**E**: o esforço aplicado (em pessoas-mês).
+<br>**S**: o número (estimado) de linhas de código para o projeto (em milhares).
+<br>**a**: um coeficiente fornecido na figura 1.
+<br>**b**: um expoente fornecido na figura 1.
+<br>**fae**: o Fator de Ajustamento do Esforço
 
 O Fator de Ajustamento do esforço é calculado multiplicando os atributos dos Direcionadores de custo. Os valores da multiplicação são escolhidos a partir de valores que devem ser dados entre "muito baixo" e "extremamente elevado". Esses atributos podem ser visualizados na Figura 2.
 
@@ -70,13 +72,15 @@ O Fator de Ajustamento do esforço é calculado multiplicando os atributos dos D
 
 Para a estimativa de tempo, segue-se a seguinte equação:
 
+```
 T = c x E^d
+```
 
 sendo:
-<br>T: o tempo de desenvolvimento (em meses cronológicos).
-<br>E: o esforço aplicado (em pessoas-mês).
-<br>c: um coeficiente fornecido na figura 3.
-<br>d: um expoente fornecido na figura 3.
+<br>**T**: o tempo de desenvolvimento (em meses cronológicos).
+<br>**E**: o esforço aplicado (em pessoas-mês).
+<br>**c**: um coeficiente fornecido na figura 3.
+<br>**d**: um expoente fornecido na figura 3.
 
 ![Coeficientes do COCOMO básico](imagens/coeficientes_cocomo_basico.png)
 <p align="center">Figura 3. Coeficientes do COCOMO básico. Fonte: [2]</p>
@@ -86,50 +90,49 @@ sendo:
 O fator de ajustamento de esforço foi calculado conforme os seguintes multiplicadores concordados pela equipe:
 
 - Atributos do produto
-	- Confiabilidade exigida do software: 1.15 (Elevado)
-	- Tamanho do Banco de Dados: 1.08 (Elevado)
-	- Complexidade do produto: 1.00 (Normal)
+	- Confiabilidade exigida do software: **1.15** (Elevado)
+	- Tamanho do Banco de Dados: **1.08** (Elevado)
+	- Complexidade do produto: **1.00** (Normal)
 - Atributos do hardware
-	- Restrições ao tempo de execução: 1.00 (Normal)
-	- Restrições de memória: 1.00 (Normal)
-	- Volatilidade do ambiente de máquina virtual: 1.00 (Normal)
-	- Tempo de turnaround (tempo para completar o ciclo) exigido: 1.00 (Normal)
+	- Restrições ao tempo de execução: **1.00** (Normal)
+	- Restrições de memória: **1.00** (Normal)
+	- Volatilidade do ambiente de máquina virtual: **1.00** (Normal)
+	- Tempo de turnaround (tempo para completar o ciclo) exigido: **1.00** (Normal)
 - Atributos de pessoal
-	- Capacidade do analista: 1.00 (Normal)
-	- Experiência em aplicações: 0.91 (Elevado)
-	- Capacidade do programador: 0.86 (Elevado)
-	- Experiência em máquina virtual: 1.00 (Normal)
-	- Experiência com a linguagem de programação: 1.00 (Normal)
+	- Capacidade do analista: **1.00** (Normal)
+	- Experiência em aplicações: **0.91** (Elevado)
+	- Capacidade do programador: **0.86** (Elevado)
+	- Experiência em máquina virtual: **1.00** (Normal)
+	- Experiência com a linguagem de programação: **1.00** (Normal)
 - Atributos de projeto
-	- Uso de práticas modernas de programação: 0.91 (Elevado)
-	- Uso de ferramentas de software: 1.00 (Normal)
-	- Cronograma exigido de desenvolvimento: 1.10 (Muito Elevado)
+	- Uso de práticas modernas de programação: **0.91** (Elevado)
+	- Uso de ferramentas de software: **1.00** (Normal)
+	- Cronograma exigido de desenvolvimento: **1.10** (Muito Elevado)
 
 Para a quantidade de linhas em KLOC (linhas de código em milhares), foram considerados os módulos abaixo, derivados dos requisitos elicitados.
 
 - Backend
-	- API dos estabelecimentos - 200 linhas
-	- Script para mandar os dados do google forms para o banco de dados - 20 linhas
+	- API dos estabelecimentos - **200 linhas**
+	- Script para mandar os dados do google forms para o banco de dados - **20 linhas**
 
 - Frontend
-    - Tela do feed de serviços - 300 linhas
-    - Tela do perfil do estabelecimento - 200 linhas
-    - Consumir a API do backend - 50 linhas
-    - Consumir a API do Google maps - 50 linhas
+    - Tela do feed de serviços - **300 linhas**
+    - Tela do perfil do estabelecimento - **200 linhas**
+    - Consumir a API do backend - **50 linhas**
+    - Consumir a API do Google maps - **50 linhas**
 
 Embora as linguagens ainda não tenham sido decididas, as estimativas de linhas foram feitas pensando em linguagens nas linguagens python e javascript.
 
-Dados os valores de fae = 0.973 e S = 0.82, temos como resultado da estimativa de esforço:
+Dados os valores de **fae = 0.973** e **S = 0.82**, temos como resultado da estimativa de esforço:
 
-E = 3 * 0.82^1.12 * 0.973
-
-**E = 2.33 pessoas-mês**
+>E = 3 * 0.82^1.12 * 0.973
+>**E = 2.33 pessoas-mês**
 
 e a estimativa de tempo:
 
-T = 2.5 * 2.33^0.35
 
-**T = 3.3 meses**
+>T = 2.5 * 2.33^0.35
+>**T = 3.3 meses**
 
 ## Histórico de revisões
 
@@ -137,6 +140,7 @@ T = 2.5 * 2.33^0.35
 |-|-|-|-|
 | Wagner Martins | 0.1 | 16/02/2021 | Introdução e modelos de estimativa |
 | Wagner Martins | 0.2 | 17/02/2021 | Realização dos cálculos das estimativas |
+| João Luis Baraky | 0.3 | 27/02/2021 | Atualizações na estética do documento |
 
 ## Referências
 
