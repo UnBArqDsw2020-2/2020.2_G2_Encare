@@ -163,4 +163,5 @@ Todas as issues que da sprint 1 foram movidas para dívida técnica. Além dela 
 | 01/03/2021 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
 | 01/03/2021 | Hugo Aragão | Documentação da Sprint 1 | 0.2 |
 | 03/03/2021 | João Pedro Silva de Carvalho | Adicionando reunião 02/03 | 0.3 |
+| 07/03/2021 | Hugo Aragão | Adicionando Reunião do dia 04/03| 0.4 |
 
