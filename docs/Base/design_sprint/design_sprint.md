@@ -1,22 +1,14 @@
 # Desing sprint
 ## Geração de ideias
-Para gerar as ideias de como seria a palicação a equipe realizou uma reunião onde usamos a técnica de brainstorm, após isso cada membro teve que gerar o seu próprio esboço para validar as ideias discutidas.
+Afim de gerar as ideias de como seria a aplicação, a equipe realizou uma reunião onde usamos a técnica de brainstorming, após isso cada membro teve que gerar o seu próprio esboço para validar as ideias discutidas.
 ## Esboço das ideias
 
-Os esboços são representações de uma sessão de brainstorming realizada pela
-equipe, de forma assíncrona, onde todos apresentaram suas ideias de como o 
-Encare deve ser. Os documentos a seguir são feitos em formato livre, sem
-compromisso com o estilo específico, haja visto que o propósito do brainstorm
-era capturar as ideias da equipe de forma crua.
+Os esboços são representações de uma sessão de brainstorming realizada pela equipe, de forma assíncrona, onde todos apresentaram suas ideias de como o Encare deve ser. Os documentos a seguir são feitos em formato livre, sem compromisso com o estilo específico, haja visto que o propósito da atividade era capturar as ideias da equipe de forma crua.
 
-Após o processo dessa captura de ideias, nós selecionamos uma delas para
-guiar o processo de prototipagem do projeto Encare. A decisão está descrita
-abaixo dos esboços.
+Após o processo dessa captura de ideias, nós selecionamos uma delas para guiar o processo de prototipagem do projeto Encare. A decisão está descritaabaixo dos esboços.
 
 ### João Pedro
-
 ![Esboço_JoaoPedro](imagens/esboco_Joao_Pedro.png)
-
 
 ### Wagner Martins
 ![Esboço_Wagner](imagens/esboco_storyboard_wagner.jpg)
@@ -30,10 +22,6 @@ abaixo dos esboços.
 ### Hugo Aragão
 ![Esboço_Hugo](imagens/esboco_Hugo.jpg)
 
-### Nícalo Ribeiro
-<p align="center">
-    ![Esboço_Nícalo](imagens/esboco_nicalo.jpg)
-</p>
 ### Gustavo Nogueira
 ![Esboço_Gustavo](imagens/esboco_gustavo.png)
 
@@ -41,14 +29,13 @@ abaixo dos esboços.
 
 Foi feita de decisão de se selecionar o esboço de João Baraky, visto que
 este captura a essência do que o Encare deve ser. Boa parte da ideia será
-usada, mas algumas mudanças foram feitas para alinhar com o resto do time
-os planos.
+usada, mas algumas mudanças foram feitas para alinhar com o resto do time.
 
 ### Divergências do esboço
 
 Foi feita a decisão de abandonar o feature representado no esboço selecionado
 relacionado aos preços de cada estabelecimento. No esboço é possível ver um
-feature semelhante ao IFood, onde os preços de um estabelecimento são
+feature semelhante ao iFood, onde os preços de um estabelecimento são
 representados com cifrões ($).
 
 A ideia foi abandonada pois se julgou que fosse um dado difícil de se
@@ -59,7 +46,7 @@ estabelecimento pertence.
 
 ## Protótipo
 
-O protótipo de baixa fidelidade foi produzido a partir do artefatos gerados, onde pudemos
+O protótipo de baixa fidelidade foi produzido a partir dos artefatos gerados, onde pudemos
 revisar os elementos acordados da aplicação e geramos a versão final da ideia prototipada.
 <p align="center">
 ![Figura1](imagens/encare_feed.png)  
@@ -69,7 +56,6 @@ revisar os elementos acordados da aplicação e geramos a versão final da ideia
 ![Figura3](imagens/encare_estabelecimento.png)  
 *Figura 3. Perfil do estabelecimento*  
 </p>  
-
 
 ## Vesionamento:
 | Data | Nome | Versão | Descrição |
@@ -84,3 +70,5 @@ revisar os elementos acordados da aplicação e geramos a versão final da ideia
 | 19/02/2021 | Hugo, João Pedro, Renato | 0.8 | Adicionando Prototipo de Baixa Fidelidade |
 | 19/02/2021 | Renato Britto Araujo | 0.9 | Adiciona decisão, explicação das mudanças dela, esboço e geração de ideias. |
 | 19/02/2021 | João Pedro Silva de Carvalho | 1.0 | Adiciona geração de ideias |
+| 27/02/2021 | João Luis Baraky| 1.1 | Corrige erros de ortografia e concordância |
+
