@@ -11,6 +11,17 @@ Essa foi a primeira reunião da equipe e definiu muitos tópicos dentre eles:
 * Foi decido a [metodologia](https://unbarqdsw2020-2.github.io/2020.2_G2_Encare/Base/metodologia/) de trabalho da equipe, também de forma geral.
 * Foi escolhido um método de mapa de calor para definir o horário ideal da planning.
 
+### Reunião 04/03
+
+Reunião organizada para discutir as incoerências do projeto relacionadas os documentos produzidos e o escopo do projeto:
+* Observamos o feedback da professora notanto os pontos a serem corrigidos
+* Para garantir maior clareza do que de fato o produto deve ser, a equipe solicitou o preenchimento do cargo de Product Owner, que no caso será o integrante Hugo Aragão
+* Após conversarmos sobre a ideia decidimos fortalecer a base teórica do produto, usando uma nova técnica de elicitação, agora aferindo as necessidades do cliente fictício, no caso o nosso PO
+* A equipe revisou juntos as teorias por trás dos diagramas solicitados na etapa de Modelagem e apontamos as correções a serem feitas para essa entrega 
+* Foi acordado que a equipe se empenharia mais em construir um quadro de requisitos mais sólidos e claros para que facilitasse o desenvolvimento dos próximos artefatos e do código.
+
+----
+
 ## Sprint 0
 ### Planning (Excepcionalmente segunda 15/02)
 
@@ -148,7 +159,7 @@ Todas as issues que da sprint 1 foram movidas para dívida técnica. Além dela 
 
 | Data | Nome | Detalhes | Versão |
 |-----|-------|---------|---------|
-| 01/03/2020 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
-| 01/03/2020 | Hugo Aragão | Documentação da Sprint 1 | 0.2 |
-| 03/03/2020 | João Pedro Silva de Carvalho | Adicionando reunião 02/03 | 0.3 |
+| 01/03/2021 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
+| 01/03/2021 | Hugo Aragão | Documentação da Sprint 1 | 0.2 |
+| 03/03/2021 | João Pedro Silva de Carvalho | Adicionando reunião 02/03 | 0.3 |
 
