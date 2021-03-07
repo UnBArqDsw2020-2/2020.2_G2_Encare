@@ -10,6 +10,16 @@ Termos e seus significados :
 |INT|Introspecção|
 |BS|Brainstorming|
 
+Resumo do documento :
+|Identificador|Quantidade|
+|-------------|----------|
+|BS|08|
+|ST|07|
+|INT|18|
+|RF|18|
+|RNF|04|
+
+
 - - -  
 
 ## Brainstorming
@@ -19,14 +29,14 @@ Para fazer o brainstorm, a equipe se reuniu por video chamada no Teams e, com a 
 
 | Requisito | Descrição |
 |-----------|-----------|
-| RF01 | Ter um feed de serviços |
-| RF02 | Poder filtrar os estabelecimentos por distância e tipo de serviço | BS02
-| RF03 | Solicitar a localização do usuário | BS03
-| RF04 | Ter o perfil do estabelecimento com informações pertinentes | BS04
-| RF05 | Poder acessar a localização do estabelecimento no google maps a partir do perfil | BS05
-| RNF01 | Ter disponível no banco de dados todos os eatabelecimentos | BS06
-| RNF02 | Ter uma api para consumir os dados do estabelecimentos | BS07
-| RNF03 | Consumir a api do google maps para calcular a distância | BS08
+| BS01 | Ter um feed de serviços |
+| BS02 | Poder filtrar os estabelecimentos por distância e tipo de serviço | 
+| BS03 | Solicitar a localização do usuário | 
+| BS04 | Ter o perfil do estabelecimento com informações pertinentes | 
+| BS05 | Poder acessar a localização do estabelecimento no google maps a partir do perfil | 
+| BS06 | Ter disponível no banco de dados todos os eatabelecimentos | 
+| BS07 | Ter uma api para consumir os dados do estabelecimentos | 
+| BS08 | Consumir a api do google maps para calcular a distância | 
 
 - - -  
 
@@ -158,3 +168,4 @@ A partir da análise do que foi levantado no Storytelling, Introspecção e Brai
 | 06/03/2021 | Nícalo Ribeiro | Adição do resumo dos requisitos do storytelling | 0.3 |
 | 06/03/2021 | João Pedro Carvalho | Adição do brainstorm e formatação do documento | 0.4 |
 | 07/03/2021 | Nícalo Ribeiro | Separação em requisitos funcionais e não funcionais e formatação do documento | 0.5 |
+| 07/03/2021 | Nícalo Ribeiro | Revisão e formatação do documento | 0.6 |
