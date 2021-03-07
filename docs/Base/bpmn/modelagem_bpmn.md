@@ -34,4 +34,4 @@ CASTRO, Bruna. Notação BPMN: O que é e quando usar? Guia completo. Blog SML B
 | ------ | ---------- | --------------------------------------------- | ------------------------- |
 | 0.1    | 17/02/2021 | Adição da página                              | Gustavo Nogueira & Renato |
 | 0.2    | 17/02/2021 | Adição dos diagramas geral, sprint e planning | Gustavo Nogueira          |
-| 1.0    | 18/02/2021 | Adição da análise da Coleta de Dados, Daily e Sprint Review | Renato Britto Araujo |
+| 0.3    | 18/02/2021 | Adição da análise da Coleta de Dados, Daily e Sprint Review | Renato Britto Araujo |
