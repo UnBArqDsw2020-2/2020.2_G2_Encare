@@ -10,15 +10,8 @@ Essa foi a primeira reunião da equipe e definiu muitos tópicos dentre eles:
 * O scrum master da equipe que foi decido em comum acordo com a equipe foi o [João Pedro](https://github.com/jps12)
 * Foi decido a [metodologia](https://unbarqdsw2020-2.github.io/2020.2_G2_Encare/Base/metodologia/) de trabalho da equipe, também de forma geral.
 * Foi escolhido um método de mapa de calor para definir o horário ideal da planning.
+* As reuniões semanais marcadas para toda terça-feira às 7am
 
-### Reunião 04/03
-
-Reunião organizada para discutir as incoerências do projeto relacionadas os documentos produzidos e o escopo do projeto:
-* Observamos o feedback da professora notanto os pontos a serem corrigidos
-* Para garantir maior clareza do que de fato o produto deve ser, a equipe solicitou o preenchimento do cargo de Product Owner, que no caso será o integrante Hugo Aragão
-* Após conversarmos sobre a ideia decidimos fortalecer a base teórica do produto, usando uma nova técnica de elicitação, agora aferindo as necessidades do cliente fictício, no caso o nosso PO
-* A equipe revisou juntos as teorias por trás dos diagramas solicitados na etapa de Modelagem e apontamos as correções a serem feitas para essa entrega 
-* Foi acordado que a equipe se empenharia mais em construir um quadro de requisitos mais sólidos e claros para que facilitasse o desenvolvimento dos próximos artefatos e do código.
 
 ----
 
@@ -118,10 +111,12 @@ Na reunião de review, os membros da equipe colocaram alguns pontos de destaque 
 | Melhorar pareamento | 0 |
 | Iniciar as tarefas mais cedo | 0 |
 
+----
+
 ## Sprint 1
 ### Planning
 
-Nesse planejamento distribuímos as tarefas de acordo com a entrega da etapa de Modelagem, dentre os tópicos abordados nas reuniões estão:
+Nesse planejamento distribuímos as tarefas de forma síncrona e de acordo com a entrega da etapa de Modelagem, dentre os tópicos abordados nas reuniões estão:
 * Leitura e interpretação dos documentos a serem produzidos
 * Distribuição de pontos de dificuldade de execução usando a ferramenta PlanitPoker
 * O resultado do levantamnento dos principais documentos a serem entregues:
@@ -147,10 +142,22 @@ Nesse planejamento distribuímos as tarefas de acordo com a entrega da etapa de 
 
 Como nenhuma issue foi entregue, não foi possível fazer a review com o quadro de críticas, elogios e sugestões. 
 
+----
+
 ## Sprint 2:
 ### Plannining:
 
-Todas as issues que da sprint 1 foram movidas para dívida técnica. Além dela foi atríbuida mais uma issue.
+### Reunião 04/03
+
+Reunião síncrona organizada para discutir as incoerências do projeto relacionadas os documentos produzidos e o escopo do projeto:
+* A equipe apresentou dificuldades com a produção dos diagramas devido às falhas na elicitação dos requisitos na sprint passada
+* As dívidas técnicas foram observadas e trazidas para essa sprint
+* Observamos o feedback da professora notanto os pontos a serem corrigidos
+* Para garantir maior clareza do que de fato o produto deve ser, a equipe solicitou o preenchimento do cargo de Product Owner, que no caso será o integrante Hugo Aragão
+* Após conversarmos sobre a ideia decidimos fortalecer a base teórica do produto, usando uma nova técnica de elicitação, agora aferindo as necessidades do cliente fictício, no caso o nosso PO
+* A equipe revisou juntos as teorias por trás dos diagramas solicitados na etapa de Modelagem e apontamos as correções a serem feitas para essa entrega 
+* Foi acordado que a equipe se empenharia mais em construir um quadro de requisitos mais sólidos e claros para que facilitasse o desenvolvimento dos próximos artefatos e do código.
+
 
 #### Relacionamento entre documentos e seus criadores
 |Diagrama de sequência|8|João Pedro S. de Carvalho / Wagner Martins|
@@ -163,5 +170,5 @@ Todas as issues que da sprint 1 foram movidas para dívida técnica. Além dela 
 | 01/03/2021 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
 | 01/03/2021 | Hugo Aragão | Documentação da Sprint 1 | 0.2 |
 | 03/03/2021 | João Pedro Silva de Carvalho | Adicionando reunião 02/03 | 0.3 |
-| 07/03/2021 | Hugo Aragão | Adicionando Reunião do dia 04/03| 0.4 |
+| 07/03/2021 | Hugo Aragão | Adicionando Reunião do dia 04/03 | 0.4 |
 
