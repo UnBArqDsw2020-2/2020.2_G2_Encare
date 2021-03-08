@@ -24,7 +24,7 @@ O diagrama também aceita o uso de estruturas chamadas de fragmentos de interaç
 |------|------|---------|--------|
 | 02/03/2021 | João Pedro Silva de Carvalho e Wagner Martins | Diagrama para feed de estabelecimentos | 0.1 |
 | 02/03/2021 | João Pedro Silva de Carvalho e Wagner Martins | Diagrama das informações de estabelecimento | 0.2 |
-| 07/03/2021 | João Pedro Silva de Carvalho e Wagner Martins | Adição de informações sobre o diagrama | 0.3 |
+| 07/03/2021 | João Pedro Silva de Carvalho e Wagner Martins | Adição de informações sobre o diagrama | 1.0 |
 
 ## Referências
 
