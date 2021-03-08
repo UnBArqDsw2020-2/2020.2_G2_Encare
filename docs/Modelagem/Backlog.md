@@ -86,7 +86,7 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 |RF05| Identificação dos estabelecimentos no mapa | **Could** |
 |T06| Alimentar o mapa com os dados dos estabelecimentos | **Could** |
 |RF06| Filtrar estabelecimentos por distância | **Must** |
-|T07| Criar endpoint para calculo das distâncias | **Must** |
+|T07| Criar endpoint para cálculo das distâncias | **Must** |
 |T08| Criar componente para aplicação do filtro no frontend | **Must** |
 |T09| Criar endpoint para fornecimento dos serviços filtrados| **Must** |
 |RF07| Filtrar estabelecimentos por serviço | **Must** |
@@ -100,7 +100,7 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 |RF10| Mostar no feed os estabelecimentos filtrados | **Must** | 
 |T15| Mostrar no frontend o resultado dos filtros | **Must** |
 |RF11| Calcular a distância até o estabelecimento desejado | **Must** |
-|T16| Criar endponit que retorna o valor da distância | **Must**|
+|T16| Criar endpoint que retorna o valor da distância | **Must**|
 |RF12| Cadastrar estabelecimentos pelo admin | **Must** |
 |T17| Criar crud de estabelecimentos no backend | **Must** |
 |T18| Criar formulario de cadastro no frontend | **Must**|
@@ -114,13 +114,13 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 |RF03| Fornecer a localização do estabelecimento no mapa (externo à aplicação) | **Must** |
 |T23| Preencher a aplicação com os dados dos estabelecimentos obtidos| **Must** |
 |RF13| Recuperar as informações dos estabelecimentos| **Must** | 
-|T24| Consumir as informações especificas do estabelecimento no backend | **Must** |
+|T24| Consumir as informações específicas do estabelecimento no backend | **Must** |
 |T25| Mostrar os dados no front | **Must** |
 |RF14| Recuperar fotos dos estabelecimentos | **Must** | 
 |T26| Criar componente para exibir as fotos dos serviços no front| **Must** |
 |RF15| Possuir um perfil para o estabelecimento| **Must** | 
 |T27| Criar página de perfil no front | **Must**|
-|RF16| Exibir no perfil do estabelecimento suas informações básicas (nome, endereço, contato e horário de funcionamento) | **Must** |
+|RF16| Exibir no perfil do estabelecimento suas informações básicas | **Must** |
 |T28| Exibir os dados recuperados no front | **Must**|
 |RF17| Exibir no perfil do estabeleceimento os serviços que ele oferece| **Must** |
 |T29| Exibir os serviços oferecidos na página de perfil | **Must** |
