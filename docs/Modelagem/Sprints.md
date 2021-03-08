@@ -12,7 +12,6 @@ Essa foi a primeira reunião da equipe e definiu muitos tópicos dentre eles:
 * Foi escolhido um método de mapa de calor para definir o horário ideal da planning.
 * As reuniões semanais marcadas para toda terça-feira às 7am
 
-
 ----
 
 ## Sprint 0
@@ -116,7 +115,7 @@ Na reunião de review, os membros da equipe colocaram alguns pontos de destaque 
 ## Sprint 1
 ### Planning
 
-Nesse planejamento distribuímos as tarefas de forma síncrona e de acordo com a entrega da etapa de Modelagem, dentre os tópicos abordados nas reuniões estão:
+Nesse planejamento distribuímos as tarefas de acordo com a entrega da etapa de Modelagem, dentre os tópicos abordados nas reuniões estão:
 * Leitura e interpretação dos documentos a serem produzidos
 * Distribuição de pontos de dificuldade de execução usando a ferramenta PlanitPoker
 * O resultado do levantamnento dos principais documentos a serem entregues:
@@ -182,6 +181,7 @@ A equipe também aprendeu os benefícios de eleger um Product Owner, que faz o p
 Obs: Os documentos produzidos são discutidos em reunião e revisados por no mínimo 2 integrantes no momento de avaliar o Pull Request em nosso repositório.
 
 ----
+
 ## Versionamento
 
 | Data | Nome | Detalhes | Versão |
@@ -191,4 +191,3 @@ Obs: Os documentos produzidos são discutidos em reunião e revisados por no mí
 | 03/03/2021 | João Pedro Silva de Carvalho | Adicionando reunião 02/03 | 0.3 |
 | 07/03/2021 | Hugo Aragão | Adicionando Reunião do dia 04/03 | 0.4 |
 | 08/03/2021 | Hugo Aragão | Adicionando Reunião do dia 08/03 e Fechamentos das Sprints | 0.5 |
-
