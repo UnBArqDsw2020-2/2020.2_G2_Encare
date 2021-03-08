@@ -11,6 +11,12 @@ Componentes em UML podem representar:
 
 junto com os artefatos que os implementam e os nós aos quais são instalados e executados.
 
+### Diagrama de Componentes V3
+
+<p align="center">
+    <img src="imagens/Componentes_v3.png">
+</p>
+
 ### Diagrama de Componentes V2
 
 <p align="center">
@@ -30,6 +36,7 @@ junto com os artefatos que os implementam e os nós aos quais são instalados e 
 | 0.1    | 28/02/2021 | Adição da versão 1 do diagrama de componentes | Gustavo Nogueira e Wagner Martins |
 | 0.2    | 01/03/2021 | Adição da versão 2 do diagrama de componentes | Gustavo Nogueira e Wagner Martins |
 | 0.3    | 01/03/2021 | Adição de informações sobre o diagrama de componentes | Gustavo Nogueira e Wagner Martins |
+| 0.4    | 08/03/2021 | Adição da versão 3 do diagrama de componentes | Gustavo Nogueira e Wagner Martins |
 
 ## Referências
 
