@@ -74,14 +74,14 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 |Identificador|Descrição|Prioridade|
 |-------------|---------|----------|
 |US01| Eu como usuário desejo encontrar um estabelecimento com o procedimento estético que eu queira | **Must** |  
-|RF01| Feed de serviços | **Must** |
+|RF01| Criar um feed de serviços | **Must** |
 |T01| Criar página para apresentação dos serviços | **Must**|
 |T02| Desenvolver endpoint para consumo dos dados dos serviços | **Must**|
 |T03| Desenvolver estabelecimentos no backend | **Must** |
-|RF02| Feed de estabelecimentos | **Would** |
+|RF02| Criar um feed de estabelecimentos | **Would** |
 |T03| Criar página para apresentação dos estabelecimentos | **Would**|
 |T04| Consumir lista de estabelecimentos no backend | **Would** |
-|RF04| Interação no mapa | **Could** |
+|RF04| O usuário deverá ter interação no mapa | **Could** |
 |T05| Integrar mapa que o usuário possa interagir | **Could** |
 |RF05| Identificação dos estabelecimentos no mapa | **Could** |
 |T06| Alimentar o mapa com os dados dos estabelecimentos | **Could** |
@@ -132,7 +132,7 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 |T32| Executar teste | **Should** |
 |RNF04| Plataforma responsiva que possa ser usada em mobile e desktop |  **Should** | 
 |T33| Elaborar método de avaliação de portabilidade| **Should**|
-|T34| Executar método | **Should** |
+|T34| Executar método de avaliação selecionando | **Should** |
 
 
 Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vitais ao sistema para que ele seja concluído.
