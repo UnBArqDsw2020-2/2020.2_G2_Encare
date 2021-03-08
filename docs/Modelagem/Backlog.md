@@ -1,8 +1,10 @@
 # Priorização e Backlog do produto
-## Introdução:
-Este documento contém a priorização dos documentos elicitados e, a partir deles, a criação do backlog do produto com base na prioridade dos requisitos.
 
-### Abreviaçãoes e acrônimos:
+## 1. Introdução:
+
+Este documento contém a priorização dos documentos elicitados e, a partir deles, a criação do backlog do produto com base na prioridade dos requisitos. Além disso dividimos em 3 níveis de elicitação: User stories, requisitos e tarefas, que serão explicadas individualmente. Esse documento será a base para todo desenvolvimento indicando qual a ordem adequada para o desenvolvimento da aplicação.
+
+### 1.2. Abreviaçãoes e acrônimos:
 
 <table>
     <tr>
@@ -17,19 +19,46 @@ Este documento contém a priorização dos documentos elicitados e, a partir del
         <td>RNF</td>
         <td>Requisito não funcional</td>
     </tr>
-    <!-- <tr>
+    <tr>
         <td>US</td>
         <td>User storie</td>
-    </tr> -->
+    </tr> 
     <tr>
         <td>T</td>
         <td>Tarefa</td>
     </tr>
 </table>
 
-## Níveis:
+## 2. Níveis:
 
-### Priorização dos requisitos por meio do MoSCoW  
+Para a criação do backlog do produto escolhemos dividir em 3 níveis diferentes, para melhor compreensão e análise. Para o nosso primeiro momento elicitamos os **requisitos** a partir dele vamos agrupar em **User stories** par adar uma visão do usuário em cima dos requisitos e dividir em **tarefas** menores para atribuição em issues.
+
+### 2.1. User Stories:
+
+Segundo [1](https://k21.global/tudo-sobre/agilidade/user-stories/o-que-e-user-story#:~:text=User%20Story%20ou%20%E2%80%9Chist%C3%B3ria%20de,ponto%20de%20vista%20desse%20usu%C3%A1rio.) User story é uma descrição das necessidades do usuário sobre um ponto de vista do usuário e esse é um dos seus principais princípios: representar integralmente o produto sobre o ponto de vista do usuário.
+
+### 2.2. Requisitos:
+
+O site [DevMedia](https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580) tem a seguinte definição para requisitos: __"Requisitos são, além de funções, objetivos, propriedades, restrições que o sistema deve possuir para satisfazer contratos, padrões ou especificações de acordo com o(s) usuário(s). De forma mais geral um requisito é uma condição necessária para satisfazer um objetivo."__ [2]
+
+Como a user story é uma descrição baseada na visão do usuário, vários requisitos podem fazer parte de apenas uma user story, então será utilidada nesse documento como uma subdivisão das US's.
+
+Dentro de requisitos temos duas principais classificações:
+
+#### 2.2.1. Requisitos funcionais:
+
+Se refere a o que o sistema faz como funções e informações [2]. 
+
+#### 2.2.2. Requisitos não funcionais:
+
+Se refere a como o sistema faz, geralmente atribuído a métricas de qualidade, como usabilidade e confiabilidade[2]. 
+
+### 2.3. Tarefas:
+
+É um meio de "quebrar" tantos os requisitos, como as Histórias de usuário, de forma que seja de tamanho pequeno e que tenha um escopo bem definido, sendo as tarefas que serão realizadas pela equipe.
+
+## 3. Priorização dos requisitos por meio do MoSCoW 
+
 Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade definidos de acordo com as letras que compõem o MoSCoW, sendo eles:  
 
 * **Must**: Nesta categoria são atribuídos os itens que devem necessariamente ser realizados. São considerados obrigatórios, vitais, essenciais e inegociáveis;
@@ -41,7 +70,8 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 * **Would**: São os itens de menor prioridade. Podem ser reconsiderados no futuro, mas não ocuparão os recursos da organização no momento atual.
 
 |Identificador|Descrição|Prioridade|
-|-------------|---------|----------|  
+|-------------|---------|----------|
+|US01| Eu como usuário desejo encontrar um estabelecimento com o procedimento estético que eu queira | -- |  
 |RF01| Feed de serviços | **Must** |
 |RF02| Feed de estabelecimentos | **Must** |
 |RF03| Fornecer a visualização de um mapa (interno ou externo) | **Must** |
@@ -71,14 +101,12 @@ Resumo :
 |Must|12|
 |Should|6|
 |Could|3|
-| Would|1|
+|Would|1|
 
 Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vitais ao sistema para que ele seja concluído.
 
-<!-- ### User Stories:  
-Histórias de usuários são tarefas de desenvolvimento expressas, em geral, como "persona + necessidade + propósito".  É uma explicação informal e geral sobre um recurso de software escrita a partir da perspectiva do usuário final. Seu objetivo é articular como um recurso de software pode gerar valor para o cliente.   -->
+## 4. Product Backlog:
 
-### Product Backlog:
 Após analisar os requisitos e suas prioridades, foram definidas as seguintes atividades para que os requisitos essenciais sejam atendidos e entregues.  
 Eventualmente, novas tarefas podem ser criadas.
 
@@ -247,11 +275,18 @@ Eventualmente, novas tarefas podem ser criadas.
     </tr>
 </table> -->
 
-## Versionamento:
+## 5. Referências:
+
+[1] - https://k21.global/tudo-sobre/agilidade/user-stories/o-que-e-user-story#:~:text=User%20Story%20ou%20%E2%80%9Chist%C3%B3ria%20de,ponto%20de%20vista%20desse%20usu%C3%A1rio. 
+[2] - https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580
+[3] - https://www.pluralsight.com/guides/break-down-agile-user-stories-into-tasks-and-estimate-level-of-effort
+
+## 6. Versionamento:
 | Data | Nome | Descrição | Versão |
 |------|------|-----------|--------|
-| 01/03/2020 | João Pedro Silva de Carvalho | Documentando Brainstorm | 0.1 |
-| 01/03/2020 | Nícalo Ribeiro | Complementando a documentação | 0.2 |
-| 02/03/2020 | Nícalo Ribeiro | Adição de tarefas para o backlog | 0.3 |
-| 02/03/2020 | Nícalo Ribeiro | Ajustes na tabela de tarefas e adição de novas | 0.4|
-| 07/03/2020 | Nícalo Ribeiro | Refatoração do documento; Adição da priorização e tarefas do backlog | 0.5|
+| 01/03/2021 | João Pedro Silva de Carvalho | Documentando Brainstorm | 0.1 |
+| 01/03/2021 | Nícalo Ribeiro | Complementando a documentação | 0.2 |
+| 02/03/2021 | Nícalo Ribeiro | Adição de tarefas para o backlog | 0.3 |
+| 02/03/2021 | Nícalo Ribeiro | Ajustes na tabela de tarefas e adição de novas | 0.4 |
+| 07/03/2021 | Nícalo Ribeiro | Refatoração do documento; Adição da priorização e tarefas do backlog | 0.5 |
+| 01/03/2021 | João Pedro Silva de Carvalho | Adicionando definições de termos | 0.6 |
