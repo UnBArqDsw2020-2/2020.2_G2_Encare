@@ -20,14 +20,14 @@ A partir do que foi definido como escopo do projeto e reuniões com os membros d
 Esse diagrama busca demonstrar o fluxo principal das atividades do usuário em interação com a aplicação. No fluxo pricipal temos a ação de decisão, onde o usuário pode escolher buscar no Feed de imagens por uma ideia nova ou executar uma busca completa (busca avançada), podendo assim rastrear exatamente o procedimento de estética desejado. A tarefa é finalizada após a visualização do estabelecimento e suas informações principais, onde o usuário decide por finalizar a busca ou retornar à escolha de filtros.
 
 <p align="center">
-    <img src="./imagens/diagrama_geral.png">
+    <img src="../imagens/diagrama_geral.png">
 </p>
 
 ## Filtrar Estabelecimentos
 No filtro de estabelecimentos, temos aqui representada no diagrama uma visão ampliada da tarefa. Nesse caso mais específico, as ações são referentes às consequências de cada decisão de busca feita pelo usuário. A tarefa é finalizada quando as opções de filtro desejadas são selecionadas e o usuário clica no botão de "executar ação", no caso "Filtrar".
 
 <p align="center">
-    <img src="./imagens/diagrama_atividades_filtrar.png">
+    <img src="../imagens/diagrama_atividades_filtrar.png">
 </p>
 
 ----
