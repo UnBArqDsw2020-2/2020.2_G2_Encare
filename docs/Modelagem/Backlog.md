@@ -2,7 +2,7 @@
 
 ## 1. Introdução:
 
-Este documento contém a priorização dos documentos elicitados e, a partir deles, a criação do backlog do produto com base na prioridade dos requisitos. Além disso dividimos em 3 níveis de elicitação: User stories, requisitos e tarefas, que serão explicadas individualmente. Esse documento será a base para todo desenvolvimento indicando qual a ordem adequada para o desenvolvimento da aplicação.
+Este documento contém a priorização dos documentos elicitados e, a partir deles, a criação do backlog do produto com base na prioridade dos requisitos. Além disso, dividimos em 3 níveis de elicitação: User stories, requisitos e tarefas, que serão explicados individualmente. Esse documento será a base para todo desenvolvimento, indicando qual a ordem adequada para o desenvolvimento da aplicação.
 
 ### 1.2. Abreviaçãoes e acrônimos:
 
@@ -31,23 +31,23 @@ Este documento contém a priorização dos documentos elicitados e, a partir del
 
 ## 2. Níveis:
 
-Para a criação do backlog do produto escolhemos dividir em 3 níveis diferentes, para melhor compreensão e análise. Para o nosso primeiro momento elicitamos os **requisitos** a partir dele vamos agrupar em **User stories** par adar uma visão do usuário em cima dos requisitos e dividir em **tarefas** menores para atribuição em issues.
+Para a criação do backlog do produto, optamos por dividi-lo em 3 níveis diferentes visando uma melhor compreensão e análise. Em nosso primeiro momento, elicitamos os **requisitos** e, a partir deles, vamos agrupar em **User stories**, para dar uma visão do usuário acerca dos requisitos, e em **tarefas** menores, para devida atribuição em issues.
 
 ### 2.1. User Stories:
 
-Segundo [1](https://k21.global/tudo-sobre/agilidade/user-stories/o-que-e-user-story#:~:text=User%20Story%20ou%20%E2%80%9Chist%C3%B3ria%20de,ponto%20de%20vista%20desse%20usu%C3%A1rio.) User story é uma descrição das necessidades do usuário sobre um ponto de vista do usuário e esse é um dos seus principais princípios: representar integralmente o produto sobre o ponto de vista do usuário.
+Segundo [1](https://k21.global/tudo-sobre/agilidade/user-stories/o-que-e-user-story#:~:text=User%20Story%20ou%20%E2%80%9Chist%C3%B3ria%20de,ponto%20de%20vista%20desse%20usu%C3%A1rio.) , User story é uma descrição das necessidades do usuário sobre um ponto de vista do usuário, sendo esse um dos seus principais princípios: representar integralmente o produto sobre o ponto de vista do usuário.
 
 ### 2.2. Requisitos:
 
 O site [DevMedia](https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580) tem a seguinte definição para requisitos: __"Requisitos são, além de funções, objetivos, propriedades, restrições que o sistema deve possuir para satisfazer contratos, padrões ou especificações de acordo com o(s) usuário(s). De forma mais geral um requisito é uma condição necessária para satisfazer um objetivo."__ [2]
 
-Como a user story é uma descrição baseada na visão do usuário, vários requisitos podem fazer parte de apenas uma user story, então será utilidada nesse documento como uma subdivisão das US's.
+Como a user story é uma descrição baseada na visão do usuário e vários requisitos podem fazer parte da mesma user story, os requisitos serão abordados nesse documento como uma subdivisão das US's.
 
-Dentro de requisitos temos duas principais classificações:
+Dentro de requisitos, temos duas principais classificações:
 
 #### 2.2.1. Requisitos funcionais:
 
-Se refere a o que o sistema faz como funções e informações [2]. 
+Se refere a o que o sistema faz, como funções e informações [2]. 
 
 #### 2.2.2. Requisitos não funcionais:
 
@@ -55,7 +55,7 @@ Se refere a como o sistema faz, geralmente atribuído a métricas de qualidade, 
 
 ### 2.3. Tarefas:
 
-É um meio de "quebrar" tantos os requisitos, como as Histórias de usuário, de forma que seja de tamanho pequeno e que tenha um escopo bem definido, sendo as tarefas que serão realizadas pela equipe.
+É um meio de "quebrar" tanto os requisitos quanto as Histórias de usuário de forma que seja de tamanho pequeno e que tenha um escopo bem definido, sendo essas as tarefas que serão realizadas pela equipe.
 
 ## 3. Priorização dos requisitos por meio do MoSCoW 
 
@@ -63,7 +63,7 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 
 * **Must**: Nesta categoria são atribuídos os itens que devem necessariamente ser realizados. São considerados obrigatórios, vitais, essenciais e inegociáveis;
 
-* **Should**: Nesta categoria estão os itens necessários, importantes e valorosos; porém não obrigatórios e negociáveis. São itens de segunda prioridade que podem ser realizados num segundo momento;
+* **Should**: Nesta categoria estão os itens necessários, importantes e valorosos porém não obrigatórios e negociáveis. São itens de segunda prioridade que podem ser realizados num segundo momento;
 
 * **Could**: Nesta categoria estão inseridos os itens desejados, mas com menor impacto ou menor valor para o objetivo estratégico. São itens de terceira prioridade que não apresentam problemas caso não sejam realizados;
 
@@ -139,9 +139,9 @@ Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vita
 
 ## 5. Referências:
 
-[1] - https://k21.global/tudo-sobre/agilidade/user-stories/o-que-e-user-story#:~:text=User%20Story%20ou%20%E2%80%9Chist%C3%B3ria%20de,ponto%20de%20vista%20desse%20usu%C3%A1rio. 
-[2] - https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580
-[3] - https://www.pluralsight.com/guides/break-down-agile-user-stories-into-tasks-and-estimate-level-of-effort
+[1] - https://k21.global/tudo-sobre/agilidade/user-stories/o-que-e-user-story#:~:text=User%20Story%20ou%20%E2%80%9Chist%C3%B3ria%20de,ponto%20de%20vista%20desse%20usu%C3%A1rio.  
+[2] - https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580  
+[3] - https://www.pluralsight.com/guides/break-down-agile-user-stories-into-tasks-and-estimate-level-of-effort  
 
 ## 6. Versionamento:
 | Data | Nome | Descrição | Versão |
@@ -153,4 +153,5 @@ Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vita
 | 07/03/2021 | Nícalo Ribeiro | Refatoração do documento; Adição da priorização e tarefas do backlog | 0.5 |
 | 07/03/2021 | João Pedro Silva de Carvalho | Adicionando definições de termos | 0.6 |
 | 08/03/2021 | João Pedro Silva de Carvalho | Dividindo requisitos em tarefas | 0.7 |
+| 08/03/2021 | Nícalo Ribeiro | Revisão e ajustes | 0.8 |
 
