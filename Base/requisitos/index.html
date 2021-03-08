@@ -1,0 +1,1510 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>Requisitos - ArqDsw - EnCare</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.21aed14c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#requisitos-do-produto" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="ArqDsw - EnCare" class="md-header-nav__button md-logo" aria-label="ArqDsw - EnCare">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            ArqDsw - EnCare
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Requisitos
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020.2_G2_Encare
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ArqDsw - EnCare" class="md-nav__button md-logo" aria-label="ArqDsw - EnCare">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ArqDsw - EnCare
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020.2_G2_Encare
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Base
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Base" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Base
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" >
+    <label class="md-nav__link" for="nav-2-1">
+      Projeto Não Orientado a Abordagens Específicas
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Projeto Não Orientado a Abordagens Específicas" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Projeto Não Orientado a Abordagens Específicas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../glossario/glossario/" class="md-nav__link">
+      Glossário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../design_sprint.md" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rich_picture.md" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../estimativas.md" class="md-nav__link">
+      Estimativas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mapa_mental.md" class="md-nav__link">
+      Mapa mental
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../causa_e_efeito.md" class="md-nav__link">
+      Causa e efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../planodeacao/5w2g/" class="md-nav__link">
+      Plano de Ação
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+    <label class="md-nav__link" for="nav-2-2">
+      Processos/Metodologias/Abordagens
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Processos/Metodologias/Abordagens" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Processos/Metodologias/Abordagens
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../modelagem_bpmn.md" class="md-nav__link">
+      Modelagem BPMN
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../metodologia.md" class="md-nav__link">
+      Metodologia
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
+    <label class="md-nav__link" for="nav-3-1">
+      Diagramas Estáticos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diagramas Estáticos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        Diagramas Estáticos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Modelagem/diagrama_componentes/" class="md-nav__link">
+      Digrama de Componentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Modelagem/diagrama_de_classes/" class="md-nav__link">
+      Diagrama de Classe
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+    <label class="md-nav__link" for="nav-3-2">
+      Diagramas Dinâmicos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diagramas Dinâmicos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Diagramas Dinâmicos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Modelagem/Diagrama%20de%20sequ%C3%AAncia/" class="md-nav__link">
+      Diagrama de Sequência
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Modelagem/diagrama_de_atividades/" class="md-nav__link">
+      Diagrama de Atividade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+    <label class="md-nav__link" for="nav-3-3">
+      Modelagem ágil
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem ágil" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem ágil
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Modelagem/Backlog/" class="md-nav__link">
+      Backlog do produto
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    <label class="md-nav__link" for="nav-4">
+      Iniciativas extras
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Iniciativas extras" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Iniciativas extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" >
+    <label class="md-nav__link" for="nav-4-1">
+      Documentação das sprints
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Documentação das sprints" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        Documentação das sprints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Modelagem/Sprints/" class="md-nav__link">
+      Sprints
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Requisitos
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Requisitos
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brainstorming" class="md-nav__link">
+    Brainstorming
+  </a>
+  
+    <nav class="md-nav" aria-label="Brainstorming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo" class="md-nav__link">
+    Resumo:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storytelling" class="md-nav__link">
+    Storytelling
+  </a>
+  
+    <nav class="md-nav" aria-label="Storytelling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cliente-procura-novo-estilo" class="md-nav__link">
+    Cliente procura novo estilo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cliente-procura-um-procedimento-estetico-ja-existente" class="md-nav__link">
+    Cliente procura um procedimento estético já existente
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumo_1" class="md-nav__link">
+    Resumo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introspeccao" class="md-nav__link">
+    Introspecção
+  </a>
+  
+    <nav class="md-nav" aria-label="Introspecção">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ao-acessar-o-site" class="md-nav__link">
+    Ao acessar o site
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#na-tela-principal" class="md-nav__link">
+    Na tela principal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-utilizar-o-mapa" class="md-nav__link">
+    Ao utilizar o mapa
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-aplicar-filtros" class="md-nav__link">
+    Ao aplicar filtros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-selecionar-um-estabelecimento" class="md-nav__link">
+    Ao selecionar um estabelecimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumo_2" class="md-nav__link">
+    Resumo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais-e-requisitos-nao-funcionais" class="md-nav__link">
+    Requisitos Funcionais e Requisitos não Funcionais
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos Funcionais e Requisitos não Funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    Requisitos Funcionais
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-nao-funcionais" class="md-nav__link">
+    Requisitos Não Funcionais
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    Histórico de versão
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#brainstorming" class="md-nav__link">
+    Brainstorming
+  </a>
+  
+    <nav class="md-nav" aria-label="Brainstorming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resumo" class="md-nav__link">
+    Resumo:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storytelling" class="md-nav__link">
+    Storytelling
+  </a>
+  
+    <nav class="md-nav" aria-label="Storytelling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cliente-procura-novo-estilo" class="md-nav__link">
+    Cliente procura novo estilo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cliente-procura-um-procedimento-estetico-ja-existente" class="md-nav__link">
+    Cliente procura um procedimento estético já existente
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumo_1" class="md-nav__link">
+    Resumo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introspeccao" class="md-nav__link">
+    Introspecção
+  </a>
+  
+    <nav class="md-nav" aria-label="Introspecção">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ao-acessar-o-site" class="md-nav__link">
+    Ao acessar o site
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#na-tela-principal" class="md-nav__link">
+    Na tela principal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-utilizar-o-mapa" class="md-nav__link">
+    Ao utilizar o mapa
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-aplicar-filtros" class="md-nav__link">
+    Ao aplicar filtros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ao-selecionar-um-estabelecimento" class="md-nav__link">
+    Ao selecionar um estabelecimento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumo_2" class="md-nav__link">
+    Resumo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais-e-requisitos-nao-funcionais" class="md-nav__link">
+    Requisitos Funcionais e Requisitos não Funcionais
+  </a>
+  
+    <nav class="md-nav" aria-label="Requisitos Funcionais e Requisitos não Funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    Requisitos Funcionais
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-nao-funcionais" class="md-nav__link">
+    Requisitos Não Funcionais
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    Histórico de versão
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/edit/master/docs/Base/requisitos.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="requisitos-do-produto">Requisitos do produto</h1>
+<p>Esse documento contém as técnicas de elicitação que foram utilizadas e os requisitos levantados a partir delas.  </p>
+<p>Termos e seus significados: </p>
+<table>
+<thead>
+<tr>
+<th>Termo</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF</td>
+<td>Requisito Funcional</td>
+</tr>
+<tr>
+<td>RNF</td>
+<td>Requisito Não Funcional</td>
+</tr>
+<tr>
+<td>ST</td>
+<td>Storytelling</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>Introspecção</td>
+</tr>
+<tr>
+<td>BS</td>
+<td>Brainstorming</td>
+</tr>
+</tbody>
+</table>
+<p>Resumo do documento :</p>
+<table>
+<thead>
+<tr>
+<th>Identificador</th>
+<th>Quantidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BS</td>
+<td>08</td>
+</tr>
+<tr>
+<td>ST</td>
+<td>07</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>18</td>
+</tr>
+<tr>
+<td>RF</td>
+<td>18</td>
+</tr>
+<tr>
+<td>RNF</td>
+<td>04</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="brainstorming">Brainstorming</h2>
+<p>Para fazer o brainstorm, a equipe se reuniu por video chamada no Teams e, com a participação de todos os membros, inicialmente foram sugeridos requisitos e discutimos a validade de todos para  adicionar ao nosso projeto. Foi a primeira técnica usada pela equipe e serviu principalmente para gerar uma linha base dos requisitos do Mínimo Produto Viável (MVP).</p>
+<h3 id="resumo">Resumo:</h3>
+<table>
+<thead>
+<tr>
+<th>Requisito</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BS01</td>
+<td>Ter um feed de serviços</td>
+</tr>
+<tr>
+<td>BS02</td>
+<td>Poder filtrar os estabelecimentos por distância e tipo de serviço</td>
+</tr>
+<tr>
+<td>BS03</td>
+<td>Solicitar a localização do usuário</td>
+</tr>
+<tr>
+<td>BS04</td>
+<td>Ter o perfil do estabelecimento com informações pertinentes</td>
+</tr>
+<tr>
+<td>BS05</td>
+<td>Poder acessar a localização do estabelecimento no google maps a partir do perfil</td>
+</tr>
+<tr>
+<td>BS06</td>
+<td>Ter disponível no banco de dados todos os eatabelecimentos</td>
+</tr>
+<tr>
+<td>BS07</td>
+<td>Ter uma api para consumir os dados do estabelecimentos</td>
+</tr>
+<tr>
+<td>BS08</td>
+<td>Consumir a api do google maps para calcular a distância</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="storytelling">Storytelling</h2>
+<p>Storytelling é um termo em inglês. "Story" significa história e "telling", contar. Mais que uma mera narrativa, Storytelling é a arte de contar histórias usando técnicas inspiradas em roteiristas e escritores para transmitir uma mensagem de forma inesquecível.</p>
+<h3 id="cliente-procura-novo-estilo">Cliente procura novo estilo</h3>
+<p>Um cliente desejava mudar seu estilo, para isso procurou seu barbeiro de confiança, mas ao chegar ao estabelecimento percebeu que o mesmo estava fechado. O cliente então teve que procurar outro estabelecimento e informou ao barbeiro sua ideia de novo corte de cabelo. Após o procedimento, o cliente se sentiu frustrado, pois o resultado não era nem um pouco parecido com o pedido. </p>
+<h3 id="cliente-procura-um-procedimento-estetico-ja-existente">Cliente procura um procedimento estético já existente</h3>
+<p>Uma jovem ao navegar pelo Instagram gostou do corte de cabelo de uma atriz e da arte nas unhas dela. Buscando melhorar sua autoestima, e se sentir renovada, a jovem procurou em seu bairro um estabelecimento que a oferecesse o mesmo corte e arte nas unhas, que a deixassem bonita como a atriz nas fotos. A jovem então navegou pelo Google Maps buscando por um salão que parecesse competente, escolheu um que possuía boas avaliações e se dirigiu ao local para executar o mesmo procedimento estético. Mas como o procedimento era novo, as profissionais do salão não conseguiram atingir o resultado que a cliente desejou, as ferramentas de busca também não traziam informações que a dessem certeza de que as profissionais conseguiriam obter tal resultado.  </p>
+<h3 id="resumo_1">Resumo</h3>
+<table>
+<thead>
+<tr>
+<th>Identificador</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ST01</td>
+<td>Deve ser possível saber o horário de funcionamento do estabelecimento</td>
+</tr>
+<tr>
+<td>ST02</td>
+<td>O sistema deve informar os serviços prestados pelo estabelecimento</td>
+</tr>
+<tr>
+<td>ST03</td>
+<td>O usuário deve ser capaz de analisar fotos de resultados de procedimentos feitos em outros clientes</td>
+</tr>
+<tr>
+<td>ST04</td>
+<td>O usuário deve conseguir buscar estabelecimentos que ofereçam o serviço desejado</td>
+</tr>
+<tr>
+<td>ST05</td>
+<td>O sistema deve fornecer um mapa para navegação e encontrar estabelecimentos</td>
+</tr>
+<tr>
+<td>ST06</td>
+<td>O usuário deve poder conseguir visualizar fotos do estabelecimento em si</td>
+</tr>
+<tr>
+<td>ST07</td>
+<td>O estabelecimento poderia informar quem são seus funcionários e suas capacidades técnicas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="introspeccao">Introspecção</h2>
+<p>É uma técnica rica e profunda que visa entender quais propriedades o sistema deve possuir. Demanda imaginação de quem está levantando os requisitos para estabelecer o que ele gostaria que estivesse no sistema, a fim de executar uma determinada tarefa. Apesar de ser uma técnica útil, a instrospeccção de um especialista, por exemplo, pode não ser reflitida na experiência real do usuário.  </p>
+<h4 id="ao-acessar-o-site">Ao acessar o site</h4>
+<ul>
+<li>Visualizar uma mensagem de boas vindas;</li>
+<li>Ser apresentado ao sistema;</li>
+<li>Deve ser possível acessar de qualquer navegador;</li>
+<li>Deve ser possível acessar de dispositivos móveis e desktops;</li>
+</ul>
+<h4 id="na-tela-principal">Na tela principal</h4>
+<ul>
+<li>Deve haver uma inteface agradável;</li>
+<li>A interface deve ser intuitiva;</li>
+<li>As funcionalidades devem estar claras;</li>
+</ul>
+<h4 id="ao-utilizar-o-mapa">Ao utilizar o mapa</h4>
+<ul>
+<li>O sistema deve solicitar a minha permissão para acessar minha localização;</li>
+<li>Caso forneça minha localização, o mapa deve estar centralizado nela;</li>
+<li>Deve ser possível navegar pelo mapa;</li>
+<li>Os estabelecimentos devem estar marcados claramente no mapa;</li>
+<li>Deve ser possível definir o raio de busca do mapa;</li>
+<li>Deve ser possível selecionar o estabelecimento que aparece no mapa;</li>
+</ul>
+<h4 id="ao-aplicar-filtros">Ao aplicar filtros</h4>
+<ul>
+<li>Deve ser possível filtrar estabeleciomentos pelo nome;</li>
+<li>Deve ser possível filtrar estabelecimentos pela distância/localização;</li>
+<li>Deve ser possível filtrar estabelecimentos pelos serviços oferecidos;</li>
+<li>Deve ser possível filtrar estabelecimentos por faixa de preço;</li>
+</ul>
+<h4 id="ao-selecionar-um-estabelecimento">Ao selecionar um estabelecimento</h4>
+<ul>
+<li>Deve estar evidente os dados do estabelecimento :</li>
+<li>Nome</li>
+<li>Endereço</li>
+<li>Informações de contato</li>
+<li>Deve ser possível visualizar fotos do estabelecimento em si;</li>
+<li>O sistema deve fornecer fotos dos resultados dos serviços realizados pelo estabelecimento;</li>
+</ul>
+<h3 id="resumo_2">Resumo</h3>
+<table>
+<thead>
+<tr>
+<th>Identificador</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INT01</td>
+<td>Usuário deve ser capaz de visualizar o mapa a partir de sua localização</td>
+</tr>
+<tr>
+<td>INT02</td>
+<td>Usuário deve ser capaz de visualizar o mapa sem fornecer sua localização</td>
+</tr>
+<tr>
+<td>INT03</td>
+<td>Usuário deve ser capaz de identificar um estabelecimento no mapa</td>
+</tr>
+<tr>
+<td>INT04</td>
+<td>Usuário deve ser capaz de navegar pelo mapa</td>
+</tr>
+<tr>
+<td>INT05</td>
+<td>Usuário deve ser capaz de selecionar o estabelecimento no mapa</td>
+</tr>
+<tr>
+<td>INT06</td>
+<td>O sistema deve apresentar devidamente as informações do estabelecimento selecionado</td>
+</tr>
+<tr>
+<td>INT07</td>
+<td>O sistema deve listar todos os estabelecimentos cadastrados</td>
+</tr>
+<tr>
+<td>INT08</td>
+<td>Usuário deve filtrar os estabelecimentos no mapa</td>
+</tr>
+<tr>
+<td>INT09</td>
+<td>Usuário deve filtrar os etabelecimentos na lista</td>
+</tr>
+<tr>
+<td>INT10</td>
+<td>O sistema deve permitir filtragem por nome dos estabelecimentos, serviços oferecidos e localização</td>
+</tr>
+<tr>
+<td>INT11</td>
+<td>O usuário deve ser capaz de ver fotos do estabelecimento</td>
+</tr>
+<tr>
+<td>INT12</td>
+<td>O usuário deve ser capaz de ver fotos dos resultados dos serviços que o estabelecimento realiza</td>
+</tr>
+<tr>
+<td>INT13</td>
+<td>O usuário deve ser capaz de identificar os detalhes do estabelecimento escolhido</td>
+</tr>
+<tr>
+<td>INT14</td>
+<td>O sistema deve ser acessado em desktops</td>
+</tr>
+<tr>
+<td>INT15</td>
+<td>O sistema deve ser acessado em dispositivos móveis</td>
+</tr>
+<tr>
+<td>INT16</td>
+<td>O estabelecimento deve informar horários de funcionamento</td>
+</tr>
+<tr>
+<td>INT17</td>
+<td>O estabelecimento deve informar os preços</td>
+</tr>
+<tr>
+<td>INT18</td>
+<td>O sistema deve possuir uma interface agradável e intuitiva</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="requisitos-funcionais-e-requisitos-nao-funcionais">Requisitos Funcionais e Requisitos não Funcionais</h2>
+<p>A partir da análise do que foi levantado no Storytelling, Introspecção e Brainstorm, foi possível determinar os seguintes requisitos :  </p>
+<h3 id="requisitos-funcionais">Requisitos Funcionais</h3>
+<table>
+<thead>
+<tr>
+<th>Requisito</th>
+<th>Descrição</th>
+<th>Origem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF01</td>
+<td>Feed de serviços</td>
+<td>BS01 , ST02</td>
+</tr>
+<tr>
+<td>RF02</td>
+<td>Feed de estabelecimentos</td>
+<td>INT07</td>
+</tr>
+<tr>
+<td>RF03</td>
+<td>Fornecer a visualização de um mapa (interno ou externo)</td>
+<td>BS05, ST05, INT01, INT02</td>
+</tr>
+<tr>
+<td>RF04</td>
+<td>Interação no mapa</td>
+<td>ST05, INT04, INT05</td>
+</tr>
+<tr>
+<td>RF05</td>
+<td>Identificação dos estabelecimentos no mapa</td>
+<td>ST05, INT05</td>
+</tr>
+<tr>
+<td>RF06</td>
+<td>Filtrar estabelecimentos por distância</td>
+<td>BS02, INT10</td>
+</tr>
+<tr>
+<td>RF07</td>
+<td>Filtrar estabelecimentos por serviço</td>
+<td>BS02, ST04, INT10</td>
+</tr>
+<tr>
+<td>RF08</td>
+<td>Filtrar estabelecimento por nome</td>
+<td>INT07, INT10</td>
+</tr>
+<tr>
+<td>RF09</td>
+<td>Mostar no mapa os estabelecimentos filtrados</td>
+<td>BS03, INT08, INT10, ST04</td>
+</tr>
+<tr>
+<td>RF10</td>
+<td>Mostar no feed os estabelecimentos filtrados</td>
+<td>RF03, INT09</td>
+</tr>
+<tr>
+<td>RF11</td>
+<td>Calcular a distância até o estabelecimento desejado</td>
+<td>BS08</td>
+</tr>
+<tr>
+<td>RF12</td>
+<td>Cadastrar estabelecimentos</td>
+<td>BS06</td>
+</tr>
+<tr>
+<td>RF13</td>
+<td>Recuperar as informações dos estabelecimentos</td>
+<td>BS07, ST01, ST02</td>
+</tr>
+<tr>
+<td>RF14</td>
+<td>Recuperar fotos do estabelecimento no Instagram</td>
+<td>BS04, ST03, ST06, INT11, INT12</td>
+</tr>
+<tr>
+<td>RF15</td>
+<td>Possuir um perfil para o estabelecimento</td>
+<td>BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17</td>
+</tr>
+<tr>
+<td>RF16</td>
+<td>Exibir no perfil do estabelecimento suas informações básicas (nome, endereço, contato e horário de funcionamento)</td>
+<td>BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17</td>
+</tr>
+<tr>
+<td>RF17</td>
+<td>Exibir no perfil do estabeleceimento os serviços que ele oferece</td>
+<td>BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17</td>
+</tr>
+<tr>
+<td>RF18</td>
+<td>Exibir no perfil do estabelecimento as fotos de seus serviços</td>
+<td>BS04, ST03, ST06, INT11, INT12</td>
+</tr>
+</tbody>
+</table>
+<h3 id="requisitos-nao-funcionais">Requisitos Não Funcionais</h3>
+<table>
+<thead>
+<tr>
+<th>Requisito</th>
+<th>Descrição</th>
+<th>Origem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF01</td>
+<td>Solicitar acesso à localização do usuário</td>
+<td>BS03, INT01, INT02</td>
+</tr>
+<tr>
+<td>RBF02</td>
+<td>Informar ao usuário como sua localização será utilizada</td>
+<td>BS03, BS08, INT01, INT02</td>
+</tr>
+<tr>
+<td>RNF03</td>
+<td>Uso do sistema intuitivo</td>
+<td>INT18</td>
+</tr>
+<tr>
+<td>RNF04</td>
+<td>Plataforma responsiva</td>
+<td>INT14, INT8</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="historico-de-versao">Histórico de versão</h3>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Nome</th>
+<th>Detalhe</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>05/03/2021</td>
+<td>Hugo Aragão</td>
+<td>Criação do documento e Storytelling</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>05/03/2021</td>
+<td>Nícalo Ribeiro</td>
+<td>Adição da introspecção e definição do storytelling</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>06/03/2021</td>
+<td>Nícalo Ribeiro</td>
+<td>Adição do resumo dos requisitos do storytelling</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>06/03/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adição do brainstorm e formatação do documento</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>07/03/2021</td>
+<td>Nícalo Ribeiro</td>
+<td>Separação em requisitos funcionais e não funcionais e formatação do documento</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>07/03/2021</td>
+<td>Nícalo Ribeiro</td>
+<td>Revisão e formatação do documento</td>
+<td>0.6</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../Modelagem/Sprints/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Sprints
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
