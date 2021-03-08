@@ -142,7 +142,7 @@ Obs: Os documentos produzidos são discutidos em reunião e revisados por no mí
 
 ### Review:
 
-A equipe teve dificuldade em produzir os documentos por incompatibilidade de horários para pareamento, e principalmente por conta das falhas na elicitação dos requisitos e na documentação dos mesmos foi sugerida uma reunião extraordinária para discutir a melhora na comunicação interna da equipe e garantir a revisão e alinhamento das documentações com as ideias.
+A equipe teve dificuldade em produzir os documentos por incompatibilidade de horários para pareamento, e principalmente por conta das falhas na elicitação dos requisitos e na documentação dos mesmos. Foi sugerida uma reunião extraordinária para discutir a melhora na comunicação interna da equipe e garantir a revisão e alinhamento das documentações com as ideias.
 
 ----
 
