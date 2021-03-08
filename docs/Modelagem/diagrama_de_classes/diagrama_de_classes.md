@@ -4,7 +4,7 @@
 
 O diagrama de classes tem como objetivo representar a estrutura e os relacionamentos entre as classes envolvidas no desenvolvimento de um projeto orientado a objetos.
 
-# Metodologia
+## Metodologia
 
 Foram feitas reuniões com a equipe para discutir e esclarecer quais serão as classes e seus respectivos relacionamentos que implementaremos no projeto.
 
