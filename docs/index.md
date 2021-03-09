@@ -13,7 +13,7 @@
 | 18/0033646 | João Luís Baraky                 |
 | 18/0029177 | Wagner Martins da Cunha          |
 | 16/0124581 | Hugo Aragão de Oliveira          |
-| 16/0016169 | Nícalo Ribeiro Dourado de Araujo |
+| 16/0016169 | Nícalo Ribeiro Dourado Araújo    |
 | 17/0144259 | Gustavo Nogueira Rodrigues       |
 
 ## Sobre
@@ -24,7 +24,7 @@ Será um projeto que tem como objetivo facilitar a busca por procedimentos esté
 
 ## Primeira entrega
 
-### Screenshots Primeira Entrega <<DSW(Base)>>
+### Screenshots Primeira Entrega &lt;&lt;DSW(Base)&gt;&gt;
 
 ![Design Sprint](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_design_spring.png)
 
@@ -32,7 +32,7 @@ Será um projeto que tem como objetivo facilitar a busca por procedimentos esté
 
 ![Modelagem BPMN](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_modelagemBPMN.png)
 
-### Vídeo(s) Primeira Entrega <<DSW(Base)>>
+### Vídeo(s) Primeira Entrega &lt;&lt;DSW(Base)&gt;&gt;
 
 #### Módulo Projeto Não Orientado a Abordagens Específicas
 
