@@ -1,6 +1,7 @@
 # EnCare
 
 **Código da Disciplina**: FGA0208
+
 **Número do Grupo**: 02
 
 ## Alunos
@@ -37,13 +38,18 @@ Link do Video da apresentação do Módulo Processos/Metodologias/Abordagens:  h
 
 - - -
 
-<!-- ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
+## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
+
+![Diagrama de Classes](Modelagem/imagens/screenshot_modelagem01.png)
+
+![Diagrama de Sequência](Modelagem/imagens/screenshot_modelagem02.png)
+
+![Backlog](Modelagem/imagens/screenshot_modelagem03.png)
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione o(s)s vídeo(s) da Segunda Entrega.
 
-## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
+<!-- ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
 
 ## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
