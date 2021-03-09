@@ -29,8 +29,13 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 [Apresentação do Módulo Projeto Não Orientado a Abordagens Específicas](https://youtu.be/OqCiTozAYR8) 
 [Apresentação do Módulo Processos/Metodologias/Abordagens](https://youtu.be/UjFOLxKm9jY)
 
-<!-- ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
+## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
+
+![Diagrama de Classes](docs/Modelagem/imagens/screenshot_modelagem01.png)
+
+![Diagrama de Sequência](docs/Modelagem/imagens/screenshot_modelagem02.png)
+
+![Backlog](docs/Modelagem/imagens/screenshot_modelagem03.png)
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione o(s)s vídeo(s) da Segunda Entrega.
