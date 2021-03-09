@@ -40,7 +40,7 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione o(s)s vídeo(s) da Segunda Entrega.
 
-## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
+<!-- ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
 
 ## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
