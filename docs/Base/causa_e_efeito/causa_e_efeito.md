@@ -4,9 +4,7 @@ Trata-se de uma ferramenta da qualidade que ajuda a levantar as causas-raízes d
 
 ## Diagrama
 
-<p align="center">
-    <img src="../imagens/causa_e_efeito.png">
-</p>
+![Causa_e_Efeito](imagens/causa_e_efeito.png)
 
 ## Referências
 
@@ -18,3 +16,4 @@ BASTIANI, Jeison; MARTINS, Rosemary. Diagrama de Ishikawa. Blog da Qualidade. Di
 | ------ | ---------- | ----------------- | ---------------- |
 | 0.1    | 17/02/2021 | Adição da página  | Gustavo Nogueira |
 | 0.2    | 17/02/2021 | Adição de ajustes | Gustavo Nogueira |
+| 0.3    | 01/03/2021 | Melhora terminologia | João Luis Baraky |

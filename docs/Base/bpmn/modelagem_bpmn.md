@@ -4,43 +4,25 @@ A notação BPMN (Business Process Model and Notation) é uma representação gr
 
 A notação BPMN permite que você desenhe e conheça todas as tarefas operacionais de um negócio de forma lógica, sequencial. É possível também identificar os papéis de cada um, os eventos e todos os demais componentes de um processo.
 
-[Clique aqui para acessar a versão em PDF](assets/pdfs/bpmn.pdf)
+[Clique aqui para acessar a versão em PDF](bpmn.pdf)
 
 ## Geral
-
-<p align="center">
-    <img src="../assets/imagens/bpmn-01.png">
-</p>
+![BPMN01](imagens/bpmn-01.png)
 
 ## Sprint
-
-<p align="center">
-    <img src="../assets/imagens/bpmn-02.png">
-</p>
+![BPMN02](imagens/bpmn-02.png)
 
 ## Planning
-
-<p align="center">
-    <img src="../assets/imagens/bpmn-03.png">
-</p>
+![BPMN03](imagens/bpmn-03.png)
 
 ## Sprint Review
-
-<p align="center">
-    <img src="../assets/imagens/bpmn-06.png">
-</p>
+![BPMN06](imagens/bpmn-06.png)
 
 ## Daily
-
-<p align="center">
-    <img src="../assets/imagens/bpmn-05.png">
-</p>
+![BPMN05](imagens/bpmn-05.png)
 
 ## Coleta de Dados
-
-<p align="center">
-    <img src="../assets/imagens/bpmn-04.png">
-</p>
+![BPMN04](imagens/bpmn-04.png)
 
 ## Referências
 
@@ -52,4 +34,4 @@ CASTRO, Bruna. Notação BPMN: O que é e quando usar? Guia completo. Blog SML B
 | ------ | ---------- | --------------------------------------------- | ------------------------- |
 | 0.1    | 17/02/2021 | Adição da página                              | Gustavo Nogueira & Renato |
 | 0.2    | 17/02/2021 | Adição dos diagramas geral, sprint e planning | Gustavo Nogueira          |
-| 1.0    | 18/02/2021 | Adição da análise da Coleta de Dados, Daily e Sprint Review | Renato Britto Araujo |
+| 0.3    | 18/02/2021 | Adição da análise da Coleta de Dados, Daily e Sprint Review | Renato Britto Araujo |

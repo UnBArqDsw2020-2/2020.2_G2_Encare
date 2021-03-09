@@ -20,7 +20,17 @@ nav:
   - Modelagem:
       - Diagramas Estáticos:
           - Digrama de Componentes: Modelagem/diagrama_componentes.md
+          - Diagrama de Classe: Modelagem/diagrama_de_classes.md
       - Diagramas Dinâmicos:
+          - Diagrama de Sequência: Modelagem/Diagrama de sequência.md
+          - Diagrama de Atividade: Modelagem/diagrama_de_atividades.md
+      - Modelagem ágil:
+          - Backlog do produto: Modelagem/Backlog.md
+  - Iniciativas extras: 
+      - Documentação das sprints:
+          - Sprints: Modelagem/Sprints.md
+      - Requisitos: Base/requisitos.md
+      - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md
 theme:
   name: material
   language: pt

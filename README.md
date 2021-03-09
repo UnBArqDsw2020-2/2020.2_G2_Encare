@@ -15,7 +15,7 @@
 | 17/0144259  |  Gustavo Nogueira Rodrigues |
 
 ## Sobre 
-Será um projeto que tem como objetivo facilitar a busca por procedimentos estéticos não-cirurgicos, como cortes de cabelo, serviços de manicure e pedicure, maquiagem, entre outros. Para isso, o nosso projeto tem como proposta oferecer as ofertas disponíveis na região, de acordo com o serviço desejado e com a localização do usuário. 
+O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cirurgicos, como cortes de cabelo, serviços de manicure e pedicure, maquiagem, entre outros. Para isso, o nosso projeto tem como proposta oferecer as ofertas disponíveis na região, de acordo com o serviço desejado e com a localização do usuário. 
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 
@@ -26,16 +26,21 @@ Será um projeto que tem como objetivo facilitar a busca por procedimentos esté
 ![Modelagem BPMN](https://raw.githubusercontent.com/UnBArqDsw2020-2/2020.2_G2_Encare/develop/docs/Base/imagens/Screenshot_modelagemBPMN.png)
 
 ## Vídeo(s) Primeira Entrega <<FOCO: DSW(Base)>>
-Link do Video da apresentação do Módulo Projeto Não Orientado a Abordagens Específicas: https://youtu.be/OqCiTozAYR8  
-Link do Video da apresentação do Módulo Processos/Metodologias/Abordagens:  https://youtu.be/UjFOLxKm9jY  
+[Apresentação do Módulo Projeto Não Orientado a Abordagens Específicas](https://youtu.be/OqCiTozAYR8) 
+[Apresentação do Módulo Processos/Metodologias/Abordagens](https://youtu.be/UjFOLxKm9jY)
 
-<!-- ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
+## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
+
+![Diagrama de Classes](docs/Modelagem/imagens/screenshot_modelagem01.png)
+
+![Diagrama de Sequência](docs/Modelagem/imagens/screenshot_modelagem02.png)
+
+![Backlog](docs/Modelagem/imagens/screenshot_modelagem03.png)
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione o(s)s vídeo(s) da Segunda Entrega.
 
-## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
+<!-- ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
 
 ## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>

@@ -52,10 +52,10 @@ O github pages é uma página da web onde é apresentada os documentos e outros 
 
 ## Referências:
 
-[1] - https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/metodologia/
-[2] - https://www.desenvolvimentoagil.com.br/scrum/
-[3] - https://www.treinaweb.com.br/blog/o-que-e-xp-extreme-programming/
-[4] - https://artia.com/kanban/
+[1] - https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/metodologia/  
+[2] - https://www.desenvolvimentoagil.com.br/scrum/  
+[3] - https://www.treinaweb.com.br/blog/o-que-e-xp-extreme-programming/  
+[4] - https://artia.com/kanban/  
 
 ## Versionamento:
 

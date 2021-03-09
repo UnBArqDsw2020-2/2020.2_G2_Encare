@@ -1,7 +1,8 @@
 # Requisitos do produto
 Esse documento contém as técnicas de elicitação que foram utilizadas e os requisitos levantados a partir delas.  
 
-Termos e seus significados :  
+Termos e seus significados: 
+
 |Termo|Significado|  
 |-----|-----------|
 |RF|Requisito Funcional|
@@ -11,6 +12,7 @@ Termos e seus significados :
 |BS|Brainstorming|
 
 Resumo do documento :
+
 |Identificador|Quantidade|
 |-------------|----------|
 |BS|08|
