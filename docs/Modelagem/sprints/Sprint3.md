@@ -26,3 +26,4 @@ Essa reunião foi convocada para verificar os pontos a serem desenvolvidos no pr
 | Data | Nome | Detalhes | Versão |
 |-----|-------|---------|---------|
 | 15/03/2021 | Hugo Aragão| Criação do documento e Reunião 09/03 | 0.1 |
+| 15/03/2021 | Hugo Aragão| Adiciona tabela de contribuição | 0.2 | 
