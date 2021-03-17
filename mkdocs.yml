@@ -30,7 +30,9 @@ nav:
       - Documentação das sprints:
           - Sprints: Modelagem/sprints/Sprints.md
       - Requisitos: Base/requisitos/requisitos.md
-      - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md
+      - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md  
+  - Padrões:
+    - Guia de Estilo: Padroes/guia_de_estilo/guia_estilo.md
 theme:
   name: material
   language: pt
