@@ -10,16 +10,6 @@ Dentro da reunião da planning foram verificados os pontos a serem desenvolvidos
 * Realização do Planning Poker das tarefas.
 * A equipe optou pela colaboração de mais integrantes nas decisões acerca do design do projeto.
 
-**Reunião 16/03**
-
-Nessa reunião discutimos o que foi produzido nas issues assim como:
-
-* Resultado do Guia de Estilo
-* Remodelagem do Backlog
-* Diretrizes necessárias para a próxima entrega
-* Revisão do novo protótipo de baixa fidedelidade de acordo com o escopo
-* Escolha do tema do Gh-pages
-* Ideias de aumento do escopo para produção dos documentos relacionados à teoria da disciplina
 
 ### Relacionamento entre documentos e seus criadores
 
@@ -32,6 +22,19 @@ Nessa reunião discutimos o que foi produzido nas issues assim como:
 |Configurar o Backlog|8|João Baraky / João Pedro| Wagner Martins / Gustavo Nogueira |
 |Documentar Sprint|4|Hugo Aragão / João Pedro| João Baraky / Wagner Martins |
 
+## Review:
+**Reunião 16/03**
+
+Nessa reunião discutimos o que foi produzido nas issues assim como:
+
+* Resultado do Guia de Estilo
+* Remodelagem do Backlog
+* Diretrizes necessárias para a próxima entrega
+* Revisão do novo protótipo de baixa fidedelidade de acordo com o escopo
+* Escolha do tema do Gh-pages
+* Ideias de aumento do escopo para produção dos documentos relacionados à teoria da disciplina
+
+Além disso, visto a necessidade de confirmar alguns tópicos da proxima entrega, foi adiada a entrega das issues para 17/03, quando começará a próxima sprint.
 
 ## Versionamento
 
@@ -41,3 +44,4 @@ Nessa reunião discutimos o que foi produzido nas issues assim como:
 | 15/03/2021 | Hugo Aragão| Adiciona tabela de contribuição | 0.2 | 
 | 15/03/2021 | João Pedro | Adiciona os revisores | 0.3 |
 | 16/03/2021 | Hugo Aragão| Adiciona reunião 16/03| 0.4 |
+| 17/03/2021 | João Pedro | Revisão | 1.0 |
