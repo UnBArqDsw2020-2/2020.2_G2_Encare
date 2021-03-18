@@ -8,6 +8,10 @@ Será adotado um modelo evolucionário de prototipação, que consiste em produz
 Um protótipo de média fidelidade visa definir a estrutura de conteúdo da interface, definir o peso, relevância e relação entre os elementos e criar um layout básico (com conteúdos e imagens de marcação).  
 Para chegar à primeira versão do protótipo de alta fidelidade, os membros do grupo elaboraram alguns protótipos de média fidelidade para conciliar ideias e construir um protótipo de alta fidelidade mais próximo ao ideal.
 
+## Protótipo 01 
+### Autor : Nícalo Ribeiro
+![Prototipo_Media_Nicalo](imagens/prototipo-media-nicalo.jpg)
+
 ## Protótipo de alta fidelidade
 
 - - -
@@ -16,3 +20,4 @@ Para chegar à primeira versão do protótipo de alta fidelidade, os membros do 
 |----|---------|---------|
 |18/03/2021| Criação do documento | Nícalo, Gustavo, Hugo|
 |18/03/2021| Estruturação do documento | Nícalo, Gustavo, Hugo|
+|18/03/2021| Adicao do prototipo de média 01 | Nícalo|
