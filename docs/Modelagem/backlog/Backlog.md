@@ -309,4 +309,5 @@ Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vita
 | 07/03/2021 | João Pedro Silva de Carvalho | Adicionando definições de termos | 0.6 |
 | 08/03/2021 | João Pedro Silva de Carvalho | Dividindo requisitos em tarefas | 0.7 |
 | 08/03/2021 | Nícalo Ribeiro | Revisão e ajustes | 0.8 |
+| 18/03/2021 | João Luis Baraky e João Pedro Silva | Substitui tabela do Backlog para 3 tabelas melhores organizadas e coerentes | 0.9 |
 
