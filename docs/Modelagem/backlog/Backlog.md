@@ -85,7 +85,6 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 			<td>US01</td>
 			<td>Eu como usuário desejo encontrar um estabelecimento com o procedimento estético que eu queira</td>
 			<td>Must</td>
-            
 		</tr>
 		<tr>
 			<td>US02</td>
