@@ -122,42 +122,52 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 		<tr>
 			<td>RF03</td>
 			<td>Criar um mapa interativo.</td>
+			<td>Should</td>
 		</tr>
 		<tr>
 			<td>RF04</td>
 			<td>Criar um filtro para o feed de serviços.</td>
+			<td>Must</td>
 		</tr>
 		<tr>
 			<td>RF05</td>
 			<td>O sistema deverá ser capaz de calcular a distância entre o usuário e um estabelecimento.</td>
+			<td>Must</td>
 		</tr>
 		<tr>
 			<td>RF06</td>
 			<td>O sistema deverá permitir que o usuário admin cadastre os estabelecimentos.</td>
+            <td>Must</td>
 		</tr>
 		<tr>
 			<td>RF07</td>
 			<td>O sistema deverá ser capaz de coletar a localização do usuário.</td>
+            <td>Must</td>
 		</tr>
 		<tr>
 			<td>RF08</td>
 			<td>O sistema deverá fornecer um link para que o usuário possa acessar a localização do estabelecimento.</td>
+            <td>Must</td>
 		</tr>
 		<tr>
 			<td>RF09</td>
 			<td>O sistema deverá ter um perfil do estabelecimento com informações básicas de contato, funcionamento e localização.</td>
+            <td>Must</td>
 		</tr>
 		<tr>
 			<td>RF10</td>
 			<td>O sistema deverá listar dentro do perfil do estabelecimento, os serviços que ele oferece.</td>
+            <td>Must</td>
 		</tr>
 		<tr>
 			<td>RNF01</td>
 			<td>Avaliar a usabilidade por meio do tempo necessário para a realização das principais tarefas.</td>
+            <td>Should</td>
 		</tr>
 		<tr>
 			<td>RNF02</td>
 			<td>O sistema deverá ter portabilidade para uso em mobile e desktop.</td>
+            <td>Should</td>
 		</tr>
 	</tbody>
 </table>
@@ -313,4 +323,5 @@ Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vita
 | 08/03/2021 | João Pedro Silva de Carvalho | Dividindo requisitos em tarefas | 0.7 |
 | 08/03/2021 | Nícalo Ribeiro | Revisão e ajustes | 0.8 |
 | 18/03/2021 | João Luis Baraky e João Pedro Silva | Substitui tabela do Backlog para 3 tabelas melhores organizadas e coerentes | 0.9 |
+| 18/03/2020 | João Pedro Silva e João Luis Baraky | Adicionando priorização nos requisitos |1.0|
 
