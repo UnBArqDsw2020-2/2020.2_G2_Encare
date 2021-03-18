@@ -105,16 +105,19 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 		<tr>
 			<th>Requisito</th>
 			<th>Descrição</th>
+            <th>Prioridade</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>RF01</td>
 			<td>Criar feed de serviços.</td>
+			<td>Must</td>
 		</tr>
 		<tr>
 			<td>RF02</td>
 			<td>Criar um feed de estabelecimentos.</td>
+			<td>Must</td>
 		</tr>
 		<tr>
 			<td>RF03</td>
