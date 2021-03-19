@@ -137,7 +137,7 @@ A partir da análise do que foi levantado no Storytelling, Introspecção e Brai
 |RF03| Criar mapa interativo | BS05, ST05, INT01, INT02, INT04, INT05 |
 |RF04| Criar filtro para o feed de serviços | BS02, INT10, ST04, INT07 |
 |RF05| Calcular a distância até o estabelecimento desejado | BS08 |
-|RF06| O sistema deverá permitir que o suusário admin cadastre os estabelecimentos | BS06 |
+|RF06| O sistema deverá permitir que o usuário admin cadastre os estabelecimentos | BS06 |
 |RF07| O sistema deverá ser capaz de coletar a localização do usuário| INT01, INT08, INT09, ST05 |
 |RF08| O sistema deverá fornecer um link para que o usuário possa acessar a localização do estabelecimento|INT10|
 |RF09|O sistema deverá ter um perfil do estabelecimento com informações básicas de contato, funcionamento e localização.|BS04, BS07, ST01, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17|
@@ -162,3 +162,4 @@ A partir da análise do que foi levantado no Storytelling, Introspecção e Brai
 | 07/03/2021 | Nícalo Ribeiro | Separação em requisitos funcionais e não funcionais e formatação do documento | 0.5 |
 | 07/03/2021 | Nícalo Ribeiro | Revisão e formatação do documento | 0.6 |
 | 18/03/2021 | João Pedro e João Baraky | Refatoração dos requisitos| 1.0 |
+| 19/03/2021 | Wagner Martins | Revisão - Correção de erro ortográfico | 1.1 |
