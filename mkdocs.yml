@@ -20,7 +20,7 @@ nav:
   - Modelagem:
       - Diagramas Estáticos:
           - Digrama de Componentes: Modelagem/diagrama_componentes/diagrama_componentes.md
-          - Diagrama de Classe: Modelagem/diagrama_classes/diagrama_de_classes.md
+          - Diagrama de Classes: Modelagem/diagrama_classes/diagrama_de_classes.md
       - Diagramas Dinâmicos:
           - Diagrama de Sequência: Modelagem/diagrama_sequencia/Diagrama de sequência.md
           - Diagrama de Atividade: Modelagem/diagrama_atividades/diagrama_de_atividades.md
@@ -48,4 +48,4 @@ theme:
   favicon: assets/images/favicon-encare.png
 
 extra_css:
-  - styles.css
+  - assets/stylesheets/styles.css

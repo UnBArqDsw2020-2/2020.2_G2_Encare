@@ -32,6 +32,10 @@
   font-size: 1.2rem;
 }
 
+#section-home-logo img {
+  width: 256px;
+}
+
 #section-home-about {
   display: flex;
   justify-content: center;

@@ -1,4 +1,4 @@
-# Priorização e Backlog do produto
+# Priorização e Backlog do Produto
 
 ## 1. Introdução:
 
@@ -139,9 +139,9 @@ Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vita
 
 ## 5. Referências:
 
-[1] - https://k21.global/tudo-sobre/agilidade/user-stories/o-que-e-user-story#:~:text=User%20Story%20ou%20%E2%80%9Chist%C3%B3ria%20de,ponto%20de%20vista%20desse%20usu%C3%A1rio.  
-[2] - https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580  
-[3] - https://www.pluralsight.com/guides/break-down-agile-user-stories-into-tasks-and-estimate-level-of-effort  
+- [1] - https://k21.global/tudo-sobre/agilidade/user-stories/o-que-e-user-story#:~:text=User%20Story%20ou%20%E2%80%9Chist%C3%B3ria%20de,ponto%20de%20vista%20desse%20usu%C3%A1rio.  
+- [2] - https://www.devmedia.com.br/introducao-a-requisitos-de-software/29580  
+- [3] - https://www.pluralsight.com/guides/break-down-agile-user-stories-into-tasks-and-estimate-level-of-effort  
 
 ## 6. Versionamento:
 | Data | Nome | Descrição | Versão |

@@ -142,14 +142,14 @@ Nesse planejamento distribuímos as tarefas de acordo com a entrega da etapa de 
 
 Obs: Os documentos produzidos são discutidos em reunião e revisados por no mínimo 2 integrantes no momento de avaliar o Pull Request em nosso repositório.
 
-### Review:
+### Review
 
 A equipe teve dificuldade em produzir os documentos por incompatibilidade de horários para pareamento, e principalmente por conta das falhas na elicitação dos requisitos e na documentação dos mesmos. Foi sugerida uma reunião extraordinária para discutir a melhora na comunicação interna da equipe e garantir a revisão e alinhamento das documentações com as ideias.
 
 ----
 
-## Sprint 2:
-### Plannining:
+## Sprint 2
+### Plannining
 
 ### Reunião 04/03
 
