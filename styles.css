@@ -8,6 +8,8 @@
   --md-primary-fg-color--light: #EE0F0F;
   --md-primary-fg-color--dark: #3A0402;
   --md-secondary-fg-color: #1B1B3A;
+  --md-accent-fg-color: var(--md-primary-fg-color--dark);
+  --md-default-fg-color--light: #6B3E3C;
 }
 
 .md-header,
@@ -103,4 +105,8 @@
 
 #section-home-footer img {
   width: 25vw;
+}
+
+.md-typeset blockquote {
+  border-left: .2rem solid var(--md-default-fg-color--light);
 }
