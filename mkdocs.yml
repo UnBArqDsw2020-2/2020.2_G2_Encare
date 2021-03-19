@@ -42,6 +42,7 @@ theme:
     - navigation.sections
     # - navigation.expand
   font:
+    text: Poppins
     code: Roboto Mono
   logo: assets/images/logo-encare.png
   favicon: assets/images/favicon-encare.png
