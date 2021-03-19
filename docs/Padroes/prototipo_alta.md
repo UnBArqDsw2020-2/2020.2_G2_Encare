@@ -13,7 +13,9 @@ Para chegar à primeira versão do protótipo de alta fidelidade, os membros do 
 ![Prototipo_Media_Nicalo](imagens/prototipo-media-nicalo.jpg)
 
 ## Protótipo de alta fidelidade
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxJ49RxNyO7ulXwd86Gxbov%2FUntitled%3Fnode-id%3D2%253A17%26scaling%3Dmin-zoom" allowfullscreen></iframe>  
 
+Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/xJ49RxNyO7ulXwd86Gxbov/Untitled?node-id=2%3A17&scaling=min-zoom).
 - - -
 # Histórico
 |Data|Descrição|Autor(es)|
@@ -21,3 +23,4 @@ Para chegar à primeira versão do protótipo de alta fidelidade, os membros do 
 |18/03/2021| Criação do documento | Nícalo, Gustavo, Hugo|
 |18/03/2021| Estruturação do documento | Nícalo, Gustavo, Hugo|
 |18/03/2021| Adicao do prototipo de média 01 | Nícalo|
+|18/03/2021| Adição da primeira versão do protótipo de alta fidelidade | Nícalo|
