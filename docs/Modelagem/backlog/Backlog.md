@@ -287,7 +287,7 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 			<td rowspan="4">US03</td>
 			<td rowspan="2">RNF01</td>
 			<td rowspan="2">Should</td>
-			<td>T27: Elaborar método de avaliação da usabilidade com relação ao tempo, (inspeção, observação, investigação)</td>
+			<td>T27: Elaborar método de avaliação da usabilidade com relação ao tempo (inspeção, observação, investigação)</td>
 		</tr>
 		<tr>
 			<td>T28: Aplicar método escolhido para a avaliação</td>
@@ -324,4 +324,5 @@ Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vita
 | 08/03/2021 | Nícalo Ribeiro | Revisão e ajustes | 0.8 |
 | 18/03/2021 | João Luis Baraky e João Pedro Silva | Substitui tabela do Backlog para 3 tabelas melhores organizadas e coerentes | 0.9 |
 | 18/03/2020 | João Pedro Silva e João Luis Baraky | Adicionando priorização nos requisitos |1.0|
+| 19/03/2020 | João Pedro Silva e Gustavo Nogueira | Adicionando revisão do PR |1.1 |
 
