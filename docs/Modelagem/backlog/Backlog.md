@@ -71,69 +71,237 @@ Esta técnica consiste em dividir os requisitos em quatro níveis de prioridade 
 
 ## 4. Product Backlog:
 
-|Identificador|Descrição|Prioridade|
-|-------------|---------|----------|
-|US01| Eu como usuário desejo encontrar um estabelecimento com o procedimento estético que eu queira | **Must** |  
-|RF01| Criar um feed de serviços | **Must** |
-|T01| Criar página para apresentação dos serviços | **Must**|
-|T02| Desenvolver endpoint para consumo dos dados dos serviços | **Must**|
-|T03| Desenvolver estabelecimentos no backend | **Must** |
-|RF02| Criar um feed de estabelecimentos | **Would** |
-|T03| Criar página para apresentação dos estabelecimentos | **Would**|
-|T04| Consumir lista de estabelecimentos no backend | **Would** |
-|RF04| O usuário deverá ter interação no mapa | **Could** |
-|T05| Integrar mapa que o usuário possa interagir | **Could** |
-|RF05| Identificação dos estabelecimentos no mapa | **Could** |
-|T06| Alimentar o mapa com os dados dos estabelecimentos | **Could** |
-|RF06| Filtrar estabelecimentos por distância | **Must** |
-|T07| Criar endpoint para cálculo das distâncias | **Must** |
-|T08| Criar componente para aplicação do filtro no frontend | **Must** |
-|T09| Criar endpoint para fornecimento dos serviços filtrados| **Must** |
-|RF07| Filtrar estabelecimentos por serviço | **Must** |
-|T10| Criar componente para aplicação do filtro no frontend | **Must** |
-|T11| Criar endpoint para fornecimento dos serviços filtrados| **Must** |
-|RF08| Filtrar estabelecimento por nome | **Must** |
-|T12| Criar componente para aplicação do filtro no frontend | **Must** |
-|T13| Criar endpoint para fornecimento dos serviços filtrados| **Must** |
-|RF09| Mostar no mapa os estabelecimentos filtrados | **Could** |
-|T14| Apresentar os dados filtrados no mapa | **Could** |
-|RF10| Mostar no feed os estabelecimentos filtrados | **Must** | 
-|T15| Mostrar no frontend o resultado dos filtros | **Must** |
-|RF11| Calcular a distância até o estabelecimento desejado | **Must** |
-|T16| Criar endpoint que retorna o valor da distância | **Must**|
-|RF12| Cadastrar estabelecimentos pelo admin | **Must** |
-|T17| Criar crud de estabelecimentos no backend | **Must** |
-|T18| Criar formulario de cadastro no frontend | **Must**|
-|T19| Restringir o cadastro a apenas os administradores do sistema | **Must** |
-|RNF01| Solicitar acesso à localização do usuário | **Should** | 
-|T20| Criar componente para solicitar a localização e guardar a informação | **Should**|
-|RNF02| Informar ao usuário como sua localização será utilizada | **Should** |
-|T21| Criar texto explicando como será usada | **Should**|
-|T22| Apresentar o texto para o usuário | **Should** |
-|US02| Eu como usuário desejo acessar as informações dos estabelecimentos | **Must** |
-|RF03| Fornecer a localização do estabelecimento no mapa (externo à aplicação) | **Must** |
-|T23| Preencher a aplicação com os dados dos estabelecimentos obtidos| **Must** |
-|RF13| Recuperar as informações dos estabelecimentos| **Must** | 
-|T24| Consumir as informações específicas do estabelecimento no backend | **Must** |
-|T25| Mostrar os dados no front | **Must** |
-|RF14| Recuperar fotos dos estabelecimentos | **Must** | 
-|T26| Criar componente para exibir as fotos dos serviços no front| **Must** |
-|RF15| Possuir um perfil para o estabelecimento| **Must** | 
-|T27| Criar página de perfil no front | **Must**|
-|RF16| Exibir no perfil do estabelecimento suas informações básicas | **Must** |
-|T28| Exibir os dados recuperados no front | **Must**|
-|RF17| Exibir no perfil do estabeleceimento os serviços que ele oferece| **Must** |
-|T29| Exibir os serviços oferecidos na página de perfil | **Must** |
-|RF18| Exibir no perfil do estabelecimento as fotos de seus serviços |  **Must** |
-|T30| Exibir as imagens do serviço no componente | **Must** |
-|US03| Eu como usuário desejo que o sistema atenda critérios de usabilidade e portabilidade | **Should** |
-|RNF03| Avaliar usabilidade por meio do tempo necessário para realização das funcionalidades |  **Should** | 
-|T31| Elaborar teste para medir o tempo de utilização | **Should**|
-|T32| Executar teste | **Should** |
-|RNF04| Plataforma responsiva que possa ser usada em mobile e desktop |  **Should** | 
-|T33| Elaborar método de avaliação de portabilidade| **Should**|
-|T34| Executar método de avaliação selecionando | **Should** |
+### 4.1 Tabela User Stories
+<table>
+	<thead>
+		<tr>
+			<th>US</th>
+			<th>Descrição</th>
+			<th>Prioridade</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>US01</td>
+			<td>Eu como usuário desejo encontrar um estabelecimento com o procedimento estético que eu queira</td>
+			<td>Must</td>
+		</tr>
+		<tr>
+			<td>US02</td>
+			<td>Eu como usuário desejo ver as informações do estabelecimento.</td>
+			<td>Must</td>
+		</tr>
+		<tr>
+			<td>US03</td>
+			<td>Eu como usuário desejo que o sistema obedeça critérios de portabilidade e usabilidade</td>
+			<td>Should</td>
+		</tr>
+	</tbody>
+</table>
 
+### 4.2 Tabela Requisitos
+<table>
+	<thead>
+		<tr>
+			<th>Requisito</th>
+			<th>Descrição</th>
+            <th>Prioridade</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>RF01</td>
+			<td>Criar feed de serviços.</td>
+			<td>Must</td>
+		</tr>
+		<tr>
+			<td>RF02</td>
+			<td>Criar um feed de estabelecimentos.</td>
+			<td>Must</td>
+		</tr>
+		<tr>
+			<td>RF03</td>
+			<td>Criar um mapa interativo.</td>
+			<td>Should</td>
+		</tr>
+		<tr>
+			<td>RF04</td>
+			<td>Criar um filtro para o feed de serviços.</td>
+			<td>Must</td>
+		</tr>
+		<tr>
+			<td>RF05</td>
+			<td>O sistema deverá ser capaz de calcular a distância entre o usuário e um estabelecimento.</td>
+			<td>Must</td>
+		</tr>
+		<tr>
+			<td>RF06</td>
+			<td>O sistema deverá permitir que o usuário admin cadastre os estabelecimentos.</td>
+            <td>Must</td>
+		</tr>
+		<tr>
+			<td>RF07</td>
+			<td>O sistema deverá ser capaz de coletar a localização do usuário.</td>
+            <td>Must</td>
+		</tr>
+		<tr>
+			<td>RF08</td>
+			<td>O sistema deverá fornecer um link para que o usuário possa acessar a localização do estabelecimento.</td>
+            <td>Must</td>
+		</tr>
+		<tr>
+			<td>RF09</td>
+			<td>O sistema deverá ter um perfil do estabelecimento com informações básicas de contato, funcionamento e localização.</td>
+            <td>Must</td>
+		</tr>
+		<tr>
+			<td>RF10</td>
+			<td>O sistema deverá listar dentro do perfil do estabelecimento, os serviços que ele oferece.</td>
+            <td>Must</td>
+		</tr>
+		<tr>
+			<td>RNF01</td>
+			<td>Avaliar a usabilidade por meio do tempo necessário para a realização das principais tarefas.</td>
+            <td>Should</td>
+		</tr>
+		<tr>
+			<td>RNF02</td>
+			<td>O sistema deverá ter portabilidade para uso em mobile e desktop.</td>
+            <td>Should</td>
+		</tr>
+	</tbody>
+</table>
+
+### 4.3 Tabela Tarefas
+<table>
+	<thead>
+		<tr>
+			<th rowspan="3">US</th>
+			<th rowspan="3">Requisito</th>
+			<th rowspan="3">Prioridade</th>
+			<th>Tarefa</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan="19">US01</td>
+			<td rowspan="4">RF01</td>
+			<td rowspan="4">Must</td>
+			<td> T01: Criar página de apresentação de serviços no front</td>
+		</tr>
+		<tr>
+			<td>T02: Criar componente que mostre um serviço no feed</td>
+		</tr>
+		<tr>
+			<td>T03: Desenvolver endpoint para consumo dos dados dos serviços</td>
+		</tr>
+		<tr>
+			<td>T04: Desenvolver estabelecimentos no backend</td>
+		</tr>
+		<tr>
+			<td rowspan="2">RF02</td>
+			<td rowspan="2">Would</td>
+			<td>T05: Criar página para apresentar os estabelecimentos</td>
+		</tr>
+		<tr>
+			<td>T06: Consumir dados dos estabelecimentos no backend</td>
+		</tr>
+		<tr>
+			<td rowspan="5">RF03</td>
+			<td rowspan="5">Could</td>
+			<td>T07: Integrar um mapa do site</td>
+		</tr>
+		<tr>
+			<td>T08: Permitir interação do usuário com o mapa</td>
+		</tr>
+		<tr>
+			<td>T09: Alimentar o mapa com os dados dos estabelecimentos</td>
+		</tr>
+		<tr>
+			<td>T10: Identificar os estabelecimentos no mapa</td>
+		</tr>
+		<tr>
+			<td>T11: Poder acessar o perfil de um estabelecimento no mapa</td>
+		</tr>
+		<tr>
+			<td rowspan="3">RF04</td>
+			<td rowspan="3">Must</td>
+			<td>T12: Criar componente para abrigar os filtros</td>
+		</tr>
+		<tr>
+			<td>T13: Criar endpoint que recebe os filtros e retorna os dados equivalentes</td>
+		</tr>
+		<tr>
+			<td>T14: Exibir dados filtrados</td>
+		</tr>
+		<tr>
+			<td rowspan="1">RF05</td>
+			<td rowspan="1">Must</td>
+			<td>T15: Criar endpoint que receba a localização do usuário e calcule a distância</td>
+		</tr>
+		<tr>
+			<td rowspan="2">RF06</td>
+			<td rowspan="2">Must</td>
+			<td>T16: Criar um CRUD de estabelecimentos no backend</td>
+		</tr>
+		<tr>
+			<td>T17: Criar uma página para cadastro dos estabelecimentos no front</td>
+		</tr>
+		<tr>
+			<td rowspan="2">RF07</td>
+			<td rowspan="2">Must</td>
+			<td>T18: Solicitar localização exata</td>
+		</tr>
+		<tr>
+			<td>T19: Conseguir localização aproximada (caso o usuário não forneça a localização)</td>
+		</tr>
+		<tr>
+			<td rowspan="7">US02</td>
+			<td rowspan="1">RF08</td>
+			<td rowspan="1">Must</td>
+			<td>T20: Gerar link do mapa com a localização do estabelecimento</td>
+		</tr>
+		<tr>
+			<td rowspan="3">RF09</td>
+			<td rowspan="3">Must</td>
+			<td>T21: Criar página de perfil no frontend</td>
+		</tr>
+		<tr>
+			<td>T22: Criar endpoint no backend para consumo desses dados</td>
+		</tr>
+		<tr>
+			<td>T23: Exibir os dados corretamente no frontend</td>
+		</tr>
+		<tr>
+			<td rowspan="3">RF10</td>
+			<td rowspan="3">Must</td>
+			<td>T24: Consumir a lista de serviços no backend</td>
+		</tr>
+		<tr>
+			<td>T25: Exibir os dados no frontend</td>
+		</tr>
+		<tr>
+			<td>T26: Possibilitar melhor visualização (aproximação) das fotos</td>
+		</tr>
+		<tr>
+			<td rowspan="4">US03</td>
+			<td rowspan="2">RNF01</td>
+			<td rowspan="2">Should</td>
+			<td>T27: Elaborar método de avaliação da usabilidade com relação ao tempo (inspeção, observação, investigação)</td>
+		</tr>
+		<tr>
+			<td>T28: Aplicar método escolhido para a avaliação</td>
+		</tr>
+		<tr>
+			<td rowspan="3">RNF02</td>
+			<td rowspan="3">Should</td>
+			<td>T29: Elaborar método de avaliação da portabilidade</td>
+		</tr>
+		<tr>
+			<td>T30: Aplicar método escolhido para a avaliação</td>
+		</tr>
+	</tbody>
+</table>
 
 Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vitais ao sistema para que ele seja concluído.
 
@@ -154,4 +322,7 @@ Apesar de termos um escopo que aparenta ser pequeno, muitos requisitos são vita
 | 07/03/2021 | João Pedro Silva de Carvalho | Adicionando definições de termos | 0.6 |
 | 08/03/2021 | João Pedro Silva de Carvalho | Dividindo requisitos em tarefas | 0.7 |
 | 08/03/2021 | Nícalo Ribeiro | Revisão e ajustes | 0.8 |
+| 18/03/2021 | João Luis Baraky e João Pedro Silva | Substitui tabela do Backlog para 3 tabelas melhores organizadas e coerentes | 0.9 |
+| 18/03/2020 | João Pedro Silva e João Luis Baraky | Adicionando priorização nos requisitos |1.0|
+| 19/03/2020 | João Pedro Silva e Gustavo Nogueira | Adicionando revisão do PR |1.1 |
 
