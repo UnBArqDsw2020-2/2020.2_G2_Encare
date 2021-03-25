@@ -26,9 +26,9 @@ A notação BPMN permite que você desenhe e conheça todas as tarefas operacion
 
 ## Referências
 
-CASTRO, Bruna. Notação BPMN: O que é e quando usar? Guia completo. Blog SML Brasil. Disponível em: <https://blog.smlbrasil.com.br/o-que-significa-bpmn/>. Acesso em: 17 de fevereiro de 2021.
+- CASTRO, Bruna. Notação BPMN: O que é e quando usar? Guia completo. Blog SML Brasil. Disponível em: <https://blog.smlbrasil.com.br/o-que-significa-bpmn/>. Acesso em: 17 de fevereiro de 2021.
 
-## Histórico de versão
+## Versionamento
 
 | Versão | Data       | Comentários                                   | Autor(es)                 |
 | ------ | ---------- | --------------------------------------------- | ------------------------- |

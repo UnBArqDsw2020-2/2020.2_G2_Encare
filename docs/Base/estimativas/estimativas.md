@@ -1,4 +1,4 @@
-# Estimativas de custo
+# Estimativas de Custo
 
 ## Introdução
 
@@ -134,15 +134,16 @@ e a estimativa de tempo:
 >T = 2.5 * 2.33^0.35
 >**T = 3.3 meses**
 
-## Histórico de revisões
+## Referências
+
+- [1] Documento de estimativas de custo do repositório **A Monitoria**. Disponível em: https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/estimativas_de_custo/
+- [2] Meller, Maristela Corrêa. Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte. 2002. Disponível em: https://repositorio.ufsc.br/xmlui/handle/123456789/82351
+
+
+## Versionamento
 
 |Nome|Versão|Data|Descrição|
 |-|-|-|-|
 | Wagner Martins | 0.1 | 16/02/2021 | Introdução e modelos de estimativa |
 | Wagner Martins | 0.2 | 17/02/2021 | Realização dos cálculos das estimativas |
 | João Luis Baraky | 0.3 | 27/02/2021 | Atualizações na estética do documento |
-
-## Referências
-
-- [1] Documento de estimativas de custo do repositório **A Monitoria**. Disponível em: https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/estimativas_de_custo/
-- [2] Meller, Maristela Corrêa. Modelos Para Estimar Custos De Software: Estudo Comparativo Com Softwares De Pequeno Porte. 2002. Disponível em: https://repositorio.ufsc.br/xmlui/handle/123456789/82351
