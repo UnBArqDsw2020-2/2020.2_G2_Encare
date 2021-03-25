@@ -8,6 +8,7 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 
 ## Esboços de escopo:
 ### João Pedro 
+![Esboco João Pedro](./img/Esboco_joao_pedro.png)
 ### Gustavo Nogueira
 ### Renato Britto
 ### João Luis Baraky
@@ -18,3 +19,4 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 | Nome | Data | Detalhes | Versão |
 |---|---|---|---|
 | João Pedro Carvalho | 23/03/2021 | Adicionando introdução e tópicos | 0.1 |
+| João Pedro Carvalho | 25/03/2021 | Adicionando esboço de escopo | 0.2 |
