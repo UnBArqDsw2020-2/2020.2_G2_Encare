@@ -6,11 +6,33 @@
 
 # GRASPs
 
-<!-- ## Sobre -->
+Os padrões GRASP fornecem uma abordagem
+sistemática para a atribuição de responsabilidades às
+classes do projeto e englobam uma série de princípios baseados na Orientação a Objetos. Seu termo vem do inglês e significa <i>General Responsibility Assignment Software Patterns</i>.  
+Dentre os tipos de GRASPs, temos :  
+- Criador;
+- Especialista;
+- Alta Coesão;
+- Baixo Acoplamento;
+- Controladora;
+- Polimorfismo;
+- Invenção pura;
+- Variações protegidas.
 
 ## Criador
 
-<!-- ### O que é -->
+Este princípio determina qual classe deve ser responsável pela criação certos objetos ou instâncias.
+
+Para definir criadores, é importantes responder à problemática de quem deve ser responsável por criar uma nova instância de uma determinada classe. Para responder isso, existem algumas indagações a serem levandas em consideração, assim, deve-se atribir a uma classe B a responsabilidade de criar uma instância de A se
+pelo menos uma dessas condições é verdadeira :
+- B contém ou agrega A;
+- B registra a existência de A;
+- B usa A;
+- B tem os dados necessários para a inicialização de A que
+serão passados ao construtor de A.
+
+Caso nenhuma dessas condições seja atendida, a própria classe é responsável por "se criar" ou por criar uma nova instância dela mesma.
+
 
 ### Aplicação no projeto
 
@@ -30,7 +52,7 @@ Em suma, a classe Estabilishment é a responsável por criar uma instância da c
 
 ## Especialista
 
-<!-- ### O que é -->
+Este princípio determina quando devemos delegar a responsabilidade para um outro objeto que seja especialista naquele domínio.
 
 ### Aplicação no Projeto
 
@@ -42,7 +64,7 @@ A responsabilidade de guardar os dados dos horários de abertura e fechamento, a
 
 ## Controlador
 
-<!-- ### O que é -->
+ Este princípio atribui a responsabilidade por lidar com eventos do sistema a uma classe que não esteja relacionada a interface com o usuário.
 
 ### Aplicação no Projeto
 
@@ -78,6 +100,7 @@ Este é um caso básico onde a classe FeedController apenas processa uma requisi
 |---------|:--:|:----:|---------|
 |Wagner Martins| 24/03/21 | 0.1 | Criação do documento |
 |Wagner Martins| 24/03/21 | 0.2 | Adição de exemplos de aplicações no projeto para os GRASPs criador, especialista e controlador
+|Nícalo Ribeiro| 26/03/21 | 0.3 | Adição da definição de alguns conceitos
 
 
 ## Referências
