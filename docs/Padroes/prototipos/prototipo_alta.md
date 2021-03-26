@@ -39,8 +39,28 @@ Dessa vez a equipe decidiu produzir os protótipos passo-a-passo, de forma que a
 
 *Wireframe* pode ser definido como um esqueleto do produto final. Nele está contido o conjunto de estruturas do site e os principais elementos, organizados por formas geométricas que ajudam a visualizar um produto real.
 
-![Wireframe_Hugo](imagens/Wireframe_home.jpg)
+**Home**
+
+Na Home dispusemos os elementos de forma que simplificasse cada sessão de serviço para o usuário, dividindo em quatro os atributos: 
+
+- Menu
+- Apresentção
+- Mapa
+- Feed de serviços
+
+![Wireframe_Home](imagens/Wireframe_home.jpg)
 Homepage do site - Hugo
+
+**Perfil do Estabelecimento**
+
+A página de Perfil conta com as principais informações do Estabelecimento, descrição do mesmo (afim de engajar o cliente), e um menu onde o cliente pode visualizar por:
+
+- Trabalhos realizados
+- Posição no Mapa
+- Comentários de clientes daquele estabelecimento
+
+![Wireframe_Perfil](imagens/Wireframe_perfil.jpg)
+Página de perfil do Estabelecimento - Hugo
 ### Versão 1
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxJ49RxNyO7ulXwd86Gxbov%2FUntitled%3Fnode-id%3D2%253A17%26scaling%3Dscale-down" allowfullscreen></iframe>  
 
@@ -66,3 +86,4 @@ Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/
 |18/03/2021| Adição dos protótipos do Hugo e Do Gustavo | Gustavo, Hugo, Nícalo | 0.5 |
 |19/03/2021| Adição de alguns ajustes na página | Gustavo | 0.6 |
 |25/03/2021| Adição do Wireframe Home | Hugo | 0.7 |
+|25/03/2021| Adição do Wireframe Perfil e Descrição das pages | Hugo | 0.8 |
