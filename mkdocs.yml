@@ -26,6 +26,8 @@ nav:
           - Diagrama de Atividade: Modelagem/diagrama_atividades/diagrama_de_atividades.md
       - Modelagem ágil:
           - Backlog do produto: Modelagem/backlog/Backlog.md
+  - Padrões:
+      - Protótipos: Padroes/prototipos/prototipo_alta.md
   - Iniciativas extras: 
       - Documentação das sprints:
           - Sprints: Modelagem/sprints/Sprints.md
