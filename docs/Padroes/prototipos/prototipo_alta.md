@@ -19,17 +19,28 @@ Para chegar à primeira versão do protótipo de alta fidelidade, os membros do 
 
 ## Protótipo 01 
 ### Autor: Nícalo Ribeiro
+
 ![Prototipo_Media_Nicalo](imagens/prototipo-media-nicalo.jpg)  
 
 ### Autor: Hugo
+
 ![Prototipo_Hugo](imagens/prototipo-hugo-1.png)
 ![Prototipo_Hugo](imagens/prototipo-hugo-2.png)  
 
 ### Autor: Gustavo
+
 ![Prototipo_Gustavo](imagens/prototipo-gustavo.png)
 
 ## Protótipo de Alta Fidelidade
 
+### Wireframe
+
+Dessa vez a equipe decidiu produzir os protótipos passo-a-passo, de forma que as ideias tivessem mais espaço para amadurecer e o *front-end* estivesse de acordo com os requisitos evoluidos após a refatoração do escopo. Assim, antes de lançarmos a versão final, decidimos produzir um *Wireframe*.
+
+*Wireframe* pode ser definido como um esqueleto do produto final. Nele está contido o conjunto de estruturas do site e os principais elementos, organizados por formas geométricas que ajudam a visualizar um produto real.
+
+![Wireframe_Hugo](imagens/Wireframe_home.jpg)
+Homepage do site - Hugo
 ### Versão 1
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxJ49RxNyO7ulXwd86Gxbov%2FUntitled%3Fnode-id%3D2%253A17%26scaling%3Dscale-down" allowfullscreen></iframe>  
 
@@ -40,6 +51,8 @@ Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/
 - Prototipagem de alta fidelidade: o que é, quando, por que e como usar?. Medium. Disponível em: <http://medium.com/somos-tera/prototipagem-de-alta-fidelidade-635d745b662b>. Acesso em: 18 de março de 2021.
 
 - ALEX, Jefferson. Protótipos de baixa, média e alta fidelidade. Disponível em: <https://jeffersonalex.medium.com/prot%C3%B3tipos-de-baixa-m%C3%A9dia-e-alta-fidelidade-bf04870325a6>. Acesso em: 18 de março de 2021.
+
+- BECKER, Lauro. Wireframes, o que são e por que os utilizamos?. Orgânica Natural Marketing. Disponível em: https://www.organicadigital.com/blog/o-que-sao-wireframes-e-por-que-os-utilizamos/. Acesso em 25/03/2021
 
 
 ## Versionamento 
@@ -52,3 +65,4 @@ Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/
 |18/03/2021| Adição da primeira versão do protótipo de alta fidelidade | Nícalo | 0.4 |
 |18/03/2021| Adição dos protótipos do Hugo e Do Gustavo | Gustavo, Hugo, Nícalo | 0.5 |
 |19/03/2021| Adição de alguns ajustes na página | Gustavo | 0.6 |
+|25/03/2021| Adição do Wireframe Home | Hugo | 0.7 |
