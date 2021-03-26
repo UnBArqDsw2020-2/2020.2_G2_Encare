@@ -52,7 +52,10 @@ Em suma, a classe Estabilishment é a responsável por criar uma instância da c
 
 ## Especialista
 
-Este princípio determina quando devemos delegar a responsabilidade para um outro objeto que seja especialista naquele domínio.
+Este princípio determina quando devemos delegar a responsabilidade para um outro objeto que seja especialista naquele domínio.  
+
+A problemática envolvida está relacionada à necessidade de um princípio para a  atribuição de responsabilidade a objetos, onde escolhas são necessárias durante um projeto para a atribuição de responsabilidades a classes.  
+Como solução, atribui-se uma responsabilidade a uma classe que possui a informação necessária para cumpri-la, devendo-se deixar bem claro qual é essa responsabilidade.
 
 ### Aplicação no Projeto
 
@@ -65,6 +68,11 @@ A responsabilidade de guardar os dados dos horários de abertura e fechamento, a
 ## Controlador
 
  Este princípio atribui a responsabilidade por lidar com eventos do sistema a uma classe que não esteja relacionada a interface com o usuário.
+
+ Ele surge da problemática de quem deve ser o responsável por lidar com um evento que ocorre na interface de usuáro (UI).  
+ Para resolver isso, deve-se atribuir a responsabilidade de receber ou lidar com um evento do sistema a uma classe que representa todo o sistema, a um sub-sistema e a um cenário de caso de uso.     
+
+ É interessante também seguir alguns princípios para a elaboração desse modelo, como não conectar objetos da UI com objetos não pertecentes da UI e não aplicar métodos lógicos, como algum tipo de cálculo, aos métodos de um objeto da UI, a fim de modularizar o desenvolvimento das camadas de apresentação e negócio e minimmizar, na camada de negócio, as alterações nos requisitos da UI.
 
 ### Aplicação no Projeto
 
@@ -101,6 +109,7 @@ Este é um caso básico onde a classe FeedController apenas processa uma requisi
 |Wagner Martins| 24/03/21 | 0.1 | Criação do documento |
 |Wagner Martins| 24/03/21 | 0.2 | Adição de exemplos de aplicações no projeto para os GRASPs criador, especialista e controlador
 |Nícalo Ribeiro| 26/03/21 | 0.3 | Adição da definição de alguns conceitos
+|Nícalo Ribeiro| 26/03/21 | 0.4 | Adição da definição de controlador e complementação de especialista
 
 
 ## Referências
