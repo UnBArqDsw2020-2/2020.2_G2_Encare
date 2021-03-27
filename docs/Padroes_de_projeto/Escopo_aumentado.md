@@ -12,6 +12,7 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 ### Gustavo Nogueira
 ### Renato Britto
 ### João Luis Baraky
+![Esboco João Baraky](./img/esboco_joao_baraky.png)
 ## Aumento de escopo final:
 ## Conclusão:
 ## Versionamento:
