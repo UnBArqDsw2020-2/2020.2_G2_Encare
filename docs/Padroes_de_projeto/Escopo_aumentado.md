@@ -21,3 +21,4 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 |---|---|---|---|
 | João Pedro Carvalho | 23/03/2021 | Adicionando introdução e tópicos | 0.1 |
 | João Pedro Carvalho | 25/03/2021 | Adicionando esboço de escopo | 0.2 |
+| João Luis Baraky | 27/03/2021 | Adicionando esboço do aumento de escopo | 0.3 |
