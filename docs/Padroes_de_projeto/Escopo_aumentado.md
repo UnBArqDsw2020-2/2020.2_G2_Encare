@@ -1,4 +1,4 @@
-# Escopo aumentado
+# Escopo Aumentado
 
 ## Introdução: 
 
@@ -7,14 +7,22 @@ O projeto atual tem um escopo bastante reduzido e por isso se viu a necessidade 
 Assim busca-se adicionar vários pontos de vistas ao documento e também facilitar o brainstorm para a elaboração do documento final.
 
 ## Esboços de escopo:
+
 ### João Pedro 
 ![Esboco João Pedro](./img/Esboco_joao_pedro.png)
+
 ### Gustavo Nogueira
+![Esboco João Baraky](./img/esboco_gustavo_nogueira.png)
+
 ### Renato Britto
+
 ### João Luis Baraky
 ![Esboco João Baraky](./img/esboco_joao_baraky.png)
+
 ## Aumento de escopo final:
+
 ## Conclusão:
+
 ## Versionamento:
 
 | Nome | Data | Detalhes | Versão |
@@ -22,3 +30,4 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 | João Pedro Carvalho | 23/03/2021 | Adicionando introdução e tópicos | 0.1 |
 | João Pedro Carvalho | 25/03/2021 | Adicionando esboço de escopo | 0.2 |
 | João Luis Baraky | 27/03/2021 | Adicionando esboço do aumento de escopo | 0.3 |
+| Gustavo Nogueira | 28/03/2021 | Adicionando esboço do aumento de escopo | 0.4 |
