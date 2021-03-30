@@ -21,7 +21,12 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 
 ## Aumento de escopo final:
 Após uma reunião entre os integrantes do grupo, decidimos as características inspiridas pelos esboços acima que irá compor o escopo final. Resultando no seguinte diagrama de classes:
-![Escopo Aumentado](./img/escopo_aumentado.png)
+
+### Versão 1
+![Escopo Aumentado V1](./img/escopo_aumentado_v1.png)
+
+### Versão 2
+![Escopo Aumentado V2](./img/escopo_aumentado_v2.png)
 
 ## Conclusão:
 
@@ -34,3 +39,4 @@ Após uma reunião entre os integrantes do grupo, decidimos as características 
 | João Luis Baraky | 27/03/2021 | Adicionando esboço do aumento de escopo | 0.3 |
 | Gustavo Nogueira | 28/03/2021 | Adicionando esboço do aumento de escopo | 0.4 |
 | Todos | 29/03/2021 | Adiciona o escopo final resultante | 0.5 |
+| João Baraky | 30/03/2021 | Adiciona segunda versão do escopo final | 0.6 |
