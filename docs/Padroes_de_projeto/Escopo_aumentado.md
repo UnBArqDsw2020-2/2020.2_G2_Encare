@@ -14,6 +14,8 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 ### João Luis Baraky
 ![Esboco João Baraky](./img/esboco_joao_baraky.png)
 ## Aumento de escopo final:
+Após uma reunião entre os integrantes do grupo, decidimos as características inspiridas pelos esboços acima que irá compor o escopo final. Resultando no seguinte diagrama de classes:
+![Escopo Aumentado](./img/escopo_aumentado.png)
 ## Conclusão:
 ## Versionamento:
 
@@ -22,3 +24,4 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 | João Pedro Carvalho | 23/03/2021 | Adicionando introdução e tópicos | 0.1 |
 | João Pedro Carvalho | 25/03/2021 | Adicionando esboço de escopo | 0.2 |
 | João Luis Baraky | 27/03/2021 | Adicionando esboço do aumento de escopo | 0.3 |
+| Todos | 29/03/2021 | Adiciona o escopo final resultante | 0.4 |
