@@ -40,6 +40,10 @@ Seu funcionamento começa na classe *Director* que possui o método que chama o 
 * Aumenta a complexidade do código, ja que esse padrão requer a criação de múltiplas classes.
 * Requer que a classe Builder seja mutável.
 
+### 3.3. Aplicação no projeto: 
+
+Todas as classes do projeto não têm mais de 4 atributos que necessitam ser inicializados junto ao objeto, oq ue torna a criação da maioria das classes simples ao ponto de o padrão de projeto builder se tornar desisteressante. Há apenas uma classe que pode ser usada para aplicar o método Builder que é a *OpeningHours*, ja que os horários de abertura e fechamento estão em um formato específico e cada dia da semana tem um próprio funcionamento; atualmente a responsabilidade para contrução desse objeto é da própria classe *Opening Hours*.
+
 ## 4. Singleton
 
 ## 5. Multiton
