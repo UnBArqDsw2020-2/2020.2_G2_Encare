@@ -32,7 +32,7 @@ Após uma reunião entre os integrantes do grupo, decidimos as características 
 ![Escopo Aumentado V3](./img/escopo_aumentado_v3.png)
 
 ## Conclusão:
-
+Com isso, acreditamos que a adição das novas classes e features ao projeto agrega uma complexidade interessante e possibilitará uma aplicação completa dos GOFs e padrões emergentes. Além disso, chegamos a conclusão em equipe que o aumento de escopo resultante pode ser aplicado no projeto por completo sem muitas dificuldades.
 
 ## Versionamento:
 
@@ -43,5 +43,6 @@ Após uma reunião entre os integrantes do grupo, decidimos as características 
 | João Luis Baraky | 27/03/2021 | Adicionando esboço do aumento de escopo | 0.3 |
 | Gustavo Nogueira | 28/03/2021 | Adicionando esboço do aumento de escopo | 0.4 |
 | Todos | 29/03/2021 | Adiciona o escopo final resultante | 0.5 |
-| João Baraky | 30/03/2021 | Adiciona segunda versão do escopo final | 0.6 |
-| João Baraky | 31/03/2021 | Adiciona terceira versão do escopo final | 0.7 |
+| João Luis Baraky | 30/03/2021 | Adiciona segunda versão do escopo final | 0.6 |
+| João Luis Baraky | 31/03/2021 | Adiciona terceira versão do escopo final | 0.7 |
+| João Luis Baraky | 31/03/2021 | Adiciona conclusão do documento | 1.0 |
