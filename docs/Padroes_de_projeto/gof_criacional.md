@@ -53,7 +53,7 @@ Para isso é necessário a implementação de uma classe que irá ser a variáve
 ### 4.1. Vantagens:
 
 - Controla o acesso a essa instância.
-- Facilidade em permitir um maior número de instâncias ;
+- Facilidade em permitir um maior número de instâncias(Multiton);
 - Substitui variáveis globais.
 
 ### 4.2. Desvantagens:
@@ -69,23 +69,59 @@ Dentro da nossa modelagem, a principal classe que pode ser usada o padrão *sing
 
 ## 5. Multiton
 
-## 6. Object poll
+Esse padrão é apenas uma generalização do *Singleton* sendo que este autoriza apenas uma instância, enquanto o *Multiton* permite uma quantidade controlada de instâncias.
+
+### 5.1. Vantagens:
+
+- Controla o acesso a várias instâncias.
+- Substitui variáveis globais.
+
+### 5.2. Desvantagens: 
+
+- É mais difícil de testar, visto que várias partes do código alteram essa classe.
+- Viola o princípio de responsabilidade única
+- Requer tratamento especial em caso de concorrência.
+
+### 5.3. Aplicação no projeto:
+
+Assim como o *singleton* o escopo atual não permite o uso desse padrão de forma se tornar vantajoso ao sistema. Por outro lado, assim como o *singleton*, na ferramenta usada no ReactJS, que é o framework que será usado no frontend, há a aparição do padrão de projeto *singleton*/*multiton* no uso do *Context API*. 
+
+## 6. Object poll:
+
+Esse padrão permite uma boa economia de performace e sendo usado principalmente em casos em que o custo d0 instaciamento de uma classe é bem pesado. Seu fucionamento se baseia no armazenamento de classes que não estão sendo usadas e não destruindo-as podem ser usadas posteriormente. Um exemplo clássico de seu uso são de classes que precisam ser renderizadas em games; ao invés de destruir, a classe é armazenada para ser usada posteriormente, assim, o programa não precisa renderizar tudo novamente.
+
+### 6.1. Vantagens:
+
+- Alta economia de desempenho
+
+### 6.2. Desvantagens:
+
+- Uso de memória alto a depender da situação.
+
+### 6.3. Aplicação no projeto:
+
+O Object pool se mostra vantajoso quando quando existem classes que demandam tempo e processamento para serem instanciadas. Essa condição não se aplica ao projeto, visto que a implementação das atuais classes não são pesadas em questão de performance.
 
 ## 7. Abstract factory
 
-## 8. Conclusão:
-## 9. Referências:
+## 8. Prototype
+
+## 9. Conclusão:
+## 10. Referências:
 
 [1] - Design patterns: Elements of reusable object-oriented software
 [2] - https://www.geeksforgeeks.org/factory-method-python-design-patterns/ acesso em 31/03/2021 as 15:22
 [3] - https://www.geeksforgeeks.org/builder-method-python-design-patterns/ acesso em 31/03/2021 as 19:00
 [4] - https://www.geeksforgeeks.org/singleton-design-pattern/ acesso em 31/03/2021 as 21:00
 [5] - https://www.informit.com/articles/article.aspx?p=1404056 acesso em 31/03/2021 as 21:15
+[6] - https://en.wikipedia.org/wiki/Multiton_pattern acesso em 01/04/2021 as 17:20
+[7] - https://sourcemaking.com/design_patterns/object_pool acesso em 01/04/2021 as 17:38
 
-## 10. Versionamento:
+## 11. Versionamento:
 
 |Data|Nome|Detalhes|Versão|
 |----|---|---|---|
 | 31/03/2021 | João Pedro Carvalho | Adicionando factory methodo e iniciando o documento | 0.1 |
 | 31/03/2021 | João Pedro Carvalho | Adicionando builder  | 0.2 |
 | 31/03/2021 | João Pedro Carvalho | Adicionando singleton  | 0.3 |
+| 31/03/2021 | João Pedro Carvalho | Adicionando multiton e object pool  | 0.4 |
