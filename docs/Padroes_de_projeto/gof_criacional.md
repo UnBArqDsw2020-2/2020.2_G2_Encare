@@ -46,6 +46,27 @@ Todas as classes do projeto não têm mais de 4 atributos que necessitam ser ini
 
 ## 4. Singleton
 
+Garante que uma classe tenha apenas uma instância em todo o código e oferece um ponto de acesso global para essa classe. Em outras palavras, esse padrão é usada para quando precisa de uma classe de acesso global no código, garantindo apenas uma instância. 
+
+Para isso é necessário a implementação de uma classe que irá ser a variável global e em caso de multithreading irá controlar também o acesso, sobre risco de criar novas instâncias. 
+
+### 4.1. Vantagens:
+
+- Controla o acesso a essa instância.
+- Facilidade em permitir um maior número de instâncias ;
+- Substitui variáveis globais.
+
+### 4.2. Desvantagens:
+
+- É mais difícil de testar, visto que várias partes do código alteram essa classe.
+- Viola o princípio de responsabilidade única
+- Requer tratamento especial em caso de concorrência.
+- Em [5] O próprio autor fala que esse é o único padrão de projeto que ele retiraria em uma refatoração do livro.
+
+### 4.3. Aplicação no projeto:
+
+Dentro da nossa modelagem, a principal classe que pode ser usada o padrão *singleton* é são as classes que geram autenticação: *Costumer*, *Owner* e *Admin*. Como elas podem ser acessadas de várias parte do código, então são as favoritas para serem aplicadas os padrões de projeto.
+
 ## 5. Multiton
 
 ## 6. Object poll
@@ -58,6 +79,8 @@ Todas as classes do projeto não têm mais de 4 atributos que necessitam ser ini
 [1] - Design patterns: Elements of reusable object-oriented software
 [2] - https://www.geeksforgeeks.org/factory-method-python-design-patterns/ acesso em 31/03/2021 as 15:22
 [3] - https://www.geeksforgeeks.org/builder-method-python-design-patterns/ acesso em 31/03/2021 as 19:00
+[4] - https://www.geeksforgeeks.org/singleton-design-pattern/ acesso em 31/03/2021 as 21:00
+[5] - https://www.informit.com/articles/article.aspx?p=1404056 acesso em 31/03/2021 as 21:15
 
 ## 10. Versionamento:
 
@@ -65,3 +88,4 @@ Todas as classes do projeto não têm mais de 4 atributos que necessitam ser ini
 |----|---|---|---|
 | 31/03/2021 | João Pedro Carvalho | Adicionando factory methodo e iniciando o documento | 0.1 |
 | 31/03/2021 | João Pedro Carvalho | Adicionando builder  | 0.2 |
+| 31/03/2021 | João Pedro Carvalho | Adicionando singleton  | 0.3 |
