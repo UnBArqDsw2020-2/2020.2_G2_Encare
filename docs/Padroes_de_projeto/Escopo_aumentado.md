@@ -15,6 +15,7 @@ Assim busca-se adicionar vários pontos de vistas ao documento e também facilit
 ![Esboco João Baraky](./img/esboco_gustavo_nogueira.png)
 
 ### Renato Britto
+![Esboco Renato Britto](./img/esboco_renato_britto.png)
 
 ### João Luis Baraky
 ![Esboco João Baraky](./img/esboco_joao_baraky.png)
