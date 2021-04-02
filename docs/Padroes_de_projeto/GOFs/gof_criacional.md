@@ -104,9 +104,46 @@ O Object pool se mostra vantajoso quando quando existem classes que demandam tem
 
 ## 7. Abstract factory
 
+É um padrão que é usado no instanciamento de familias de objetos que possuem categorias em comum. É criada uma classe abstrata factory e para cada categoria é criada uma classe concreta implementando a factory abstrata. Cada classe concreta dessas é responsável pelo instanciamento de classes de uma mesma categoria, mas de familias diferentes.
+
+#### 7.1. Vantagens:
+
+- Aplicação do princípio Open/Closed Principle.
+- Aplicação do princípio da responsabilidade única.
+- Os produtos sao compatíveis entre si.
+
+#### 7.2. Desvantagens:
+
+- Adicoina bastante complexidade no código.
+
+#### 7.3. Aplicação no projeto:
+
+A modelagem do nosso projeto não possui o principal ponto do *abstract factory* que é fámilias de classes que podem ter categorias em comum. Como veremos a seguir, a nossa modelagem possui apenas uma família de classes, o que inviabiliza o uso da *abstract factory*.
+
 ## 8. Prototype
 
+Esse padrão cria um novo objeto a partir de uma cópia de um objeto ja existente. Isso evita muito processamento de instaciamento de classes, em caso de classes complexas. 
+
+#### 8.1. Vantagens: 
+
+- Oculta as classes concretas do código cliente.
+- Ajuda na criação de objetos caros/complexos
+- Evita a explosão de subclasses.
+
+#### 8.2. Desvantagens: 
+
+- Clonar objetos que tem referências a outros objetos pode ser complexo.
+
+#### 8.3. Aplicação no projeto:
+
+Esse padrão será aplicado no projeto na classe *Estabeliment*, pois é uma das classe smais complexas do projeto e esse padrão pode ajudar quando o usuário quer criar um novo estabelecimento a partir de um já existente, aproveitando a maior parte das informações. Pensando nisso é melhor usar um objeto existente e fazer uma cópia do que instanciar e inicializar do 0.
+
 ## 9. Conclusão:
+
+Aqui está a versão final da modelagem do projeto.
+
+![gof_criacional](docs/Padroes_de_projeto/GOFs/img/gof_criacional.png)
+
 ## 10. Referências:
 
 [1] - Design patterns: Elements of reusable object-oriented software
@@ -116,6 +153,7 @@ O Object pool se mostra vantajoso quando quando existem classes que demandam tem
 [5] - https://www.informit.com/articles/article.aspx?p=1404056 acesso em 31/03/2021 as 21:15
 [6] - https://en.wikipedia.org/wiki/Multiton_pattern acesso em 01/04/2021 as 17:20
 [7] - https://sourcemaking.com/design_patterns/object_pool acesso em 01/04/2021 as 17:38
+[8] - https://en.wikipedia.org/wiki/Object_pool_pattern acesso em 01/04/2021 as 17:50
 
 ## 11. Versionamento:
 
@@ -124,4 +162,5 @@ O Object pool se mostra vantajoso quando quando existem classes que demandam tem
 | 31/03/2021 | João Pedro Carvalho | Adicionando factory methodo e iniciando o documento | 0.1 |
 | 31/03/2021 | João Pedro Carvalho | Adicionando builder  | 0.2 |
 | 31/03/2021 | João Pedro Carvalho | Adicionando singleton  | 0.3 |
-| 31/03/2021 | João Pedro Carvalho | Adicionando multiton e object pool  | 0.4 |
+| 01/04/2021 | João Pedro Carvalho | Adicionando multiton e object pool  | 0.4 |
+| 01/04/2021 | João Pedro Carvalho | Adicionando abstract factory e prototype  | 0.5 |
