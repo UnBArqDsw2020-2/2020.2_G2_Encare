@@ -142,7 +142,7 @@ Esse padrão será aplicado no projeto na classe *Estabeliment*, pois é uma das
 
 Aqui está a versão final da modelagem do projeto.
 
-![gof_criacional](docs/Padroes_de_projeto/GOFs/img/gof_criacional.png)
+![gof_criacional](img/gof_criacional.png)
 
 ## 10. Referências:
 
