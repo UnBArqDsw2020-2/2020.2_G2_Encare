@@ -142,7 +142,11 @@ Esse padrão será aplicado no projeto na classe *Establishment*, pois é uma da
 
 Aqui está a versão final da modelagem do projeto:
 
-![gof_criacional](docs/Padroes_de_projeto/GOFs/img/gof_criacional.png)
+### Versão 1.0:
+![gof_criacional_v1](img/gof_criacional_v1.png)
+
+### Versão 2.0:
+![gof_criacional_v2](img/gof_criacional_v2.png)
 
 ## 10. Referências:
 
@@ -165,3 +169,4 @@ Aqui está a versão final da modelagem do projeto:
 | 01/04/2021 | João Pedro Carvalho | Adicionando multiton e object pool  | 0.4 |
 | 01/04/2021 | João Pedro Carvalho | Adicionando abstract factory e prototype  | 0.5 |
 | 02/04/2021 | João Luis Baraky | Corrige erros de ortografia | 0.6 |
+| 02/04/2021 | João Luis Baraky | Adiciona Factory Method à modelagem (v2) | 0.7 |
