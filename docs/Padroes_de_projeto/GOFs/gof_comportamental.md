@@ -78,43 +78,91 @@ O Iterator é utilizado quando se quer que o código seja capaz de percorrer dif
 - - -
 
 ## 5. Mediator
+O Mediator é um padrão de projeto comportamental que permite que você reduza as dependências caóticas entre objetos. O padrão restringe comunicações diretas entre objetos e os força a colaborar apenas através do objeto mediador.
+
+## Estrutura
+1. Componentes - são várias classes que contém alguma lógica de negócio. Cada componente tem uma referência a um mediador, declarada com o tipo de interface do mediador. O componente não está ciente da classe atual do mediador, então é possível reutilizar o componente em outros programas ao ligá-lo com um mediador diferente.
+2. Interface do Mediador - declara métodos de comunicação com os componentes, os quais geralmente incluem apenas um método de notificação. Os componentes podem passar qualquer contexto como argumentos desse método, incluindo seus próprios objetos, mas apenas de tal forma que nenhum acoplamento ocorra entre um componente destinatário e a classe remetente.
+3. Mediadores Concretos - encapsulam as relações entre vários componentes. Os mediadores concretos quase sempre mantém referências de todos os componentes os quais gerenciam e, algumas vezes, até gerenciam o ciclo de vida deles.
+4. Componentes não devem estar cientes de outros componentes - se algo importante acontece dentro ou para um componente, ele deve apenas notificar o mediador. Quando o mediador recebe a notificação, ele pode facilmente identificar o remetente, o que é suficiente para decidir que componente deve ser acionado em retorno. Da perspectiva de um componente, tudo parece como uma caixa preta. O remetente não sabe quem vai acabar lidando com o seu pedido, e o destinatário não sabe quem enviou o pedido em primeiro lugar.
 
 ### 5.1 Vantagens
+- Princípio de responsabilidade única. É possível extrair as comunicações entre vários componentes para um único lugar, tornando as de mais fácil entendimento e manutenção.
+- Princípio aberto/fechado. É possível introduzir novos mediadores sem ter que mudar os próprios componentes.
+- É possível reduzir o acoplamento entre os vários componentes de um programa.
+- É possível reutilizar componentes individuais mais facilmente.
 
 ### 5.2 Desvantagens
+- Com o tempo um mediador pode evoluir para um Objeto Deus. Na programação orientada a objetos, um Objeto Deus é um objeto que sabe demais ou faz demais. O objeto deus é um exemplo de um antipadrão em projetos de software.
 
 ### 5.3 Aplicação no Projeto
+-- A PRINCIPIO NO FILTRO --
 
 - - -
 
 ## 6. Memento
+O Memento é um padrão de projeto comportamental que permite que você salve e restaure o estado anterior de um objeto sem revelar os detalhes de sua implementação.
+O padrão Memento é usado quando se quer produzir retratos do estado de um objeto para ser capaz de restaurar um estado anterior do objeto.
+
+## Estrutura  
+1. Classe Originadora - pode produzir retratos de seu próprio estado, bem como restaurar seu estado de retratos quando necessário.
+2. Memento - é um objeto de valor que age como um retrato do estado da originadora. É uma prática comum fazer o memento imutável e passar os dados para ele apenas uma vez, através do construtor.
+3. Cuidadora - sabe não só “quando” e “por quê” capturar o estado da originadora, mas também quando o estado deve ser restaurado.
+4. Nessa implementação, a classe memento está aninhada dentro da originadora. Isso permite que a originadora acesse os campos e métodos do memento, mesmo que eles tenham sido declarados privados. Por outro lado, a cuidadora tem um acesso muito limitado aos campos do memento, que permite ela armazenar os mementos em uma pilha, mas não permite mexer com seu estado.
 
 ### 6.1 Vantagens
-
+- É possível produzir retratos do estado de um objeto sem violar seu encapsulamento.
+- É possível simplificar o código da originadora permitindo que a cuidadora mantenha o histórico do estado da originadora.
 ### 6.2 Desvantagens
-
+- A aplicação pode consumir muita RAM se os clientes criarem mementos com muita frequência.
+- Cuidadoras devem acompanhar o ciclo de vida da originadora para serem capazes de destruir mementos obsoletos.
+- A maioria das linguagens de programação dinâmicas, tais como PHP, Python, e JavaScript, não conseguem garantir que o estado dentro do memento permaneça intacto.
 ### 6.3 Aplicação no Projeto
+-- A PRINCIPIO SEM APLICAÇÃO -- 
 
 - - -
 
 ## 7. Observer
+O Observer é um padrão de projeto comportamental que permite que você defina um mecanismo de assinatura para notificar múltiplos objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando. Também pode ser conhecido como Observador, Assinante do evento, Event-Subscriber, Escutador, Listener.
+O padrão Observer pode ser usado quando mudanças no estado de um objeto podem precisar mudar outros objetos, e o atual conjunto de objetos é desconhecido de antemão ou muda dinamicamente.
+
+## Estrutura
+1. Publicadora - manda eventos de interesse para outros objetos. Esses eventos ocorrem quando a publicadora muda seu estado ou executa algum comportamento. As publicadoras contêm uma infraestrutura de inscrição que permite novos assinantes se juntar aos atuais assinantes ou deixar a lista.
+2. Quando um novo evento acontece, a publicadora percorre a lista de assinantes e chama o método de notificação declarado na interface do assinante em cada objeto assinante.
+3. Interface Assinante - declara a interface de notificação. Na maioria dos casos ela consiste de um único método atualizar. O método pode ter vários parâmetros que permite que a publicadora passe alguns detalhes do evento junto com a atualização.
+4. Assinantes Concretos - realizam algumas ações em resposta às notificações enviadas pela publicadora. Todas essas classes devem implementar a mesma interface para que a publicadora não fique acoplada à classes concretas.
+5. Geralmente, assinantes precisam de alguma informação contextual para lidar com a atualização corretamente. Por esse motivo, as publicadoras quase sempre passam algum dado de contexto como argumentos do método de notificação. A publicadora pode passar a si mesmo como um argumento, permitindo que o assinante recupere quaisquer dados diretamente.
+6. Cliente - cria a publicadora e os objetos assinantes separadamente e então registra os assinantes para as atualizações da publicadora.
 
 ### 7.1 Vantagens
+- Princípio aberto/fechado. É possível introduzir novas classes assinantes sem ter que mudar o código da publicadora (e vice versa se existe uma interface publicadora).
+- É possível estabelecer relações entre objetos durante a execução.
 
 ### 7.2 Desvantagens
-
+- Assinantes são notificados em ordem aleatória
+  
 ### 7.3 Aplicação no Projeto
-
+-- A CLASSE DO CHAT FAZ ISSO --
 - - -
 
 ## 8. State
+O State é um padrão de projeto comportamental que permite que um objeto altere seu comportamento quando seu estado interno muda. É como se o objeto mudasse de classe.
+O padrão State pode ser usado quando se tem um objeto que se comporta de maneira diferente dependendo do seu estado atual, quando o número de estados é enorme, e quando o código estado específico muda com frequência.
+
+## Estrutura
+1. Contexto - armazena uma referência a um dos objetos concretos de estado e delega a eles todos os trabalhos específicos de estado. O contexto se comunica com o objeto estado através da interface do estado. O contexto expõe um setter para passar a ele um novo objeto de estado.
+2. Interface do Estado - declara métodos específicos a estados. Esses métodos devem fazer sentido para todos os estados concretos porque você não quer alguns dos seus estados tendo métodos inúteis que nunca irão ser chamados.
+3. Estados Concretos - fornecem suas próprias implementações para os métodos específicos de estados. Objetos de estado podem armazenar referências retroativas para o objeto de contexto.Através dessa referência o estado pode buscar qualquer informação desejada do objeto contexto, assim como iniciar transições de estado.
+4. Ambos os estados de contexto e concretos podem configurar o próximo estado do contexto e realizar a atual transição de estado ao substituir o objeto estado ligado ao contexto.
 
 ### 8.1 Vantagens
-
+- Princípio de responsabilidade única. Organiza o código relacionado a estados particulares em classes separadas.
+- Princípio aberto/fechado. Introduz novos estados sem mudar classes de estado ou contexto existentes.
+- Simplifica o código de contexto ao eliminar condicionais de máquinas de estado pesadas
 ### 8.2 Desvantagens
-
+- Aplicar o padrão pode ser um exagero se a máquina de estado só tem alguns estados ou raramente muda eles.
 ### 8.3 Aplicação no Projeto
-
+-- A PRINCIPIO NENHUM -- 
 - - -
 
 ## 9. Strategy
@@ -167,3 +215,4 @@ O Iterator é utilizado quando se quer que o código seja capaz de percorrer dif
 |03/04/2021|Nícalo Ribeiro| Criação da estrutura base do documento| 0.1|
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Chain of Responsibility | 0.2 |
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Command e Iterator | 0.3 |
+|03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Mediator, Memento, Observer e State | 0.4 |
