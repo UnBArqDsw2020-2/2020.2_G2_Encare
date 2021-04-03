@@ -42,18 +42,18 @@ Seu funcionamento começa na classe *Director* que possui o método que chama o 
 
 ### 3.3. Aplicação no projeto: 
 
-Todas as classes do projeto não têm mais de 4 atributos que necessitam ser inicializados junto ao objeto, oq ue torna a criação da maioria das classes simples ao ponto de o padrão de projeto builder se tornar desisteressante. Há apenas uma classe que pode ser usada para aplicar o método Builder que é a *OpeningHours*, ja que os horários de abertura e fechamento estão em um formato específico e cada dia da semana tem um próprio funcionamento; atualmente a responsabilidade para contrução desse objeto é da própria classe *Opening Hours*.
+Todas as classes do projeto não têm mais de 4 atributos que necessitam ser inicializados junto ao objeto, oque torna a criação da maioria das classes simples ao ponto de o padrão de projeto builder se tornar desisteressante. Há apenas uma classe que pode ser usada para aplicar o método Builder que é a *OpeningHours*, ja que os horários de abertura e fechamento estão em um formato específico e cada dia da semana tem um próprio funcionamento; atualmente a responsabilidade para contrução desse objeto é da própria classe *Opening Hours*.
 
 ## 4. Singleton
 
 Garante que uma classe tenha apenas uma instância em todo o código e oferece um ponto de acesso global para essa classe. Em outras palavras, esse padrão é usada para quando precisa de uma classe de acesso global no código, garantindo apenas uma instância. 
 
-Para isso é necessário a implementação de uma classe que irá ser a variável global e em caso de multithreading irá controlar também o acesso, sobre risco de criar novas instâncias. 
+Para isso é necessário a implementação de uma classe que irá ser a variável global e em caso de multithreading irá controlar também o acesso, sob risco de criar novas instâncias. 
 
 ### 4.1. Vantagens:
 
 - Controla o acesso a essa instância.
-- Facilidade em permitir um maior número de instâncias(Multiton);
+- Facilidade em permitir um maior número de instâncias (Multiton);
 - Substitui variáveis globais.
 
 ### 4.2. Desvantagens:
@@ -88,11 +88,11 @@ Assim como o *singleton* o escopo atual não permite o uso desse padrão de form
 
 ## 6. Object poll:
 
-Esse padrão permite uma boa economia de performace e sendo usado principalmente em casos em que o custo d0 instaciamento de uma classe é bem pesado. Seu fucionamento se baseia no armazenamento de classes que não estão sendo usadas e não destruindo-as podem ser usadas posteriormente. Um exemplo clássico de seu uso são de classes que precisam ser renderizadas em games; ao invés de destruir, a classe é armazenada para ser usada posteriormente, assim, o programa não precisa renderizar tudo novamente.
+Esse padrão permite uma boa economia de performace e sendo usado principalmente em casos em que o custo do instaciamento de uma classe é bem pesado. Seu fucionamento se baseia no armazenamento de classes que não estão sendo usadas e não destruindo-as podem ser usadas posteriormente. Um exemplo clássico de seu uso são de classes que precisam ser renderizadas em games; ao invés de destruir, a classe é armazenada para ser usada posteriormente, assim, o programa não precisa renderizar tudo novamente.
 
 ### 6.1. Vantagens:
 
-- Alta economia de desempenho
+- Alta economia de desempenho.
 
 ### 6.2. Desvantagens:
 
@@ -104,7 +104,7 @@ O Object pool se mostra vantajoso quando quando existem classes que demandam tem
 
 ## 7. Abstract factory
 
-É um padrão que é usado no instanciamento de familias de objetos que possuem categorias em comum. É criada uma classe abstrata factory e para cada categoria é criada uma classe concreta implementando a factory abstrata. Cada classe concreta dessas é responsável pelo instanciamento de classes de uma mesma categoria, mas de familias diferentes.
+É um padrão que é usado no instanciamento de familias de objetos que possuem categorias em comum. É criada uma classe abstrata factory e para cada categoria é criada uma classe concreta implementando a factory abstrata. Cada classe concreta dessas é responsável pelo instanciamento de classes de uma mesma categoria, mas de famílias diferentes.
 
 #### 7.1. Vantagens:
 
@@ -114,15 +114,15 @@ O Object pool se mostra vantajoso quando quando existem classes que demandam tem
 
 #### 7.2. Desvantagens:
 
-- Adicoina bastante complexidade no código.
+- Adiciona bastante complexidade ao código.
 
 #### 7.3. Aplicação no projeto:
 
-A modelagem do nosso projeto não possui o principal ponto do *abstract factory* que é fámilias de classes que podem ter categorias em comum. Como veremos a seguir, a nossa modelagem possui apenas uma família de classes, o que inviabiliza o uso da *abstract factory*.
+A modelagem do nosso projeto não possui o principal ponto do *abstract factory* que é famílias de classes que podem ter categorias em comum. Como veremos a seguir, a nossa modelagem possui apenas uma família de classes, o que inviabiliza o uso da *abstract factory*.
 
 ## 8. Prototype
 
-Esse padrão cria um novo objeto a partir de uma cópia de um objeto ja existente. Isso evita muito processamento de instaciamento de classes, em caso de classes complexas. 
+Esse padrão cria um novo objeto a partir de uma cópia de um objeto já existente. Isso evita muito processamento de instaciamento de classes, em caso de classes complexas. 
 
 #### 8.1. Vantagens: 
 
@@ -136,13 +136,21 @@ Esse padrão cria um novo objeto a partir de uma cópia de um objeto ja existent
 
 #### 8.3. Aplicação no projeto:
 
-Esse padrão será aplicado no projeto na classe *Estabeliment*, pois é uma das classe smais complexas do projeto e esse padrão pode ajudar quando o usuário quer criar um novo estabelecimento a partir de um já existente, aproveitando a maior parte das informações. Pensando nisso é melhor usar um objeto existente e fazer uma cópia do que instanciar e inicializar do 0.
+Esse padrão será aplicado no projeto na classe *Establishment*, pois é uma das classes mais complexas do projeto e esse padrão pode ajudar quando o usuário quer criar um novo estabelecimento a partir de um já existente, aproveitando a maior parte das informações. Pensando nisso é melhor usar um objeto existente e fazer uma cópia do que instanciar e inicializar do zero.
 
 ## 9. Conclusão:
 
-Aqui está a versão final da modelagem do projeto.
+Aqui está a versão final da modelagem do projeto:
 
+<<<<<<< HEAD
 ![gof_criacional](img/gof_criacional.png)
+=======
+### Versão 1.0:
+![gof_criacional_v1](img/gof_criacional_v1.png)
+
+### Versão 2.0:
+![gof_criacional_v2](img/gof_criacional_v2.png)
+>>>>>>> 7074e9ff6dfce49cc2cc6782c77600a395c6cc94
 
 ## 10. Referências:
 
@@ -164,3 +172,5 @@ Aqui está a versão final da modelagem do projeto.
 | 31/03/2021 | João Pedro Carvalho | Adicionando singleton  | 0.3 |
 | 01/04/2021 | João Pedro Carvalho | Adicionando multiton e object pool  | 0.4 |
 | 01/04/2021 | João Pedro Carvalho | Adicionando abstract factory e prototype  | 0.5 |
+| 02/04/2021 | João Luis Baraky | Corrige erros de ortografia | 0.6 |
+| 02/04/2021 | João Luis Baraky | Adiciona Factory Method à modelagem (v2) | 0.7 |
