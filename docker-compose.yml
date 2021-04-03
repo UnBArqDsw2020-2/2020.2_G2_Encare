@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  postgresdb: 
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  back:
+    build: ./back
+    command: bash -c "
+      python manage.py makemigrations &&
+      python manage.py migrate &&
+      chmod +x scripts/create_superuser.sh &&
+      ./scripts/create_superuser.sh &&
+      python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./back:/back
+    ports:
+      - 8000:8000
+    depends_on:
+      - postgresdb
+
+  front:
+    build: ./front
+    command: npm run start
+    volumes:
+      - ./front:/front
+    ports:
+      - 3000:3000
+    depends_on:
+      - back
+
+  # NOTA: isso aqui é para uso exclusivo do deploy
+  # nginx:
+  #   build: ./nginx
+  #   ports:
+  #     - 80:80
+  #   depends_on:
+  #     - front

@@ -1,1 +1,18 @@
 /site
+*.pyc
+__pycache__/
+
+public/
+.env
+.venv/
+*env/
+*venv/
+
+.git/
+
+# pycharm
+.idea/
+
+# coverage result
+.coverage
+/coverage/
