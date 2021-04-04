@@ -98,7 +98,7 @@ contextos do que apenas o que foi citado. Por exemplo, o feature da linguagem
 python chamado de "decorator" foi inspirado na dinamicidade que o design
 pattern decorator provê. Um decorator do python **não** é um padrão de projeto,
 mas foi inspirado no conceito. Este feature da linguagem pode vir a ser usado
-no Backend do projeto, 
+no Backend do projeto.
 
 ## 6. Facade
 #### 6.1. Vantagens
@@ -122,3 +122,5 @@ no Backend do projeto,
 
 |Data|Nome|Detalhes|Versão|
 |---|----|---|---|
+| 4/4/2021 | João Pedro Carvalho | Adiciona padrão Adapter | 0.1 |
+| 4/4/2021 | Renato Britto Araujo | Adiciona padrão Decorator | 0.2 |
