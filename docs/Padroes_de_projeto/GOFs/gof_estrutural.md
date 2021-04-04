@@ -43,10 +43,63 @@ O próprio DRF aplica em algumas classes o padrão de projeto *Adapter* como pod
 #### 4.1. Vantagens
 #### 4.2. Desvantagens
 #### 4.3. Aplicação no projeto.
+
 ## 5. Decorator
+
+Decorators se tratam de classes que permitem a adição de funcionalidade sob
+uma outra classe base em tempo de execução. Isto é feito a partir da composição 
+de objetos do mesmo tipo ao invés da criação de uma cadeia de heranças e uma série
+de estruturas condicionais. Este padrão permite que novas 
+responsabilidades sejam atribuídas sem, necessariamente, atribuí-las ao objeto pesado.
+
+Metaforicamente, decorators atribuem uma lista de responsabilidades dinâmicamente para
+a classe base alvo.
+
 #### 5.1. Vantagens
+
+- Permite a adição e remoção de funcionalidades em tempo de execução.
+- Evita heranças quando não existe uma grande necessidade para herança. 
+- É possível separar o estado interno de cada uma das funcionalidades, cada qual com seu próprio conjunto de regras e propriedades, sem que elas interfiram umas nas outras, sem alongar a classe original e sem herança.
+
 #### 5.2. Desvantagens
+
+- É possível argumentar que, em certos contextos, decorators apresentam problemas semelhantes aos causados por herança múltipla - [problema do diamante](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem). Neste sentido, se usados sem cuidado, podem causar uma refatoração geral das funcionalidades envolvidas.
+- Caso muitas funcionalidades sejam adicionadas por meio de decorators, existe o risco de interferências entre si. Pelo fato de decorators separarem funcionalidades, fica mais difícil de depurar qual é a interação de dois ou mais decorators que causam o problema. Neste contexto, classes herdadadas seriam mais fáceis de serem consertadas.
+
 #### 5.3. Aplicação no projeto.
+
+Embora a arquitetura do projeto Encare não seja complexa o suficiente para se
+considerar a necessidade de adicionar um decotarator no seu *stricto senso*, 
+seu uso poderia ser feito considerando em um contexto onde cada estabelecimento
+tenha um comportamento diferente quanto ao seu tipo:
+
+```python
+class Estabelecimento: ...
+
+class BarbeariaDecorator(Estabelecimento: ...
+class CabeleireiroDecorator(Estabelecimento): ...
+
+def estabelecimento_factory(args):
+    """
+    Cria um novo estabelecimento a partir de keywords
+    """
+
+    estabelecimento = Estabelecimento()
+    if 'cabeleireiro' in args:
+        estabelecimento = CabeleireiroDecorator(estabelecimento)
+    if 'barbearia' in args:
+        estabelecimento = BarbeariaDecorator(estabelecimento)
+
+    return estabelecimento
+```
+
+O conceito de decorators se provou tão útil que foi abstraído para mais
+contextos do que apenas o que foi citado. Por exemplo, o feature da linguagem 
+python chamado de "decorator" foi inspirado na dinamicidade que o design
+pattern decorator provê. Um decorator do python **não** é um padrão de projeto,
+mas foi inspirado no conceito. Este feature da linguagem pode vir a ser usado
+no Backend do projeto, 
+
 ## 6. Facade
 #### 6.1. Vantagens
 #### 6.2. Desvantagens
