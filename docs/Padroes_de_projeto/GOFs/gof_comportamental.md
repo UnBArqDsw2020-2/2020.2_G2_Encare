@@ -166,33 +166,74 @@ O padrão State pode ser usado quando se tem um objeto que se comporta de maneir
 - - -
 
 ## 9. Strategy
+O Strategy é um padrão de projeto comportamental que permite que você defina uma família de algoritmos, coloque-os em classes separadas, e faça os objetos deles intercambiáveis. O padrão Strategy sugere que se pegue uma classe que faz algo específico em diversas maneiras diferentes e extraia todos esses algoritmos para classes separadas chamadas estratégias.
+Pode ser utilizado quando se tem muitas classes parecidas que somente diferem na forma que elas executam algum comportamento.
+
+## Estrutura
+1. Contexto - mantém uma referência para uma das estratégias concretas e se comunica com esse objeto através da interface da estratégia.
+2. Interface Estratégia - é comum à todas as estratégias concretas. Ela declara um método que o contexto usa para executar uma estratégia.
+3. Estratégias Concretas - implementam diferentes variações de um algoritmo que o contexto usa.
+4. O contexto chama o método de execução no objeto estratégia ligado cada vez que ele precisa rodar um algoritmo. O contexto não sabe qual tipo de estratégia ele está trabalhando ou como o algoritmo é executado.
+5. Client - cria um objeto estratégia específico e passa ele para o contexto. O contexto expõe um setter que permite o cliente mudar a estratégia associada com contexto durante a execução.
 
 ### 9.1 Vantagens
+- É possível trocar algoritmos usados dentro de um objeto durante a execução.
+- É possível isolar os detalhes de implementação de um algoritmo do código que usa ele.
+- É possível substituir a herança por composição.
+- Princípio aberto/fechado. É possível introduzir novas estratégias sem mudar o contexto.
 
 ### 9.2 Desvantagens
-
+- Se existe só tem um par de algoritmos e eles raramente mudam, não há motivo real para deixar o programa mais complicado com novas classes e interfaces que vêm junto com o padrão.
+- Os Clientes devem estar cientes das diferenças entre as estratégias para serem capazes de selecionar a adequada.
+- Muitas linguagens de programação modernas tem suporte do tipo funcional que permite que implemente diferentes versões de um algoritmo dentro de um conjunto de funções anônimas. Então é possível usar essas funções exatamente como se estivesse usando objetos estratégia, mas sem inchar seu código com classes e interfaces adicionais.
+  
 ### 9.3 Aplicação no Projeto
-
+-- NA PARTE DE 'USER' --
 - - -
 
 ## 10. Template Method
+Também conhecido como Método padrão, é um padrão de projeto comportamental que define o esqueleto de um algoritmo na superclasse mas deixa as subclasses sobrescreverem etapas específicas do algoritmo sem modificar sua estrutura.
+Pode ser utilizade quando se tem várias classes que contém algoritmos quase idênticos com algumas diferenças menores. Como resultado, é possível querer modificar todas as classes quando o algoritmo muda.
+
+## Estrutura
+1. Classe Abstrata - declara métodos que agem como etapas de um algoritmo, bem como o próprio método padrão que chama esses métodos em uma ordem específica. Os passos podem ser declarados como abstratos ou ter alguma implementação padrão.
+2. Classes Concretas - podem sobrescrever todas as etapas, mas não o próprio método padrão.
 
 ### 10.1 Vantagens
+- É possível deixar clientes sobrescrever apenas certas partes de um algoritmo grande, tornando-os menos afetados por mudanças que acontece por outras partes do algoritmo.
+- É possível elevar o código duplicado para uma superclasse.
 
 ### 10.2 Desvantagens
-
+- Alguns clientes podem ser limitados ao fornecer o esqueleto de um algoritmo.
+- Implementações do padrão Template Method tendem a ser mais difíceis de se manter quanto mais etapas eles tiverem.
 ### 10.3 Aplicação no Projeto
+-- A PRINCIPIO NAO FOI IDENTIFICADO --
 
 - - -
 
 ## 11. Visitor
+O Visitor é um padrão de projeto comportamental que permite que você separe algoritmos dos objetos nos quais eles operam. O padrão Visitor sugere que você coloque o novo comportamento em uma classe separada chamada visitante, ao invés de tentar integrá-lo em classes já existentes.
+É possível utilizar o Visitor quando se quer fazer uma operação em todos os elementos de uma estrutura de objetos complexa.
+
+## Estrutura
+1. Interface Visitante - declara um conjunto de métodos visitantes que podem receber elementos concretos de uma estrutura de objetos como argumentos. Esses métodos podem ter os mesmos nomes se o programa é escrito em uma linguagem que suporta sobrecarregamento, mas o tipo dos parâmetros devem ser diferentes.
+2. Visitante Concreto - implementa diversas versões do mesmo comportamento, feitos sob medida para diferentes elementos concretos de classes.
+3. A interface Elemento - declara um método para “aceitar” visitantes. Esse método deve ter um parâmetro declarado com o tipo da interface do visitante.
+4. Elemento Concreto - deve implementar o método de aceitação. O propósito desse método é redirecionar a chamada para o método visitante apropriado que corresponde com a atual classe elemento. Esteja atento que mesmo se uma classe elemento base implemente esse método, todas as subclasses deve ainda sobrescrever esse método em suas próprias classes e chamar o método apropriado no objeto visitante.
+5. Cliente - geralmente representa uma coleção de outros objetos complexos. Geralmente, os clientes não estão cientes de todos as classes elemento concretas porque eles trabalham com objetos daquele coleção através de uma interface abstrata.
 
 ### 11.1 Vantagens
-
+- Princípio aberto/fechado. É possível introduzir um novo comportamento que pode funcionar com objetos de diferentes classes sem mudar essas classes.
+- Princípio de responsabilidade única. É possível mover múltiplas versões do mesmo comportamento para dentro da mesma classe.
+- Um objeto visitante pode acumular algumas informações úteis enquanto trabalha com vários objetos. Isso pode ser interessante quando se quer percorrer algum objeto de estrutura complexa e aplicar o visitante para cada objeto da estrutura.
+  
 ### 11.2 Desvantagens
+- É necessário atualizar todos os visitantes a cada vez que a classe é adicionada ou removida da hierarquia de elementos.
+- Visitantes podem não ter seu acesso permitido para campos e métodos privados dos elementos que eles deveriam estar trabalhando.
 
 ### 11.3 Aplicação no Projeto
 
+-- A PRINCIPIO NÃO HÁ --
 - - -
 
 ## 12. Conclusão
@@ -216,3 +257,4 @@ O padrão State pode ser usado quando se tem um objeto que se comporta de maneir
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Chain of Responsibility | 0.2 |
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Command e Iterator | 0.3 |
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Mediator, Memento, Observer e State | 0.4 |
+|03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Strategy, Template Method e Visitor | 0.5 |
