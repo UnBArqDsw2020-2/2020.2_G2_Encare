@@ -101,5 +101,5 @@ Na reunião de review, os membros da equipe colocaram alguns pontos de destaque 
 | Data | Nome | Detalhes | Versão |
 |-----|-------|---------|---------|
 | 01/03/2021 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
-| 03/03/2021 | João Pedro Silva de Carvalho | Adicionando reunião 02/03 | 0.3 |
-| 09/03/2021 | Nícalo Ribeiro | Revisão e formatacao | 0.6 |
+| 03/03/2021 | João Pedro Silva de Carvalho | Adicionando reunião 02/03 | 0.2 |
+| 09/03/2021 | Nícalo Ribeiro | Revisão e formatacao | 1.0 |
