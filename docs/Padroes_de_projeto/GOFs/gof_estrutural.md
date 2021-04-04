@@ -1,5 +1,10 @@
 # GOFs Estruturais
 ## 1. Introdução
+
+Seguindo com os padrões de projeto GOFs temos os estruturais. Esses padrões focam em como classes e objetos se compõem para formar estruturas complexas. 
+
+Sendo assim vamos apresentar os principais padrões, suas vantagens e desvantagens e como eles podem ou não ser aplicados no projeto.
+
 ## 2. Adapter
 #### 2.1. Vantagens
 #### 2.2. Desvantagens
