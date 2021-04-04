@@ -151,14 +151,14 @@ Aqui está a versão final da modelagem do projeto:
 
 ## 10. Referências:
 
-[1] - Design patterns: Elements of reusable object-oriented software
-[2] - https://www.geeksforgeeks.org/factory-method-python-design-patterns/ acesso em 31/03/2021 as 15:22
-[3] - https://www.geeksforgeeks.org/builder-method-python-design-patterns/ acesso em 31/03/2021 as 19:00
-[4] - https://www.geeksforgeeks.org/singleton-design-pattern/ acesso em 31/03/2021 as 21:00
-[5] - https://www.informit.com/articles/article.aspx?p=1404056 acesso em 31/03/2021 as 21:15
-[6] - https://en.wikipedia.org/wiki/Multiton_pattern acesso em 01/04/2021 as 17:20
-[7] - https://sourcemaking.com/design_patterns/object_pool acesso em 01/04/2021 as 17:38
-[8] - https://en.wikipedia.org/wiki/Object_pool_pattern acesso em 01/04/2021 as 17:50
+[1] - GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Design Patterns: Elements of Reusable Object-Oriented Software. Indianapolis: [s. n.], 1994.
+[2] - FACTORY method: Python Design Patterns. Disponível em: https://www.geeksforgeeks.org/factory-method-python-design-patterns/. Acesso em: 31 mar. 2021.
+[3] - Builder method: Python design patterns. Disponível em: https://www.geeksforgeeks.org/builder-method-python-design-patterns/. Acesso em 31 mar. 2021.
+[4] - Singleton design pattern: Implementation. Disponível em: https://www.geeksforgeeks.org/singleton-design-pattern/. Acesso em: 31 mar. 2021.
+[5] - Design Patterns 15 Years Later: An Interview with Erich Gamma, Richard Helm, and Ralph Johnson. Disponível em: https://www.informit.com/articles/article.aspx?p=1404056. Acesso em 31 mar. 2021.
+[6] - Multiton pattern. Disponível em: https://en.wikipedia.org/wiki/Multiton_pattern. Acesso em 1 abr. 2021.
+[7] - Object pool: Design pattern. Disponível em: https://sourcemaking.com/design_patterns/object_pool. Acesso em 1 abr. 2021.
+[8] - Obejct pool pattern. Disponível em: https://en.wikipedia.org/wiki/Object_pool_pattern. Acesso em 1 abr.2021.
 
 ## 11. Versionamento:
 
