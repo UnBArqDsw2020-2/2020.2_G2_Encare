@@ -9,6 +9,8 @@ A seguir iremos apresentar os principais padrões criacionais e como eles se apl
 
 O *factory method* (método de fábrica) consiste no instanciamento de um produto concreto que usa uma interface, por exemplo, uma aplicação que requer um objeto com uma interface específica para realizar as tarefas. 
 
+Em termos práticos é uma criação de uma classe que será fábrica de um determinando produto. Exixtem duas implementações encontrada: a primeira é uma fábrica concreta para todos as classes que implementam uma interface e a segunda é uma fábrica para cada produto que implementa a interface. Enquanto a primeira seja mais simples de ser implementada, apenas a segunda atende o principio do open/close.
+
 #### 2.1. Vantagens:
 
 * Poder facilmente adicionar mais produtos concretos que utilizam a mesma interface.
