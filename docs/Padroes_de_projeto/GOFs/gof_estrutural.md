@@ -8,10 +8,12 @@ Sendo assim vamos apresentar os principais padrões, suas vantagens e desvantage
 #### 1.1. Siglas e acrônimos:
 
 |Termo|Representação|
+|---|---|
 |GOF| Gang of Four (em referência aos 4 autores do livro em [1])|
 |SRP| Single Responsibility Principle|
 |OCP| Open Close Principle|
-|DRF|Django REST Framework|
+|DRF| Django REST Framework|
+|SO| Sistema operacional|
 
 ## 2. Adapter
 
@@ -35,10 +37,30 @@ Metaforicamente, o adapter é um adptador de tomada que permite que um plug se c
 
 O próprio DRF aplica em algumas classes o padrão de projeto *Adapter* como podemos ver [aqui](https://davenathanaeld.medium.com/design-pattern-django-rest-framework-1e8c17946bce). Para o projeto, as classes entre si, não há problemas de compatibilidade; por outro lado, a adapter pode ser usada para conversar com o banco de dados e fazer as devidas requisições. 
 
+Outro ponto interessante para o uso de *adapteres* é em relação as imagens que são recebidas por meio de requests em formato de bytes e tratadas no código como uma classe picture.
+
 ## 3. Bridge
+
+O *Bridge* tem a intenção de desacoplar a abstração da sua implementação, de modo que as duas possam variar e evoluir independentemente. Outra utilização é separar uma classe grande ou um conjunto de classes intimidamente ligadas em duas hierarquias.
+
+Segundo o livro Design Patterns [1], o padrão Bridge está sendo descrito como "Desacoplar a **abstração** da sua **implementação** então ambas podem variar independentemente.". Esses dois termos são chaves para o entendimento do padrão. Abstração é uma camada de controle de alto nível que não realiza o trabalho por si só e sim delega para uma camada de implementação. 
+
+Um bom exemplo sobre abstração e implementação é a relação entre a GUI e as APIs de um SO. A GUI (asbtração) apenas transfere as ações do usuário para que a API (implementação) realize o trabalho.
+
 #### 3.1. Vantagens
+
+- Desacopla o código da abstração do código da implementação (SRP)
+- Insere o OCP para novas abstrações/implementações para o código existente.
+- Tem as mesmas vantagens do Adapter.
+
 #### 3.2. Desvantagens
+
+- Aumenta a complexidade do projeto quando aplicada em locais inapropriados.
+
 #### 3.3. Aplicação no projeto.
+
+Aplicar o Bridge no projeto irá aumentar a complexidade sem ter vantagens significativas, dado que poucos pontos do projeto tem essa relação abstração-implementação.
+
 ## 4. Composite
 #### 4.1. Vantagens
 #### 4.2. Desvantagens
@@ -64,8 +86,10 @@ O próprio DRF aplica em algumas classes o padrão de projeto *Adapter* como pod
 
 [1] - GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Design Patterns: Elements of Reusable Object-Oriented Software. Indianapolis: [s. n.], 1994.
 [2] - Design Pattern: Django REST Framework. Disponível em: https://davenathanaeld.medium.com/design-pattern-django-rest-framework-1e8c17946bce. Acesso em 4 abr. 2021.
+[3] - Bridge. Disponível em: https://refactoring.guru/pt-br/design-patterns/bridge. Acesso em 05/04/2021.
 
 ## 11. Versionamento.
 
 |Data|Nome|Detalhes|Versão|
 |---|----|---|---|
+|04/01/2021| João Pedro Carvalho| Adicionando adapter e o documento |0.1|
