@@ -14,6 +14,7 @@ Sendo assim vamos apresentar os principais padrões, suas vantagens e desvantage
 |OCP| Open Close Principle|
 |DRF| Django REST Framework|
 |SO| Sistema operacional|
+|ISP|Interface segregation principle|
 
 ## 2. Adapter
 
@@ -62,9 +63,25 @@ Um bom exemplo sobre abstração e implementação é a relação entre a GUI e 
 Aplicar o Bridge no projeto irá aumentar a complexidade sem ter vantagens significativas, dado que poucos pontos do projeto tem essa relação abstração-implementação.
 
 ## 4. Composite
+
+Composite é um padrão que permite que componha objetos em estruturas de árvores e então trabalhar com essas estruturas como se ela fosse objetos individuais. Esse padrão só faz sentido se a estrutura central pode ser representada como uma árvore. 
+
+Simplificando, a *Composite* pode ser descrita como uma classe que represente toda a estrutura de árvore. Um bom exemplo para ilustrar é quando temos uma compra e a compra tem caixas que podem guardar tanto caixas quanto produtos. Essa situação pode gerar uma árvore com os produtos sendo as folhas e as caixas sendo os demais vértices. Calcular o preço nessa estrutura pode ser uma tarefa árdua e nesse caso o *Composite* se torna bastante vantajoso de ser aplicado no código.
+
 #### 4.1. Vantagens
+
+- Facilidae para criar objetos complexos por composição.
+- Facilidade para gerar uma hierarquia de objetos.
+- Facilidade de usar polimorfismo e recursão.
+- Aplicação do OCP.
+
 #### 4.2. Desvantagens
+
+- Dependendo da estrutura pode quebrar o ISP em estruturas folhas que podem não usar alguns de seus métodos.
+
 #### 4.3. Aplicação no projeto.
+
+Uma possível aplicação é com relação a estrutura englobada pela classe owner, estabeliciment e suas filhas. Essa estrutura se assemelha a uma árvore, entretanto, possui várias funções distintas, sendo assim, aplicar esse padrão nesse caso acima fere o ISP.
 
 ## 5. Decorator
 
@@ -139,7 +156,8 @@ no Backend do projeto.
 
 [1] - GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Design Patterns: Elements of Reusable Object-Oriented Software. Indianapolis: [s. n.], 1994.
 [2] - Design Pattern: Django REST Framework. Disponível em: https://davenathanaeld.medium.com/design-pattern-django-rest-framework-1e8c17946bce. Acesso em 4 abr. 2021.
-[3] - Bridge. Disponível em: https://refactoring.guru/pt-br/design-patterns/bridge. Acesso em 05/04/2021.
+[3] - Bridge. Disponível em: https://refactoring.guru/pt-br/design-patterns/bridge. Acesso em 5 abr. 2021.
+[4] - Composite. Disponível em: https://refactoring.guru/pt-br/design-patterns/composite. acesso em 5 abr. 2021.
 
 ## 11. Versionamento.
 
@@ -147,4 +165,5 @@ no Backend do projeto.
 |---|----|---|---|
 | 4/4/2021 | João Pedro Carvalho | Adiciona padrão Adapter | 0.1 |
 | 4/4/2021 | Renato Britto Araujo | Adiciona padrão Decorator | 0.2 |
-| 4/4/2021 | Renato Britto Araujo | Adiciona padrão Bridge | 0.2 |
+| 4/4/2021 | João Pedro Carvalho| Adiciona padrão Bridge | 0.3 |
+| 5/4/2021 | João Pedro Carvalho| Adiciona padrão Composite | 0.4 |
