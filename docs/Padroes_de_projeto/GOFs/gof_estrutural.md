@@ -160,9 +160,31 @@ Esse padrão promove uma interface unificada para um conjunto de interfaces em u
 É um interessante padrão de simples implementação. O principal caso que poderá ser usada no projeto é para o acesso a APIs de cálculo de distâncias. Outro ponto que pode ser criado, são para os endpoints do backend para consumo do front. 
 
 ## 7. Flyweight
+
+Esse padrão de projeto tem como intenção usar compatilhamento para suportar um grande número de objetos de baixa granularidade. Usado quando existem uma grande quantidade de objetos semelhantes e a partir desse ponto é dividido essa classe entre um objeto que é repetido com mais frequência com um que é mais único, podendo assim existir o compartilhamento e melhorando questões de desempenho. 
+
+É um padrão de otimização que visa principalmente economizar memória RAM diminuindo o número de objetos. Deve ser usado somente se a aplicação estiver com alto consumo de RAM.
+
+No livro Design pattern [1], os autores listam uma série de fatores para o uso do *flyweight*:
+
+- A aplicação usa uma grande quantidade de objetos.
+- Os custos de armazenamento são altos (memória e tempo de processamento).
+- A maioria dos estados dos objetos podem ser compartilhados.
+- Muitos objetos podem ser substituidos por poucos objetos compatilhados.
+- A aplicaçaõ nãi depende da identidade dos objetos.
+
 #### 7.1. Vantagens
+
+- Pode economizar RAM.
+
 #### 7.2. Desvantagens
+
+- Muito complexo em nível de código.
+
 #### 7.3. Aplicação no projeto.
+
+Esse padrão é usado em uma situação bem específica e possui várias condições que precisam ser atendidas para que seja vantasojo ou mesmo seja possível aplicar no projeto. No caso do projeto Encare, a quantidade de objetos não é grande em nenhum dos casos e não pode ser notado nenhum consumo excessivo de memória nesse estágio do desenvolvimento (modelagem), portanto é inviário o uso desse padrão de projeto.
+
 ## 8. Proxy
 #### 8.1. Vantagens
 #### 8.2. Desvantagens
@@ -184,3 +206,4 @@ Esse padrão promove uma interface unificada para um conjunto de interfaces em u
 | 4/4/2021 | João Pedro Carvalho| Adiciona padrão Bridge | 0.3 |
 | 5/4/2021 | João Pedro Carvalho| Adiciona padrão Composite | 0.4 |
 | 5/4/2021 | João Pedro Carvalho| Adiciona padrão Facade | 0.5 |
+| 6/4/2021 | João Pedro Carvalho| Adiciona padrão Flyweight | 0.6 |
