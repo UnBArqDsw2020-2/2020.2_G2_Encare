@@ -186,9 +186,25 @@ No livro Design pattern [1], os autores listam uma série de fatores para o uso 
 Esse padrão é usado em uma situação bem específica e possui várias condições que precisam ser atendidas para que seja vantasojo ou mesmo seja possível aplicar no projeto. No caso do projeto Encare, a quantidade de objetos não é grande em nenhum dos casos e não pode ser notado nenhum consumo excessivo de memória nesse estágio do desenvolvimento (modelagem), portanto é inviário o uso desse padrão de projeto.
 
 ## 8. Proxy
+
+De acordo com o Design Pattern[1], esse padrão tem como intenção fornecer um substituo ou um marcador de localização para outro objeto com a finalidade de controlar o seu acesso. Em outras palavras o proxy funciona como um intermediador entre o código cliente e o objeto que é necessitado. Tem uma estrutra muito similar aos padrões *Composite* e *Decorator*. 
+
+O *Proxy* controla todo o fluxo de informações entre o código cliente e o objeto real, podendo escolher como e quando repassar as informações inclusive. Além disso ele tem muitas variações como: *proxy* virtual, *proxy* remoto, *proxy* de proteção, entre outros.
+
 #### 8.1. Vantagens
+
+- O código cliente não saberá se esta usando ou não o Proxy.
+- Você pode adicionar novos Proxies sem alterar o código testado (OCP)
+- O proxy funciona mesmo se o obejto real não estiver operacional ou pronto para uso.
+
 #### 8.2. Desvantagens
+
+- Aumenta a complexidade do sistema.
+
 #### 8.3. Aplicação no projeto.
+
+É um padrão muito versátil e pode ser utilizado em vários lugares do código...
+
 ## 9. Conclusão
 ## 10. Referências
 
@@ -207,3 +223,4 @@ Esse padrão é usado em uma situação bem específica e possui várias condiç
 | 5/4/2021 | João Pedro Carvalho| Adiciona padrão Composite | 0.4 |
 | 5/4/2021 | João Pedro Carvalho| Adiciona padrão Facade | 0.5 |
 | 6/4/2021 | João Pedro Carvalho| Adiciona padrão Flyweight | 0.6 |
+| 6/4/2021 | João Pedro Carvalho| Adiciona padrão Proxy | 0.7 |
