@@ -140,9 +140,25 @@ mas foi inspirado no conceito. Este feature da linguagem pode vir a ser usado
 no Backend do projeto.
 
 ## 6. Facade
+
+Esse padrão promove uma interface unificada para um conjunto de interfaces em um sub sistema. *Facade* define uma interface de maior nível facilitando assim o uso do sistema. 
+
+É importante ressaltar que o objetivo não é o desacoplamento e sim facilitar o uso do sistema por parte do código cliente. Outro ponto importe é com relação a classes que tem muitas responsabilidades; o uso excessivo desse padrão concentrado em poucas clases *Facade* pode quebrar o SRP e também o ISP, pois muitas funções podem torna a classe de propósito geral. Por mais que seja bem simples o seu uso, esse padrão requer um pouco de atenção em sua aplicação.
+
 #### 6.1. Vantagens
+
+- Isola o código complexo do código cliente.
+- Facilita o uso do sistema 
+- Cria pontos de entrada para camadas da aplicação e serviços de terceiros.
+
 #### 6.2. Desvantagens
+
+- O ISP e o RSP pode ser facilmente quebrados.
+
 #### 6.3. Aplicação no projeto.
+
+É um interessante padrão de simples implementação. O principal caso que poderá ser usada no projeto é para o acesso a APIs de cálculo de distâncias. Outro ponto que pode ser criado, são para os endpoints do backend para consumo do front. 
+
 ## 7. Flyweight
 #### 7.1. Vantagens
 #### 7.2. Desvantagens
@@ -167,3 +183,4 @@ no Backend do projeto.
 | 4/4/2021 | Renato Britto Araujo | Adiciona padrão Decorator | 0.2 |
 | 4/4/2021 | João Pedro Carvalho| Adiciona padrão Bridge | 0.3 |
 | 5/4/2021 | João Pedro Carvalho| Adiciona padrão Composite | 0.4 |
+| 5/4/2021 | João Pedro Carvalho| Adiciona padrão Facade | 0.5 |
