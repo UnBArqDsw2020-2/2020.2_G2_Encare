@@ -24,7 +24,14 @@ Para chegar à primeira versão do protótipo de alta fidelidade, os membros do 
 
 ### Autor: Hugo
 
+Essa parte do protótipo teve como objetivo principal compilar as ideias gerais da equipe sobre o produto, concebido após as restrições da refatoração dos Requisitos do projeto.
+
+A primeira tela se refere à uma tela principal, onde a maioria das frunções estariam disponíveis assim que o usuário começasse sua experiência.
+
 ![Prototipo_Hugo](imagens/prototipo-hugo-1.png)
+
+A segunda tela se refere ao perfil do Estabelecimento onde todas suas informações estarão dispostas, assim como as imagens de seus serviços.
+
 ![Prototipo_Hugo](imagens/prototipo-hugo-2.png)  
 
 ### Autor: Gustavo
@@ -95,4 +102,5 @@ Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/
 |19/03/2021| Adição de alguns ajustes na página | Gustavo | 0.6 |
 |25/03/2021| Adição do Wireframe Home | Hugo | 0.7 |
 |25/03/2021| Adição do Wireframe Perfil e Descrição das pages | Hugo | 0.8 |
-|08/04/2021| Adição do Wireframe Filtro | 0.9 |
+|08/04/2021| Adição do Wireframe Filtro | Hugo | 0.9 |
+|08/04/2021| Adição da descrição do protótipo de baixa (Hugo) | Hugo | 1.0 |
