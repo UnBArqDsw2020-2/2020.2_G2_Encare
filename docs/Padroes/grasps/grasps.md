@@ -104,12 +104,21 @@ Para melhor entendimento da ordem de execução, segue um diagrama de sequência
 ![SequenceFeed](images/SequenceFeed.png)
 
 Este é um caso básico onde a classe FeedController apenas processa uma requisição. Entretanto, caso sejam adicionadas mais requisições relacionadas ao feed, esta controladora manteria a responsabilidade de direcionar o processamento à classe correta. 
+## Polimorfismo
+
+No Polimorfismo as operações polimóficas devem ser utilizadas sobrepondo o conceito de decisão. Nessa abordagem uma classe principal pode ser utilizada como base, definindo as características básicas do que seus derivados devem ser, ou seja, uma classe *Animal* pode definir um método *emitirSom()* e permitir que as classes derivadas: *Gato*, *Cachorro* e *Galinha* executem o mesmo comportamento e ao mesmo tempo possuam características próprias. Exemplo:
+
+![Polimorfismo](images/Animal.png)
+
+No caso da nossa aplicação, a tarefa de Registrar Entidades foi padronizada, de forma que a *Register* fosse responsável por definir um CRUD principal, onde as classes derivadas pudessem executar o registro de acordo com o tipo de necessidade específica, no caso *UserRegister*, *EstabilishmentRegister* e *ServiceRegister*. Essa aplicação faz com que as classes *User*, *Estabilishment* e *Service* não precisem se preocupar com criar um novo registro, apenas armazenar os mesmos. 
+
+![Polimorfismo](images/Polimorfismo.png)
+
 
 <!-- ## Alta Coesão -->
 
 <!-- ## Baixo Acoplamento -->
 
-<!-- ## Polimorfismo -->
 
 <!-- ## Indireção -->
 
@@ -127,9 +136,11 @@ Este é um caso básico onde a classe FeedController apenas processa uma requisi
 |Nícalo Ribeiro| 26/03/21 | 0.4 | Adição da definição de controlador e complementação de especialista|
 |Hugo Aragão   | 07/04/21 | 0.5 | Adição da classe ContactData |
 |Hugo Aragão   | 07/04/21 | 0.6 | Adição da classe OpeningTime do escopo aumentado |
+|Hugo, Wagner Nícalo| 07/04/21| 0.7 | Adição do conceito Polimorfismo |
 
 
 ## Referências
 
 [1] Slides das aulas, disponível no moodle da disciplina.
-[2] GRASP (padrão orientado a objetos). Disponível em <https://pt.wikipedia.org/wiki/GRASP_(padr%C3%A3o_orientado_a_objetos)>. Acesso: 05/04/21
+[2] Site: GRASP (padrão orientado a objetos). Disponível em <https://pt.wikipedia.org/wiki/GRASP_(padr%C3%A3o_orientado_a_objetos)>. Acesso: 05/04/21
+[3] Site: RDD – Responsibility Driven Design e GRASP – General Responsibility Assignment Software Principles. Disponível em <http://nelsonbassetto.com/blog/tags/grasp/>
