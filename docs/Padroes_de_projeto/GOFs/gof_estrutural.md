@@ -157,7 +157,7 @@ Esse padrão promove uma interface unificada para um conjunto de interfaces em u
 
 #### 6.3. Aplicação no projeto.
 
-É um interessante padrão de simples implementação. O principal caso que poderá ser usada no projeto é para o acesso a APIs de cálculo de distâncias. Outro ponto que pode ser criado, são para os endpoints do backend para consumo do front. 
+É um interessante padrão de simples implementação. No projeto, utilizaremos para fornecer uma interface mais simples e independente da tecnologia de armazenamento de dados para lidar com as ações relacionadas a contagem de visitas diárias de um estabelecimento.
 
 ## 7. Flyweight
 
@@ -203,7 +203,7 @@ O *Proxy* controla todo o fluxo de informações entre o código cliente e o obj
 
 #### 8.3. Aplicação no projeto.
 
-É um padrão muito versátil e pode ser utilizado em vários lugares do código...
+É um padrão muito versátil e será utilizado no projeto como um intermediador na interação da classe *Geolocation* com a API do Google Maps, validando a latitude e longitude e adicionando o Token da API antes de enviar o *request*.
 
 ## 9. Conclusão
 ## 10. Referências
@@ -224,3 +224,4 @@ O *Proxy* controla todo o fluxo de informações entre o código cliente e o obj
 | 5/4/2021 | João Pedro Carvalho| Adiciona padrão Facade | 0.5 |
 | 6/4/2021 | João Pedro Carvalho| Adiciona padrão Flyweight | 0.6 |
 | 6/4/2021 | João Pedro Carvalho| Adiciona padrão Proxy | 0.7 |
+| 8/4/2021 | João Luis Baraky e Gustavo Nogueira| Atualiza aplicação do projeto do Facade e Proxy | 0.8 |
