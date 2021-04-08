@@ -61,6 +61,14 @@ A página de Perfil conta com as principais informações do Estabelecimento, de
 
 ![Wireframe_Perfil](imagens/Wireframe_perfil.jpg)
 Página de perfil do Estabelecimento - Hugo
+
+**Filtro de Estabelecimentos**
+
+A página de *Filtro Avançado* foi criada para permitir que o usuário pudesse fazer uma busca personalizada, de forma a economizar tempo buscando por tipo de serviço ou distância, por exemplo.
+
+![Filtro](imagens/Filtro.png)
+
+Página de Filtro Avançado - Hugo
 ### Versão 1
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxJ49RxNyO7ulXwd86Gxbov%2FUntitled%3Fnode-id%3D2%253A17%26scaling%3Dscale-down" allowfullscreen></iframe>  
 
@@ -87,3 +95,4 @@ Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/
 |19/03/2021| Adição de alguns ajustes na página | Gustavo | 0.6 |
 |25/03/2021| Adição do Wireframe Home | Hugo | 0.7 |
 |25/03/2021| Adição do Wireframe Perfil e Descrição das pages | Hugo | 0.8 |
+|08/04/2021| Adição do Wireframe Filtro | 0.9 |
