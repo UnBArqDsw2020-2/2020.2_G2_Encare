@@ -40,6 +40,8 @@ A versão 1 do diagrama de classes, mais especificamente a classe Estabilishment
 
 ![Classe Establishment](SimpleClass.png)
 
+#### OpeningTime
+
 Os atributos minTime e maxTime representam respectivamente o horário de abertura e fechamento do estabelecimento. Estes atributos podem ser separados em outra classe, assim como seus respectivos métodos (_getMinTime()_, ou _getMaxTime()_ por exemplo). Um exemplo conceitual dessa separação pode ser visto abaixo:
 
 ![Classes Estabilishment e OpeningTime - modelo conceitual](SimpleClass01.png)
@@ -49,6 +51,12 @@ A palavra **contém** indica um forte relacionamento entre as classes. Uma vez q
 ![Diagrama das Classes Estabilishment e OpeningTime](SimpleClass02.png)
 
 Em suma, a classe Estabilishment é a responsável por criar uma instância da classe OpeningTime.
+
+#### ContactData [escopo aumentado]
+
+No caso da classe *ContactData* os atributos que definem os dados de contato da classe Estabilishment foram separados de modo a dividir suas respectivas responsabilidades. As classes *Phone* e *SocialNetwork* são responsáveis por armazenar as informações de telefone e redes sociais, respectivamente, com o objetivo de intermediar a coleta de dados, e atrinuíndo à classe *ContactData* a responsabilidade de armazenar e tratar os contatos dos estabelecimentos. Ao distribuir essa responsabilidade, a *Estabilishment* fica responsável apenas por armazenar os dados de contato compilados.
+
+![Diagrama das Classes Estabilishment e OpeningTime](images/ContactData.png)
 
 ## Especialista
 
@@ -107,9 +115,10 @@ Este é um caso básico onde a classe FeedController apenas processa uma requisi
 |Autor(es)|Data|Versão|Descrição|
 |---------|:--:|:----:|---------|
 |Wagner Martins| 24/03/21 | 0.1 | Criação do documento |
-|Wagner Martins| 24/03/21 | 0.2 | Adição de exemplos de aplicações no projeto para os GRASPs criador, especialista e controlador
-|Nícalo Ribeiro| 26/03/21 | 0.3 | Adição da definição de alguns conceitos
-|Nícalo Ribeiro| 26/03/21 | 0.4 | Adição da definição de controlador e complementação de especialista
+|Wagner Martins| 24/03/21 | 0.2 | Adição de exemplos de aplicações no projeto para os GRASPs criador, especialista e controlador|
+|Nícalo Ribeiro| 26/03/21 | 0.3 | Adição da definição de alguns conceitos|
+|Nícalo Ribeiro| 26/03/21 | 0.4 | Adição da definição de controlador e complementação de especialista|
+|Hugo Aragão   | 07/04/21 | 0.5 | Adição da classe ContactData |
 
 
 ## Referências
