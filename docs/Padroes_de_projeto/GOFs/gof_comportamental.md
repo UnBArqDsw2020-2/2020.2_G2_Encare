@@ -1,4 +1,5 @@
 # Padrões de projeto GOFs Comportamentais
+
 ## 1. Introdução
 Os padrões comportamentais são voltados aos algoritmos e a designação de responsabilidades entre objetos.  
 
@@ -30,11 +31,11 @@ O Chain of Responsibility é aplicado quando é esperado que o programa processe
 O Command é um padrão de projeto comportamental que transforma um pedido em um objeto independente que contém toda a informação sobre o pedido. Essa transformação permite que você parametrize métodos com diferentes pedidos, atrase ou coloque a execução do pedido em uma fila, e suporte operações que não podem ser feitas.
 
 ## Estrutura
-1. Classe Remetente - responsável por iniciar os pedidos. Essa classe deve ter um campo para armazenar a referência para um objeto comando. O remetente aciona aquele comando ao invés de enviar o pedido diretamente para o destinatário. Observe que o remetente não é responsável por criar o objeto comando. Geralmente ele é pré criado através de um construtor do cliente.
-2. Interface Comando - geralmente declara apenas um único método para executar o comando.
-3. Comandos Concretos - implementam vários tipos de pedidos. Um comando concreto não deve realizar o trabalho por conta própria, mas passar a chamada para um dos objetos da lógica do negócio.
-4. Classe Destinatária - contém a lógica do negócio. Quase qualquer objeto pode servir como um destinatário. A maioria dos comandos apenas lida com os detalhes de como um pedido é passado para o destinatário, enquanto que o destinatário em si executa o verdadeiro trabalho.
-5. Client - cria e configura objetos comando concretos. O cliente deve passar todos os parâmetros do pedido, incluindo uma instância do destinatário, para o construtor do comando. Após isso, o comando resultante pode ser associado com um ou múltiplos destinatários.
+1. Classe Remetente ou Invocadora (Invoker) - responsável por iniciar os pedidos. Essa classe deve ter um campo para armazenar a referência para um objeto comando. O remetente aciona aquele comando ao invés de enviar o pedido diretamente para o destinatário. Observe que o remetente não é responsável por criar o objeto comando. Geralmente ele é pré criado através de um construtor do cliente.
+2. Interface Comando (Command) - geralmente declara apenas um único método para executar o comando.
+3. Comandos Concretos (Concrete Command) - implementam vários tipos de pedidos. Um comando concreto não deve realizar o trabalho por conta própria, mas passar a chamada para um dos objetos da lógica do negócio.
+4. Classe Destinatária (Receiver) - contém a lógica do negócio. Quase qualquer objeto pode servir como um destinatário. A maioria dos comandos apenas lida com os detalhes de como um pedido é passado para o destinatário, enquanto que o destinatário em si executa o verdadeiro trabalho.
+5. Cliente (Client) - cria e configura objetos comando concretos. O cliente deve passar todos os parâmetros do pedido, incluindo uma instância do destinatário, para o construtor do comando. Após isso, o comando resultante pode ser associado com um ou múltiplos destinatários.
 
 ### 3.1 Vantagens
 -  Princípio de responsabilidade única. É possível desacoplar classes que invocam operações de classes que fazem essas operações.
@@ -48,8 +49,120 @@ O Command é um padrão de projeto comportamental que transforma um pedido em um
 O código pode ficar mais complicado uma vez que você está introduzindo uma nova camada entre remetentes e destinatários.
 
 ### 3.3 Aplicação no Projeto
--- APLICÁVEL EM "RATING"
-- - -
+
+**Exemplo toy ([Escopo estendido]())**
+
+O padrão command pode ser aplicado em locais que precisam da requisição a API do Back-end. Neste exemplo, aplicamos o padrão command no envio da avaliação de um estabelecimento por parte do usuário.
+
+![Modelagem do exemplo Command](images/Command.png)
+
+Abaixo os códigos do exemplo, feitos em typescript:
+
+~~~typescript
+function App() {
+
+  const requestHandler: RequestHandler = new RequestHandler();
+
+  const ratingSender: RatingSender = new RatingSender("Session User", "Target Estabilishment", requestHandler);
+
+  return (
+    <div>
+      <select name="rating" id="ratingNumber">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br/>
+      <textarea name="estabilishmentReview" id="ratingComment" defaultValue="Some Placeholder text"></textarea>
+      <br/>
+      <button onClick={ratingSender.getCommandFunction()}>Send Review</button>
+    </div>
+  );
+}
+~~~
+
+A própria aplicação é a cliente que usa a command.
+
+O botão é a invoker, responsável por chamar a função de execução da command.
+
+~~~typescript
+class RequestHandler {
+
+    public constructor() {
+        return this;
+    }
+
+    public sendGetRequest(path:string): any {
+        console.log(`Request to ${path}`);
+    }
+
+    public sendPostRequest(path:string, data:any): any {
+        console.log(`Request to ${path} with`)
+        console.log(data)
+    }
+}
+~~~
+
+RequestHandler é a receiver. Neste caso responsável pelas requisições. Por se tratar de um exemplo toy, as funções apenas logam no console os objetos que seriam passados pela requisição.
+
+~~~typescript
+interface RequestSender {
+    execute: {
+        (data: any): any
+    }
+}
+~~~
+
+~~~typescript
+class RatingSender implements RequestSender {
+    private user: string;
+    private estabilishment: string;
+    private handler: RequestHandler;
+
+
+    public constructor(user: string, estabilishment: string, handler: RequestHandler) {
+        this.user = user;
+        this.estabilishment = estabilishment;
+        this.handler = handler;
+    }
+
+    public execute(): any {
+        let rating = this.getFormData();
+        
+        let data = {
+            rating: rating.number,
+            comment: rating.comment,
+            user: this.user,
+            estabilishment: this.estabilishment,
+        }
+
+        return this.handler.sendPostRequest(`establishment/sendrating`, data);
+    }
+
+    public getCommandFunction() {
+        return () => {
+            this.execute();
+        }
+    }
+
+    private getFormData = () => {
+        let number: HTMLInputElement = document.getElementById("ratingNumber") as HTMLInputElement;
+        let comment: HTMLInputElement = document.getElementById("ratingComment") as HTMLInputElement;
+        
+        let rating = {
+          number: number.value,
+          comment: comment.value
+        }
+        
+        return rating;
+      }
+
+}
+~~~
+
+RequestSender é a interface do command. Suas implementações concretas (neste caso a RatingSender) são responsáveis por fazer modificações nos dados e pedir para a receiver executar a requisição.
 
 ## 4. Iterator
 O Iterator é um padrão de projeto comportamental que permite a você percorrer elementos de uma coleção sem expor as representações dele (lista, pilha, árvore, etc.)
@@ -258,3 +371,4 @@ O Visitor é um padrão de projeto comportamental que permite que você separe a
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Command e Iterator | 0.3 |
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Mediator, Memento, Observer e State | 0.4 |
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Strategy, Template Method e Visitor | 0.5 |
+|08/04/2021|Wagner Martins| Adição da modelagem e código do padrão command | 0.6 |
