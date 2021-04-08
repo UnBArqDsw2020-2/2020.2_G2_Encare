@@ -187,7 +187,54 @@ O Iterator é utilizado quando se quer que o código seja capaz de percorrer dif
 - Aplicar o padrão pode ser um preciosismo se sua aplicação só trabalha com coleções simples.
 - Usar um iterador pode ser menos eficiente que percorrer elementos de algumas coleções especializadas diretamente.
 ### 4.3 Aplicação no Projeto
--- APLICÁVEL EM "PICTURE" --
+No nosso projeto, vários tipos de listas serão obtidas do *backend*, a princípio por meio de um objeto JSON, para serem tratadas exibidas ao usuário no *frontend*.  
+Com isso, a construção de um Iterator se torna interessante devido à variedade das listas, assim como seu tamanho, permitindo reúso.
+
+Abaixo temos um trecho de código escrito em JavaScript, que será usado pelo React, com a implementação de um Iterator :
+~~~javascript
+const Iterator = function (items) {
+    this.index = 0;
+    this.items = items;
+}
+
+Iterator.prototype = {
+    first: function() {
+        this.reset();
+        return this.next();
+    },
+    next: function() {
+        return this.items[this.index++];
+    },
+    hasNext: function() {
+        return this.index <= this.items.length;
+    },
+    reset: function() {
+        this.index = 0;
+    },
+    each: function(callback) {
+        for (var item = this.first(); this.hasNext(); item = this.next()) {
+            callback(item);
+        }
+    }
+}
+
+module.exports = Iterator;
+~~~
+
+Abaixo, temos um exemplo do uso do Iterator no React, onde uma lista, independente do que se trata, será iterada e seus objetos serão adicionados a um state.
+A função *useEffect* executa a função de percorrer a lista quando o componente em questão é montado.
+
+~~~javascript
+const [ data, setData ] = useState([]);
+
+const loadData = () => {
+    let iter = new Iterator(list);
+    for(let item = iter.first(); iter.hasNext(); item = iter.next()){
+        setData(data => [...data, item]);
+    }
+}
+useEffect(() => { loadData() }, []); 
+~~~
 - - -
 
 ## 5. Mediator
@@ -372,3 +419,4 @@ O Visitor é um padrão de projeto comportamental que permite que você separe a
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Mediator, Memento, Observer e State | 0.4 |
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Strategy, Template Method e Visitor | 0.5 |
 |08/04/2021|Wagner Martins| Adição da modelagem e código do padrão command | 0.6 |
+|08/04/2021|Nícalo Ribeiro| Adição do código do padrão Iterator | 0.7 |
