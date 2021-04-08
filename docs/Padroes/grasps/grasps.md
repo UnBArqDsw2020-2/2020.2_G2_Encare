@@ -1,3 +1,4 @@
+
 <style>
     p {
         text-align: justify;
@@ -38,17 +39,17 @@ Caso nenhuma dessas condições seja atendida, a própria classe é responsável
 
 A versão 1 do diagrama de classes, mais especificamente a classe Estabilishment apresenta um baixo nível de coesão, com muitas responsabilidades de forma não especializada. Segue abaixo uma versão reduzida da mesma classe:
 
-![Classe Establishment](SimpleClass.png)
+![Classe Establishment](images/SimpleClass.png)
 
 #### OpeningTime
 
 Os atributos minTime e maxTime representam respectivamente o horário de abertura e fechamento do estabelecimento. Estes atributos podem ser separados em outra classe, assim como seus respectivos métodos (_getMinTime()_, ou _getMaxTime()_ por exemplo). Um exemplo conceitual dessa separação pode ser visto abaixo:
 
-![Classes Estabilishment e OpeningTime - modelo conceitual](SimpleClass01.png)
+![Classes Estabilishment e OpeningTime - modelo conceitual](images/SimpleClass01.png)
 
 A palavra **contém** indica um forte relacionamento entre as classes. Uma vez que o horário de funcionamento de um estabelecimento só faz sentido existir se o seu respectivo estabelecimento existe. Essa relação é uma composição, criando as seguintes classes:
 
-![Diagrama das Classes Estabilishment e OpeningTime](SimpleClass02.png)
+![Diagrama das Classes Estabilishment e OpeningTime](images/SimpleClass02.png)
 
 Em suma, a classe Estabilishment é a responsável por criar uma instância da classe OpeningTime.
 
@@ -69,9 +70,15 @@ Como solução, atribui-se uma responsabilidade a uma classe que possui a inform
 
 Ainda utilizando o exemplo das classes Estabilishment e OpeningTime (agora com alguns seus métodos):
 
-![Diagrama das Classes Estabilishment e Opening Time com métodos](SimpleClassE.png)
+![Diagrama das Classes Estabilishment e Opening Time com métodos](images/SimpleClassE.png)
 
 A responsabilidade de guardar os dados dos horários de abertura e fechamento, assim como de retornar eles está na classe OpeningTime. Essas responsabilidades são a **especialidade** da classe, o que aumenta a coesão do sistema.
+
+**V2 [escopo aumentado]**
+
+No escopo aumentado, a responsabilidade da *OpeningTime* foi dividida com a nova *OpeningDay* de forma que os dias da semana podessem ser tratados de forma independente (considerando que o estabelecimento feche mais cedo em algum dia da semana, ou não abra em outro). Dessa forma cabe à *OpeningTime* apenas compilar e tratar esses dados, onde serão armazenados na *Estabilishment*. 
+
+![Opening Time do escopo aumentado](images/Openingv2.png)
 
 ## Controlador
 
@@ -90,11 +97,11 @@ Considerando uma controladora apenas para este caso de uso**, a FeedController �
 
 O exemplo abaixo mostra um diagrama conceitual de quais componentes participariam do processamento da requisição:
 
-![FeedController](feedControllerConcept.png)
+![FeedController](images/feedControllerConcept.png)
 
 Para melhor entendimento da ordem de execução, segue um diagrama de sequência para este caso:
 
-![SequenceFeed](SequenceFeed.png)
+![SequenceFeed](images/SequenceFeed.png)
 
 Este é um caso básico onde a classe FeedController apenas processa uma requisição. Entretanto, caso sejam adicionadas mais requisições relacionadas ao feed, esta controladora manteria a responsabilidade de direcionar o processamento à classe correta. 
 
@@ -119,8 +126,10 @@ Este é um caso básico onde a classe FeedController apenas processa uma requisi
 |Nícalo Ribeiro| 26/03/21 | 0.3 | Adição da definição de alguns conceitos|
 |Nícalo Ribeiro| 26/03/21 | 0.4 | Adição da definição de controlador e complementação de especialista|
 |Hugo Aragão   | 07/04/21 | 0.5 | Adição da classe ContactData |
+|Hugo Aragão   | 07/04/21 | 0.6 | Adição da classe OpeningTime do escopo aumentado |
 
 
 ## Referências
 
 [1] Slides das aulas, disponível no moodle da disciplina.
+[2] GRASP (padrão orientado a objetos). Disponível em <https://pt.wikipedia.org/wiki/GRASP_(padr%C3%A3o_orientado_a_objetos)>. Acesso: 05/04/21
