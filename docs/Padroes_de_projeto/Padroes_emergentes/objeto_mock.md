@@ -101,9 +101,11 @@ A nível de comparação das ferramentas, temos algumas mais completas como a *M
 
 ## Referências
 
-[1] Site: Wikipedia - Objeto Mock. Disponível em <https://pt.wikipedia.org/wiki/Objeto_mock>. Acesso 07/04/2021
-[2] Freeman, Steve. Growing Object-Oriented Software, Guided By Tests.
-[3] Site: Devmedia - Mocks: Introdução a Automatização de Testes com Mock Object. Disponível em <https://www.devmedia.com.br/mocks-introducao-a-automatizacao-de-testes-com-mock-object/30641>. Acesso 08/04/2021.
+- [1] Site: Wikipedia - Objeto Mock. Disponível em <https://pt.wikipedia.org/wiki/Objeto_mock>. Acesso 07/04/2021
+
+- [2] Freeman, Steve. Growing Object-Oriented Software, Guided By Tests.
+
+- [3] Site: Devmedia - Mocks: Introdução a Automatização de Testes com Mock Object. Disponível em <https://www.devmedia.com.br/mocks-introducao-a-automatizacao-de-testes-com-mock-object/30641>. Acesso 08/04/2021.
 ## Versionamento
 
 |Autor|Data|Descrição|Versão|
