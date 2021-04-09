@@ -421,4 +421,5 @@ Não foram identificadas aplicações para este padrão.
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Strategy, Template Method e Visitor | 0.5 |
 |08/04/2021|Wagner Martins| Adição da modelagem e código do padrão command | 0.6 |
 |08/04/2021|Nícalo Ribeiro| Adição do código do padrão Iterator | 0.7 |
-|08/04/2021|Wagner Martins| Adição de ideias de aplicação no projeto para os outros padrões | 0.8 |
+|09/04/2021|Wagner Martins| Adição de ideias de aplicação no projeto para os outros padrões | 0.8 |
+|09/04/2021|Wagner Martins| Atualização da aplicação no padrão chain of responsability | 0.9 |
