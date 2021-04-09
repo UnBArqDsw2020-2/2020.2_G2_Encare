@@ -32,6 +32,9 @@ Após uma reunião entre os integrantes do grupo, decidimos as características 
 ### Versão 3.0:
 ![Escopo Aumentado V3](./img/escopo_aumentado_v3.png)
 
+### Versão com padões de projeto 1.0:
+![Escopo Aumentado V3](./img/class-MAIN.png)
+
 ## Diagrama de Casos de Uso
 
 Com o aumento de escopo definido, também foi criado um diagrama de casos de uso cujo objetivo é servir de apoio em casos onde a interação do usuário tenha que ser considerada.
@@ -55,3 +58,4 @@ Com isso, acreditamos que a adição das novas classes e features ao projeto agr
 | João Luis Baraky | 31/03/2021 | Adiciona terceira versão do escopo final | 0.7 |
 | João Luis Baraky | 31/03/2021 | Adiciona conclusão do documento | 1.0 |
 | Wagner Martins | 09/04/2021 | Adição do diagrama de casos de uso | 1.1 |
+| Todos | 09/04/2021 | Adicionando Modelagem com padrões de projeto | 2.0 |
