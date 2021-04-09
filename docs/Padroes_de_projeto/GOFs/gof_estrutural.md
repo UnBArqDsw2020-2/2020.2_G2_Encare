@@ -6,7 +6,7 @@ Seguindo com os padrões de projeto GOFs temos os estruturais. Esses padrões fo
 
 Sendo assim vamos apresentar os principais padrões, suas vantagens e desvantagens e como eles podem ou não ser aplicados no projeto.
 
-### 1.1. Siglas e acrônimos:
+### 1.1. Siglas e Acrônimos:
 
 | Termo | Representação                                              |
 | ----- | ---------------------------------------------------------- |
@@ -52,7 +52,7 @@ Outro ponto interessante para o uso de _adapteres_ é em relação as imagens qu
 
 O _Bridge_ tem a intenção de desacoplar a abstração da sua implementação, de modo que as duas possam variar e evoluir independentemente. Outra utilização é separar uma classe grande ou um conjunto de classes intimidamente ligadas em duas hierarquias.
 
-Segundo o livro Design Patterns [1], o padrão Bridge está sendo descrito como "Desacoplar a **abstração** da sua **implementação** então ambas podem variar independentemente.". Esses dois termos são chaves para o entendimento do padrão. Abstração é uma camada de controle de alto nível que não realiza o trabalho por si só e sim delega para uma camada de implementação.
+Segundo o livro Design Patterns [1], o padrão _Bridge_ está sendo descrito como "Desacoplar a **abstração** da sua **implementação** então ambas podem variar independentemente.". Esses dois termos são chaves para o entendimento do padrão. Abstração é uma camada de controle de alto nível que não realiza o trabalho por si só e sim delega para uma camada de implementação.
 
 Um bom exemplo sobre abstração e implementação é a relação entre a GUI e as APIs de um SO. A GUI (asbtração) apenas transfere as ações do usuário para que a API (implementação) realize o trabalho.
 
@@ -181,9 +181,32 @@ Esse padrão promove uma interface unificada para um conjunto de interfaces em u
 
 ### 6.4. Aplicação no projeto
 
+A ideia desta aplicação é fornecer uma interface simplificada para a criação de usuários a partir de um tipo de usuários(_userType_).
+
 #### 6.4.1. Representação
 
+![gof_criacional_v1](img/gof_facade.png)
+
 #### 6.4.2. Código
+
+```python
+from constants import USER_TYPES
+import AdminFactory, CustomerFactory, OwnerFactory
+
+class UserFacade():
+	def getUser(userType, userData):
+		if userType == USER_TYPES.ADMIN:
+			adminFactory = AdminFactory()
+			return adminFactory.getUser(userData)
+		elif userType == USER_TYPES.CUSTOMER:
+			customerFactory = CustomerFactory()
+			return customerFactory.getUser(userData)
+		elif userType == USER_TYPES.OWNER:
+			ownerFactory = OwnerFactory()
+			return ownerFactory.getUser(userData)
+		else:
+			raise AssertionError
+```
 
 ## 7. Flyweight
 
@@ -201,11 +224,11 @@ No livro Design pattern [1], os autores listam uma série de fatores para o uso 
 
 ### 7.1. Estrutura
 
-1. A classe Flyweight contém a porção do estado do objeto original que pode ser compartilhada entre múltiplos objetos. O mesmo objeto flyweight pode ser usado em muitos contextos diferentes.
-2. A classe Contexto contém o estado extrínseco, único para todos os objetos originais. Quando um contexto é pareado com um dos objetos flyweight, ele representa o estado completo do objeto original.
-3. Geralmente, o comportamento do objeto original permanece na classe flyweight. Nesse caso, quem chamar o método do flyweight deve também passar os dados apropriados do estado extrínseco nos parâmetros do método.
-4. O Cliente calcula ou armazena o estado extrínseco dos flyweights.
-5. A Fábrica Flyweight gerencia um conjunto de flyweights existentes. Com a fábrica os clientes não precisam criar flyweights diretamente. Ao invés disso, eles chamam a fábrica, passam os dados de estado intrínseco para o flyweight desejado.
+1. A classe _Flyweight_ contém a porção do estado do objeto original que pode ser compartilhada entre múltiplos objetos. O mesmo objeto _flyweight_ pode ser usado em muitos contextos diferentes.
+2. A classe Contexto contém o estado extrínseco, único para todos os objetos originais. Quando um contexto é pareado com um dos objetos _flyweight_, ele representa o estado completo do objeto original.
+3. Geralmente, o comportamento do objeto original permanece na classe _flyweight_. Nesse caso, quem chamar o método do _flyweight_ deve também passar os dados apropriados do estado extrínseco nos parâmetros do método.
+4. O Cliente calcula ou armazena o estado extrínseco dos _flyweights_.
+5. A Fábrica _Flyweight_ gerencia um conjunto de _flyweights_ existentes. Com a fábrica os clientes não precisam criar _flyweights_ diretamente. Ao invés disso, eles chamam a fábrica, passam os dados de estado intrínseco para o _flyweight_ desejado.
 
 ### 7.2. Vantagens
 
@@ -221,22 +244,22 @@ Esse padrão é usado em uma situação bem específica e possui várias condiç
 
 ## 8. Proxy
 
-De acordo com o Design Pattern[1], esse padrão tem como intenção fornecer um substituo ou um marcador de localização para outro objeto com a finalidade de controlar o seu acesso. Em outras palavras o proxy funciona como um intermediador entre o código cliente e o objeto que é necessitado. Tem uma estrutra muito similar aos padrões _Composite_ e _Decorator_.
+De acordo com o Design Pattern[1], esse padrão tem como intenção fornecer um substituo ou um marcador de localização para outro objeto com a finalidade de controlar o seu acesso. Em outras palavras o _proxy_ funciona como um intermediador entre o código cliente e o objeto que é necessitado. Tem uma estrutra muito similar aos padrões _Composite_ e _Decorator_.
 
 O _Proxy_ controla todo o fluxo de informações entre o código cliente e o objeto real, podendo escolher como e quando repassar as informações inclusive. Além disso ele tem muitas variações como: _proxy_ virtual, _proxy_ remoto, _proxy_ de proteção, entre outros.
 
 ### 8.1. Estrutura
 
-1. A Interface do Serviço declara a interface do Serviço. O proxy deve seguir essa interface para ser capaz de se disfarçar como um objeto do serviço.
+1. A Interface do Serviço declara a interface do Serviço. O _proxy_ deve seguir essa interface para ser capaz de se disfarçar como um objeto do serviço.
 2. O Serviço é uma classe que fornece alguma lógica de negócio útil.
-3. A classe Proxy tem um campo de referência que aponta para um objeto do serviço. Após o proxy finalizar seu processamento (por exemplo: inicialização preguiçosa, acesso, acessar controle, colocar em cache, etc.), ele passa o pedido para o objeto do serviço.
-4. O Cliente deve trabalhar tanto com os serviços e proxies através da mesma interface. Dessa forma você pode passar uma proxy para qualquer código que espera um objeto do serviço.
+3. A classe _Proxy_ tem um campo de referência que aponta para um objeto do serviço. Após o _proxy_ finalizar seu processamento (por exemplo: inicialização preguiçosa, acesso, acessar controle, colocar em cache, etc.), ele passa o pedido para o objeto do serviço.
+4. O Cliente deve trabalhar tanto com os serviços e proxies através da mesma interface. Dessa forma você pode passar uma _proxy_ para qualquer código que espera um objeto do serviço.
 
 ### 8.2. Vantagens
 
-- O código cliente não saberá se esta usando ou não o Proxy.
+- O código cliente não saberá se esta usando ou não o _Proxy_.
 - Você pode adicionar novos Proxies sem alterar o código testado (OCP)
-- O proxy funciona mesmo se o obejto real não estiver operacional ou pronto para uso.
+- O _proxy_ funciona mesmo se o obejto real não estiver operacional ou pronto para uso.
 
 ### 8.3. Desvantagens
 
@@ -282,10 +305,10 @@ class ProxyGoogleMaps():
 
 ## 10. Referências
 
-[1] - GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Design Patterns: Elements of Reusable Object-Oriented Software. Indianapolis: [s. n.], 1994.
-[2] - Design Pattern: Django REST Framework. Disponível em: https://davenathanaeld.medium.com/design-pattern-django-rest-framework-1e8c17946bce. Acesso em 4 abr. 2021.
-[3] - Bridge. Disponível em: https://refactoring.guru/pt-br/design-patterns/bridge. Acesso em 5 abr. 2021.
-[4] - Composite. Disponível em: https://refactoring.guru/pt-br/design-patterns/composite. acesso em 5 abr. 2021.
+- [1] - GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Design Patterns: Elements of Reusable Object-Oriented Software. Indianapolis: [s. n.], 1994.
+- [2] - Design Pattern: Django REST Framework. Disponível em: https://davenathanaeld.medium.com/design-pattern-django-rest-framework-1e8c17946bce. Acesso em 4 abr. 2021.
+- [3] - Bridge. Disponível em: https://refactoring.guru/pt-br/design-patterns/bridge. Acesso em 5 abr. 2021.
+- [4] - Composite. Disponível em: https://refactoring.guru/pt-br/design-patterns/composite. acesso em 5 abr. 2021.
 
 ## 11. Versionamento
 
@@ -300,4 +323,5 @@ class ProxyGoogleMaps():
 | 6/4/2021 | João Pedro Carvalho                 | Adiciona padrão Proxy                           | 0.7    |
 | 8/4/2021 | João Luis Baraky e Gustavo Nogueira | Atualiza aplicação do projeto do Facade e Proxy | 0.8    |
 | 8/4/2021 | João Luis Baraky e Gustavo Nogueira | Atualiza aplicação do projeto do Proxy          | 0.9    |
-| 8/4/2021 | Gustavo Nogueira                    | Adição do tópico estrutura                      | 1.0    |
+| 8/4/2021 | Gustavo Nogueira                    | Atualiza aplicação do projeto do Facade         | 1.0    |
+| 9/4/2021 | Gustavo Nogueira                    | Adição do tópico estrutura                      | 1.1    |
