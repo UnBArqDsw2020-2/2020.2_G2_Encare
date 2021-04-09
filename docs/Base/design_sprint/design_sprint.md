@@ -1,6 +1,9 @@
-# Desing sprint
+# Desing Sprint
+
 ## Geração de ideias
+
 Afim de gerar as ideias de como seria a aplicação, a equipe realizou uma reunião onde usamos a técnica de brainstorming, após isso cada membro teve que gerar o seu próprio esboço para validar as ideias discutidas.
+
 ## Esboço das ideias
 
 Os esboços são representações de uma sessão de brainstorming realizada pela equipe, de forma assíncrona, onde todos apresentaram suas ideias de como o Encare deve ser. Os documentos a seguir são feitos em formato livre, sem compromisso com o estilo específico, haja visto que o propósito da atividade era capturar as ideias da equipe de forma crua.
@@ -60,7 +63,7 @@ revisar os elementos acordados da aplicação e geramos a versão final da ideia
 *Figura 3. Perfil do estabelecimento*  
 </p>  
 
-## Vesionamento:
+## Versionamento
 | Data | Nome | Versão | Descrição |
 |-|-|-|-|
 | 16/02/2021 | João Pedro Silva de Carvalho | 0.1 | Adicionando Esboço | 

@@ -1,4 +1,5 @@
-# Requisitos do produto
+# Requisitos do Produto
+
 Esse documento contém as técnicas de elicitação que foram utilizadas e os requisitos levantados a partir delas.  
 
 Termos e seus significados: 
@@ -132,36 +133,26 @@ A partir da análise do que foi levantado no Storytelling, Introspecção e Brai
 
 |Requisito|Descrição|Origem|
 |---------|---------|------|
-|RF01| Feed de serviços | BS01 , ST02|
-|RF02| Feed de estabelecimentos | INT07 |
-|RF03| Fornecer a visualização de um mapa (interno ou externo) | BS05, ST05, INT01, INT02 |
-|RF04| Interação no mapa | ST05, INT04, INT05 |
-|RF05| Identificação dos estabelecimentos no mapa | ST05, INT05 |
-|RF06| Filtrar estabelecimentos por distância | BS02, INT10 |
-|RF07| Filtrar estabelecimentos por serviço | BS02, ST04, INT10|
-|RF08| Filtrar estabelecimento por nome | INT07, INT10 |
-|RF09| Mostar no mapa os estabelecimentos filtrados |BS03, INT08, INT10, ST04
-|RF10| Mostar no feed os estabelecimentos filtrados |RF03, INT09|
-|RF11| Calcular a distância até o estabelecimento desejado | BS08 |
-|RF12| Cadastrar estabelecimentos | BS06 |
-|RF13| Recuperar as informações dos estabelecimentos| BS07, ST01, ST02|
-|RF14| Recuperar fotos do estabelecimento no Instagram| BS04, ST03, ST06, INT11, INT12|
-|RF15| Possuir um perfil para o estabelecimento| BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17|
-|RF16| Exibir no perfil do estabelecimento suas informações básicas (nome, endereço, contato e horário de funcionamento) | BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17|
-|RF17| Exibir no perfil do estabeleceimento os serviços que ele oferece| BS04, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17|
-|RF18| Exibir no perfil do estabelecimento as fotos de seus serviços | BS04, ST03, ST06, INT11, INT12|
+|RF01| Criar feed de serviços | BS01 , ST02|
+|RF02| Criar feed de estabelecimentos | INT07 |
+|RF03| Criar mapa interativo | BS05, ST05, INT01, INT02, INT04, INT05 |
+|RF04| Criar filtro para o feed de serviços | BS02, INT10, ST04, INT07 |
+|RF05| Calcular a distância até o estabelecimento desejado | BS08 |
+|RF06| O sistema deverá permitir que o usuário admin cadastre os estabelecimentos | BS06 |
+|RF07| O sistema deverá ser capaz de coletar a localização do usuário| INT01, INT08, INT09, ST05 |
+|RF08| O sistema deverá fornecer um link para que o usuário possa acessar a localização do estabelecimento|INT10|
+|RF09|O sistema deverá ter um perfil do estabelecimento com informações básicas de contato, funcionamento e localização.|BS04, BS07, ST01, ST02, ST03, INT06, INT11, INT12, INT13, INT16, INT17|
+|RF10|O sistema deverá listar dentro do perfil do estabelecimento, os serviços que ele oferece.|BS04, ST02, ST03, ST06, INT06, INT11, INT12, INT13, INT16, INT17|
 
 ### Requisitos Não Funcionais  
 
 |Requisito|Descrição|Origem|
 |---------|---------|------|
-|RNF01| Solicitar acesso à localização do usuário | BS03, INT01, INT02 |
-|RBF02| Informar ao usuário como sua localização será utilizada | BS03, BS08, INT01, INT02 |
-|RNF03| Uso do sistema intuitivo | INT18 |
-|RNF04| Plataforma responsiva | INT14, INT8 |
+|RNF01|Avaliar a usabilidade por meio do tempo necessário para a realização das principais tarefas.| INT18|
+|RNF02|O sistema deverá ter portabilidade para uso em mobile e desktop.|INT14, INT8|
 
 - - -  
-### Histórico de versão  
+## Versionamento
 
 | Data | Nome | Detalhe | Versão |
 |------|-------|--------|--------|
@@ -171,3 +162,5 @@ A partir da análise do que foi levantado no Storytelling, Introspecção e Brai
 | 06/03/2021 | João Pedro Carvalho | Adição do brainstorm e formatação do documento | 0.4 |
 | 07/03/2021 | Nícalo Ribeiro | Separação em requisitos funcionais e não funcionais e formatação do documento | 0.5 |
 | 07/03/2021 | Nícalo Ribeiro | Revisão e formatação do documento | 0.6 |
+| 18/03/2021 | João Pedro e João Baraky | Refatoração dos requisitos| 1.0 |
+| 19/03/2021 | Wagner Martins | Revisão - Correção de erro ortográfico | 1.1 |

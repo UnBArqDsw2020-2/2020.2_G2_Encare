@@ -34,7 +34,7 @@ No filtro de estabelecimentos, temos aqui representada no diagrama uma visão am
 
 - O que é diagrama de atividades UML ?. Lucidchart. Disponível em: <https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-atividades-uml>. Acesso em: 06 de março de 2021.
 
-## Histórico de versão
+## Versionamento
 
 |    Data    |              Nome              |               Detalhe                         | Versão |
 |------------|--------------------------------|-----------------------------------------------|--------|

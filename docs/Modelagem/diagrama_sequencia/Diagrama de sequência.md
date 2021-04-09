@@ -1,4 +1,4 @@
-# Diagrama de sequência
+# Diagrama de Sequência
 
 Um diagrama de sequência mostra a colaboração dinâmica entre vários objetos de um sistema. O mais importante aspecto deste diagrama é que a partir dele percebe-se a sequência de mensagens enviadas entre os objetos [1].
 
@@ -18,6 +18,11 @@ O diagrama também aceita o uso de estruturas chamadas de fragmentos de interaç
 
 ![Informações de estabelecimento](imagens/diagrama_de_sequencia_estab_info.png)
 
+## Referências
+
+- [1] Linguagem de Modelagem Unificada Em Português. Disponível no material disponibilizado no moodle da disciplina.
+- [2] UML Sequence Diagrams. Disponível em https://www.uml-diagrams.org/sequence-diagrams.html
+
 ## Versionamento 
 
 | Data | Nome | Detalhe | Versão |
@@ -25,8 +30,3 @@ O diagrama também aceita o uso de estruturas chamadas de fragmentos de interaç
 | 02/03/2021 | João Pedro Silva de Carvalho e Wagner Martins | Diagrama para feed de estabelecimentos | 0.1 |
 | 02/03/2021 | João Pedro Silva de Carvalho e Wagner Martins | Diagrama das informações de estabelecimento | 0.2 |
 | 07/03/2021 | João Pedro Silva de Carvalho e Wagner Martins | Adição de informações sobre o diagrama | 1.0 |
-
-## Referências
-
-- [1] Linguagem de Modelagem Unificada Em Português. Disponível no material disponibilizado no moodle da disciplina.
-- [2] UML Sequence Diagrams. Disponível em https://www.uml-diagrams.org/sequence-diagrams.html
