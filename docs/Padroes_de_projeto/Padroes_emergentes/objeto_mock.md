@@ -89,9 +89,24 @@ public class OrderRepository
 }
 // Exemplo do artigo [1]
 ~~~
+## Limitações e Comparações
 
+Um dos cuidados a se ter ao usar *obejtos mock* é justamente na hora de implementar e interpretaros testes unitários, já que o *mock* geralmente é montado na forma ideal dos dados e em quantidades que facilitem a leitura e o processamento de dados. Uma consequência direta é a medição do teste obter um resultado de desempenho falso, já que a quantidade de dados utilizados na versão *mockada* é muito menor que a quantidade encontrada no banco real.
+
+A nível de comparação das ferramentas, temos algumas mais completas como a *Mockito* do Java, por exemplo, que em comparação com a *EasyMock* e a *jMock*, possui mais funcionalidades como:
+
+- injeção de mock;
+- mocks declarativos para a classe de teste;
+- um único arquivo jar no class path ser suficiente para usar a API.
+
+## Referências
+
+[1] Site: Wikipedia - Objeto Mock. Disponível em <https://pt.wikipedia.org/wiki/Objeto_mock>. Acesso 07/04/2021
+[2] Freeman, Steve. Growing Object-Oriented Software, Guided By Tests.
+[3] Site: Devmedia - Mocks: Introdução a Automatização de Testes com Mock Object. Disponível em <https://www.devmedia.com.br/mocks-introducao-a-automatizacao-de-testes-com-mock-object/30641>. Acesso 08/04/2021.
 ## Versionamento
 
 |Autor|Data|Descrição|Versão|
 |-----|:--:|:----:|---------|
 |Hugo Aragão|08/04/2021| Criação do documento e adição de conceitos | 0.1 |
+|Hugo Aragão|08/04/2021| Adição de limitações, comparações e referências | 0.2 |
