@@ -8,49 +8,49 @@ A seguir iremos apresentar os principais padrões criacionais e como eles se apl
 
 ## 2. Factory method
 
-O *factory method* (método de fábrica) consiste no instanciamento de um produto concreto que usa uma interface, por exemplo, uma aplicação que requer um objeto com uma interface específica para realizar as tarefas. 
+O _factory method_ (método de fábrica) consiste no instanciamento de um produto concreto que usa uma interface, por exemplo, uma aplicação que requer um objeto com uma interface específica para realizar as tarefas.
 
 #### 2.1. Vantagens:
 
-* Poder facilmente adicionar mais produtos concretos que utilizam a mesma interface.
-* Evitar um alto grau de acoplamento no código.
-* Obedece ao princípio da responsabilidade única.
+- Poder facilmente adicionar mais produtos concretos que utilizam a mesma interface.
+- Evitar um alto grau de acoplamento no código.
+- Obedece ao princípio da responsabilidade única.
 
 #### 2.2. Desvantagens:
 
-* Caso seu uso seja excessivo pode acarretar a um grande número de subclasses e de arquivos dentro do software.
+- Caso seu uso seja excessivo pode acarretar a um grande número de subclasses e de arquivos dentro do software.
 
 #### 2.3. Aplicação no projeto:
 
-Na nossa aplicação irá existir três tipos de usuários: *Admin*, *Owner* e *Costumer*. Dado essa situação, a equipe decidiu por aplicar o *factory method* por facilitará o instanciamento dessas classes. Esse três tipos de usuários serão classes que herdarão de uma classe *User* possibilitando a aplicação desse padrão de projeto.
+Na nossa aplicação irá existir três tipos de usuários: _Admin_, _Owner_ e _Costumer_. Dado essa situação, a equipe decidiu por aplicar o _factory method_ por facilitará o instanciamento dessas classes. Esse três tipos de usuários serão classes que herdarão de uma classe _User_ possibilitando a aplicação desse padrão de projeto.
 
 ## 3. Builder
 
-O padrão de projeto *Builder* tem como objetivo separar a construção de objetos complexos da sua representação de modo que o mesmo processo de construção pode criar várias representações.
+O padrão de projeto _Builder_ tem como objetivo separar a construção de objetos complexos da sua representação de modo que o mesmo processo de construção pode criar várias representações.
 
-Seu funcionamento começa na classe *Director* que possui o método que chama o *ConcrectBuilder* específico, de acordo com os parâmetros especificados. Essa classe não é essencial nesse padrão, mas é importante. Outra parte desse processo são as classes *Builders*; a primeira é uma classe abstrata que declara os métodos que devem ser implementados por um *ConcrectBuilder*; esta classe é uma classe concreta que implementa os métodos necessários para a construção do produto e, por fim, a classe *Product* é o resutado da construção implementada no *ConcrectBuilder*. Tendo em vista esse processo, ess padrão de projeto é vantajoso somente se o processo de contrução do produto em sí é muito complexo, sendo necessário a separação de responsabilidades entre as classes.
+Seu funcionamento começa na classe _Director_ que possui o método que chama o _ConcrectBuilder_ específico, de acordo com os parâmetros especificados. Essa classe não é essencial nesse padrão, mas é importante. Outra parte desse processo são as classes _Builders_; a primeira é uma classe abstrata que declara os métodos que devem ser implementados por um _ConcrectBuilder_; esta classe é uma classe concreta que implementa os métodos necessários para a construção do produto e, por fim, a classe _Product_ é o resutado da construção implementada no _ConcrectBuilder_. Tendo em vista esse processo, ess padrão de projeto é vantajoso somente se o processo de contrução do produto em sí é muito complexo, sendo necessário a separação de responsabilidades entre as classes.
 
 #### 3.1. Vantagens:
 
-* Pode-se usar a mesma construção para diversas representações do produto. Em outras palavras favorece a reusabilidade do código.
-* Pelo princípio da única responsabilidade, é separado a responsabilidade de construir o objeto de quem o usa.
-* É possível criar uma construção de um objeto em etapas.
-* Entrega um maior controle sobre a construção de um objeto.
+- Pode-se usar a mesma construção para diversas representações do produto. Em outras palavras favorece a reusabilidade do código.
+- Pelo princípio da única responsabilidade, é separado a responsabilidade de construir o objeto de quem o usa.
+- É possível criar uma construção de um objeto em etapas.
+- Entrega um maior controle sobre a construção de um objeto.
 
 #### 3.2. Desvantagens:
 
-* Aumenta a complexidade do código, ja que esse padrão requer a criação de múltiplas classes.
-* Requer que a classe Builder seja mutável.
+- Aumenta a complexidade do código, ja que esse padrão requer a criação de múltiplas classes.
+- Requer que a classe Builder seja mutável.
 
-#### 3.3. Aplicação no projeto: 
+#### 3.3. Aplicação no projeto:
 
-Todas as classes do projeto não têm mais de 4 atributos que necessitam ser inicializados junto ao objeto, oque torna a criação da maioria das classes simples ao ponto de o padrão de projeto builder se tornar desisteressante. Há apenas uma classe que pode ser usada para aplicar o método Builder que é a *OpeningHours*, ja que os horários de abertura e fechamento estão em um formato específico e cada dia da semana tem um próprio funcionamento; atualmente a responsabilidade para contrução desse objeto é da própria classe *Opening Hours*.
+Todas as classes do projeto não têm mais de 4 atributos que necessitam ser inicializados junto ao objeto, oque torna a criação da maioria das classes simples ao ponto de o padrão de projeto builder se tornar desisteressante. Há apenas uma classe que pode ser usada para aplicar o método Builder que é a _OpeningHours_, ja que os horários de abertura e fechamento estão em um formato específico e cada dia da semana tem um próprio funcionamento; atualmente a responsabilidade para contrução desse objeto é da própria classe _Opening Hours_.
 
 ## 4. Singleton
 
-Garante que uma classe tenha apenas uma instância em todo o código e oferece um ponto de acesso global para essa classe. Em outras palavras, esse padrão é usada para quando precisa de uma classe de acesso global no código, garantindo apenas uma instância. 
+Garante que uma classe tenha apenas uma instância em todo o código e oferece um ponto de acesso global para essa classe. Em outras palavras, esse padrão é usada para quando precisa de uma classe de acesso global no código, garantindo apenas uma instância.
 
-Para isso é necessário a implementação de uma classe que irá ser a variável global e em caso de multithreading irá controlar também o acesso, sob risco de criar novas instâncias. 
+Para isso é necessário a implementação de uma classe que irá ser a variável global e em caso de multithreading irá controlar também o acesso, sob risco de criar novas instâncias.
 
 #### 4.1. Vantagens:
 
@@ -67,18 +67,18 @@ Para isso é necessário a implementação de uma classe que irá ser a variáve
 
 #### 4.3. Aplicação no projeto:
 
-Dentro da nossa modelagem, a principal classe que pode ser usada o padrão *singleton* é são as classes que geram autenticação: *Costumer*, *Owner* e *Admin*. Como elas podem ser acessadas de várias parte do código, então são as favoritas para serem aplicadas os padrões de projeto.
+Dentro da nossa modelagem, a principal classe que pode ser usada o padrão _singleton_ é são as classes que geram autenticação: _Costumer_, _Owner_ e _Admin_. Como elas podem ser acessadas de várias parte do código, então são as favoritas para serem aplicadas os padrões de projeto.
 
 ## 5. Multiton
 
-Esse padrão é apenas uma generalização do *Singleton* sendo que este autoriza apenas uma instância, enquanto o *Multiton* permite uma quantidade controlada de instâncias.
+Esse padrão é apenas uma generalização do _Singleton_ sendo que este autoriza apenas uma instância, enquanto o _Multiton_ permite uma quantidade controlada de instâncias.
 
 #### 5.1. Vantagens:
 
 - Controla o acesso a várias instâncias.
 - Substitui variáveis globais.
 
-#### 5.2. Desvantagens: 
+#### 5.2. Desvantagens:
 
 - É mais difícil de testar, visto que várias partes do código alteram essa classe.
 - Viola o princípio de responsabilidade única
@@ -86,7 +86,7 @@ Esse padrão é apenas uma generalização do *Singleton* sendo que este autoriz
 
 #### 5.3. Aplicação no projeto:
 
-Assim como o *singleton* o escopo atual não permite o uso desse padrão de forma se tornar vantajoso ao sistema. Por outro lado, assim como o *singleton*, na ferramenta usada no ReactJS, que é o framework que será usado no frontend, há a aparição do padrão de projeto *singleton*/*multiton* no uso do *Context API*. 
+Assim como o _singleton_ o escopo atual não permite o uso desse padrão de forma se tornar vantajoso ao sistema. Por outro lado, assim como o _singleton_, na ferramenta usada no ReactJS, que é o framework que será usado no frontend, há a aparição do padrão de projeto _singleton_/_multiton_ no uso do _Context API_.
 
 ## 6. Object poll:
 
@@ -120,34 +120,36 @@ O Object pool se mostra vantajoso quando quando existem classes que demandam tem
 
 #### 7.3. Aplicação no projeto:
 
-A modelagem do nosso projeto não possui o principal ponto do *abstract factory* que é famílias de classes que podem ter categorias em comum. Como veremos a seguir, a nossa modelagem possui apenas uma família de classes, o que inviabiliza o uso da *abstract factory*.
+A modelagem do nosso projeto não possui o principal ponto do _abstract factory_ que é famílias de classes que podem ter categorias em comum. Como veremos a seguir, a nossa modelagem possui apenas uma família de classes, o que inviabiliza o uso da _abstract factory_.
 
 ## 8. Prototype
 
-Esse padrão cria um novo objeto a partir de uma cópia de um objeto já existente. Isso evita muito processamento de instaciamento de classes, em caso de classes complexas. 
+Esse padrão cria um novo objeto a partir de uma cópia de um objeto já existente. Isso evita muito processamento de instaciamento de classes, em caso de classes complexas.
 
-#### 8.1. Vantagens: 
+#### 8.1. Vantagens:
 
 - Oculta as classes concretas do código cliente.
 - Ajuda na criação de objetos caros/complexos
 - Evita a explosão de subclasses.
 
-#### 8.2. Desvantagens: 
+#### 8.2. Desvantagens:
 
 - Clonar objetos que tem referências a outros objetos pode ser complexo.
 
 #### 8.3. Aplicação no projeto:
 
-Esse padrão será aplicado no projeto na classe *Establishment*, pois é uma das classes mais complexas do projeto e esse padrão pode ajudar quando o usuário quer criar um novo estabelecimento a partir de um já existente, aproveitando a maior parte das informações. Pensando nisso é melhor usar um objeto existente e fazer uma cópia do que instanciar e inicializar do zero.
+Esse padrão será aplicado no projeto na classe _Establishment_, pois é uma das classes mais complexas do projeto e esse padrão pode ajudar quando o usuário quer criar um novo estabelecimento a partir de um já existente, aproveitando a maior parte das informações. Pensando nisso é melhor usar um objeto existente e fazer uma cópia do que instanciar e inicializar do zero.
 
 ## 9. Conclusão:
 
 Aqui está a versão final da modelagem do projeto:
 
 ### Versão 1.0:
+
 ![gof_criacional_v1](img/gof_criacional_v1.png)
 
 ### Versão 2.0:
+
 ![gof_criacional_v2](img/gof_criacional_v2.png)
 
 ## 10. Referências:
@@ -163,14 +165,13 @@ Aqui está a versão final da modelagem do projeto:
 
 ## 11. Versionamento:
 
-|Data|Nome|Detalhes|Versão|
-|----|---|---|---|
-| 31/03/2021 | João Pedro Carvalho | Adicionando factory methodo e iniciando o documento | 0.1 |
-| 31/03/2021 | João Pedro Carvalho | Adicionando builder  | 0.2 |
-| 31/03/2021 | João Pedro Carvalho | Adicionando singleton  | 0.3 |
-| 01/04/2021 | João Pedro Carvalho | Adicionando multiton e object pool  | 0.4 |
-| 01/04/2021 | João Pedro Carvalho | Adicionando abstract factory e prototype  | 0.5 |
-| 02/04/2021 | João Luis Baraky | Corrige erros de ortografia | 0.6 |
-| 02/04/2021 | João Luis Baraky | Adiciona Factory Method à modelagem (v2) | 0.7 |
-| 03/04/2021 | João Pedro Carvalho | Adicionando justificativa para factory method  | 1.0 |
-
+| Data       | Nome                | Detalhes                                            | Versão |
+| ---------- | ------------------- | --------------------------------------------------- | ------ |
+| 31/03/2021 | João Pedro Carvalho | Adicionando factory methodo e iniciando o documento | 0.1    |
+| 31/03/2021 | João Pedro Carvalho | Adicionando builder                                 | 0.2    |
+| 31/03/2021 | João Pedro Carvalho | Adicionando singleton                               | 0.3    |
+| 01/04/2021 | João Pedro Carvalho | Adicionando multiton e object pool                  | 0.4    |
+| 01/04/2021 | João Pedro Carvalho | Adicionando abstract factory e prototype            | 0.5    |
+| 02/04/2021 | João Luis Baraky    | Corrige erros de ortografia                         | 0.6    |
+| 02/04/2021 | João Luis Baraky    | Adiciona Factory Method à modelagem (v2)            | 0.7    |
+| 03/04/2021 | João Pedro Carvalho | Adicionando justificativa para factory method       | 1.0    |
