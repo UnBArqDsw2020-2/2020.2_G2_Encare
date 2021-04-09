@@ -128,6 +128,13 @@ O Object pool se mostra vantajoso quando quando existem classes que demandam tem
 
 É um padrão que é usado no instanciamento de familias de objetos que possuem categorias em comum. É criada uma classe abstrata factory e para cada categoria é criada uma classe concreta implementando a factory abstrata. Cada classe concreta dessas é responsável pelo instanciamento de classes de uma mesma categoria, mas de famílias diferentes.
 
+## Estrutura
+
+1. Produtos Abstratos declaram interfaces para um conjunto de produtos distintos mas relacionados que fazem parte de uma família de produtos.
+2. Produtos Concretos são várias implementações de produtos abstratos, agrupados por variantes. Cada produto abstrato deve ser implementado em todas as variantes dadas.
+3. A interface *Fabrica Abstrata* declara um conjunto de métodos para a criação de cada um dos produtos abstratos.
+4. Fábricas Concretas implementam métodos de criação fábricas abstratas. Cada fábrica concreta corresponde a uma variante específica de produtos e cria apenas aquelas variantes de produto.
+5. Embora fábricas concretas instanciam produtos concretos, assinaturas dos seus métodos de criação devem retornar produtos abstratos correspondentes.
 #### 7.1. Vantagens
 
 - Aplicação do princípio Open/Closed Principle.
@@ -146,6 +153,11 @@ A modelagem do nosso projeto não possui o principal ponto do *abstract factory*
 
 Esse padrão cria um novo objeto a partir de uma cópia de um objeto já existente. Isso evita muito processamento de instaciamento de classes, em caso de classes complexas. 
 
+## Estrutura
+
+1. A interface *Protótipo* declara os métodos de clonagem. Na maioria dos casos é apenas um método *clonar*.
+2. A classe *Protótipo Concreta* implementa o método de clonagem. Além de copiar os dados do objeto original para o clone, esses métodos também podem lidar com alguns casos específicos do processo de clonagem relacionados a colnar objetos ligados, desfazendo dependências recursivas, etc.
+3. O *Client* pode, no caso, produzir uma cópia de qualquer objeto que segue a interface do produto.
 #### 8.1. Vantagens 
 
 - Oculta as classes concretas do código cliente.
@@ -196,5 +208,6 @@ Aqui está a versão final da modelagem do projeto:
 | 04/04/2021 | Hugo, Wagner, Nícalo | Revisão do Documento  | 1.0 |
 | 09/04/2021 | Hugo Aragão          | Adiciona Estrutura Factory | 1.1 |
 | 09/04/2021 | Hugo Aragão          | Adiciona Estrutura Singleton e Builder | 1.2 |
+| 09/04/2021 | Hugo Aragão          | Adiciona Estrutura Prototype e Abstract Factory | 1.3 |
 
 
