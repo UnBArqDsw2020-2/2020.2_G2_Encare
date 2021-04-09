@@ -197,6 +197,9 @@ O Iterator é utilizado quando se quer que o código seja capaz de percorrer dif
 No nosso projeto, vários tipos de listas serão obtidas do *backend*, a princípio por meio de um objeto JSON, para serem tratadas exibidas ao usuário no *frontend*.  
 Com isso, a construção de um Iterator se torna interessante devido à variedade das listas, assim como seu tamanho, permitindo reúso.
 
+![Modelagem do exemplo Iterator](images/js-iterator.jpg) 
+
+
 Abaixo temos um trecho de código escrito em JavaScript, que será usado pelo React, com a implementação de um Iterator :
 ~~~javascript
 const Iterator = function (items) {
@@ -423,3 +426,4 @@ Não foram identificadas aplicações para este padrão.
 |08/04/2021|Nícalo Ribeiro| Adição do código do padrão Iterator | 0.7 |
 |09/04/2021|Wagner Martins| Adição de ideias de aplicação no projeto para os outros padrões | 0.8 |
 |09/04/2021|Wagner Martins| Atualização da aplicação no padrão chain of responsability | 0.9 |
+|09/04/2021|Nícalo Ribeiro| Adição da imagem de modelagem do Iterator | 1.0 |
