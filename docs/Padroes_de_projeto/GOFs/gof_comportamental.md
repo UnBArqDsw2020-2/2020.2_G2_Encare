@@ -30,7 +30,9 @@ O Chain of Responsibility é aplicado quando é esperado que o programa processe
 
 ### 2.3 Aplicação no Projeto
 
-O chain of responsability poderia ser aplicado na camada de controle da aplicação, de forma a realizar operações de logging e autorização antes de seguir para a lógica de negócio propriamente. Entretanto, essas operações geralmente já são implementadas por frameworks.
+O padrão chain of responsability pode ser exemplificado no QueryBuilder usado pela classe Filtro para a filtragem dos estabelecimentos de acordo com parâmetros como distância, serviços procurados e avaliação. A classe abstrata QueryBuilder contém a definição básica para a chaining, enquanto que suas concretas RatingQuery, GeolocationQuery e ServiceQuery são responsáveis por montar, em ordem, o pedido que será feito ao banco de dados.
+
+O chain of responsability poderia ser também aplicado na camada de controle da aplicação, de forma a realizar operações de logging e autorização, por exemplo, antes de seguir para a lógica de negócio propriamente. Entretanto, essas operações geralmente já são implementadas por frameworks.
 
 ## 3. Command
 O Command é um padrão de projeto comportamental que transforma um pedido em um objeto independente que contém toda a informação sobre o pedido. Essa transformação permite que você parametrize métodos com diferentes pedidos, atrase ou coloque a execução do pedido em uma fila, e suporte operações que não podem ser feitas.
@@ -352,7 +354,7 @@ Pode ser utilizado quando se tem muitas classes parecidas que somente diferem na
   
 ### 9.3 Aplicação no Projeto
 
-As classes User, Estabilishment e Service precisam ter instâncias salvas, atualizadas, lidas ou apagadas. Uma aplicação de Strategy nesse caso poderia usar uma interface de CRUD, cujas classes concretas se encarregam dessas operações de forma especializada para cada entidade que necessita dessas operações.
+As classes User, Estabilishment e Service precisam ter instâncias salvas, atualizadas ou apagadas. Uma aplicação de Strategy nesse caso poderia usar uma interface Register, cujas classes concretas se encarregam dessas operações de forma especializada para cada entidade que necessita dessas operações.
 
 ## 10. Template Method
 Também conhecido como Método padrão, é um padrão de projeto comportamental que define o esqueleto de um algoritmo na superclasse mas deixa as subclasses sobrescreverem etapas específicas do algoritmo sem modificar sua estrutura.
