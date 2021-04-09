@@ -36,5 +36,5 @@ A equipe teve dificuldade em produzir os documentos por incompatibilidade de hor
 |-----|-------|---------|---------|
 | 01/03/2021 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
 | 01/03/2021 | Hugo Aragão | Documentação da Sprint 1 | 0.2 |
-| 09/03/2021 | Nícalo Ribeiro | Revisão e formatacao | 0.6 |
+| 09/03/2021 | Nícalo Ribeiro | Revisão e formatacao | 1.0 |
 
