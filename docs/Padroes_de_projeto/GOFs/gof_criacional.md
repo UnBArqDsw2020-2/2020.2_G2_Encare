@@ -11,6 +11,13 @@ O *factory method* (método de fábrica) consiste no instanciamento de um produt
 
 Em termos práticos é uma criação de uma classe que será fábrica de um determinando produto. Exixtem duas implementações encontrada: a primeira é uma fábrica concreta para todos as classes que implementam uma interface e a segunda é uma fábrica para cada produto que implementa a interface. Enquanto a primeira seja mais simples de ser implementada, apenas a segunda atende o principio do open/close.
 
+## Estrutura
+
+1. É declarada uma *interface*, que é comum a todos os objetos que podem ser produzidos pelo criador pelo criador e suas subclasses.
+2. Em seguida as classes criadas serão implementações dessa *interface*.
+3. A classe *Criadora* declara o método fábrica que retorna novos objetos produto, e logo após retornando o resultado para a *interface*.
+4. As classes criadoras filhas sobrescrevem o método fábrica da *Criadora*, logo após retornando um tipo diferente de produto.
+
 #### 2.1. Vantagens
 
 * Poder facilmente adicionar mais produtos concretos que utilizam a mesma interface.
@@ -175,5 +182,6 @@ Aqui está a versão final da modelagem do projeto:
 | 02/04/2021 | João Luis Baraky | Adiciona Factory Method à modelagem (v2) | 0.7 |
 | 03/04/2021 | João Pedro Carvalho | Adicionando justificativa para factory method  | 1.0 |
 | 04/04/2021 | Hugo, Wagner, Nícalo | Revisão do Documento  | 1.0 |
+| 09/04/2021 | Hugo Aragão          | Adiciona Estrutura Factory | 1.1 |
 
 
