@@ -25,6 +25,35 @@ Em termos práticos é uma criação de uma classe que será fábrica de um dete
 
 Na nossa aplicação irá existir três tipos de usuários: *Admin*, *Owner* e *Costumer*. Dado essa situação, a equipe decidiu por aplicar o *factory method* por facilitará o instanciamento dessas classes. Esse três tipos de usuários serão classes que herdarão de uma classe *User* possibilitando a aplicação desse padrão de projeto.
 
+A implementação em código seria, por exemplo:
+
+~~~python
+
+from abc import ABC, abstractmethod
+
+class UserFactory(ABC):
+
+    @abstractmethod
+    def getUser(self, username, password):
+        pass
+
+class AdminFactory(UserFactory):
+    
+    def getUser(self, username, password) -> User:
+        return Admin(username, password)
+
+class CustomerFactory(UserFactory):
+    
+    def getUser(self, username, password, name) -> User:
+        return Customer(username, password, name)
+
+class OwnerFactory(UserFactory):
+    
+    def getUser(self, username, password, name) -> User:
+        return Owner(username, password, name)
+
+~~~
+
 ## 3. Builder
 
 O padrão de projeto *Builder* tem como objetivo separar a construção de objetos complexos da sua representação de modo que o mesmo processo de construção pode criar várias representações.
@@ -141,6 +170,25 @@ Esse padrão cria um novo objeto a partir de uma cópia de um objeto já existen
 
 Esse padrão será aplicado no projeto na classe *Establishment*, pois é uma das classes mais complexas do projeto e esse padrão pode ajudar quando o usuário quer criar um novo estabelecimento a partir de um já existente, aproveitando a maior parte das informações. Pensando nisso é melhor usar um objeto existente e fazer uma cópia do que instanciar e inicializar do zero.
 
+A implementação em código seria, por exemplo:
+
+~~~python
+
+import copy
+
+class Prototype:
+
+    def clone(self) -> Establishment:
+        pass
+
+class Establishment(Prototype):
+    ...
+
+    def clone(self) -> Establishment:
+        return copy.copy(self)
+
+~~~
+
 ## 9. Conclusão:
 
 Aqui está a versão final da modelagem do projeto:
@@ -174,4 +222,5 @@ Aqui está a versão final da modelagem do projeto:
 | 02/04/2021 | João Luis Baraky | Corrige erros de ortografia | 0.6 |
 | 02/04/2021 | João Luis Baraky | Adiciona Factory Method à modelagem (v2) | 0.7 |
 | 03/04/2021 | João Pedro Carvalho | Adicionando justificativa para factory method  | 1.0 |
+| 09/04/2021 | João Luis Baraky e Joao Pedro Carvalho | Adiciona códigos da implementação do factory method e prototype  | 2.0 |
 
