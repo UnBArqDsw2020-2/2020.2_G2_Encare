@@ -30,9 +30,9 @@ O Chain of Responsibility é aplicado quando é esperado que o programa processe
 
 ### 2.3 Aplicação no Projeto
 
-O padrão chain of responsability pode ser exemplificado no QueryBuilder usado pela classe Filtro para a filtragem dos estabelecimentos de acordo com parâmetros como distância, serviços procurados e avaliação. A classe abstrata QueryBuilder contém a definição básica para a chaining, enquanto que suas concretas RatingQuery, GeolocationQuery e ServiceQuery são responsáveis por montar, em ordem, o pedido que será feito ao banco de dados.
+O padrão Chain of Responsability pode ser exemplificado no QueryBuilder usado pela classe Filtro para a filtragem dos estabelecimentos de acordo com parâmetros como distância, serviços procurados e avaliação. A classe abstrata QueryBuilder contém a definição básica para a chaining, enquanto que suas concretas RatingQuery, GeolocationQuery e ServiceQuery são responsáveis por montar, em ordem, o pedido que será feito ao banco de dados.
 
-O chain of responsability poderia ser também aplicado na camada de controle da aplicação, de forma a realizar operações de logging e autorização, por exemplo, antes de seguir para a lógica de negócio propriamente. Entretanto, essas operações geralmente já são implementadas por frameworks.
+O Chain of Responsability poderia ser também aplicado na camada de controle da aplicação, de forma a realizar operações de logging e autorização, por exemplo, antes de seguir para a lógica de negócio propriamente. Entretanto, essas operações geralmente já são implementadas por frameworks.
 
 ## 3. Command
 O Command é um padrão de projeto comportamental que transforma um pedido em um objeto independente que contém toda a informação sobre o pedido. Essa transformação permite que você parametrize métodos com diferentes pedidos, atrase ou coloque a execução do pedido em uma fila, e suporte operações que não podem ser feitas.
@@ -185,8 +185,8 @@ O Iterator é utilizado quando se quer que o código seja capaz de percorrer dif
 5. Client - trabalha tanto com as coleções como os iteradores através de suas interfaces. Dessa forma o cliente não fica acoplado a suas classes concretas, permitindo usar várias coleções e iteradores com o mesmo código client.
    
 ### 4.1 Vantagens
-- Princípio de responsabilidade única. é possível limpar o código cliente e as coleções ao extrair os pesados algoritmos de travessia para classes separadas.
-- Princípio aberto/fechado. é possível implementar novos tipos de coleções e iteradores e passá-los para o código existente sem quebrar coisa alguma.
+- Princípio de responsabilidade única. É possível limpar o código cliente e as coleções ao extrair os pesados algoritmos de travessia para classes separadas.
+- Princípio aberto/fechado. É possível implementar novos tipos de coleções e iteradores e passá-los para o código existente sem quebrar coisa alguma.
 - É possível iterar sobre a mesma coleção em paralelo porque cada objeto iterador contém seu próprio estado de iteração.
 - Pelas mesmas razões, é possível atrasar uma iteração e continuá-la quando necessário.
 
@@ -196,9 +196,6 @@ O Iterator é utilizado quando se quer que o código seja capaz de percorrer dif
 ### 4.3 Aplicação no Projeto
 No nosso projeto, vários tipos de listas serão obtidas do *backend*, a princípio por meio de um objeto JSON, para serem tratadas exibidas ao usuário no *frontend*.  
 Com isso, a construção de um Iterator se torna interessante devido à variedade das listas, assim como seu tamanho, permitindo reúso.
-
-![Modelagem do exemplo Iterator](images/js-iterator.jpg) 
-
 
 Abaixo temos um trecho de código escrito em JavaScript, que será usado pelo React, com a implementação de um Iterator :
 ~~~javascript
@@ -271,7 +268,7 @@ No escopo estendido da aplicação, o mediator pode se caracterizar como um medi
 
 ## 6. Memento
 O Memento é um padrão de projeto comportamental que permite que você salve e restaure o estado anterior de um objeto sem revelar os detalhes de sua implementação.
-O padrão Memento é usado quando se quer produzir retratos do estado de um objeto para ser capaz de restaurar um estado anterior do objeto.
+O padrão Memento é usado quando se quer produzir retratos (*snapshots*) do estado de um objeto para ser capaz de restaurar um estado anterior do objeto.
 
 ## Estrutura  
 1. Classe Originadora - pode produzir retratos de seu próprio estado, bem como restaurar seu estado de retratos quando necessário.
@@ -320,7 +317,7 @@ O padrão State pode ser usado quando se tem um objeto que se comporta de maneir
 ## Estrutura
 1. Contexto - armazena uma referência a um dos objetos concretos de estado e delega a eles todos os trabalhos específicos de estado. O contexto se comunica com o objeto estado através da interface do estado. O contexto expõe um setter para passar a ele um novo objeto de estado.
 2. Interface do Estado - declara métodos específicos a estados. Esses métodos devem fazer sentido para todos os estados concretos porque você não quer alguns dos seus estados tendo métodos inúteis que nunca irão ser chamados.
-3. Estados Concretos - fornecem suas próprias implementações para os métodos específicos de estados. Objetos de estado podem armazenar referências retroativas para o objeto de contexto.Através dessa referência o estado pode buscar qualquer informação desejada do objeto contexto, assim como iniciar transições de estado.
+3. Estados Concretos - fornecem suas próprias implementações para os métodos específicos de estados. Objetos de estado podem armazenar referências retroativas para o objeto de contexto. Através dessa referência o estado pode buscar qualquer informação desejada do objeto contexto, assim como iniciar transições de estado.
 4. Ambos os estados de contexto e concretos podem configurar o próximo estado do contexto e realizar a atual transição de estado ao substituir o objeto estado ligado ao contexto.
 
 ### 8.1 Vantagens
@@ -426,4 +423,3 @@ Não foram identificadas aplicações para este padrão.
 |08/04/2021|Nícalo Ribeiro| Adição do código do padrão Iterator | 0.7 |
 |09/04/2021|Wagner Martins| Adição de ideias de aplicação no projeto para os outros padrões | 0.8 |
 |09/04/2021|Wagner Martins| Atualização da aplicação no padrão chain of responsability | 0.9 |
-|09/04/2021|Nícalo Ribeiro| Adição da imagem de modelagem do Iterator | 1.0 |
