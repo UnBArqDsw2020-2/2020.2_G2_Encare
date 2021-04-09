@@ -26,6 +26,12 @@ nav:
           - Diagrama de Atividade: Modelagem/diagrama_atividades/diagrama_de_atividades.md
       - Modelagem Ágil:
           - Backlog do Produto: Modelagem/backlog/Backlog.md
+  - Padrões de Projeto:
+    # - GRASPs: 
+    - GoFs Criacionais: Padroes_de_projeto/GOFs/gof_criacional.md
+    - GoFs Estruturais: Padroes_de_projeto/GOFs/gof_estrutural.md
+    # - GoFs Comportamentais: 
+    # - Padrões Emergentes: 
   - Iniciativas Extras:
       - Documentação das Sprints:
           - Sprints: Modelagem/sprints/Sprints.md

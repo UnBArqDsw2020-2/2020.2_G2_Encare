@@ -1,4 +1,5 @@
-# GOFs Estruturais
+# GoFs Estruturais
+
 ## 1. Introdução
 
 Seguindo com os padrões de projeto GOFs temos os estruturais. Esses padrões focam em como classes e objetos se compõem para formar estruturas complexas. 
@@ -7,14 +8,14 @@ Sendo assim vamos apresentar os principais padrões, suas vantagens e desvantage
 
 #### 1.1. Siglas e acrônimos:
 
-|Termo|Representação|
-|---|---|
-|GOF| Gang of Four (em referência aos 4 autores do livro em [1])|
-|SRP| Single Responsibility Principle|
-|OCP| Open Close Principle|
-|DRF| Django REST Framework|
-|SO| Sistema operacional|
-|ISP|Interface segregation principle|
+| Termo | Representação                                              |
+| ----- | ---------------------------------------------------------- |
+| GOF   | Gang of Four (em referência aos 4 autores do livro em [1]) |
+| SRP   | Single Responsibility Principle                            |
+| OCP   | Open Close Principle                                       |
+| DRF   | Django REST Framework                                      |
+| SO    | Sistema operacional                                        |
+| ISP   | Interface segregation principle                            |
 
 ## 2. Adapter
 
@@ -34,7 +35,7 @@ Metaforicamente, o adapter é um adptador de tomada que permite que um plug se c
 
 - Aumenta a complexidade do código.
 
-#### 2.3. Aplicação no projeto.
+#### 2.3. Aplicação no projeto
 
 O próprio DRF aplica em algumas classes o padrão de projeto *Adapter* como podemos ver [aqui](https://davenathanaeld.medium.com/design-pattern-django-rest-framework-1e8c17946bce). Para o projeto, as classes entre si, não há problemas de compatibilidade; por outro lado, a adapter pode ser usada para conversar com o banco de dados e fazer as devidas requisições. 
 
@@ -58,7 +59,7 @@ Um bom exemplo sobre abstração e implementação é a relação entre a GUI e 
 
 - Aumenta a complexidade do projeto quando aplicada em locais inapropriados.
 
-#### 3.3. Aplicação no projeto.
+#### 3.3. Aplicação no projeto
 
 Aplicar o Bridge no projeto irá aumentar a complexidade sem ter vantagens significativas, dado que poucos pontos do projeto tem essa relação abstração-implementação.
 
@@ -79,7 +80,7 @@ Simplificando, a *Composite* pode ser descrita como uma classe que represente to
 
 - Dependendo da estrutura pode quebrar o ISP em estruturas folhas que podem não usar alguns de seus métodos.
 
-#### 4.3. Aplicação no projeto.
+#### 4.3. Aplicação no projeto
 
 Uma possível aplicação é com relação a estrutura englobada pela classe owner, estabeliciment e suas filhas. Essa estrutura se assemelha a uma árvore, entretanto, possui várias funções distintas, sendo assim, aplicar esse padrão nesse caso acima fere o ISP.
 
@@ -105,7 +106,7 @@ a classe base alvo.
 - É possível argumentar que, em certos contextos, decorators apresentam problemas semelhantes aos causados por herança múltipla - [problema do diamante](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem). Neste sentido, se usados sem cuidado, podem causar uma refatoração geral das funcionalidades envolvidas.
 - Caso muitas funcionalidades sejam adicionadas por meio de decorators, existe o risco de interferências entre si. Pelo fato de decorators separarem funcionalidades, fica mais difícil de depurar qual é a interação de dois ou mais decorators que causam o problema. Neste contexto, classes herdadadas seriam mais fáceis de serem consertadas.
 
-#### 5.3. Aplicação no projeto.
+#### 5.3. Aplicação no projeto
 
 Embora a arquitetura do projeto Encare não seja complexa o suficiente para se
 considerar a necessidade de adicionar um decotarator no seu *stricto senso*, 
@@ -155,7 +156,7 @@ Esse padrão promove uma interface unificada para um conjunto de interfaces em u
 
 - O ISP e o RSP pode ser facilmente quebrados.
 
-#### 6.3. Aplicação no projeto.
+#### 6.3. Aplicação no projeto
 
 É um interessante padrão de simples implementação. No projeto, utilizaremos para fornecer uma interface mais simples e independente da tecnologia de armazenamento de dados para lidar com as ações relacionadas a contagem de visitas diárias de um estabelecimento.
 
@@ -171,7 +172,7 @@ No livro Design pattern [1], os autores listam uma série de fatores para o uso 
 - Os custos de armazenamento são altos (memória e tempo de processamento).
 - A maioria dos estados dos objetos podem ser compartilhados.
 - Muitos objetos podem ser substituidos por poucos objetos compatilhados.
-- A aplicaçaõ nãi depende da identidade dos objetos.
+- A aplicaçaõ não depende da identidade dos objetos.
 
 #### 7.1. Vantagens
 
@@ -181,7 +182,7 @@ No livro Design pattern [1], os autores listam uma série de fatores para o uso 
 
 - Muito complexo em nível de código.
 
-#### 7.3. Aplicação no projeto.
+#### 7.3. Aplicação no projeto
 
 Esse padrão é usado em uma situação bem específica e possui várias condições que precisam ser atendidas para que seja vantasojo ou mesmo seja possível aplicar no projeto. No caso do projeto Encare, a quantidade de objetos não é grande em nenhum dos casos e não pode ser notado nenhum consumo excessivo de memória nesse estágio do desenvolvimento (modelagem), portanto é inviário o uso desse padrão de projeto.
 
@@ -201,9 +202,42 @@ O *Proxy* controla todo o fluxo de informações entre o código cliente e o obj
 
 - Aumenta a complexidade do sistema.
 
-#### 8.3. Aplicação no projeto.
+#### 8.3. Aplicação no projeto
 
 É um padrão muito versátil e será utilizado no projeto como um intermediador na interação da classe *Geolocation* com a API do Google Maps, validando a latitude e longitude e adicionando o Token da API antes de enviar o *request*.
+
+Representação: 
+
+![gof_criacional_v1](img/gof_proxy.png)
+
+Código:
+
+~~~python
+import re
+import googlemaps
+from abc import ABCMeta, abstractmethod
+
+class GoogleMapsInterface():
+    __metaclass__ = ABCMeta
+
+    @abc.abstractmethod
+    def getDistance():
+        raise NotImplementedError
+
+class ProxyGoogleMaps():
+    def __init__(self):
+        self.googleMapsServices = googlemaps.Client(key='MY_KEY')
+
+    def checkGeolocation(coords) -> bool:
+        patternLat = 'regex_lat'
+        patternLng = 'regex_lng'
+        return re.search(patternLat, coords.lat) and re.search(patternLng, coords.lng)
+
+    def getDistance(self, source, destination) -> float:
+        if checkGeolocation(source) and checkGeolocation(destination):
+            return self.googleMapsServices.distance_matrix(origins=source, destinations=destination)
+~~~
+
 
 ## 9. Conclusão
 ## 10. Referências
@@ -215,13 +249,14 @@ O *Proxy* controla todo o fluxo de informações entre o código cliente e o obj
 
 ## 11. Versionamento.
 
-|Data|Nome|Detalhes|Versão|
-|---|----|---|---|
-| 4/4/2021 | João Pedro Carvalho | Adiciona padrão Adapter | 0.1 |
-| 4/4/2021 | Renato Britto Araujo | Adiciona padrão Decorator | 0.2 |
-| 4/4/2021 | João Pedro Carvalho| Adiciona padrão Bridge | 0.3 |
-| 5/4/2021 | João Pedro Carvalho| Adiciona padrão Composite | 0.4 |
-| 5/4/2021 | João Pedro Carvalho| Adiciona padrão Facade | 0.5 |
-| 6/4/2021 | João Pedro Carvalho| Adiciona padrão Flyweight | 0.6 |
-| 6/4/2021 | João Pedro Carvalho| Adiciona padrão Proxy | 0.7 |
-| 8/4/2021 | João Luis Baraky e Gustavo Nogueira| Atualiza aplicação do projeto do Facade e Proxy | 0.8 |
+| Data      | Nome                                | Detalhes                                        | Versão |
+| --------- | ----------------------------------- | ----------------------------------------------- | ------ |
+| 4/4/2021  | João Pedro Carvalho                 | Adiciona padrão Adapter                         | 0.1    |
+| 4/4/2021  | Renato Britto Araujo                | Adiciona padrão Decorator                       | 0.2    |
+| 4/4/2021  | João Pedro Carvalho                 | Adiciona padrão Bridge                          | 0.3    |
+| 5/4/2021  | João Pedro Carvalho                 | Adiciona padrão Composite                       | 0.4    |
+| 5/4/2021  | João Pedro Carvalho                 | Adiciona padrão Facade                          | 0.5    |
+| 6/4/2021  | João Pedro Carvalho                 | Adiciona padrão Flyweight                       | 0.6    |
+| 6/4/2021  | João Pedro Carvalho                 | Adiciona padrão Proxy                           | 0.7    |
+| 8/4/2021  | João Luis Baraky e Gustavo Nogueira | Atualiza aplicação do projeto do Facade e Proxy | 0.8    |
+| 08/4/2021 | João Luis Baraky e Gustavo Nogueira | Atualiza aplicação do projeto do Proxy          | 0.9    |
