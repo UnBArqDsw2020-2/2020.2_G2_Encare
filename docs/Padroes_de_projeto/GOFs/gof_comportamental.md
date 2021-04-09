@@ -5,6 +5,11 @@ Os padrões comportamentais são voltados aos algoritmos e a designação de res
 
 Os padrões comportamentais de classes utilizam a herança para distribuir o comportamento entre classes, e os padrões de comportamento de objeto utilizam a composição de objetos em contrapartida a herança. Alguns descrevem como grupos de objetos cooperam para a execução de uma tarefa que não poderia ser executada por um objeto sozinho.
 
+O documento apresenta uma visão geral dos GOFs Comportamentais, com descrição do o que é, a estrutura, vantagens e desvantagens e aplicação no projeto. Para a maioria são apresentadas apenas ideias da aplicação. Os padrões que apresentados com exemplos de implementação foram:
+
+- [Iterator](#4-iterator)
+- [Command](#3-command)
+
 ## 2. Chain of Responsibility  
 O Chain of Responsibility é um padrão de projeto comportamental que permite que você passe pedidos por uma corrente de handlers. Ao receber um pedido, cada handler decide se processa o pedido ou o passa adiante para o próximo handler na corrente.  
 
@@ -24,8 +29,8 @@ O Chain of Responsibility é aplicado quando é esperado que o programa processe
 - Alguns pedidos podem acabar sem tratamento.
 
 ### 2.3 Aplicação no Projeto
--- A PRINCIPIO NÃO É APLICÁVEL --
-- - -
+
+O chain of responsability poderia ser aplicado na camada de controle da aplicação, de forma a realizar operações de logging e autorização antes de seguir para a lógica de negócio propriamente. Entretanto, essas operações geralmente já são implementadas por frameworks.
 
 ## 3. Command
 O Command é um padrão de projeto comportamental que transforma um pedido em um objeto independente que contém toda a informação sobre o pedido. Essa transformação permite que você parametrize métodos com diferentes pedidos, atrase ou coloque a execução do pedido em uma fila, e suporte operações que não podem ser feitas.
@@ -256,9 +261,8 @@ O Mediator é um padrão de projeto comportamental que permite que você reduza 
 - Com o tempo um mediador pode evoluir para um Objeto Deus. Na programação orientada a objetos, um Objeto Deus é um objeto que sabe demais ou faz demais. O objeto deus é um exemplo de um antipadrão em projetos de software.
 
 ### 5.3 Aplicação no Projeto
--- A PRINCIPIO NO FILTRO --
 
-- - -
+No escopo estendido da aplicação, o mediator pode se caracterizar como um mediador entre um usuário cliente (Customer) e um usuário dono de estabelecimento (Owner), por meio de um componente de chat.
 
 ## 6. Memento
 O Memento é um padrão de projeto comportamental que permite que você salve e restaure o estado anterior de um objeto sem revelar os detalhes de sua implementação.
@@ -278,9 +282,8 @@ O padrão Memento é usado quando se quer produzir retratos do estado de um obje
 - Cuidadoras devem acompanhar o ciclo de vida da originadora para serem capazes de destruir mementos obsoletos.
 - A maioria das linguagens de programação dinâmicas, tais como PHP, Python, e JavaScript, não conseguem garantir que o estado dentro do memento permaneça intacto.
 ### 6.3 Aplicação no Projeto
--- A PRINCIPIO SEM APLICAÇÃO -- 
 
-- - -
+Esse comportamento pode ser usado em componentes de escrita, como no chat ou avaliação do estabelecimento. As tags de entreda do HTML contêm mecânismos de um memento.
 
 ## 7. Observer
 O Observer é um padrão de projeto comportamental que permite que você defina um mecanismo de assinatura para notificar múltiplos objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando. Também pode ser conhecido como Observador, Assinante do evento, Event-Subscriber, Escutador, Listener.
@@ -302,8 +305,8 @@ O padrão Observer pode ser usado quando mudanças no estado de um objeto podem 
 - Assinantes são notificados em ordem aleatória
   
 ### 7.3 Aplicação no Projeto
--- A CLASSE DO CHAT FAZ ISSO --
-- - -
+
+O chat, além de um mediator, também aplica o padrão de Observer, uma vez que ele precisa manter uma lista dos usuários participantes, e precisa escutar os eventos de conexão, desconexão e envio de mensagens entre os usuários.
 
 ## 8. State
 O State é um padrão de projeto comportamental que permite que um objeto altere seu comportamento quando seu estado interno muda. É como se o objeto mudasse de classe.
@@ -322,8 +325,8 @@ O padrão State pode ser usado quando se tem um objeto que se comporta de maneir
 ### 8.2 Desvantagens
 - Aplicar o padrão pode ser um exagero se a máquina de estado só tem alguns estados ou raramente muda eles.
 ### 8.3 Aplicação no Projeto
--- A PRINCIPIO NENHUM -- 
-- - -
+
+O gerenciamento de estado de componentes é muito utilizado no frontend. Um exemplo disso pode ser a mudança de contexto entre a tela inicial e a visualização de algum estabelecimento específico. 
 
 ## 9. Strategy
 O Strategy é um padrão de projeto comportamental que permite que você defina uma família de algoritmos, coloque-os em classes separadas, e faça os objetos deles intercambiáveis. O padrão Strategy sugere que se pegue uma classe que faz algo específico em diversas maneiras diferentes e extraia todos esses algoritmos para classes separadas chamadas estratégias.
@@ -348,8 +351,8 @@ Pode ser utilizado quando se tem muitas classes parecidas que somente diferem na
 - Muitas linguagens de programação modernas tem suporte do tipo funcional que permite que implemente diferentes versões de um algoritmo dentro de um conjunto de funções anônimas. Então é possível usar essas funções exatamente como se estivesse usando objetos estratégia, mas sem inchar seu código com classes e interfaces adicionais.
   
 ### 9.3 Aplicação no Projeto
--- NA PARTE DE 'USER' --
-- - -
+
+As classes User, Estabilishment e Service precisam ter instâncias salvas, atualizadas, lidas ou apagadas. Uma aplicação de Strategy nesse caso poderia usar uma interface de CRUD, cujas classes concretas se encarregam dessas operações de forma especializada para cada entidade que necessita dessas operações.
 
 ## 10. Template Method
 Também conhecido como Método padrão, é um padrão de projeto comportamental que define o esqueleto de um algoritmo na superclasse mas deixa as subclasses sobrescreverem etapas específicas do algoritmo sem modificar sua estrutura.
@@ -367,9 +370,8 @@ Pode ser utilizade quando se tem várias classes que contém algoritmos quase id
 - Alguns clientes podem ser limitados ao fornecer o esqueleto de um algoritmo.
 - Implementações do padrão Template Method tendem a ser mais difíceis de se manter quanto mais etapas eles tiverem.
 ### 10.3 Aplicação no Projeto
--- A PRINCIPIO NAO FOI IDENTIFICADO --
 
-- - -
+Não foram identificados casos que o Template Method precise ser implementado no projeto. Entretanto esse padrão pode ser observado em funções muito usadas como filter ou order no Javascript, que recebem funções para controlar os elementos internos de coleções.
 
 ## 11. Visitor
 O Visitor é um padrão de projeto comportamental que permite que você separe algoritmos dos objetos nos quais eles operam. O padrão Visitor sugere que você coloque o novo comportamento em uma classe separada chamada visitante, ao invés de tentar integrá-lo em classes já existentes.
@@ -393,12 +395,9 @@ O Visitor é um padrão de projeto comportamental que permite que você separe a
 
 ### 11.3 Aplicação no Projeto
 
--- A PRINCIPIO NÃO HÁ --
-- - -
+Não foram identificadas aplicações para este padrão.
 
-## 12. Conclusão
-
-- - -
+<!-- ## 12. Conclusão -->
 
 ## 13. Referências
 
@@ -420,3 +419,4 @@ O Visitor é um padrão de projeto comportamental que permite que você separe a
 |03/04/2021|Nícalo, Wagner, Hugo| Adição dos conceitos de Strategy, Template Method e Visitor | 0.5 |
 |08/04/2021|Wagner Martins| Adição da modelagem e código do padrão command | 0.6 |
 |08/04/2021|Nícalo Ribeiro| Adição do código do padrão Iterator | 0.7 |
+|08/04/2021|Wagner Martins| Adição de ideias de aplicação no projeto para os outros padrões | 0.8 |
