@@ -50,8 +50,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  logo: assets/images/logo-encare.png
-  favicon: assets/images/favicon-encare.png
+  logo: assets/images/logo-encare.svg
+  favicon: assets/images/favicon-encare.svg
 
 markdown_extensions:
   - pymdownx.highlight
