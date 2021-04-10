@@ -57,13 +57,13 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 
 ## Vídeo(s) Segunda Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
 
-[Apresentação GOFS](https://youtu.be/oNzh8aOc1qU)  
+[Apresentação GOFs](https://youtu.be/oNzh8aOc1qU)  
 
-[Apresentação Emergentes](https://youtu.be/Eo-qLv7fTFk)  
+[Apresentação Padrões Emergentes](https://youtu.be/Eo-qLv7fTFk)  
 
-[Apresentação Extras](https://youtu.be/TiEyO3wagP0)  
+[Apresentação Iniciativas Extras](https://youtu.be/TiEyO3wagP0)  
 
-[Apresentação GRASPS](https://youtu.be/8Oc10Y0dfGk)
+[Apresentação GRASPs](https://youtu.be/8Oc10Y0dfGk)
 
 <!-- ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
