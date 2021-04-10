@@ -1,4 +1,5 @@
 # Glossário
+
 Um glossário é uma lista de termos de um determinado domínio de conhecimento com a definição destes termos. De um modo geral, um glossário contém explicações de conceitos relevantes de um certo campo de estudo ou ação.  
 
 > Um vocabulário comum é um elemento essencial para uma profissão. O Léxico de Termos de Gerenciamento de
@@ -138,7 +139,7 @@ Vale ressaltar que o glossário do PMBOK 6ª Edição [[2]](#ref2) é mais exten
 - <span id="ref1">[1]</span> “Scrum Glossary.” scrum.org, 2021. https://www.scrum.org/resources/scrum-glossary.
 - <span id="ref2">[2]</span> PMI. A Guide to the Project Management Body of Knowledge. 6ª  Edição, 2017.
   
-## Histórico de versão  
+## Versionamento
 
 |Versão | Data | Comentários | Autor(es) |
 |-------|------|-------------|-----------|

@@ -1,4 +1,5 @@
-# Requisitos do produto
+# Requisitos do Produto
+
 Esse documento contém as técnicas de elicitação que foram utilizadas e os requisitos levantados a partir delas.  
 
 Termos e seus significados: 
@@ -151,7 +152,7 @@ A partir da análise do que foi levantado no Storytelling, Introspecção e Brai
 |RNF02|O sistema deverá ter portabilidade para uso em mobile e desktop.|INT14, INT8|
 
 - - -  
-### Histórico de versão  
+## Versionamento
 
 | Data | Nome | Detalhe | Versão |
 |------|-------|--------|--------|

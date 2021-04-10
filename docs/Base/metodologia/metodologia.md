@@ -1,12 +1,12 @@
-# Metodologia:
+# Metodologia
 
-## Introdução:
+## Introdução
 
 Segundo o dicionário michelis [1], metodologia pode ser entendida como um conjunto de regras e procedimentos para a realização de uma pesquisa. Na área de software a metodologia tem sentido semelhante, sendo também um conjunto de regras e procedimentos que regem um projeto.
 
 A fim de poder economizar tempo e ser mais produtivo, a equipe definiu as metodologias que serão usadas para o seguimento do projeto. Este documento tem por objetivo explicar quais são as metodologias escolhidas e como elas inteferem no modo de trabalhar da equipe.
 
-## Metodologias escolhidas: 
+## Metodologias escolhidas
 
 ### Scrum
 
@@ -28,7 +28,7 @@ O XP (extreme programming) é uma metodologia focada no desenvolvimento de softw
 
 O Kanban é um sistema ágil e visual de gestão de tarefas dividindo-as em colunas, que representam o status das tarefas inseridas em cada coluna. [4]
 
-## Ferramentas usadas pela equipe:
+## Ferramentas usadas pela equipe
 
 ### Telegram
 
@@ -50,14 +50,14 @@ O github pages é uma página da web onde é apresentada os documentos e outros 
 
 É a ferramenta de videoconferência usada pela equipe para reuniões e gravação das apresentações.
 
-## Referências:
+## Referências
 
 [1] - https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/metodologia/  
 [2] - https://www.desenvolvimentoagil.com.br/scrum/  
 [3] - https://www.treinaweb.com.br/blog/o-que-e-xp-extreme-programming/  
 [4] - https://artia.com/kanban/  
 
-## Versionamento:
+## Versionamento
 
 | Data | Nome | Detalhe | Versão |
 |------|------|---------|--------|
