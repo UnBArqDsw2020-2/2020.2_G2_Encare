@@ -47,7 +47,7 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 
 [Apresentação Iniciativas Extras](https://youtu.be/JcWaGilgkzo)
 
-## Vídeo(s) Terceira Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
+## Screenshots Terceira Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
 
 ![GOFS](docs/Padroes_de_projeto/img/screenshot1.png)
 
@@ -55,7 +55,7 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 
 ![Padroes Emergentes](docs/Padroes_de_projeto/img/screenshot3.png)
 
-## Vídeo(s) Segunda Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
+## Vídeo(s) Terceira Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
 
 [Apresentação GOFs](https://youtu.be/oNzh8aOc1qU)  
 
