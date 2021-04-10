@@ -23,7 +23,12 @@ junto com os artefatos que os implementam e os nós aos quais são instalados e 
 ![componentesV3](imagens/Componentes_v3.png)
 
 
-## Histórico de revisões
+## Referências
+
+- [1] Linguagem de Modelagem Unificada Em Português. Disponível no material disponibilizado no moodle da disciplina.
+- [2] UML Component Diagrams. Disponível em https://www.uml-diagrams.org/component-diagrams.html
+
+## Versionamento
 
 | Versão | Data       | Descrição                                     | Autor                             |
 | ------ | ---------- | --------------------------------------------- | --------------------------------- |
@@ -31,9 +36,3 @@ junto com os artefatos que os implementam e os nós aos quais são instalados e 
 | 0.2    | 01/03/2021 | Adição da versão 2 do diagrama de componentes | Gustavo Nogueira e Wagner Martins |
 | 0.3    | 01/03/2021 | Adição de informações sobre o diagrama de componentes | Gustavo Nogueira e Wagner Martins |
 | 0.4    | 08/03/2021 | Adição da versão 3 do diagrama de componentes | Gustavo Nogueira e Wagner Martins |
-
-## Referências
-
-[1] Linguagem de Modelagem Unificada Em Português. Disponível no material disponibilizado no moodle da disciplina.
-
-[2] UML Component Diagrams. Disponível em https://www.uml-diagrams.org/component-diagrams.html

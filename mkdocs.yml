@@ -1,4 +1,4 @@
-site_name: ArqDsw - EnCare
+site_name: EnCare
 
 repo_name: "2020.2_G2_Encare"
 repo_url: "https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare"
@@ -7,34 +7,67 @@ nav:
   - Home: index.md
   - Base:
       - Projeto Não Orientado a Abordagens Específicas:
-          - Glossário: Base/glossario/glossario.md
-          - Design Sprint: Base/design_sprint/design_sprint.md
           - Rich Picture: Base/richpicture/rich_picture.md
-          - Estimativas: Base/estimativas/estimativas.md
-          - Mapa mental: Base/mapa_mental/mapa_mental.md
-          - Causa e efeito: Base/causa_e_efeito/causa_e_efeito.md
+          - Mapa Mental: Base/mapa_mental/mapa_mental.md
+          - Causa e Efeito: Base/causa_e_efeito/causa_e_efeito.md
+          - Glossário: Base/glossario/glossario.md
           - Plano de Ação: Base/planodeacao/5w2g.md
-      - Processos/Metodologias/Abordagens:
+          - Estimativas: Base/estimativas/estimativas.md
+          - Design Sprint: Base/design_sprint/design_sprint.md
+      - Processos / Metodologias / Abordagens:
           - Modelagem BPMN: Base/bpmn/modelagem_bpmn.md
           - Metodologia: Base/metodologia/metodologia.md
   - Modelagem:
       - Diagramas Estáticos:
           - Digrama de Componentes: Modelagem/diagrama_componentes/diagrama_componentes.md
-          - Diagrama de Classe: Modelagem/diagrama_classes/diagrama_de_classes.md
+          - Diagrama de Classes: Modelagem/diagrama_classes/diagrama_de_classes.md
       - Diagramas Dinâmicos:
           - Diagrama de Sequência: Modelagem/diagrama_sequencia/Diagrama de sequência.md
           - Diagrama de Atividade: Modelagem/diagrama_atividades/diagrama_de_atividades.md
-      - Modelagem ágil:
-          - Backlog do produto: Modelagem/backlog/Backlog.md
-  - Iniciativas extras: 
-      - Documentação das sprints:
-          - Sprints: Modelagem/sprints/Sprints.md
+      - Modelagem Ágil:
+          - Backlog do Produto: Modelagem/backlog/Backlog.md
+  - Padrões de Projeto:
+      - GRASPs:
+          - Grasps: Padroes_de_projeto/grasps/grasps.md
+      - Gofs:
+          - GoFs Criacionais: Padroes_de_projeto/GOFs/gof_criacional.md
+          - GoFs Estruturais: Padroes_de_projeto/GOFs/gof_estrutural.md
+          - GoFs Comportamentais: Padroes_de_projeto/GOFs/gof_comportamental.md
+      - Padrões Emergentes:
+          - Balking: Padroes_de_projeto/Padroes_emergentes/balking.md
+          - Interception Filter: Padroes_de_projeto/Padroes_emergentes/interception_filter.md
+          - Serverless: Padroes_de_projeto/Padroes_emergentes/serverless.md
+          - Object-mock: Padroes_de_projeto/Padroes_emergentes/objeto_mock.md
+          - Lazy Loading: Padroes_de_projeto/Padroes_emergentes/lazy_loading.md
+  - Iniciativas Extras:
+      # - Documentação das Sprints:
+          # - Sprints: Modelagem/sprints/Sprints.md
       - Requisitos: Base/requisitos/requisitos.md
       - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md  
   - Padrões:
     - Guia de Estilo: Padroes/guia_de_estilo/guia_estilo.md
+      - Politicas de Contribuição: Base/iniciativas_extras/CONTRIBUTING.md
+      - Protótipo de Alta Fidelidade: Padroes/prototipos/prototipo_alta.md
+#       - Guia de Estilo: 
+
+# Configuration
 theme:
   name: material
+  custom_dir: material
   language: pt
-  palette:
-    primary: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    # - navigation.expand
+  font:
+    text: Poppins
+    code: Roboto Mono
+  logo: assets/images/logo-encare.svg
+  favicon: assets/images/favicon-encare.svg
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+extra_css:
+  - assets/stylesheets/styles.css

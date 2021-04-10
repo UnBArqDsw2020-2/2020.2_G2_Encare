@@ -14,9 +14,9 @@ Foram feitas reuniões com a equipe para discutir e esclarecer quais serão as c
 
 ## Referências
 
-> Orientações básicas na elaboração de um diagrama de classes. Disponível em: <https://www.devmedia.com.br/orientacoes-basicas-na-elaboracao-de-um-diagrama-de-classes/37224>. Acesso em: 03 de mar. de 2021
+- Orientações básicas na elaboração de um diagrama de classes. Disponível em: <https://www.devmedia.com.br/orientacoes-basicas-na-elaboracao-de-um-diagrama-de-classes/37224>. Acesso em: 03 de mar. de 2021
 
-## Histórico de versão
+## Versionamento
 
 | Versão | Data       | Comentários       | Autor(es)        |
 | ------ | ---------- | ----------------- | ---------------- |
