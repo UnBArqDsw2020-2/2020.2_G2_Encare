@@ -1,0 +1,2160 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon-encare.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>GoFs Estruturais - EnCare</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Poppins",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/styles.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gofs-estruturais" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="EnCare" class="md-header-nav__button md-logo" aria-label="EnCare">
+      
+  <img src="../../../assets/images/logo-encare.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            EnCare
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              GoFs Estruturais
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020.2_G2_Encare
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Base/richpicture/rich_picture/" class="md-tabs__link">
+          Base
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Modelagem/diagrama_componentes/diagrama_componentes/" class="md-tabs__link">
+          Modelagem
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../grasps/grasps/" class="md-tabs__link">
+          Padrões de Projeto
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Base/requisitos/requisitos/" class="md-tabs__link">
+          Iniciativas Extras
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="EnCare" class="md-nav__button md-logo" aria-label="EnCare">
+      
+  <img src="../../../assets/images/logo-encare.svg" alt="logo">
+
+    </a>
+    EnCare
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020.2_G2_Encare
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Base
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Base" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Base
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Projeto Não Orientado a Abordagens Específicas
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Projeto Não Orientado a Abordagens Específicas" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Projeto Não Orientado a Abordagens Específicas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/richpicture/rich_picture/" title="Rich Picture" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/mapa_mental/mapa_mental/" title="Mapa Mental" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/causa_e_efeito/causa_e_efeito/" title="Causa e Efeito" class="md-nav__link">
+      Causa e Efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/glossario/glossario/" title="Glossário" class="md-nav__link">
+      Glossário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/planodeacao/5w2g/" title="Plano de Ação" class="md-nav__link">
+      Plano de Ação
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/estimativas/estimativas/" title="Estimativas" class="md-nav__link">
+      Estimativas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/design_sprint/design_sprint/" title="Design Sprint" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Processos / Metodologias / Abordagens
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Processos / Metodologias / Abordagens" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Processos / Metodologias / Abordagens
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/bpmn/modelagem_bpmn/" title="Modelagem BPMN" class="md-nav__link">
+      Modelagem BPMN
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/metodologia/metodologia/" title="Metodologia" class="md-nav__link">
+      Metodologia
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Diagramas Estáticos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diagramas Estáticos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        Diagramas Estáticos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_componentes/diagrama_componentes/" title="Digrama de Componentes" class="md-nav__link">
+      Digrama de Componentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_classes/diagrama_de_classes/" title="Diagrama de Classes" class="md-nav__link">
+      Diagrama de Classes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Diagramas Dinâmicos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diagramas Dinâmicos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Diagramas Dinâmicos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_sequencia/Diagrama%20de%20sequ%C3%AAncia/" title="Diagrama de Sequência" class="md-nav__link">
+      Diagrama de Sequência
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_atividades/diagrama_de_atividades/" title="Diagrama de Atividade" class="md-nav__link">
+      Diagrama de Atividade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Modelagem Ágil
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem Ágil" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem Ágil
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/backlog/Backlog/" title="Backlog do Produto" class="md-nav__link">
+      Backlog do Produto
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Padrões de Projeto
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões de Projeto" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões de Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      GRASPs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="GRASPs" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        GRASPs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../grasps/grasps/" title="Grasps" class="md-nav__link">
+      Grasps
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Gofs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Gofs" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        <span class="md-nav__icon md-icon"></span>
+        Gofs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gof_criacional/" title="GoFs Criacionais" class="md-nav__link">
+      GoFs Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GoFs Estruturais
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="GoFs Estruturais" class="md-nav__link md-nav__link--active">
+      GoFs Estruturais
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-siglas-e-acronimos" class="md-nav__link">
+    1.1. Siglas e Acrônimos:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-adapter" class="md-nav__link">
+    2. Adapter
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Adapter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-estrutura" class="md-nav__link">
+    2.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-vantagens" class="md-nav__link">
+    2.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-desvantagens" class="md-nav__link">
+    2.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-aplicacao-no-projeto" class="md-nav__link">
+    2.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-bridge" class="md-nav__link">
+    3. Bridge
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-estrutura" class="md-nav__link">
+    3.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-vantagens" class="md-nav__link">
+    3.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-desvantagens" class="md-nav__link">
+    3.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-aplicacao-no-projeto" class="md-nav__link">
+    3.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-composite" class="md-nav__link">
+    4. Composite
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Composite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-estrutura" class="md-nav__link">
+    4.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-vantagens" class="md-nav__link">
+    4.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-desvantagens" class="md-nav__link">
+    4.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-aplicacao-no-projeto" class="md-nav__link">
+    4.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-decorator" class="md-nav__link">
+    5. Decorator
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Decorator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-estrutura" class="md-nav__link">
+    5.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-vantagens" class="md-nav__link">
+    5.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-desvantagens" class="md-nav__link">
+    5.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-aplicacao-no-projeto" class="md-nav__link">
+    5.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-facade" class="md-nav__link">
+    6. Facade
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Facade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-estrutura" class="md-nav__link">
+    6.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-vantagens" class="md-nav__link">
+    6.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-desvantagens" class="md-nav__link">
+    6.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-aplicacao-no-projeto" class="md-nav__link">
+    6.4. Aplicação no projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4. Aplicação no projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#641-representacao" class="md-nav__link">
+    6.4.1. Representação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#642-codigo" class="md-nav__link">
+    6.4.2. Código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-flyweight" class="md-nav__link">
+    7. Flyweight
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Flyweight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-estrutura" class="md-nav__link">
+    7.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-vantagens" class="md-nav__link">
+    7.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-desvantagens" class="md-nav__link">
+    7.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-aplicacao-no-projeto" class="md-nav__link">
+    7.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-proxy" class="md-nav__link">
+    8. Proxy
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Proxy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-estrutura" class="md-nav__link">
+    8.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-vantagens" class="md-nav__link">
+    8.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-desvantagens" class="md-nav__link">
+    8.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-aplicacao-no-projeto" class="md-nav__link">
+    8.4. Aplicação no Projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4. Aplicação no Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-representacao" class="md-nav__link">
+    8.4.1. Representação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842-codigo" class="md-nav__link">
+    8.4.2. Código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-referencias" class="md-nav__link">
+    10. Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-versionamento" class="md-nav__link">
+    11. Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gof_comportamental/" title="GoFs Comportamentais" class="md-nav__link">
+      GoFs Comportamentais
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Padrões Emergentes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões Emergentes" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões Emergentes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/balking/" title="Balking" class="md-nav__link">
+      Balking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/interception_filter/" title="Interception Filter" class="md-nav__link">
+      Interception Filter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/serverless/" title="Serverless" class="md-nav__link">
+      Serverless
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/objeto_mock/" title="Object-mock" class="md-nav__link">
+      Object-mock
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/lazy_loading/" title="Lazy Loading" class="md-nav__link">
+      Lazy Loading
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Iniciativas Extras
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Iniciativas Extras" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Iniciativas Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/requisitos/requisitos/" title="Requisitos" class="md-nav__link">
+      Requisitos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/iniciativas_extras/CONTRIBUTING/" title="Politicas de contribuição" class="md-nav__link">
+      Politicas de contribuição
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Padroes/guia_de_estilo/guia_estilo/" title="Guia de Estilo" class="md-nav__link">
+      Guia de Estilo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Padroes/prototipos/prototipo_alta/" title="Protótipo de Alta Fidelidade" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-siglas-e-acronimos" class="md-nav__link">
+    1.1. Siglas e Acrônimos:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-adapter" class="md-nav__link">
+    2. Adapter
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Adapter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-estrutura" class="md-nav__link">
+    2.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-vantagens" class="md-nav__link">
+    2.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-desvantagens" class="md-nav__link">
+    2.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-aplicacao-no-projeto" class="md-nav__link">
+    2.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-bridge" class="md-nav__link">
+    3. Bridge
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-estrutura" class="md-nav__link">
+    3.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-vantagens" class="md-nav__link">
+    3.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-desvantagens" class="md-nav__link">
+    3.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-aplicacao-no-projeto" class="md-nav__link">
+    3.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-composite" class="md-nav__link">
+    4. Composite
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Composite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-estrutura" class="md-nav__link">
+    4.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-vantagens" class="md-nav__link">
+    4.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-desvantagens" class="md-nav__link">
+    4.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-aplicacao-no-projeto" class="md-nav__link">
+    4.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-decorator" class="md-nav__link">
+    5. Decorator
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Decorator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-estrutura" class="md-nav__link">
+    5.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-vantagens" class="md-nav__link">
+    5.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-desvantagens" class="md-nav__link">
+    5.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-aplicacao-no-projeto" class="md-nav__link">
+    5.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-facade" class="md-nav__link">
+    6. Facade
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Facade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-estrutura" class="md-nav__link">
+    6.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-vantagens" class="md-nav__link">
+    6.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-desvantagens" class="md-nav__link">
+    6.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-aplicacao-no-projeto" class="md-nav__link">
+    6.4. Aplicação no projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4. Aplicação no projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#641-representacao" class="md-nav__link">
+    6.4.1. Representação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#642-codigo" class="md-nav__link">
+    6.4.2. Código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-flyweight" class="md-nav__link">
+    7. Flyweight
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Flyweight">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-estrutura" class="md-nav__link">
+    7.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-vantagens" class="md-nav__link">
+    7.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-desvantagens" class="md-nav__link">
+    7.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-aplicacao-no-projeto" class="md-nav__link">
+    7.4. Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-proxy" class="md-nav__link">
+    8. Proxy
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Proxy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-estrutura" class="md-nav__link">
+    8.1. Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-vantagens" class="md-nav__link">
+    8.2. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-desvantagens" class="md-nav__link">
+    8.3. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-aplicacao-no-projeto" class="md-nav__link">
+    8.4. Aplicação no Projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4. Aplicação no Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-representacao" class="md-nav__link">
+    8.4.1. Representação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842-codigo" class="md-nav__link">
+    8.4.2. Código
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-referencias" class="md-nav__link">
+    10. Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-versionamento" class="md-nav__link">
+    11. Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/edit/master/docs/Padroes_de_projeto/GOFs/gof_estrutural.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="gofs-estruturais">GoFs Estruturais</h1>
+<h2 id="1-introducao">1. Introdução</h2>
+<p>Seguindo com os padrões de projeto GOFs temos os estruturais. Esses padrões focam em como classes e objetos se compõem para formar estruturas complexas.</p>
+<p>Sendo assim vamos apresentar os principais padrões, suas vantagens e desvantagens e como eles podem ou não ser aplicados no projeto.</p>
+<h3 id="11-siglas-e-acronimos">1.1. Siglas e Acrônimos:</h3>
+<table>
+<thead>
+<tr>
+<th>Termo</th>
+<th>Representação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GOF</td>
+<td>Gang of Four (em referência aos 4 autores do livro em [1])</td>
+</tr>
+<tr>
+<td>SRP</td>
+<td>Single Responsibility Principle</td>
+</tr>
+<tr>
+<td>OCP</td>
+<td>Open Close Principle</td>
+</tr>
+<tr>
+<td>DRF</td>
+<td>Django REST Framework</td>
+</tr>
+<tr>
+<td>SO</td>
+<td>Sistema operacional</td>
+</tr>
+<tr>
+<td>ISP</td>
+<td>Interface segregation principle</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-adapter">2. Adapter</h2>
+<p>Converte a interface de uma classe em outra que o código cliente espera. Esse padrão permite que classes com interfaces compatíveis trabalhem juntas. Também é conhecida como Wrapper.</p>
+<p>Sua implementação é constituído por uma interface que servirá a todas as classes <em>Adapter</em>, classes concretas <em>Adapter</em> e por fim os objetos/classes que serão adaptados. Observa-se então que o padrão de projeto se baseia na criação de um intermediador entre o código cliente e o objeto a ser utilizado.</p>
+<p>Metaforicamente, o adapter é um adptador de tomada que permite que um plug se conecte a tomada sem ser compatível, comportando como um intermediador.</p>
+<h3 id="21-estrutura">2.1. Estrutura</h3>
+<ol>
+<li>O Cliente é uma classe que contém a lógica de negócio do programa existente.</li>
+<li>A Interface do Cliente descreve um protocolo que outras classes devem seguir para ser capaz de colaborar com o código cliente.</li>
+<li>O Serviço é alguma classe útil (geralmente de terceiros ou código legado). O cliente não pode usar essa classe diretamente porque ela tem uma interface incompatível.</li>
+<li>O Adaptador é uma classe que é capaz de trabalhar tanto com o cliente quanto o serviço: ela implementa a interface do cliente enquanto encobre o objeto do serviço. O adaptador recebe chamadas do cliente através da interface do adaptador e as traduz em chamadas para o objeto encobrido do serviço em um formato que ele possa entender.</li>
+</ol>
+<h3 id="22-vantagens">2.2. Vantagens</h3>
+<ul>
+<li>Desacopla o código da aplicação de terceiros.</li>
+<li>Aplica o SRP ao separar a conversão da interface da lógica da aplicação.</li>
+<li>Aplica o OCP ao permitir adicionar novos <em>adapters</em> no código exixtente.</li>
+</ul>
+<h3 id="23-desvantagens">2.3. Desvantagens</h3>
+<ul>
+<li>Aumenta a complexidade do código.</li>
+</ul>
+<h3 id="24-aplicacao-no-projeto">2.4. Aplicação no Projeto</h3>
+<p>O próprio DRF aplica em algumas classes o padrão de projeto <em>Adapter</em> como podemos ver <a href="https://davenathanaeld.medium.com/design-pattern-django-rest-framework-1e8c17946bce">aqui</a>. Para o projeto, as classes entre si, não há problemas de compatibilidade; por outro lado, a adapter pode ser usada para conversar com o banco de dados e fazer as devidas requisições.</p>
+<p>Outro ponto interessante para o uso de <em>adapteres</em> é em relação as imagens que são recebidas por meio de requests em formato de bytes e tratadas no código como uma classe picture.</p>
+<h2 id="3-bridge">3. Bridge</h2>
+<p>O <em>Bridge</em> tem a intenção de desacoplar a abstração da sua implementação, de modo que as duas possam variar e evoluir independentemente. Outra utilização é separar uma classe grande ou um conjunto de classes intimidamente ligadas em duas hierarquias.</p>
+<p>Segundo o livro Design Patterns [1], o padrão <em>Bridge</em> está sendo descrito como "Desacoplar a <strong>abstração</strong> da sua <strong>implementação</strong> então ambas podem variar independentemente.". Esses dois termos são chaves para o entendimento do padrão. Abstração é uma camada de controle de alto nível que não realiza o trabalho por si só e sim delega para uma camada de implementação.</p>
+<p>Um bom exemplo sobre abstração e implementação é a relação entre a GUI e as APIs de um SO. A GUI (asbtração) apenas transfere as ações do usuário para que a API (implementação) realize o trabalho.</p>
+<h3 id="31-estrutura">3.1. Estrutura</h3>
+<ol>
+<li>A Abstração fornece a lógica de controle de alto nível. Ela depende do objeto de implementação para fazer o verdadeiro trabalho de baixo nível.</li>
+<li>A Implementação declara a interface que é comum para todas as implementações concretas. Um abstração só pode se comunicar com um objeto de implementação através de métodos que são declarados aqui.</li>
+<li>Implementações Concretas contém código plataforma-específicos.</li>
+<li>Abstrações Refinadas fornecem variantes para controle da lógica. Como seu superior, trabalham com diferentes implementações através da interface geral de implementação.</li>
+</ol>
+<h3 id="32-vantagens">3.2. Vantagens</h3>
+<ul>
+<li>Desacopla o código da abstração do código da implementação (SRP)</li>
+<li>Insere o OCP para novas abstrações/implementações para o código existente.</li>
+<li>Tem as mesmas vantagens do Adapter.</li>
+</ul>
+<h3 id="33-desvantagens">3.3. Desvantagens</h3>
+<ul>
+<li>Aumenta a complexidade do projeto quando aplicada em locais inapropriados.</li>
+</ul>
+<h3 id="34-aplicacao-no-projeto">3.4. Aplicação no Projeto</h3>
+<p>Aplicar o Bridge no projeto irá aumentar a complexidade sem ter vantagens significativas, dado que poucos pontos do projeto tem essa relação abstração-implementação.</p>
+<h2 id="4-composite">4. Composite</h2>
+<p>Composite é um padrão que permite que componha objetos em estruturas de árvores e então trabalhar com essas estruturas como se ela fosse objetos individuais. Esse padrão só faz sentido se a estrutura central pode ser representada como uma árvore.</p>
+<p>Simplificando, a <em>Composite</em> pode ser descrita como uma classe que represente toda a estrutura de árvore. Um bom exemplo para ilustrar é quando temos uma compra e a compra tem caixas que podem guardar tanto caixas quanto produtos. Essa situação pode gerar uma árvore com os produtos sendo as folhas e as caixas sendo os demais vértices. Calcular o preço nessa estrutura pode ser uma tarefa árdua e nesse caso o <em>Composite</em> se torna bastante vantajoso de ser aplicado no código.</p>
+<h3 id="41-estrutura">4.1. Estrutura</h3>
+<ol>
+<li>A interface Componente descreve operações que são comuns tanto para elementos simples como para elementos complexos da árvore.</li>
+<li>A Folha é um elemento básico de uma árvore que não tem sub-elementos.</li>
+<li>O Contêiner (ou composite) é o elemento que tem sub-elementos: folhas ou outros contêineres. Um contêiner não sabe a classe concreta de seus filhos. Ele trabalha com todos os sub-elementos apenas através da interface componente.</li>
+<li>O Cliente trabalha com todos os elementos através da interface componente. Como resultado, o cliente pode trabalhar da mesma forma tanto com elementos simples como elementos complexos da árvore.</li>
+</ol>
+<h3 id="42-vantagens">4.2. Vantagens</h3>
+<ul>
+<li>Facilidae para criar objetos complexos por composição.</li>
+<li>Facilidade para gerar uma hierarquia de objetos.</li>
+<li>Facilidade de usar polimorfismo e recursão.</li>
+<li>Aplicação do OCP.</li>
+</ul>
+<h3 id="43-desvantagens">4.3. Desvantagens</h3>
+<ul>
+<li>Dependendo da estrutura pode quebrar o ISP em estruturas folhas que podem não usar alguns de seus métodos.</li>
+</ul>
+<h3 id="44-aplicacao-no-projeto">4.4. Aplicação no Projeto</h3>
+<p>Uma possível aplicação é com relação a estrutura englobada pela classe owner, estabeliciment e suas filhas. Essa estrutura se assemelha a uma árvore, entretanto, possui várias funções distintas, sendo assim, aplicar esse padrão nesse caso acima fere o ISP.</p>
+<h2 id="5-decorator">5. Decorator</h2>
+<p>Decorators se tratam de classes que permitem a adição de funcionalidade sob uma outra classe base em tempo de execução. Isto é feito a partir da composição de objetos do mesmo tipo ao invés da criação de uma cadeia de heranças e uma série de estruturas condicionais. Este padrão permite que novas responsabilidades sejam atribuídas sem, necessariamente, atribuí-las ao objeto pesado.</p>
+<p>Metaforicamente, decorators atribuem uma lista de responsabilidades dinâmicamente para a classe base alvo.</p>
+<h3 id="51-estrutura">5.1. Estrutura</h3>
+<ol>
+<li>O Componente declara a interface comum tanto para os envoltórios como para os objetos envolvidos.</li>
+<li>O Componente Concreto é uma classe de objetos sendo envolvidos. Ela define o comportamento básico, que pode ser alterado por decoradores.</li>
+<li>A classe Decorador Base tem um campo para referenciar um objeto envolvido. O tipo do campo deve ser declarado assim como a interface do componente para que possa conter ambos os componentes concretos e os decoradores.</li>
+<li>Os Decoradores Concretos definem os comportamentos adicionais que podem ser adicionados aos componentes dinamicamente.</li>
+<li>O Cliente pode envolver componentes em múltiplas camadas de decoradors, desde que trabalhe com todos os objetos através da interface do componente.</li>
+</ol>
+<h3 id="52-vantagens">5.2. Vantagens</h3>
+<ul>
+<li>Permite a adição e remoção de funcionalidades em tempo de execução.</li>
+<li>Evita heranças quando não existe uma grande necessidade para herança.</li>
+<li>É possível separar o estado interno de cada uma das funcionalidades, cada qual com seu próprio conjunto de regras e propriedades, sem que elas interfiram umas nas outras, sem alongar a classe original e sem herança.</li>
+</ul>
+<h3 id="53-desvantagens">5.3. Desvantagens</h3>
+<ul>
+<li>É possível argumentar que, em certos contextos, decorators apresentam problemas semelhantes aos causados por herança múltipla - <a href="https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem">problema do diamante</a>. Neste sentido, se usados sem cuidado, podem causar uma refatoração geral das funcionalidades envolvidas.</li>
+<li>Caso muitas funcionalidades sejam adicionadas por meio de decorators, existe o risco de interferências entre si. Pelo fato de decorators separarem funcionalidades, fica mais difícil de depurar qual é a interação de dois ou mais decorators que causam o problema. Neste contexto, classes herdadadas seriam mais fáceis de serem consertadas.</li>
+</ul>
+<h3 id="54-aplicacao-no-projeto">5.4. Aplicação no Projeto</h3>
+<p>Embora a arquitetura do projeto Encare não seja complexa o suficiente para se considerar a necessidade de adicionar um decotarator no seu <em>stricto senso</em>, seu uso poderia ser feito considerando em um contexto onde cada estabelecimento tenha um comportamento diferente quanto ao seu tipo:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Estabelecimento</span><span class="p">:</span> <span class="o">...</span>
+
+<span class="k">class</span> <span class="nc">BarbeariaDecorator</span><span class="p">(</span><span class="n">Estabelecimento</span><span class="p">):</span> <span class="o">...</span>
+<span class="k">class</span> <span class="nc">CabeleireiroDecorator</span><span class="p">(</span><span class="n">Estabelecimento</span><span class="p">):</span> <span class="o">...</span>
+
+<span class="k">def</span> <span class="nf">estabelecimento_factory</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cria um novo estabelecimento a partir de keywords</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">estabelecimento</span> <span class="o">=</span> <span class="n">Estabelecimento</span><span class="p">()</span>
+    <span class="k">if</span> <span class="s1">&#39;cabeleireiro&#39;</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">estabelecimento</span> <span class="o">=</span> <span class="n">CabeleireiroDecorator</span><span class="p">(</span><span class="n">estabelecimento</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s1">&#39;barbearia&#39;</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">estabelecimento</span> <span class="o">=</span> <span class="n">BarbeariaDecorator</span><span class="p">(</span><span class="n">estabelecimento</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">estabelecimento</span>
+</code></pre></div>
+
+<p>O conceito de decorators se provou tão útil que foi abstraído para mais contextos do que apenas o que foi citado. Por exemplo, o feature da linguagem python chamado de "decorator" foi inspirado na dinamicidade que o design pattern decorator provê. Um decorator do python <strong>não</strong> é um padrão de projeto, mas foi inspirado no conceito. Este feature da linguagem pode vir a ser usado no Backend do projeto.</p>
+<h2 id="6-facade">6. Facade</h2>
+<p>Esse padrão promove uma interface unificada para um conjunto de interfaces em um sub sistema. <em>Facade</em> define uma interface de maior nível facilitando assim o uso do sistema.</p>
+<p>É importante ressaltar que o objetivo não é o desacoplamento e sim facilitar o uso do sistema por parte do código cliente. Outro ponto importe é com relação a classes que tem muitas responsabilidades; o uso excessivo desse padrão concentrado em poucas clases <em>Facade</em> pode quebrar o SRP e também o ISP, pois muitas funções podem torna a classe de propósito geral. Por mais que seja bem simples o seu uso, esse padrão requer um pouco de atenção em sua aplicação.</p>
+<h3 id="61-estrutura">6.1. Estrutura</h3>
+<ol>
+<li>A Fachada fornece um acesso conveniente para uma parte particular da funcionalidade do subsistema. Ela sabe onde direcionar o pedido do cliente e como operar todas as partes móveis.</li>
+<li>Uma classe Fachada Adicional pode ser criada para prevenir a poluição de uma única fachada com funcionalidades não relevantes que podem torná-lo mais uma estrutura complexa.</li>
+<li>O Subsistema Complexo consiste em dúzias de objetos variados. Para tornar todos eles em algo que signifique alguma coisa, você tem que mergulhar fundo nos detalhes de implementação do subsistema, tais como objetos de inicialização na ordem correta e suprí-los com dados no formato correto.</li>
+<li>O Cliente usa a fachada ao invés de chamar os objetos do subsistema diretamente.</li>
+</ol>
+<h3 id="62-vantagens">6.2. Vantagens</h3>
+<ul>
+<li>Isola o código complexo do código cliente.</li>
+<li>Facilita o uso do sistema</li>
+<li>Cria pontos de entrada para camadas da aplicação e serviços de terceiros.</li>
+</ul>
+<h3 id="63-desvantagens">6.3. Desvantagens</h3>
+<ul>
+<li>O ISP e o RSP pode ser facilmente quebrados.</li>
+</ul>
+<h3 id="64-aplicacao-no-projeto">6.4. Aplicação no projeto</h3>
+<p>A ideia desta aplicação é fornecer uma interface simplificada para a criação de usuários a partir de um tipo de usuários(<em>userType</em>).</p>
+<h4 id="641-representacao">6.4.1. Representação</h4>
+<p><img alt="gof_criacional_v1" src="../img/gof_facade.png" /></p>
+<h4 id="642-codigo">6.4.2. Código</h4>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">constants</span> <span class="kn">import</span> <span class="n">USER_TYPES</span>
+<span class="kn">import</span> <span class="nn">AdminFactory</span><span class="o">,</span> <span class="nn">CustomerFactory</span><span class="o">,</span> <span class="nn">OwnerFactory</span>
+
+<span class="k">class</span> <span class="nc">UserFacade</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">getUser</span><span class="p">(</span><span class="n">userType</span><span class="p">,</span> <span class="n">userData</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">userType</span> <span class="o">==</span> <span class="n">USER_TYPES</span><span class="o">.</span><span class="n">ADMIN</span><span class="p">:</span>
+            <span class="n">adminFactory</span> <span class="o">=</span> <span class="n">AdminFactory</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">adminFactory</span><span class="o">.</span><span class="n">getUser</span><span class="p">(</span><span class="n">userData</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">userType</span> <span class="o">==</span> <span class="n">USER_TYPES</span><span class="o">.</span><span class="n">CUSTOMER</span><span class="p">:</span>
+            <span class="n">customerFactory</span> <span class="o">=</span> <span class="n">CustomerFactory</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">customerFactory</span><span class="o">.</span><span class="n">getUser</span><span class="p">(</span><span class="n">userData</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">userType</span> <span class="o">==</span> <span class="n">USER_TYPES</span><span class="o">.</span><span class="n">OWNER</span><span class="p">:</span>
+            <span class="n">ownerFactory</span> <span class="o">=</span> <span class="n">OwnerFactory</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">ownerFactory</span><span class="o">.</span><span class="n">getUser</span><span class="p">(</span><span class="n">userData</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AssertionError</span>
+</code></pre></div>
+
+<h2 id="7-flyweight">7. Flyweight</h2>
+<p>Esse padrão de projeto tem como intenção usar compatilhamento para suportar um grande número de objetos de baixa granularidade. Usado quando existem uma grande quantidade de objetos semelhantes e a partir desse ponto é dividido essa classe entre um objeto que é repetido com mais frequência com um que é mais único, podendo assim existir o compartilhamento e melhorando questões de desempenho.</p>
+<p>É um padrão de otimização que visa principalmente economizar memória RAM diminuindo o número de objetos. Deve ser usado somente se a aplicação estiver com alto consumo de RAM.</p>
+<p>No livro Design pattern [1], os autores listam uma série de fatores para o uso do <em>flyweight</em>:</p>
+<ul>
+<li>A aplicação usa uma grande quantidade de objetos.</li>
+<li>Os custos de armazenamento são altos (memória e tempo de processamento).</li>
+<li>A maioria dos estados dos objetos podem ser compartilhados.</li>
+<li>Muitos objetos podem ser substituidos por poucos objetos compatilhados.</li>
+<li>A aplicaçaõ não depende da identidade dos objetos.</li>
+</ul>
+<h3 id="71-estrutura">7.1. Estrutura</h3>
+<ol>
+<li>A classe <em>Flyweight</em> contém a porção do estado do objeto original que pode ser compartilhada entre múltiplos objetos. O mesmo objeto <em>flyweight</em> pode ser usado em muitos contextos diferentes.</li>
+<li>A classe Contexto contém o estado extrínseco, único para todos os objetos originais. Quando um contexto é pareado com um dos objetos <em>flyweight</em>, ele representa o estado completo do objeto original.</li>
+<li>Geralmente, o comportamento do objeto original permanece na classe <em>flyweight</em>. Nesse caso, quem chamar o método do <em>flyweight</em> deve também passar os dados apropriados do estado extrínseco nos parâmetros do método.</li>
+<li>O Cliente calcula ou armazena o estado extrínseco dos <em>flyweights</em>.</li>
+<li>A Fábrica <em>Flyweight</em> gerencia um conjunto de <em>flyweights</em> existentes. Com a fábrica os clientes não precisam criar <em>flyweights</em> diretamente. Ao invés disso, eles chamam a fábrica, passam os dados de estado intrínseco para o <em>flyweight</em> desejado.</li>
+</ol>
+<h3 id="72-vantagens">7.2. Vantagens</h3>
+<ul>
+<li>Pode economizar RAM.</li>
+</ul>
+<h3 id="73-desvantagens">7.3. Desvantagens</h3>
+<ul>
+<li>Muito complexo em nível de código.</li>
+</ul>
+<h3 id="74-aplicacao-no-projeto">7.4. Aplicação no Projeto</h3>
+<p>Esse padrão é usado em uma situação bem específica e possui várias condições que precisam ser atendidas para que seja vantasojo ou mesmo seja possível aplicar no projeto. No caso do projeto Encare, a quantidade de objetos não é grande em nenhum dos casos e não pode ser notado nenhum consumo excessivo de memória nesse estágio do desenvolvimento (modelagem), portanto é inviário o uso desse padrão de projeto.</p>
+<h2 id="8-proxy">8. Proxy</h2>
+<p>De acordo com o Design Pattern[1], esse padrão tem como intenção fornecer um substituo ou um marcador de localização para outro objeto com a finalidade de controlar o seu acesso. Em outras palavras o <em>proxy</em> funciona como um intermediador entre o código cliente e o objeto que é necessitado. Tem uma estrutra muito similar aos padrões <em>Composite</em> e <em>Decorator</em>.</p>
+<p>O <em>Proxy</em> controla todo o fluxo de informações entre o código cliente e o objeto real, podendo escolher como e quando repassar as informações inclusive. Além disso ele tem muitas variações como: <em>proxy</em> virtual, <em>proxy</em> remoto, <em>proxy</em> de proteção, entre outros.</p>
+<h3 id="81-estrutura">8.1. Estrutura</h3>
+<ol>
+<li>A Interface do Serviço declara a interface do Serviço. O <em>proxy</em> deve seguir essa interface para ser capaz de se disfarçar como um objeto do serviço.</li>
+<li>O Serviço é uma classe que fornece alguma lógica de negócio útil.</li>
+<li>A classe <em>Proxy</em> tem um campo de referência que aponta para um objeto do serviço. Após o <em>proxy</em> finalizar seu processamento (por exemplo: inicialização preguiçosa, acesso, acessar controle, colocar em cache, etc.), ele passa o pedido para o objeto do serviço.</li>
+<li>O Cliente deve trabalhar tanto com os serviços e proxies através da mesma interface. Dessa forma você pode passar uma <em>proxy</em> para qualquer código que espera um objeto do serviço.</li>
+</ol>
+<h3 id="82-vantagens">8.2. Vantagens</h3>
+<ul>
+<li>O código cliente não saberá se esta usando ou não o <em>Proxy</em>.</li>
+<li>Você pode adicionar novos Proxies sem alterar o código testado (OCP)</li>
+<li>O <em>proxy</em> funciona mesmo se o obejto real não estiver operacional ou pronto para uso.</li>
+</ul>
+<h3 id="83-desvantagens">8.3. Desvantagens</h3>
+<ul>
+<li>Aumenta a complexidade do sistema.</li>
+</ul>
+<h3 id="84-aplicacao-no-projeto">8.4. Aplicação no Projeto</h3>
+<p>É um padrão muito versátil e será utilizado no projeto como um intermediador na interação da classe <em>Geolocation</em> com a API do Google Maps, validando a latitude e longitude e adicionando o Token da API antes de enviar o <em>request</em>.</p>
+<h4 id="841-representacao">8.4.1. Representação</h4>
+<p><img alt="gof_criacional_v1" src="../img/gof_proxy.png" /></p>
+<h4 id="842-codigo">8.4.2. Código</h4>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">googlemaps</span>
+<span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABCMeta</span><span class="p">,</span> <span class="n">abstractmethod</span>
+
+<span class="k">class</span> <span class="nc">GoogleMapsInterface</span><span class="p">():</span>
+    <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">ABCMeta</span>
+
+    <span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
+    <span class="k">def</span> <span class="nf">getDistance</span><span class="p">():</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+
+<span class="k">class</span> <span class="nc">ProxyGoogleMaps</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">googleMapsServices</span> <span class="o">=</span> <span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;MY_KEY&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">checkGeolocation</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="n">patternLat</span> <span class="o">=</span> <span class="s1">&#39;regex_lat&#39;</span>
+        <span class="n">patternLng</span> <span class="o">=</span> <span class="s1">&#39;regex_lng&#39;</span>
+        <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">patternLat</span><span class="p">,</span> <span class="n">coords</span><span class="o">.</span><span class="n">lat</span><span class="p">)</span> <span class="ow">and</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">patternLng</span><span class="p">,</span> <span class="n">coords</span><span class="o">.</span><span class="n">lng</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">getDistance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">destination</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">checkGeolocation</span><span class="p">(</span><span class="n">source</span><span class="p">)</span> <span class="ow">and</span> <span class="n">checkGeolocation</span><span class="p">(</span><span class="n">destination</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">googleMapsServices</span><span class="o">.</span><span class="n">distance_matrix</span><span class="p">(</span><span class="n">origins</span><span class="o">=</span><span class="n">source</span><span class="p">,</span> <span class="n">destinations</span><span class="o">=</span><span class="n">destination</span><span class="p">)</span>
+</code></pre></div>
+
+<!-- ## 9. Conclusão -->
+
+<h2 id="10-referencias">10. Referências</h2>
+<ul>
+<li>[1] - GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Design Patterns: Elements of Reusable Object-Oriented Software. Indianapolis: [s. n.], 1994.</li>
+<li>[2] - Design Pattern: Django REST Framework. Disponível em: https://davenathanaeld.medium.com/design-pattern-django-rest-framework-1e8c17946bce. Acesso em 4 abr. 2021.</li>
+<li>[3] - Bridge. Disponível em: https://refactoring.guru/pt-br/design-patterns/bridge. Acesso em 5 abr. 2021.</li>
+<li>[4] - Composite. Disponível em: https://refactoring.guru/pt-br/design-patterns/composite. acesso em 5 abr. 2021.</li>
+</ul>
+<h2 id="11-versionamento">11. Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Nome</th>
+<th>Detalhes</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4/4/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adiciona padrão Adapter</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>4/4/2021</td>
+<td>Renato Britto Araujo</td>
+<td>Adiciona padrão Decorator</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>4/4/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adiciona padrão Bridge</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>5/4/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adiciona padrão Composite</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>5/4/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adiciona padrão Facade</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>6/4/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adiciona padrão Flyweight</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>6/4/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adiciona padrão Proxy</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>8/4/2021</td>
+<td>João Luis Baraky e Gustavo Nogueira</td>
+<td>Atualiza aplicação do projeto do Facade e Proxy</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>8/4/2021</td>
+<td>João Luis Baraky e Gustavo Nogueira</td>
+<td>Atualiza aplicação do projeto do Proxy</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>8/4/2021</td>
+<td>Gustavo Nogueira</td>
+<td>Atualiza aplicação do projeto do Facade</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>9/4/2021</td>
+<td>Gustavo Nogueira</td>
+<td>Adição do tópico estrutura</td>
+<td>1.1</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../gof_criacional/" title="GoFs Criacionais" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                GoFs Criacionais
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../gof_comportamental/" title="GoFs Comportamentais" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                GoFs Comportamentais
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.tabs', 'navigation.sections'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

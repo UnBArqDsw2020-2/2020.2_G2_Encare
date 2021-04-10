@@ -1,0 +1,2397 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon-encare.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>GoFs Comportamentais - EnCare</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Poppins",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/styles.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#padroes-de-projeto-gofs-comportamentais" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="EnCare" class="md-header-nav__button md-logo" aria-label="EnCare">
+      
+  <img src="../../../assets/images/logo-encare.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            EnCare
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              GoFs Comportamentais
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020.2_G2_Encare
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Base/richpicture/rich_picture/" class="md-tabs__link">
+          Base
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Modelagem/diagrama_componentes/diagrama_componentes/" class="md-tabs__link">
+          Modelagem
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../grasps/grasps/" class="md-tabs__link">
+          Padrões de Projeto
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Base/requisitos/requisitos/" class="md-tabs__link">
+          Iniciativas Extras
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="EnCare" class="md-nav__button md-logo" aria-label="EnCare">
+      
+  <img src="../../../assets/images/logo-encare.svg" alt="logo">
+
+    </a>
+    EnCare
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020.2_G2_Encare
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Base
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Base" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Base
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Projeto Não Orientado a Abordagens Específicas
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Projeto Não Orientado a Abordagens Específicas" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Projeto Não Orientado a Abordagens Específicas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/richpicture/rich_picture/" title="Rich Picture" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/mapa_mental/mapa_mental/" title="Mapa Mental" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/causa_e_efeito/causa_e_efeito/" title="Causa e Efeito" class="md-nav__link">
+      Causa e Efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/glossario/glossario/" title="Glossário" class="md-nav__link">
+      Glossário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/planodeacao/5w2g/" title="Plano de Ação" class="md-nav__link">
+      Plano de Ação
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/estimativas/estimativas/" title="Estimativas" class="md-nav__link">
+      Estimativas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/design_sprint/design_sprint/" title="Design Sprint" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Processos / Metodologias / Abordagens
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Processos / Metodologias / Abordagens" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Processos / Metodologias / Abordagens
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/bpmn/modelagem_bpmn/" title="Modelagem BPMN" class="md-nav__link">
+      Modelagem BPMN
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/metodologia/metodologia/" title="Metodologia" class="md-nav__link">
+      Metodologia
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Diagramas Estáticos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diagramas Estáticos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        Diagramas Estáticos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_componentes/diagrama_componentes/" title="Digrama de Componentes" class="md-nav__link">
+      Digrama de Componentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_classes/diagrama_de_classes/" title="Diagrama de Classes" class="md-nav__link">
+      Diagrama de Classes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Diagramas Dinâmicos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diagramas Dinâmicos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Diagramas Dinâmicos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_sequencia/Diagrama%20de%20sequ%C3%AAncia/" title="Diagrama de Sequência" class="md-nav__link">
+      Diagrama de Sequência
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_atividades/diagrama_de_atividades/" title="Diagrama de Atividade" class="md-nav__link">
+      Diagrama de Atividade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Modelagem Ágil
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem Ágil" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem Ágil
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/backlog/Backlog/" title="Backlog do Produto" class="md-nav__link">
+      Backlog do Produto
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Padrões de Projeto
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões de Projeto" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões de Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      GRASPs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="GRASPs" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        GRASPs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../grasps/grasps/" title="Grasps" class="md-nav__link">
+      Grasps
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Gofs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Gofs" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        <span class="md-nav__icon md-icon"></span>
+        Gofs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gof_criacional/" title="GoFs Criacionais" class="md-nav__link">
+      GoFs Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gof_estrutural/" title="GoFs Estruturais" class="md-nav__link">
+      GoFs Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GoFs Comportamentais
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="GoFs Comportamentais" class="md-nav__link md-nav__link--active">
+      GoFs Comportamentais
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-chain-of-responsibility" class="md-nav__link">
+    2. Chain of Responsibility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-vantagens" class="md-nav__link">
+    2.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-desvantagens" class="md-nav__link">
+    2.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-aplicacao-no-projeto" class="md-nav__link">
+    2.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-command" class="md-nav__link">
+    3. Command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_1" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-vantagens" class="md-nav__link">
+    3.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-desvantagens" class="md-nav__link">
+    3.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-aplicacao-no-projeto" class="md-nav__link">
+    3.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-iterator" class="md-nav__link">
+    4. Iterator
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Iterator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura_2" class="md-nav__link">
+    Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-vantagens" class="md-nav__link">
+    4.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-desvantagens" class="md-nav__link">
+    4.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-aplicacao-no-projeto" class="md-nav__link">
+    4.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-mediator" class="md-nav__link">
+    5. Mediator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_3" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-vantagens" class="md-nav__link">
+    5.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-desvantagens" class="md-nav__link">
+    5.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-aplicacao-no-projeto" class="md-nav__link">
+    5.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-memento" class="md-nav__link">
+    6. Memento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_4" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-vantagens" class="md-nav__link">
+    6.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-desvantagens" class="md-nav__link">
+    6.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-aplicacao-no-projeto" class="md-nav__link">
+    6.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-observer" class="md-nav__link">
+    7. Observer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_5" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-vantagens" class="md-nav__link">
+    7.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-desvantagens" class="md-nav__link">
+    7.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-aplicacao-no-projeto" class="md-nav__link">
+    7.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-state" class="md-nav__link">
+    8. State
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_6" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-vantagens" class="md-nav__link">
+    8.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-desvantagens" class="md-nav__link">
+    8.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-aplicacao-no-projeto" class="md-nav__link">
+    8.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-strategy" class="md-nav__link">
+    9. Strategy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_7" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-vantagens" class="md-nav__link">
+    9.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-desvantagens" class="md-nav__link">
+    9.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-aplicacao-no-projeto" class="md-nav__link">
+    9.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-template-method" class="md-nav__link">
+    10. Template Method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_8" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-vantagens" class="md-nav__link">
+    10.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-desvantagens" class="md-nav__link">
+    10.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-aplicacao-no-projeto" class="md-nav__link">
+    10.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-visitor" class="md-nav__link">
+    11. Visitor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_9" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-vantagens" class="md-nav__link">
+    11.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-desvantagens" class="md-nav__link">
+    11.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-aplicacao-no-projeto" class="md-nav__link">
+    11.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-referencias" class="md-nav__link">
+    13. Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-versionamento" class="md-nav__link">
+    14. Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Padrões Emergentes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões Emergentes" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões Emergentes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/balking/" title="Balking" class="md-nav__link">
+      Balking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/interception_filter/" title="Interception Filter" class="md-nav__link">
+      Interception Filter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/serverless/" title="Serverless" class="md-nav__link">
+      Serverless
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/objeto_mock/" title="Object-mock" class="md-nav__link">
+      Object-mock
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/lazy_loading/" title="Lazy Loading" class="md-nav__link">
+      Lazy Loading
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Iniciativas Extras
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Iniciativas Extras" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Iniciativas Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/requisitos/requisitos/" title="Requisitos" class="md-nav__link">
+      Requisitos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/iniciativas_extras/CONTRIBUTING/" title="Politicas de contribuição" class="md-nav__link">
+      Politicas de contribuição
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Padroes/guia_de_estilo/guia_estilo/" title="Guia de Estilo" class="md-nav__link">
+      Guia de Estilo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Padroes/prototipos/prototipo_alta/" title="Protótipo de Alta Fidelidade" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-chain-of-responsibility" class="md-nav__link">
+    2. Chain of Responsibility
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-vantagens" class="md-nav__link">
+    2.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-desvantagens" class="md-nav__link">
+    2.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-aplicacao-no-projeto" class="md-nav__link">
+    2.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-command" class="md-nav__link">
+    3. Command
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_1" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-vantagens" class="md-nav__link">
+    3.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-desvantagens" class="md-nav__link">
+    3.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-aplicacao-no-projeto" class="md-nav__link">
+    3.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-iterator" class="md-nav__link">
+    4. Iterator
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Iterator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura_2" class="md-nav__link">
+    Estrutura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-vantagens" class="md-nav__link">
+    4.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-desvantagens" class="md-nav__link">
+    4.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-aplicacao-no-projeto" class="md-nav__link">
+    4.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-mediator" class="md-nav__link">
+    5. Mediator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_3" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-vantagens" class="md-nav__link">
+    5.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-desvantagens" class="md-nav__link">
+    5.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-aplicacao-no-projeto" class="md-nav__link">
+    5.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-memento" class="md-nav__link">
+    6. Memento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_4" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-vantagens" class="md-nav__link">
+    6.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-desvantagens" class="md-nav__link">
+    6.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-aplicacao-no-projeto" class="md-nav__link">
+    6.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-observer" class="md-nav__link">
+    7. Observer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_5" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-vantagens" class="md-nav__link">
+    7.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-desvantagens" class="md-nav__link">
+    7.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-aplicacao-no-projeto" class="md-nav__link">
+    7.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-state" class="md-nav__link">
+    8. State
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_6" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-vantagens" class="md-nav__link">
+    8.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-desvantagens" class="md-nav__link">
+    8.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-aplicacao-no-projeto" class="md-nav__link">
+    8.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-strategy" class="md-nav__link">
+    9. Strategy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_7" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-vantagens" class="md-nav__link">
+    9.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-desvantagens" class="md-nav__link">
+    9.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-aplicacao-no-projeto" class="md-nav__link">
+    9.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-template-method" class="md-nav__link">
+    10. Template Method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_8" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-vantagens" class="md-nav__link">
+    10.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-desvantagens" class="md-nav__link">
+    10.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-aplicacao-no-projeto" class="md-nav__link">
+    10.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-visitor" class="md-nav__link">
+    11. Visitor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_9" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-vantagens" class="md-nav__link">
+    11.1 Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-desvantagens" class="md-nav__link">
+    11.2 Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-aplicacao-no-projeto" class="md-nav__link">
+    11.3 Aplicação no Projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-referencias" class="md-nav__link">
+    13. Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-versionamento" class="md-nav__link">
+    14. Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/edit/master/docs/Padroes_de_projeto/GOFs/gof_comportamental.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="padroes-de-projeto-gofs-comportamentais">Padrões de projeto GOFs Comportamentais</h1>
+<h2 id="1-introducao">1. Introdução</h2>
+<p>Os padrões comportamentais são voltados aos algoritmos e a designação de responsabilidades entre objetos.  </p>
+<p>Os padrões comportamentais de classes utilizam a herança para distribuir o comportamento entre classes, e os padrões de comportamento de objeto utilizam a composição de objetos em contrapartida a herança. Alguns descrevem como grupos de objetos cooperam para a execução de uma tarefa que não poderia ser executada por um objeto sozinho.</p>
+<p>O documento apresenta uma visão geral dos GOFs Comportamentais, com descrição do o que é, a estrutura, vantagens e desvantagens e aplicação no projeto. Para a maioria são apresentadas apenas ideias da aplicação. Os padrões que apresentados com exemplos de implementação foram:</p>
+<ul>
+<li><a href="#4-iterator">Iterator</a></li>
+<li><a href="#3-command">Command</a></li>
+</ul>
+<h2 id="2-chain-of-responsibility">2. Chain of Responsibility</h2>
+<p>O Chain of Responsibility é um padrão de projeto comportamental que permite que você passe pedidos por uma corrente de handlers. Ao receber um pedido, cada handler decide se processa o pedido ou o passa adiante para o próximo handler na corrente.  </p>
+<p>O Chain of Responsibility é aplicado quando é esperado que o programa processe diferentes tipos de pedidos em várias maneiras, mas os exatos tipos de pedidos e suas sequências são desconhecidos de antemão.</p>
+<h2 id="estrutura">Estrutura</h2>
+<ol>
+<li>Handler - declara a interface comum a todos os handlers concretos. Ele geralmente contém apenas um único método para lidar com pedidos, mas algumas vezes ele pode conter outro método para configurar o próximo handler da corrente.</li>
+<li>Handler Base - é uma classe opcional onde é possível colocar o código padrão que é comum a todas as classes handler.</li>
+<li>Handlers Concretos - contém o código real para processar pedidos. Ao receber um pedido, cada handler deve decidir se processa ele e, adicionalmente, se passa ele adiante na corrente. Os handlers são geralmente auto contidos e imutáveis, aceitando todos os dados necessários apenas uma vez através do construtor.</li>
+<li>Client - pode compor correntes apenas uma vez ou compô-las dinamicamente, dependendo da lógica da aplicação.</li>
+</ol>
+<h3 id="21-vantagens">2.1 Vantagens</h3>
+<ul>
+<li>É possível controlar a ordem de tratamento dos pedidos.</li>
+<li>Princípio de responsabilidade única. É possível desacoplar classes que invocam operações de classes que realizam operações.</li>
+<li>Princípio aberto/fechado. É possível introduzir novos handlers na aplicação sem quebrar o código cliente existente.</li>
+</ul>
+<h3 id="22-desvantagens">2.2 Desvantagens</h3>
+<ul>
+<li>Alguns pedidos podem acabar sem tratamento.</li>
+</ul>
+<h3 id="23-aplicacao-no-projeto">2.3 Aplicação no Projeto</h3>
+<p>O padrão Chain of Responsability pode ser exemplificado no QueryBuilder usado pela classe Filtro para a filtragem dos estabelecimentos de acordo com parâmetros como distância, serviços procurados e avaliação. A classe abstrata QueryBuilder contém a definição básica para a chaining, enquanto que suas concretas RatingQuery, GeolocationQuery e ServiceQuery são responsáveis por montar, em ordem, o pedido que será feito ao banco de dados.</p>
+<p>O Chain of Responsability poderia ser também aplicado na camada de controle da aplicação, de forma a realizar operações de logging e autorização, por exemplo, antes de seguir para a lógica de negócio propriamente. Entretanto, essas operações geralmente já são implementadas por frameworks.</p>
+<h2 id="3-command">3. Command</h2>
+<p>O Command é um padrão de projeto comportamental que transforma um pedido em um objeto independente que contém toda a informação sobre o pedido. Essa transformação permite que você parametrize métodos com diferentes pedidos, atrase ou coloque a execução do pedido em uma fila, e suporte operações que não podem ser feitas.</p>
+<h2 id="estrutura_1">Estrutura</h2>
+<ol>
+<li>Classe Remetente ou Invocadora (Invoker) - responsável por iniciar os pedidos. Essa classe deve ter um campo para armazenar a referência para um objeto comando. O remetente aciona aquele comando ao invés de enviar o pedido diretamente para o destinatário. Observe que o remetente não é responsável por criar o objeto comando. Geralmente ele é pré criado através de um construtor do cliente.</li>
+<li>Interface Comando (Command) - geralmente declara apenas um único método para executar o comando.</li>
+<li>Comandos Concretos (Concrete Command) - implementam vários tipos de pedidos. Um comando concreto não deve realizar o trabalho por conta própria, mas passar a chamada para um dos objetos da lógica do negócio.</li>
+<li>Classe Destinatária (Receiver) - contém a lógica do negócio. Quase qualquer objeto pode servir como um destinatário. A maioria dos comandos apenas lida com os detalhes de como um pedido é passado para o destinatário, enquanto que o destinatário em si executa o verdadeiro trabalho.</li>
+<li>Cliente (Client) - cria e configura objetos comando concretos. O cliente deve passar todos os parâmetros do pedido, incluindo uma instância do destinatário, para o construtor do comando. Após isso, o comando resultante pode ser associado com um ou múltiplos destinatários.</li>
+</ol>
+<h3 id="31-vantagens">3.1 Vantagens</h3>
+<ul>
+<li>Princípio de responsabilidade única. É possível desacoplar classes que invocam operações de classes que fazem essas operações.</li>
+<li>Princípio aberto/fechado. É possível introduzir novos comandos na aplicação sem quebrar o código cliente existente.</li>
+<li>É possível implementar desfazer/refazer.</li>
+<li>É possível implementar a execução adiada de operações.</li>
+<li>É possível montar um conjunto de comandos simples em um complexo.</li>
+</ul>
+<h3 id="32-desvantagens">3.2 Desvantagens</h3>
+<p>O código pode ficar mais complicado uma vez que você está introduzindo uma nova camada entre remetentes e destinatários.</p>
+<h3 id="33-aplicacao-no-projeto">3.3 Aplicação no Projeto</h3>
+<p><strong>Exemplo toy (<a href="">Escopo estendido</a>)</strong></p>
+<p>O padrão command pode ser aplicado em locais que precisam da requisição a API do Back-end. Neste exemplo, aplicamos o padrão command no envio da avaliação de um estabelecimento por parte do usuário.</p>
+<p><img alt="Modelagem do exemplo Command" src="../images/Command.png" /></p>
+<p>Abaixo os códigos do exemplo, feitos em typescript:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span> <span class="nx">App() {</span>
+
+  <span class="kr">const</span> <span class="nx">requestHandler</span>: <span class="kt">RequestHandler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RequestHandler</span><span class="p">();</span>
+
+  <span class="kr">const</span> <span class="nx">ratingSender</span>: <span class="kt">RatingSender</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RatingSender</span><span class="p">(</span><span class="s2">&quot;Session User&quot;</span><span class="p">,</span> <span class="s2">&quot;Target Estabilishment&quot;</span><span class="p">,</span> <span class="nx">requestHandler</span><span class="p">);</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">select</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;rating&quot;</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;ratingNumber&quot;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;</span><span class="err">/option&gt;</span>
+        <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="o">&gt;</span><span class="mi">2</span><span class="o">&lt;</span><span class="err">/option&gt;</span>
+        <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;3&quot;</span><span class="o">&gt;</span><span class="mi">3</span><span class="o">&lt;</span><span class="err">/option&gt;</span>
+        <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;4&quot;</span><span class="o">&gt;</span><span class="mi">4</span><span class="o">&lt;</span><span class="err">/option&gt;</span>
+        <span class="o">&lt;</span><span class="nx">option</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;5&quot;</span><span class="o">&gt;</span><span class="mi">5</span><span class="o">&lt;</span><span class="err">/option&gt;</span>
+      <span class="o">&lt;</span><span class="err">/select&gt;</span>
+      <span class="o">&lt;</span><span class="nx">br</span><span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="nx">textarea</span> <span class="nx">name</span><span class="o">=</span><span class="s2">&quot;estabilishmentReview&quot;</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;ratingComment&quot;</span> <span class="nx">defaultValue</span><span class="o">=</span><span class="s2">&quot;Some Placeholder text&quot;</span><span class="o">&gt;&lt;</span><span class="err">/textarea&gt;</span>
+      <span class="o">&lt;</span><span class="nx">br</span><span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">ratingSender</span><span class="p">.</span><span class="nx">getCommandFunction</span><span class="p">()}</span><span class="o">&gt;</span><span class="nx">Send</span> <span class="nx">Review</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+    <span class="o">&lt;</span><span class="err">/div&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>A própria aplicação é a cliente que usa a command.</p>
+<p>O botão é a invoker, responsável por chamar a função de execução da command.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">class</span> <span class="nx">RequestHandler</span> <span class="p">{</span>
+
+    <span class="kr">public</span> <span class="kr">constructor</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">sendGetRequest</span><span class="p">(</span><span class="nx">path</span>:<span class="kt">string</span><span class="p">)</span><span class="o">:</span> <span class="nx">any</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Request to </span><span class="si">${</span><span class="nx">path</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">sendPostRequest</span><span class="p">(</span><span class="nx">path</span>:<span class="kt">string</span><span class="p">,</span> <span class="nx">data</span>:<span class="kt">any</span><span class="p">)</span><span class="o">:</span> <span class="nx">any</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Request to </span><span class="si">${</span><span class="nx">path</span><span class="si">}</span><span class="sb"> with`</span><span class="p">)</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>RequestHandler é a receiver. Neste caso responsável pelas requisições. Por se tratar de um exemplo toy, as funções apenas logam no console os objetos que seriam passados pela requisição.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">interface</span> <span class="nx">RequestSender</span> <span class="p">{</span>
+    <span class="nx">execute</span><span class="o">:</span> <span class="p">{</span>
+        <span class="p">(</span><span class="nx">data</span>: <span class="kt">any</span><span class="p">)</span><span class="o">:</span> <span class="nx">any</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kr">class</span> <span class="nx">RatingSender</span> <span class="kr">implements</span> <span class="nx">RequestSender</span> <span class="p">{</span>
+    <span class="kr">private</span> <span class="nx">user</span>: <span class="kt">string</span><span class="p">;</span>
+    <span class="kr">private</span> <span class="nx">estabilishment</span>: <span class="kt">string</span><span class="p">;</span>
+    <span class="kr">private</span> <span class="nx">handler</span>: <span class="kt">RequestHandler</span><span class="p">;</span>
+
+
+    <span class="kr">public</span> <span class="kr">constructor</span><span class="p">(</span><span class="nx">user</span>: <span class="kt">string</span><span class="p">,</span> <span class="nx">estabilishment</span>: <span class="kt">string</span><span class="p">,</span> <span class="nx">handler</span>: <span class="kt">RequestHandler</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">user</span> <span class="o">=</span> <span class="nx">user</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">estabilishment</span> <span class="o">=</span> <span class="nx">estabilishment</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">handler</span> <span class="o">=</span> <span class="nx">handler</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">execute</span><span class="p">()</span><span class="o">:</span> <span class="nx">any</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">rating</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getFormData</span><span class="p">();</span>
+
+        <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="nx">rating</span>: <span class="kt">rating.number</span><span class="p">,</span>
+            <span class="nx">comment</span>: <span class="kt">rating.comment</span><span class="p">,</span>
+            <span class="nx">user</span>: <span class="kt">this.user</span><span class="p">,</span>
+            <span class="nx">estabilishment</span>: <span class="kt">this.estabilishment</span><span class="p">,</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">handler</span><span class="p">.</span><span class="nx">sendPostRequest</span><span class="p">(</span><span class="sb">`establishment/sendrating`</span><span class="p">,</span> <span class="nx">data</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kr">public</span> <span class="nx">getCommandFunction() {</span>
+        <span class="k">return</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">execute</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kr">private</span> <span class="nx">getFormData</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="kt">number</span><span class="o">:</span> <span class="nx">HTMLInputElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;ratingNumber&quot;</span><span class="p">)</span> <span class="kr">as</span> <span class="nx">HTMLInputElement</span><span class="p">;</span>
+        <span class="kd">let</span> <span class="nx">comment</span>: <span class="kt">HTMLInputElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;ratingComment&quot;</span><span class="p">)</span> <span class="kr">as</span> <span class="nx">HTMLInputElement</span><span class="p">;</span>
+
+        <span class="kd">let</span> <span class="nx">rating</span> <span class="o">=</span> <span class="p">{</span>
+          <span class="kt">number</span><span class="o">:</span> <span class="kt">number</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span>
+          <span class="nx">comment</span>: <span class="kt">comment.value</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="nx">rating</span><span class="p">;</span>
+      <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+
+<p>RequestSender é a interface do command. Suas implementações concretas (neste caso a RatingSender) são responsáveis por fazer modificações nos dados e pedir para a receiver executar a requisição.</p>
+<h2 id="4-iterator">4. Iterator</h2>
+<p>O Iterator é um padrão de projeto comportamental que permite a você percorrer elementos de uma coleção sem expor as representações dele (lista, pilha, árvore, etc.)
+Além de implementar o algoritmo em si, um objeto iterador encapsula todos os detalhes da travessia, tais como a posição atual e quantos elementos faltam para chegar ao fim. Por causa disso, alguns iteradores podem averiguar a mesma coleção ao mesmo tempo, independentemente um do outro.</p>
+<p>O Iterator é utilizado quando se quer que o código seja capaz de percorrer diferentes estruturas de dados ou quando os tipos dessas estruturas são desconhecidos de antemão.</p>
+<h3 id="estrutura_2">Estrutura</h3>
+<ol>
+<li>Interface Iterador - declara as operações necessárias para percorrer uma coleção: buscar o próximo elemento, pegar a posição atual, recomeçar a iteração e outras</li>
+<li>Iteradores Concretos - implementam algoritmos específicos para percorrer uma coleção. O objeto iterador deve monitorar o progresso da travessia por conta própria. Isso permite que diversos iteradores percorram a mesma coleção independentemente de cada um.</li>
+<li>Interface Coleção - declara um ou mais métodos para obter os iteradores compatíveis com a coleção.</li>
+<li>Coleções Concretas - retornam novas instâncias de uma classe iterador concreta em particular cada vez que o cliente pede por uma.</li>
+<li>Client - trabalha tanto com as coleções como os iteradores através de suas interfaces. Dessa forma o cliente não fica acoplado a suas classes concretas, permitindo usar várias coleções e iteradores com o mesmo código client.</li>
+</ol>
+<h3 id="41-vantagens">4.1 Vantagens</h3>
+<ul>
+<li>Princípio de responsabilidade única. É possível limpar o código cliente e as coleções ao extrair os pesados algoritmos de travessia para classes separadas.</li>
+<li>Princípio aberto/fechado. É possível implementar novos tipos de coleções e iteradores e passá-los para o código existente sem quebrar coisa alguma.</li>
+<li>É possível iterar sobre a mesma coleção em paralelo porque cada objeto iterador contém seu próprio estado de iteração.</li>
+<li>Pelas mesmas razões, é possível atrasar uma iteração e continuá-la quando necessário.</li>
+</ul>
+<h3 id="42-desvantagens">4.2 Desvantagens</h3>
+<ul>
+<li>Aplicar o padrão pode ser um preciosismo se sua aplicação só trabalha com coleções simples.</li>
+<li>Usar um iterador pode ser menos eficiente que percorrer elementos de algumas coleções especializadas diretamente.</li>
+</ul>
+<h3 id="43-aplicacao-no-projeto">4.3 Aplicação no Projeto</h3>
+<p>No nosso projeto, vários tipos de listas serão obtidas do <em>backend</em>, a princípio por meio de um objeto JSON, para serem tratadas exibidas ao usuário no <em>frontend</em>.<br />
+Com isso, a construção de um Iterator se torna interessante devido à variedade das listas, assim como seu tamanho, permitindo reúso.</p>
+<p>Abaixo temos um trecho de código escrito em JavaScript, que será usado pelo React, com a implementação de um Iterator :
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">Iterator</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">items</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">index</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">items</span> <span class="o">=</span> <span class="nx">items</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">Iterator</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">first</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">reset</span><span class="p">();</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+    <span class="p">},</span>
+    <span class="nx">next</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">items</span><span class="p">[</span><span class="k">this</span><span class="p">.</span><span class="nx">index</span><span class="o">++</span><span class="p">];</span>
+    <span class="p">},</span>
+    <span class="nx">hasNext</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">index</span> <span class="o">&lt;=</span> <span class="k">this</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">reset</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">index</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">each</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">first</span><span class="p">();</span> <span class="k">this</span><span class="p">.</span><span class="nx">hasNext</span><span class="p">();</span> <span class="nx">item</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">next</span><span class="p">())</span> <span class="p">{</span>
+            <span class="nx">callback</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">Iterator</span><span class="p">;</span>
+</code></pre></div></p>
+<p>Abaixo, temos um exemplo do uso do Iterator no React, onde uma lista, independente do que se trata, será iterada e seus objetos serão adicionados a um state.
+A função <em>useEffect</em> executa a função de percorrer a lista quando o componente em questão é montado.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="p">[</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">setData</span> <span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
+
+<span class="kr">const</span> <span class="nx">loadData</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">iter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Iterator</span><span class="p">(</span><span class="nx">list</span><span class="p">);</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">iter</span><span class="p">.</span><span class="nx">first</span><span class="p">();</span> <span class="nx">iter</span><span class="p">.</span><span class="nx">hasNext</span><span class="p">();</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">iter</span><span class="p">.</span><span class="nx">next</span><span class="p">()){</span>
+        <span class="nx">setData</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">[...</span><span class="nx">data</span><span class="p">,</span> <span class="nx">item</span><span class="p">]);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="nx">loadData</span><span class="p">()</span> <span class="p">},</span> <span class="p">[]);</span> 
+</code></pre></div>
+
+<hr />
+<h2 id="5-mediator">5. Mediator</h2>
+<p>O Mediator é um padrão de projeto comportamental que permite que você reduza as dependências caóticas entre objetos. O padrão restringe comunicações diretas entre objetos e os força a colaborar apenas através do objeto mediador.</p>
+<h2 id="estrutura_3">Estrutura</h2>
+<ol>
+<li>Componentes - são várias classes que contém alguma lógica de negócio. Cada componente tem uma referência a um mediador, declarada com o tipo de interface do mediador. O componente não está ciente da classe atual do mediador, então é possível reutilizar o componente em outros programas ao ligá-lo com um mediador diferente.</li>
+<li>Interface do Mediador - declara métodos de comunicação com os componentes, os quais geralmente incluem apenas um método de notificação. Os componentes podem passar qualquer contexto como argumentos desse método, incluindo seus próprios objetos, mas apenas de tal forma que nenhum acoplamento ocorra entre um componente destinatário e a classe remetente.</li>
+<li>Mediadores Concretos - encapsulam as relações entre vários componentes. Os mediadores concretos quase sempre mantém referências de todos os componentes os quais gerenciam e, algumas vezes, até gerenciam o ciclo de vida deles.</li>
+<li>Componentes não devem estar cientes de outros componentes - se algo importante acontece dentro ou para um componente, ele deve apenas notificar o mediador. Quando o mediador recebe a notificação, ele pode facilmente identificar o remetente, o que é suficiente para decidir que componente deve ser acionado em retorno. Da perspectiva de um componente, tudo parece como uma caixa preta. O remetente não sabe quem vai acabar lidando com o seu pedido, e o destinatário não sabe quem enviou o pedido em primeiro lugar.</li>
+</ol>
+<h3 id="51-vantagens">5.1 Vantagens</h3>
+<ul>
+<li>Princípio de responsabilidade única. É possível extrair as comunicações entre vários componentes para um único lugar, tornando as de mais fácil entendimento e manutenção.</li>
+<li>Princípio aberto/fechado. É possível introduzir novos mediadores sem ter que mudar os próprios componentes.</li>
+<li>É possível reduzir o acoplamento entre os vários componentes de um programa.</li>
+<li>É possível reutilizar componentes individuais mais facilmente.</li>
+</ul>
+<h3 id="52-desvantagens">5.2 Desvantagens</h3>
+<ul>
+<li>Com o tempo um mediador pode evoluir para um Objeto Deus. Na programação orientada a objetos, um Objeto Deus é um objeto que sabe demais ou faz demais. O objeto deus é um exemplo de um antipadrão em projetos de software.</li>
+</ul>
+<h3 id="53-aplicacao-no-projeto">5.3 Aplicação no Projeto</h3>
+<p>No escopo estendido da aplicação, o mediator pode se caracterizar como um mediador entre um usuário cliente (Customer) e um usuário dono de estabelecimento (Owner), por meio de um componente de chat.</p>
+<h2 id="6-memento">6. Memento</h2>
+<p>O Memento é um padrão de projeto comportamental que permite que você salve e restaure o estado anterior de um objeto sem revelar os detalhes de sua implementação.
+O padrão Memento é usado quando se quer produzir retratos (<em>snapshots</em>) do estado de um objeto para ser capaz de restaurar um estado anterior do objeto.</p>
+<h2 id="estrutura_4">Estrutura</h2>
+<ol>
+<li>Classe Originadora - pode produzir retratos de seu próprio estado, bem como restaurar seu estado de retratos quando necessário.</li>
+<li>Memento - é um objeto de valor que age como um retrato do estado da originadora. É uma prática comum fazer o memento imutável e passar os dados para ele apenas uma vez, através do construtor.</li>
+<li>Cuidadora - sabe não só “quando” e “por quê” capturar o estado da originadora, mas também quando o estado deve ser restaurado.</li>
+<li>Nessa implementação, a classe memento está aninhada dentro da originadora. Isso permite que a originadora acesse os campos e métodos do memento, mesmo que eles tenham sido declarados privados. Por outro lado, a cuidadora tem um acesso muito limitado aos campos do memento, que permite ela armazenar os mementos em uma pilha, mas não permite mexer com seu estado.</li>
+</ol>
+<h3 id="61-vantagens">6.1 Vantagens</h3>
+<ul>
+<li>É possível produzir retratos do estado de um objeto sem violar seu encapsulamento.</li>
+<li>É possível simplificar o código da originadora permitindo que a cuidadora mantenha o histórico do estado da originadora.</li>
+</ul>
+<h3 id="62-desvantagens">6.2 Desvantagens</h3>
+<ul>
+<li>A aplicação pode consumir muita RAM se os clientes criarem mementos com muita frequência.</li>
+<li>Cuidadoras devem acompanhar o ciclo de vida da originadora para serem capazes de destruir mementos obsoletos.</li>
+<li>A maioria das linguagens de programação dinâmicas, tais como PHP, Python, e JavaScript, não conseguem garantir que o estado dentro do memento permaneça intacto.</li>
+</ul>
+<h3 id="63-aplicacao-no-projeto">6.3 Aplicação no Projeto</h3>
+<p>Esse comportamento pode ser usado em componentes de escrita, como no chat ou avaliação do estabelecimento. As tags de entreda do HTML contêm mecânismos de um memento.</p>
+<h2 id="7-observer">7. Observer</h2>
+<p>O Observer é um padrão de projeto comportamental que permite que você defina um mecanismo de assinatura para notificar múltiplos objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando. Também pode ser conhecido como Observador, Assinante do evento, Event-Subscriber, Escutador, Listener.
+O padrão Observer pode ser usado quando mudanças no estado de um objeto podem precisar mudar outros objetos, e o atual conjunto de objetos é desconhecido de antemão ou muda dinamicamente.</p>
+<h2 id="estrutura_5">Estrutura</h2>
+<ol>
+<li>Publicadora - manda eventos de interesse para outros objetos. Esses eventos ocorrem quando a publicadora muda seu estado ou executa algum comportamento. As publicadoras contêm uma infraestrutura de inscrição que permite novos assinantes se juntar aos atuais assinantes ou deixar a lista.</li>
+<li>Quando um novo evento acontece, a publicadora percorre a lista de assinantes e chama o método de notificação declarado na interface do assinante em cada objeto assinante.</li>
+<li>Interface Assinante - declara a interface de notificação. Na maioria dos casos ela consiste de um único método atualizar. O método pode ter vários parâmetros que permite que a publicadora passe alguns detalhes do evento junto com a atualização.</li>
+<li>Assinantes Concretos - realizam algumas ações em resposta às notificações enviadas pela publicadora. Todas essas classes devem implementar a mesma interface para que a publicadora não fique acoplada à classes concretas.</li>
+<li>Geralmente, assinantes precisam de alguma informação contextual para lidar com a atualização corretamente. Por esse motivo, as publicadoras quase sempre passam algum dado de contexto como argumentos do método de notificação. A publicadora pode passar a si mesmo como um argumento, permitindo que o assinante recupere quaisquer dados diretamente.</li>
+<li>Cliente - cria a publicadora e os objetos assinantes separadamente e então registra os assinantes para as atualizações da publicadora.</li>
+</ol>
+<h3 id="71-vantagens">7.1 Vantagens</h3>
+<ul>
+<li>Princípio aberto/fechado. É possível introduzir novas classes assinantes sem ter que mudar o código da publicadora (e vice versa se existe uma interface publicadora).</li>
+<li>É possível estabelecer relações entre objetos durante a execução.</li>
+</ul>
+<h3 id="72-desvantagens">7.2 Desvantagens</h3>
+<ul>
+<li>Assinantes são notificados em ordem aleatória</li>
+</ul>
+<h3 id="73-aplicacao-no-projeto">7.3 Aplicação no Projeto</h3>
+<p>O chat, além de um mediator, também aplica o padrão de Observer, uma vez que ele precisa manter uma lista dos usuários participantes, e precisa escutar os eventos de conexão, desconexão e envio de mensagens entre os usuários.</p>
+<h2 id="8-state">8. State</h2>
+<p>O State é um padrão de projeto comportamental que permite que um objeto altere seu comportamento quando seu estado interno muda. É como se o objeto mudasse de classe.
+O padrão State pode ser usado quando se tem um objeto que se comporta de maneira diferente dependendo do seu estado atual, quando o número de estados é enorme, e quando o código estado específico muda com frequência.</p>
+<h2 id="estrutura_6">Estrutura</h2>
+<ol>
+<li>Contexto - armazena uma referência a um dos objetos concretos de estado e delega a eles todos os trabalhos específicos de estado. O contexto se comunica com o objeto estado através da interface do estado. O contexto expõe um setter para passar a ele um novo objeto de estado.</li>
+<li>Interface do Estado - declara métodos específicos a estados. Esses métodos devem fazer sentido para todos os estados concretos porque você não quer alguns dos seus estados tendo métodos inúteis que nunca irão ser chamados.</li>
+<li>Estados Concretos - fornecem suas próprias implementações para os métodos específicos de estados. Objetos de estado podem armazenar referências retroativas para o objeto de contexto. Através dessa referência o estado pode buscar qualquer informação desejada do objeto contexto, assim como iniciar transições de estado.</li>
+<li>Ambos os estados de contexto e concretos podem configurar o próximo estado do contexto e realizar a atual transição de estado ao substituir o objeto estado ligado ao contexto.</li>
+</ol>
+<h3 id="81-vantagens">8.1 Vantagens</h3>
+<ul>
+<li>Princípio de responsabilidade única. Organiza o código relacionado a estados particulares em classes separadas.</li>
+<li>Princípio aberto/fechado. Introduz novos estados sem mudar classes de estado ou contexto existentes.</li>
+<li>Simplifica o código de contexto ao eliminar condicionais de máquinas de estado pesadas</li>
+</ul>
+<h3 id="82-desvantagens">8.2 Desvantagens</h3>
+<ul>
+<li>Aplicar o padrão pode ser um exagero se a máquina de estado só tem alguns estados ou raramente muda eles.</li>
+</ul>
+<h3 id="83-aplicacao-no-projeto">8.3 Aplicação no Projeto</h3>
+<p>O gerenciamento de estado de componentes é muito utilizado no frontend. Um exemplo disso pode ser a mudança de contexto entre a tela inicial e a visualização de algum estabelecimento específico. </p>
+<h2 id="9-strategy">9. Strategy</h2>
+<p>O Strategy é um padrão de projeto comportamental que permite que você defina uma família de algoritmos, coloque-os em classes separadas, e faça os objetos deles intercambiáveis. O padrão Strategy sugere que se pegue uma classe que faz algo específico em diversas maneiras diferentes e extraia todos esses algoritmos para classes separadas chamadas estratégias.
+Pode ser utilizado quando se tem muitas classes parecidas que somente diferem na forma que elas executam algum comportamento.</p>
+<h2 id="estrutura_7">Estrutura</h2>
+<ol>
+<li>Contexto - mantém uma referência para uma das estratégias concretas e se comunica com esse objeto através da interface da estratégia.</li>
+<li>Interface Estratégia - é comum à todas as estratégias concretas. Ela declara um método que o contexto usa para executar uma estratégia.</li>
+<li>Estratégias Concretas - implementam diferentes variações de um algoritmo que o contexto usa.</li>
+<li>O contexto chama o método de execução no objeto estratégia ligado cada vez que ele precisa rodar um algoritmo. O contexto não sabe qual tipo de estratégia ele está trabalhando ou como o algoritmo é executado.</li>
+<li>Client - cria um objeto estratégia específico e passa ele para o contexto. O contexto expõe um setter que permite o cliente mudar a estratégia associada com contexto durante a execução.</li>
+</ol>
+<h3 id="91-vantagens">9.1 Vantagens</h3>
+<ul>
+<li>É possível trocar algoritmos usados dentro de um objeto durante a execução.</li>
+<li>É possível isolar os detalhes de implementação de um algoritmo do código que usa ele.</li>
+<li>É possível substituir a herança por composição.</li>
+<li>Princípio aberto/fechado. É possível introduzir novas estratégias sem mudar o contexto.</li>
+</ul>
+<h3 id="92-desvantagens">9.2 Desvantagens</h3>
+<ul>
+<li>Se existe só tem um par de algoritmos e eles raramente mudam, não há motivo real para deixar o programa mais complicado com novas classes e interfaces que vêm junto com o padrão.</li>
+<li>Os Clientes devem estar cientes das diferenças entre as estratégias para serem capazes de selecionar a adequada.</li>
+<li>Muitas linguagens de programação modernas tem suporte do tipo funcional que permite que implemente diferentes versões de um algoritmo dentro de um conjunto de funções anônimas. Então é possível usar essas funções exatamente como se estivesse usando objetos estratégia, mas sem inchar seu código com classes e interfaces adicionais.</li>
+</ul>
+<h3 id="93-aplicacao-no-projeto">9.3 Aplicação no Projeto</h3>
+<p>As classes User, Estabilishment e Service precisam ter instâncias salvas, atualizadas ou apagadas. Uma aplicação de Strategy nesse caso poderia usar uma interface Register, cujas classes concretas se encarregam dessas operações de forma especializada para cada entidade que necessita dessas operações.</p>
+<h2 id="10-template-method">10. Template Method</h2>
+<p>Também conhecido como Método padrão, é um padrão de projeto comportamental que define o esqueleto de um algoritmo na superclasse mas deixa as subclasses sobrescreverem etapas específicas do algoritmo sem modificar sua estrutura.
+Pode ser utilizade quando se tem várias classes que contém algoritmos quase idênticos com algumas diferenças menores. Como resultado, é possível querer modificar todas as classes quando o algoritmo muda.</p>
+<h2 id="estrutura_8">Estrutura</h2>
+<ol>
+<li>Classe Abstrata - declara métodos que agem como etapas de um algoritmo, bem como o próprio método padrão que chama esses métodos em uma ordem específica. Os passos podem ser declarados como abstratos ou ter alguma implementação padrão.</li>
+<li>Classes Concretas - podem sobrescrever todas as etapas, mas não o próprio método padrão.</li>
+</ol>
+<h3 id="101-vantagens">10.1 Vantagens</h3>
+<ul>
+<li>É possível deixar clientes sobrescrever apenas certas partes de um algoritmo grande, tornando-os menos afetados por mudanças que acontece por outras partes do algoritmo.</li>
+<li>É possível elevar o código duplicado para uma superclasse.</li>
+</ul>
+<h3 id="102-desvantagens">10.2 Desvantagens</h3>
+<ul>
+<li>Alguns clientes podem ser limitados ao fornecer o esqueleto de um algoritmo.</li>
+<li>Implementações do padrão Template Method tendem a ser mais difíceis de se manter quanto mais etapas eles tiverem.</li>
+</ul>
+<h3 id="103-aplicacao-no-projeto">10.3 Aplicação no Projeto</h3>
+<p>Não foram identificados casos que o Template Method precise ser implementado no projeto. Entretanto esse padrão pode ser observado em funções muito usadas como filter ou order no Javascript, que recebem funções para controlar os elementos internos de coleções.</p>
+<h2 id="11-visitor">11. Visitor</h2>
+<p>O Visitor é um padrão de projeto comportamental que permite que você separe algoritmos dos objetos nos quais eles operam. O padrão Visitor sugere que você coloque o novo comportamento em uma classe separada chamada visitante, ao invés de tentar integrá-lo em classes já existentes.
+É possível utilizar o Visitor quando se quer fazer uma operação em todos os elementos de uma estrutura de objetos complexa.</p>
+<h2 id="estrutura_9">Estrutura</h2>
+<ol>
+<li>Interface Visitante - declara um conjunto de métodos visitantes que podem receber elementos concretos de uma estrutura de objetos como argumentos. Esses métodos podem ter os mesmos nomes se o programa é escrito em uma linguagem que suporta sobrecarregamento, mas o tipo dos parâmetros devem ser diferentes.</li>
+<li>Visitante Concreto - implementa diversas versões do mesmo comportamento, feitos sob medida para diferentes elementos concretos de classes.</li>
+<li>A interface Elemento - declara um método para “aceitar” visitantes. Esse método deve ter um parâmetro declarado com o tipo da interface do visitante.</li>
+<li>Elemento Concreto - deve implementar o método de aceitação. O propósito desse método é redirecionar a chamada para o método visitante apropriado que corresponde com a atual classe elemento. Esteja atento que mesmo se uma classe elemento base implemente esse método, todas as subclasses deve ainda sobrescrever esse método em suas próprias classes e chamar o método apropriado no objeto visitante.</li>
+<li>Cliente - geralmente representa uma coleção de outros objetos complexos. Geralmente, os clientes não estão cientes de todos as classes elemento concretas porque eles trabalham com objetos daquele coleção através de uma interface abstrata.</li>
+</ol>
+<h3 id="111-vantagens">11.1 Vantagens</h3>
+<ul>
+<li>Princípio aberto/fechado. É possível introduzir um novo comportamento que pode funcionar com objetos de diferentes classes sem mudar essas classes.</li>
+<li>Princípio de responsabilidade única. É possível mover múltiplas versões do mesmo comportamento para dentro da mesma classe.</li>
+<li>Um objeto visitante pode acumular algumas informações úteis enquanto trabalha com vários objetos. Isso pode ser interessante quando se quer percorrer algum objeto de estrutura complexa e aplicar o visitante para cada objeto da estrutura.</li>
+</ul>
+<h3 id="112-desvantagens">11.2 Desvantagens</h3>
+<ul>
+<li>É necessário atualizar todos os visitantes a cada vez que a classe é adicionada ou removida da hierarquia de elementos.</li>
+<li>Visitantes podem não ter seu acesso permitido para campos e métodos privados dos elementos que eles deveriam estar trabalhando.</li>
+</ul>
+<h3 id="113-aplicacao-no-projeto">11.3 Aplicação no Projeto</h3>
+<p>Não foram identificadas aplicações para este padrão.</p>
+<!-- ## 12. Conclusão -->
+
+<h2 id="13-referencias">13. Referências</h2>
+<p>[1] - Padrões de projeto comportamentais. Disponível em: <a href="https://refactoring.guru/pt-br/design-patterns/behavioral-patterns">https://refactoring.guru/pt-br/design-patterns/behavioral-patterns</a>.  </p>
+<p>[2] - ALESSANDRO FERREIRA LEITE. Conheça os Padrões de Projeto. Disponível em: <a href="https://www.devmedia.com.br/conheca-os-padroes-de-projeto/957">https://www.devmedia.com.br/conheca-os-padroes-de-projeto/957</a>.</p>
+<p>‌
+‌</p>
+<hr />
+<h2 id="14-versionamento">14. Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Nome</th>
+<th>Detalhes</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>03/04/2021</td>
+<td>Nícalo Ribeiro</td>
+<td>Criação da estrutura base do documento</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>03/04/2021</td>
+<td>Nícalo, Wagner, Hugo</td>
+<td>Adição dos conceitos de Chain of Responsibility</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>03/04/2021</td>
+<td>Nícalo, Wagner, Hugo</td>
+<td>Adição dos conceitos de Command e Iterator</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>03/04/2021</td>
+<td>Nícalo, Wagner, Hugo</td>
+<td>Adição dos conceitos de Mediator, Memento, Observer e State</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>03/04/2021</td>
+<td>Nícalo, Wagner, Hugo</td>
+<td>Adição dos conceitos de Strategy, Template Method e Visitor</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>08/04/2021</td>
+<td>Wagner Martins</td>
+<td>Adição da modelagem e código do padrão command</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>08/04/2021</td>
+<td>Nícalo Ribeiro</td>
+<td>Adição do código do padrão Iterator</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>09/04/2021</td>
+<td>Wagner Martins</td>
+<td>Adição de ideias de aplicação no projeto para os outros padrões</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>09/04/2021</td>
+<td>Wagner Martins</td>
+<td>Atualização da aplicação no padrão chain of responsability</td>
+<td>0.9</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../gof_estrutural/" title="GoFs Estruturais" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                GoFs Estruturais
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../Padroes_emergentes/balking/" title="Balking" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                Balking
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.tabs', 'navigation.sections'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

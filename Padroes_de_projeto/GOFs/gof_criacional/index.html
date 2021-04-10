@@ -1,0 +1,2011 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon-encare.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>GoFs Criacionais - EnCare</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Poppins",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/styles.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gofs-criacionais" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="EnCare" class="md-header-nav__button md-logo" aria-label="EnCare">
+      
+  <img src="../../../assets/images/logo-encare.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            EnCare
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              GoFs Criacionais
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020.2_G2_Encare
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Base/richpicture/rich_picture/" class="md-tabs__link">
+          Base
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Modelagem/diagrama_componentes/diagrama_componentes/" class="md-tabs__link">
+          Modelagem
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../grasps/grasps/" class="md-tabs__link">
+          Padrões de Projeto
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Base/requisitos/requisitos/" class="md-tabs__link">
+          Iniciativas Extras
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="EnCare" class="md-nav__button md-logo" aria-label="EnCare">
+      
+  <img src="../../../assets/images/logo-encare.svg" alt="logo">
+
+    </a>
+    EnCare
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2020.2_G2_Encare
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Base
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Base" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Base
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Projeto Não Orientado a Abordagens Específicas
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Projeto Não Orientado a Abordagens Específicas" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Projeto Não Orientado a Abordagens Específicas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/richpicture/rich_picture/" title="Rich Picture" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/mapa_mental/mapa_mental/" title="Mapa Mental" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/causa_e_efeito/causa_e_efeito/" title="Causa e Efeito" class="md-nav__link">
+      Causa e Efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/glossario/glossario/" title="Glossário" class="md-nav__link">
+      Glossário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/planodeacao/5w2g/" title="Plano de Ação" class="md-nav__link">
+      Plano de Ação
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/estimativas/estimativas/" title="Estimativas" class="md-nav__link">
+      Estimativas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/design_sprint/design_sprint/" title="Design Sprint" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Processos / Metodologias / Abordagens
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Processos / Metodologias / Abordagens" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Processos / Metodologias / Abordagens
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/bpmn/modelagem_bpmn/" title="Modelagem BPMN" class="md-nav__link">
+      Modelagem BPMN
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/metodologia/metodologia/" title="Metodologia" class="md-nav__link">
+      Metodologia
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Diagramas Estáticos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diagramas Estáticos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        Diagramas Estáticos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_componentes/diagrama_componentes/" title="Digrama de Componentes" class="md-nav__link">
+      Digrama de Componentes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_classes/diagrama_de_classes/" title="Diagrama de Classes" class="md-nav__link">
+      Diagrama de Classes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Diagramas Dinâmicos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diagramas Dinâmicos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Diagramas Dinâmicos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_sequencia/Diagrama%20de%20sequ%C3%AAncia/" title="Diagrama de Sequência" class="md-nav__link">
+      Diagrama de Sequência
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/diagrama_atividades/diagrama_de_atividades/" title="Diagrama de Atividade" class="md-nav__link">
+      Diagrama de Atividade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Modelagem Ágil
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem Ágil" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem Ágil
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Modelagem/backlog/Backlog/" title="Backlog do Produto" class="md-nav__link">
+      Backlog do Produto
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Padrões de Projeto
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões de Projeto" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões de Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+    
+    <label class="md-nav__link" for="nav-4-1">
+      GRASPs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="GRASPs" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        GRASPs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../grasps/grasps/" title="Grasps" class="md-nav__link">
+      Grasps
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Gofs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Gofs" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        <span class="md-nav__icon md-icon"></span>
+        Gofs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GoFs Criacionais
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="GoFs Criacionais" class="md-nav__link md-nav__link--active">
+      GoFs Criacionais
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-factory-method" class="md-nav__link">
+    2. Factory Method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-vantagens" class="md-nav__link">
+    2.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-desvantagens" class="md-nav__link">
+    2.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-aplicacao-no-projeto" class="md-nav__link">
+    2.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-builder" class="md-nav__link">
+    3. Builder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_1" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-vantagens" class="md-nav__link">
+    3.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-desvantagens" class="md-nav__link">
+    3.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-aplicacao-no-projeto" class="md-nav__link">
+    3.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-singleton" class="md-nav__link">
+    4. Singleton
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_2" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-vantagens" class="md-nav__link">
+    4.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-desvantagens" class="md-nav__link">
+    4.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-aplicacao-no-projeto" class="md-nav__link">
+    4.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-multiton" class="md-nav__link">
+    5. Multiton
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Multiton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-vantagens" class="md-nav__link">
+    5.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-desvantagens" class="md-nav__link">
+    5.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-aplicacao-no-projeto" class="md-nav__link">
+    5.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-object-poll" class="md-nav__link">
+    6. Object poll
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Object poll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-vantagens" class="md-nav__link">
+    6.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-desvantagens" class="md-nav__link">
+    6.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-aplicacao-no-projeto" class="md-nav__link">
+    6.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-abstract-factory" class="md-nav__link">
+    7. Abstract factory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_3" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-vantagens" class="md-nav__link">
+    7.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-desvantagens" class="md-nav__link">
+    7.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-aplicacao-no-projeto" class="md-nav__link">
+    7.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-prototype" class="md-nav__link">
+    8. Prototype
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_4" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-vantagens" class="md-nav__link">
+    8.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-desvantagens" class="md-nav__link">
+    8.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-aplicacao-no-projeto" class="md-nav__link">
+    8.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conclusao" class="md-nav__link">
+    9. Conclusão:
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Conclusão:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versao-10" class="md-nav__link">
+    Versão 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-20" class="md-nav__link">
+    Versão 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-referencias" class="md-nav__link">
+    10. Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-versionamento" class="md-nav__link">
+    11. Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gof_estrutural/" title="GoFs Estruturais" class="md-nav__link">
+      GoFs Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gof_comportamental/" title="GoFs Comportamentais" class="md-nav__link">
+      GoFs Comportamentais
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Padrões Emergentes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões Emergentes" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões Emergentes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/balking/" title="Balking" class="md-nav__link">
+      Balking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/interception_filter/" title="Interception Filter" class="md-nav__link">
+      Interception Filter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/serverless/" title="Serverless" class="md-nav__link">
+      Serverless
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/objeto_mock/" title="Object-mock" class="md-nav__link">
+      Object-mock
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Padroes_emergentes/lazy_loading/" title="Lazy Loading" class="md-nav__link">
+      Lazy Loading
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Iniciativas Extras
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Iniciativas Extras" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Iniciativas Extras
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/requisitos/requisitos/" title="Requisitos" class="md-nav__link">
+      Requisitos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Base/iniciativas_extras/CONTRIBUTING/" title="Politicas de contribuição" class="md-nav__link">
+      Politicas de contribuição
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Padroes/guia_de_estilo/guia_estilo/" title="Guia de Estilo" class="md-nav__link">
+      Guia de Estilo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Padroes/prototipos/prototipo_alta/" title="Protótipo de Alta Fidelidade" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-factory-method" class="md-nav__link">
+    2. Factory Method
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-vantagens" class="md-nav__link">
+    2.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-desvantagens" class="md-nav__link">
+    2.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-aplicacao-no-projeto" class="md-nav__link">
+    2.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-builder" class="md-nav__link">
+    3. Builder
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_1" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-vantagens" class="md-nav__link">
+    3.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-desvantagens" class="md-nav__link">
+    3.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-aplicacao-no-projeto" class="md-nav__link">
+    3.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-singleton" class="md-nav__link">
+    4. Singleton
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_2" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-vantagens" class="md-nav__link">
+    4.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-desvantagens" class="md-nav__link">
+    4.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-aplicacao-no-projeto" class="md-nav__link">
+    4.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-multiton" class="md-nav__link">
+    5. Multiton
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Multiton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-vantagens" class="md-nav__link">
+    5.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-desvantagens" class="md-nav__link">
+    5.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-aplicacao-no-projeto" class="md-nav__link">
+    5.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-object-poll" class="md-nav__link">
+    6. Object poll
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Object poll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-vantagens" class="md-nav__link">
+    6.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-desvantagens" class="md-nav__link">
+    6.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-aplicacao-no-projeto" class="md-nav__link">
+    6.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-abstract-factory" class="md-nav__link">
+    7. Abstract factory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_3" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-vantagens" class="md-nav__link">
+    7.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-desvantagens" class="md-nav__link">
+    7.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-aplicacao-no-projeto" class="md-nav__link">
+    7.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-prototype" class="md-nav__link">
+    8. Prototype
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura_4" class="md-nav__link">
+    Estrutura
+  </a>
+  
+    <nav class="md-nav" aria-label="Estrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-vantagens" class="md-nav__link">
+    8.1. Vantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-desvantagens" class="md-nav__link">
+    8.2. Desvantagens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-aplicacao-no-projeto" class="md-nav__link">
+    8.3. Aplicação no projeto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conclusao" class="md-nav__link">
+    9. Conclusão:
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Conclusão:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#versao-10" class="md-nav__link">
+    Versão 1.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#versao-20" class="md-nav__link">
+    Versão 2.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-referencias" class="md-nav__link">
+    10. Referências
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-versionamento" class="md-nav__link">
+    11. Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/edit/master/docs/Padroes_de_projeto/GOFs/gof_criacional.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="gofs-criacionais">GoFs Criacionais</h1>
+<h2 id="1-introducao">1. Introdução</h2>
+<p>Os padrões de projeto criacionais abstraem o proceso de instanciação do objeto. Eles ajudam a fazer o sistema independente na maneira em que são criados, compostos e representados. Em outras palavras esse padrões se concentram em oferecer soluções para problemas recorrentes principalmente na criação/instanciação de objetos.</p>
+<p>A seguir iremos apresentar os principais padrões criacionais e como eles se aplicam o projeto, explicando também o problema/solução. Será apresentado também os casos em que os padrões não serão aplicados e o motivo.</p>
+<h2 id="2-factory-method">2. Factory Method</h2>
+<p>O <em>factory method</em> (método de fábrica) consiste no instanciamento de um produto concreto que usa uma interface, por exemplo, uma aplicação que requer um objeto com uma interface específica para realizar as tarefas.</p>
+<p>Em termos práticos é uma criação de uma classe que será fábrica de um determinando produto. Exixtem duas implementações encontrada: a primeira é uma fábrica concreta para todos as classes que implementam uma interface e a segunda é uma fábrica para cada produto que implementa a interface. Enquanto a primeira seja mais simples de ser implementada, apenas a segunda atende o principio do open/close.</p>
+<h2 id="estrutura">Estrutura</h2>
+<ol>
+<li>É declarada uma <em>interface</em>, que é comum a todos os objetos que podem ser produzidos pelo criador pelo criador e suas subclasses.</li>
+<li>Em seguida as classes criadas serão implementações dessa <em>interface</em>.</li>
+<li>A classe <em>Criadora</em> declara o método fábrica que retorna novos objetos produto, e logo após retornando o resultado para a <em>interface</em>.</li>
+<li>As classes criadoras filhas sobrescrevem o método fábrica da <em>Criadora</em>, logo após retornando um tipo diferente de produto.</li>
+</ol>
+<h4 id="21-vantagens">2.1. Vantagens</h4>
+<ul>
+<li>Poder facilmente adicionar mais produtos concretos que utilizam a mesma interface.</li>
+<li>Evitar um alto grau de acoplamento no código.</li>
+<li>Obedece ao princípio da responsabilidade única.</li>
+</ul>
+<h4 id="22-desvantagens">2.2. Desvantagens</h4>
+<ul>
+<li>Caso seu uso seja excessivo pode acarretar a um grande número de subclasses e de arquivos dentro do software.</li>
+</ul>
+<h4 id="23-aplicacao-no-projeto">2.3. Aplicação no projeto</h4>
+<p>Na nossa aplicação irá existir três tipos de usuários: <em>Admin</em>, <em>Owner</em> e <em>Costumer</em>. Dado essa situação, a equipe decidiu por aplicar o <em>factory method</em> por facilitará o instanciamento dessas classes. Esse três tipos de usuários serão classes que herdarão de uma classe <em>User</em> possibilitando a aplicação desse padrão de projeto.</p>
+<p>A implementação em código seria, por exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+
+<span class="k">class</span> <span class="nc">UserFactory</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">getUser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">AdminFactory</span><span class="p">(</span><span class="n">UserFactory</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">getUser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">User</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Admin</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">CustomerFactory</span><span class="p">(</span><span class="n">UserFactory</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">getUser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">User</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Customer</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">OwnerFactory</span><span class="p">(</span><span class="n">UserFactory</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">getUser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">User</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Owner</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="3-builder">3. Builder</h2>
+<p>O padrão de projeto <em>Builder</em> tem como objetivo separar a construção de objetos complexos da sua representação de modo que o mesmo processo de construção pode criar várias representações.</p>
+<p>Seu funcionamento começa na classe <em>Director</em> que possui o método que chama o <em>ConcrectBuilder</em> específico, de acordo com os parâmetros especificados. Essa classe não é essencial nesse padrão, mas é importante. Outra parte desse processo são as classes <em>Builders</em>; a primeira é uma classe abstrata que declara os métodos que devem ser implementados por um <em>ConcrectBuilder</em>; esta classe é uma classe concreta que implementa os métodos necessários para a construção do produto e, por fim, a classe <em>Product</em> é o resutado da construção implementada no <em>ConcrectBuilder</em>. Tendo em vista esse processo, ess padrão de projeto é vantajoso somente se o processo de contrução do produto em sí é muito complexo, sendo necessário a separação de responsabilidades entre as classes.</p>
+<h2 id="estrutura_1">Estrutura</h2>
+<ol>
+<li>A interface <em>Builder</em> declara etapas de construção do produto que são comuns a todos os tipos de de builders. </li>
+<li>Os <em>Builders Concretos</em> trazem diferentes implementações das etapas de construção. <em>Builders Concretos</em> podem produzir podem produzir produtos que não seguem a interface comum.</li>
+<li>Os Produtos são objetos resultantes. Produtos construídos pode diferentes builders não precisam pertencer a mesma interface ou hierarquia da classe.</li>
+<li>Uma classe chamada <em>Diretor</em> define a ordem na qual as etapas de construção são chamadas, então você pode criar e reutilizar configurações específicas de produtos.</li>
+<li>Uma classe <em>Cliente</em> deve associas um dos objetos builders como o construtor do <em>Diretor</em>. Geralmente isso é feito apenas uma vez, através de parâmetros do construtor do diretor. O <em>Diretor</em> então usa aquele objeto builder para todas as futuras construções.</li>
+</ol>
+<h4 id="31-vantagens">3.1. Vantagens</h4>
+<ul>
+<li>Pode-se usar a mesma construção para diversas representações do produto. Em outras palavras favorece a reusabilidade do código.</li>
+<li>Pelo princípio da única responsabilidade, é separado a responsabilidade de construir o objeto de quem o usa.</li>
+<li>É possível criar uma construção de um objeto em etapas.</li>
+<li>Entrega um maior controle sobre a construção de um objeto.</li>
+</ul>
+<h4 id="32-desvantagens">3.2. Desvantagens</h4>
+<ul>
+<li>Aumenta a complexidade do código, ja que esse padrão requer a criação de múltiplas classes.</li>
+<li>Requer que a classe Builder seja mutável.</li>
+</ul>
+<h4 id="33-aplicacao-no-projeto">3.3. Aplicação no projeto</h4>
+<p>Todas as classes do projeto não têm mais de 4 atributos que necessitam ser inicializados junto ao objeto, oque torna a criação da maioria das classes simples ao ponto de o padrão de projeto builder se tornar desisteressante. Há apenas uma classe que pode ser usada para aplicar o método Builder que é a <em>OpeningHours</em>, ja que os horários de abertura e fechamento estão em um formato específico e cada dia da semana tem um próprio funcionamento; atualmente a responsabilidade para contrução desse objeto é da própria classe <em>Opening Hours</em>.</p>
+<h2 id="4-singleton">4. Singleton</h2>
+<p>Garante que uma classe tenha apenas uma instância em todo o código e oferece um ponto de acesso global para essa classe. Em outras palavras, esse padrão é usada para quando precisa de uma classe de acesso global no código, garantindo apenas uma instância.</p>
+<p>Para isso é necessário a implementação de uma classe que irá ser a variável global e em caso de multithreading irá controlar também o acesso, sob risco de criar novas instâncias.</p>
+<h2 id="estrutura_2">Estrutura</h2>
+<ol>
+<li>A classe <em>Singleton</em> declara o método estático <em>getInstancia</em> que retorna a mesma instância de sua classe. O construtor da singleton deve ser escondido do código <em>client</em>. Chamando o método <em>getInstancia</em> deve ser o único modo de obter o objeto singleton.</li>
+</ol>
+<h4 id="41-vantagens">4.1. Vantagens</h4>
+<ul>
+<li>Controla o acesso a essa instância.</li>
+<li>Facilidade em permitir um maior número de instâncias (Multiton);</li>
+<li>Substitui variáveis globais.</li>
+</ul>
+<h4 id="42-desvantagens">4.2. Desvantagens</h4>
+<ul>
+<li>É mais difícil de testar, visto que várias partes do código alteram essa classe.</li>
+<li>Viola o princípio de responsabilidade única</li>
+<li>Requer tratamento especial em caso de concorrência.</li>
+<li>Em [5] O próprio autor fala que esse é o único padrão de projeto que ele retiraria em uma refatoração do livro.</li>
+</ul>
+<h4 id="43-aplicacao-no-projeto">4.3. Aplicação no projeto</h4>
+<p>Dentro da nossa modelagem, a principal classe que pode ser usada o padrão <em>singleton</em> é são as classes que geram autenticação: <em>Costumer</em>, <em>Owner</em> e <em>Admin</em>. Como elas podem ser acessadas de várias parte do código, então são as favoritas para serem aplicadas os padrões de projeto.</p>
+<h2 id="5-multiton">5. Multiton</h2>
+<p>Esse padrão é apenas uma generalização do <em>Singleton</em> sendo que este autoriza apenas uma instância, enquanto o <em>Multiton</em> permite uma quantidade controlada de instâncias.</p>
+<h4 id="51-vantagens">5.1. Vantagens</h4>
+<ul>
+<li>Controla o acesso a várias instâncias.</li>
+<li>Substitui variáveis globais.</li>
+</ul>
+<h4 id="52-desvantagens">5.2. Desvantagens</h4>
+<ul>
+<li>É mais difícil de testar, visto que várias partes do código alteram essa classe.</li>
+<li>Viola o princípio de responsabilidade única</li>
+<li>Requer tratamento especial em caso de concorrência.</li>
+</ul>
+<h4 id="53-aplicacao-no-projeto">5.3. Aplicação no projeto</h4>
+<p>Assim como o <em>singleton</em> o escopo atual não permite o uso desse padrão de forma se tornar vantajoso ao sistema. Por outro lado, assim como o <em>singleton</em>, na ferramenta usada no ReactJS, que é o framework que será usado no frontend, há a aparição do padrão de projeto <em>singleton</em>/<em>multiton</em> no uso do <em>Context API</em>.</p>
+<h2 id="6-object-poll">6. Object poll</h2>
+<p>Esse padrão permite uma boa economia de performace e sendo usado principalmente em casos em que o custo do instaciamento de uma classe é bem pesado. Seu fucionamento se baseia no armazenamento de classes que não estão sendo usadas e não destruindo-as podem ser usadas posteriormente. Um exemplo clássico de seu uso são de classes que precisam ser renderizadas em games; ao invés de destruir, a classe é armazenada para ser usada posteriormente, assim, o programa não precisa renderizar tudo novamente.</p>
+<h4 id="61-vantagens">6.1. Vantagens</h4>
+<ul>
+<li>Alta economia de desempenho.</li>
+</ul>
+<h4 id="62-desvantagens">6.2. Desvantagens</h4>
+<ul>
+<li>Uso de memória alto a depender da situação.</li>
+</ul>
+<h4 id="63-aplicacao-no-projeto">6.3. Aplicação no projeto</h4>
+<p>O Object pool se mostra vantajoso quando quando existem classes que demandam tempo e processamento para serem instanciadas. Essa condição não se aplica ao projeto, visto que a implementação das atuais classes não são pesadas em questão de performance.</p>
+<h2 id="7-abstract-factory">7. Abstract factory</h2>
+<p>É um padrão que é usado no instanciamento de familias de objetos que possuem categorias em comum. É criada uma classe abstrata factory e para cada categoria é criada uma classe concreta implementando a factory abstrata. Cada classe concreta dessas é responsável pelo instanciamento de classes de uma mesma categoria, mas de famílias diferentes.</p>
+<h2 id="estrutura_3">Estrutura</h2>
+<ol>
+<li>Produtos Abstratos declaram interfaces para um conjunto de produtos distintos mas relacionados que fazem parte de uma família de produtos.</li>
+<li>Produtos Concretos são várias implementações de produtos abstratos, agrupados por variantes. Cada produto abstrato deve ser implementado em todas as variantes dadas.</li>
+<li>A interface <em>Fabrica Abstrata</em> declara um conjunto de métodos para a criação de cada um dos produtos abstratos.</li>
+<li>Fábricas Concretas implementam métodos de criação fábricas abstratas. Cada fábrica concreta corresponde a uma variante específica de produtos e cria apenas aquelas variantes de produto.</li>
+<li>Embora fábricas concretas instanciam produtos concretos, assinaturas dos seus métodos de criação devem retornar produtos abstratos correspondentes.</li>
+</ol>
+<h4 id="71-vantagens">7.1. Vantagens</h4>
+<ul>
+<li>Aplicação do princípio Open/Closed Principle.</li>
+<li>Aplicação do princípio da responsabilidade única.</li>
+<li>Os produtos sao compatíveis entre si.</li>
+</ul>
+<h4 id="72-desvantagens">7.2. Desvantagens</h4>
+<ul>
+<li>Adiciona bastante complexidade ao código.</li>
+</ul>
+<h4 id="73-aplicacao-no-projeto">7.3. Aplicação no projeto</h4>
+<p>A modelagem do nosso projeto não possui o principal ponto do <em>abstract factory</em> que é famílias de classes que podem ter categorias em comum. Como veremos a seguir, a nossa modelagem possui apenas uma família de classes, o que inviabiliza o uso da <em>abstract factory</em>.</p>
+<h2 id="8-prototype">8. Prototype</h2>
+<p>Esse padrão cria um novo objeto a partir de uma cópia de um objeto já existente. Isso evita muito processamento de instaciamento de classes, em caso de classes complexas.</p>
+<h2 id="estrutura_4">Estrutura</h2>
+<ol>
+<li>A interface <em>Protótipo</em> declara os métodos de clonagem. Na maioria dos casos é apenas um método <em>clonar</em>.</li>
+<li>A classe <em>Protótipo Concreta</em> implementa o método de clonagem. Além de copiar os dados do objeto original para o clone, esses métodos também podem lidar com alguns casos específicos do processo de clonagem relacionados a colnar objetos ligados, desfazendo dependências recursivas, etc.</li>
+<li>O <em>Client</em> pode, no caso, produzir uma cópia de qualquer objeto que segue a interface do produto.</li>
+</ol>
+<h4 id="81-vantagens">8.1. Vantagens</h4>
+<ul>
+<li>Oculta as classes concretas do código cliente.</li>
+<li>Ajuda na criação de objetos caros/complexos</li>
+<li>Evita a explosão de subclasses.</li>
+</ul>
+<h4 id="82-desvantagens">8.2. Desvantagens</h4>
+<ul>
+<li>Clonar objetos que tem referências a outros objetos pode ser complexo.</li>
+</ul>
+<h4 id="83-aplicacao-no-projeto">8.3. Aplicação no projeto</h4>
+<p>Esse padrão será aplicado no projeto na classe <em>Establishment</em>, pois é uma das classes mais complexas do projeto e esse padrão pode ajudar quando o usuário quer criar um novo estabelecimento a partir de um já existente, aproveitando a maior parte das informações. Pensando nisso é melhor usar um objeto existente e fazer uma cópia do que instanciar e inicializar do zero.</p>
+<p>A implementação em código seria, por exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">copy</span>
+
+<span class="k">class</span> <span class="nc">Prototype</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Establishment</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Establishment</span><span class="p">(</span><span class="n">Prototype</span><span class="p">):</span>
+    <span class="o">...</span>
+
+    <span class="k">def</span> <span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Establishment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="9-conclusao">9. Conclusão:</h2>
+<p>Aqui está a versão final da modelagem do projeto:</p>
+<h3 id="versao-10">Versão 1.0</h3>
+<p><img alt="gof_criacional_v1" src="../img/gof_criacional_v1.png" /></p>
+<h3 id="versao-20">Versão 2.0</h3>
+<p><img alt="gof_criacional_v2" src="../img/gof_criacional_v2.png" /></p>
+<h2 id="10-referencias">10. Referências</h2>
+<p>[1] - GAMMA, Erich; HELM, Richard; JOHNSON, Ralph; VLISSIDES, John. Design Patterns: Elements of Reusable Object-Oriented Software. Indianapolis: [s. n.], 1994.
+[2] - FACTORY method: Python Design Patterns. Disponível em: https://www.geeksforgeeks.org/factory-method-python-design-patterns/. Acesso em: 31 mar. 2021.
+[3] - Builder method: Python design patterns. Disponível em: https://www.geeksforgeeks.org/builder-method-python-design-patterns/. Acesso em 31 mar. 2021.
+[4] - Singleton design pattern: Implementation. Disponível em: https://www.geeksforgeeks.org/singleton-design-pattern/. Acesso em: 31 mar. 2021.
+[5] - Design Patterns 15 Years Later: An Interview with Erich Gamma, Richard Helm, and Ralph Johnson. Disponível em: https://www.informit.com/articles/article.aspx?p=1404056. Acesso em 31 mar. 2021.
+[6] - Multiton pattern. Disponível em: https://en.wikipedia.org/wiki/Multiton_pattern. Acesso em 1 abr. 2021.
+[7] - Object pool: Design pattern. Disponível em: https://sourcemaking.com/design_patterns/object_pool. Acesso em 1 abr. 2021.
+[8] - Obejct pool pattern. Disponível em: https://en.wikipedia.org/wiki/Object_pool_pattern. Acesso em 1 abr.2021.</p>
+<h2 id="11-versionamento">11. Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Nome</th>
+<th>Detalhes</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>31/03/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adicionando factory methodo e iniciando o documento</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>31/03/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adicionando builder</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>31/03/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adicionando singleton</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>01/04/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adicionando multiton e object pool</td>
+<td>0.4</td>
+</tr>
+<tr>
+<td>01/04/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adicionando abstract factory e prototype</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>02/04/2021</td>
+<td>João Luis Baraky</td>
+<td>Corrige erros de ortografia</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>02/04/2021</td>
+<td>João Luis Baraky</td>
+<td>Adiciona Factory Method à modelagem (v2)</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>03/04/2021</td>
+<td>João Pedro Carvalho</td>
+<td>Adicionando justificativa para factory method</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>04/04/2021</td>
+<td>Hugo, Wagner, Nícalo</td>
+<td>Revisão do Documento</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>04/04/2021</td>
+<td>Hugo, Wagner, Nícalo</td>
+<td>Revisão do Documento</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>09/04/2021</td>
+<td>Hugo Aragão</td>
+<td>Adiciona Estrutura Factory</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>09/04/2021</td>
+<td>Hugo Aragão</td>
+<td>Adiciona Estrutura Singleton e Builder</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>09/04/2021</td>
+<td>Hugo Aragão</td>
+<td>Adiciona Estrutura Prototype e Abstract Factory</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>09/04/2021</td>
+<td>João Luis Baraky e Joao Pedro Carvalho</td>
+<td>Adiciona códigos da implementação do factory method e prototype</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../grasps/grasps/" title="Grasps" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Grasps
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../gof_estrutural/" title="GoFs Estruturais" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                GoFs Estruturais
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.tabs', 'navigation.sections'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
