@@ -301,7 +301,7 @@ class ProxyGoogleMaps():
             return self.googleMapsServices.distance_matrix(origins=source, destinations=destination)
 ```
 
-## 9. Conclusão
+<!-- ## 9. Conclusão -->
 
 ## 10. Referências
 
