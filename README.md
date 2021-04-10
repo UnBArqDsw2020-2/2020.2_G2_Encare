@@ -38,8 +38,8 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 ![Backlog](docs/Modelagem/imagens/screenshot_modelagem03.png)
 
 ## Vídeo(s) Segunda Entrega &lt;&lt;FOCO: DSW(Modelagem)&gt;&gt;  
-[Apresentação Modelagem Estática](https://youtu.be/LtufoTmp0eY)  
 
+[Apresentação Modelagem Estática](https://youtu.be/LtufoTmp0eY)  
 
 [Apresentação Modelagem Dinâmica](https://youtu.be/Jz1-VP2KhHM)  
 
@@ -47,13 +47,25 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 
 [Apresentação Iniciativas Extras](https://youtu.be/JcWaGilgkzo)
 
-<!-- ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
+## Vídeo(s) Terceira Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
 
-## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
-Adicione o(s)s vídeo(s) da Terceira Entrega.
+![GOFS](docs/Padroes_de_projeto/img/screenshot1.png)
 
-## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
+![GRASPS](docs/Padroes_de_projeto/img/screenshot2.png)
+
+![Padroes Emergentes](docs/Padroes_de_projeto/img/screenshot3.png)
+
+## Vídeo(s) Segunda Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
+
+[Apresentação GOFS](https://youtu.be/oNzh8aOc1qU)  
+
+[Apresentação Emergentes](https://youtu.be/Eo-qLv7fTFk)  
+
+[Apresentação Extras](https://youtu.be/TiEyO3wagP0)  
+
+[Apresentação GRASPS](https://youtu.be/8Oc10Y0dfGk)
+
+<!-- ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Vídeo(s) Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
