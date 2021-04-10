@@ -43,9 +43,13 @@ nav:
       # - Documentação das Sprints:
           # - Sprints: Modelagem/sprints/Sprints.md
       - Requisitos: Base/requisitos/requisitos.md
-      - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md  
+      - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md
       - Guia de Estilo: Padroes/guia_de_estilo/guia_estilo.md
       - Protótipo de Alta Fidelidade: Padroes/prototipos/prototipo_alta.md
+  - Apresentações:
+      - Base: videos/base.md
+      - Modelagem: videos/modelagem.md
+      - Padrões de Projeto: videos/padroes.md
 
 # Configuration
 theme:
