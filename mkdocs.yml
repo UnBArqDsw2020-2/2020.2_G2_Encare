@@ -40,8 +40,12 @@ nav:
           - Object-mock: Padroes_de_projeto/Padroes_emergentes/objeto_mock.md
           - Lazy Loading: Padroes_de_projeto/Padroes_emergentes/lazy_loading.md
   - Iniciativas Extras:
-      # - Documentação das Sprints:
-          # - Sprints: Modelagem/sprints/Sprints.md
+      - Documentação das Sprints:
+          - Pré Projeto: Modelagem/sprints/Pre_projeto.md
+          - Sprint 0: Modelagem/sprints/Sprint0.md
+          - Sprint 1: Modelagem/sprints/Sprint1.md
+          - Sprint 2: Modelagem/sprints/Sprint2.md
+          - Sprint 3: Modelagem/sprints/Sprint3.md
       - Requisitos: Base/requisitos/requisitos.md
       - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md
       - Guia de Estilo: Padroes/guia_de_estilo/guia_estilo.md
