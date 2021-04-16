@@ -4,6 +4,8 @@
 
 ### 1.1 Finalidade
 
+Este documento tem como finalidade especificar e documentar as decisões arquiteturais do software Encare, usando diferentes visões arquiteturais para detalhar diferentes aspectos do sistema.
+
 ### 1.2 Escopo
 
 ### 1.3 Definições, Acrônimos e Abreviações
@@ -39,3 +41,4 @@
 |Data|Nome|Detalhes|Versão|
 |----|---|---|---|
 | 16/04/21 | Wagner Martins | Criação do documento | 0.1 |
+| 16/04/21 | Wagner Martins | Adição da finalidade | 0.2 |
