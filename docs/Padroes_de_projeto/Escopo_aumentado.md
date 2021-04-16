@@ -32,7 +32,9 @@ Após uma reunião entre os integrantes do grupo, decidimos as características 
 ### Versão 3.0:
 ![Escopo Aumentado V3](./img/escopo_aumentado_v3.png)
 
-<<<<<<< HEAD
+### Versão 4.0 (Padrões de projeto):
+![Escopo Aumentado V3](./img/class-MAIN.png)
+
 ### Versão 4.0
 
 Após uma reunião com toda equipe e com base nos aumentos de escopo anteriores foi decido que esse escopo será usado para codificação e para apresentação do entregável.
@@ -42,10 +44,6 @@ A motivação para a utilização desse escopo ao invés do planejado inicialmen
 Será levado em conta todos os artefatos gerados até então, entretanto como o prazo não permite uma refatoração completa , a equipe nessa mesma reunião decidiu dar mais prioridade em gerar o aplicativo final. 
 
 ![Escopo Aumentado v4](./img/Sugestao.png)
-=======
-### Versão com padões de projeto 1.0:
-![Escopo Aumentado V3](./img/class-MAIN.png)
->>>>>>> 3e147133a0e7fd5ac13ddd3d1164bc35843d81f2
 
 ## Diagrama de Casos de Uso
 

@@ -46,6 +46,7 @@ nav:
       - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md
       - Guia de Estilo: Padroes/guia_de_estilo/guia_estilo.md
       - Protótipo de Alta Fidelidade: Padroes/prototipos/prototipo_alta.md
+      - Aumento de Escopo: Padroes_de_projeto/Escopo_aumentado.md
   - Apresentações:
       - Base: videos/base.md
       - Modelagem: videos/modelagem.md
