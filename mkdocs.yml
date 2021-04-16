@@ -27,16 +27,29 @@ nav:
       - Modelagem Ágil:
           - Backlog do Produto: Modelagem/backlog/Backlog.md
   - Padrões de Projeto:
-      # - GRASPs:
-      - GoFs Criacionais: Padroes_de_projeto/GOFs/gof_criacional.md
-      - GoFs Estruturais: Padroes_de_projeto/GOFs/gof_estrutural.md
-    # - GoFs Comportamentais:
-    # - Padrões Emergentes:
+      - GRASPs:
+          - Grasps: Padroes_de_projeto/grasps/grasps.md
+      - Gofs:
+          - GoFs Criacionais: Padroes_de_projeto/GOFs/gof_criacional.md
+          - GoFs Estruturais: Padroes_de_projeto/GOFs/gof_estrutural.md
+          - GoFs Comportamentais: Padroes_de_projeto/GOFs/gof_comportamental.md
+      - Padrões Emergentes:
+          - Balking: Padroes_de_projeto/Padroes_emergentes/balking.md
+          - Interception Filter: Padroes_de_projeto/Padroes_emergentes/interception_filter.md
+          - Serverless: Padroes_de_projeto/Padroes_emergentes/serverless.md
+          - Object-mock: Padroes_de_projeto/Padroes_emergentes/objeto_mock.md
+          - Lazy Loading: Padroes_de_projeto/Padroes_emergentes/lazy_loading.md
   - Iniciativas Extras:
-      - Documentação das Sprints:
-          - Sprints: Modelagem/sprints/Sprints.md
+      # - Documentação das Sprints:
+          # - Sprints: Modelagem/sprints/Sprints.md
       - Requisitos: Base/requisitos/requisitos.md
-      - Politicas de Contribuição: Base/iniciativas_extras/CONTRIBUTING.md
+      - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md
+      - Guia de Estilo: Padroes/guia_de_estilo/guia_estilo.md
+      - Protótipo de Alta Fidelidade: Padroes/prototipos/prototipo_alta.md
+  - Apresentações:
+      - Base: videos/base.md
+      - Modelagem: videos/modelagem.md
+      - Padrões de Projeto: videos/padroes.md
 
 # Configuration
 theme:
