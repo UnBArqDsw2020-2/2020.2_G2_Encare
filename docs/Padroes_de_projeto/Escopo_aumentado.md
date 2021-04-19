@@ -35,7 +35,7 @@ Após uma reunião entre os integrantes do grupo, decidimos as características 
 ### Versão 4.0 (Padrões de projeto):
 ![Escopo Aumentado V3](./img/class-MAIN.png)
 
-### Versão 4.0
+### Versão 5.0
 
 Após uma reunião com toda equipe e com base nos aumentos de escopo anteriores foi decido que esse escopo será usado para codificação e para apresentação do entregável.
 
@@ -70,3 +70,4 @@ Com isso, acreditamos que a adição das novas classes e features ao projeto agr
 | Wagner Martins | 09/04/2021 | Adição do diagrama de casos de uso | 2.0 |
 | Todos | 09/04/2021 | Adicionando Modelagem com padrões de projeto | 3.0 |
 | João Pedro Carvalho | 16/04/2021 | Adição da modelagem  | 4.0 |
+| João Pedro Carvalho e Wagner Martins | 16/04/2021 | Adicionando revisão  | 4.1 |
