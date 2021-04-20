@@ -61,6 +61,25 @@ Essa será a ferramenta usada para persistir os dados da aplicação.
 
 ## 3. Metas Arquiteturais e Restrições
 
+### 3.1 Metas:
+|Meta|Descrição|
+|---|---|
+|Portabilidade|O software deverá ser portátil para navegadores mobile e desktop|
+|Usabilidade|O usuário deverá ser capaz de realizar as tarefas no menor tempo possível|
+
+### 3.2 Restrições:
+
+|Restrição|Descrição|
+|---|---|
+|Conectividade|A aplicação precisará de internet para trabalhar|
+|Plataforma| A aplicação irá rodar somente em navegadores web|
+|Público|A aplicação será voltada ao público brasileiro que seja voltado a cuidados pessoais|
+|Língua|A aplicação será voltada a pessoas que falam o português do Brasil|
+|Equipe|A equipe possui apenas 7 integrantes|
+|Horas semanais de trabalho por integrante|4 horas|
+|Deadline|A aplicação deverá ser finalizada até o fim da disciplina|
+|Hospedagem|Será usada uma conta básica na Amazon AMS|
+
 ## 4. Visão de Casos de Uso
 
 ## 5. Visão Lógica
@@ -91,4 +110,5 @@ Essa será a ferramenta usada para persistir os dados da aplicação.
 | 16/04/21 | Wagner Martins | Criação do documento | 0.1 |
 | 16/04/21 | Wagner Martins | Adição da finalidade | 0.2 |
 | 19/04/21 | João Pedro Carvalho | Adição da visão geral e das siglas  | 0.3 |
-| 20/04/21 | João Pedro Carvalho | Adição da respresentação arquitetural  | 0.4 |
+| 20/04/21 | João Pedro Carvalho | Adição da representação arquitetural  | 0.4 |
+| 20/04/21 | João Pedro Carvalho | Adição das metas e restrições arquiteturais  | 0.5 |
