@@ -82,6 +82,10 @@ Essa será a ferramenta usada para persistir os dados da aplicação.
 
 ## 4. Visão de Casos de Uso
 
+A visão de casos de uso apresenta uma visão próxima do usuário, descrevendo cenários de uso da aplicação.
+
+![Diagrama de Casos de Uso](./img/diagrama_casos_uso_ne.png)
+
 ## 5. Visão Lógica
 
 ## 6. Visão de Processos
@@ -112,3 +116,4 @@ Essa será a ferramenta usada para persistir os dados da aplicação.
 | 19/04/21 | João Pedro Carvalho | Adição da visão geral e das siglas  | 0.3 |
 | 20/04/21 | João Pedro Carvalho | Adição da representação arquitetural  | 0.4 |
 | 20/04/21 | João Pedro Carvalho | Adição das metas e restrições arquiteturais  | 0.5 |
+| 20/04/21 | Wagner Martins | Adição do diagrama de casos de uso | 0.6 |
