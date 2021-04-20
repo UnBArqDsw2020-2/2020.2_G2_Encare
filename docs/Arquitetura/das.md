@@ -8,9 +8,17 @@ Este documento tem como finalidade especificar e documentar as decisões arquite
 
 ### 1.2 Escopo
 
+O escopo desse documento de arquitetura abrange todo a arquitetura do software em diferentes níveis a ser desenvolvido na disciplina. 
+
 ### 1.3 Definições, Acrônimos e Abreviações
 
+|Sigla|Descrição|
+|---|---|
+|DAS|Documento de Arquitetura de Software| 
+
 ### 1.4 Visão Geral
+
+O projeto trata de uma aplicação web que tem como objetivo facilitar a procura por serviços de cuidados pessoais. Para isso o projeto contará com uma API que utilizará o framework django e um frontend em ReactJS
 
 ## 2. Representação Arquitetural
 
@@ -42,3 +50,4 @@ Este documento tem como finalidade especificar e documentar as decisões arquite
 |----|---|---|---|
 | 16/04/21 | Wagner Martins | Criação do documento | 0.1 |
 | 16/04/21 | Wagner Martins | Adição da finalidade | 0.2 |
+| 19/04/21 | João Pedro Carvalho | Adição da visão geral e das siglas  | 0.3 |
