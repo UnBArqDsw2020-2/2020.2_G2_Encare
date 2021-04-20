@@ -23,21 +23,41 @@ O projeto trata de uma aplicação web que tem como objetivo facilitar a procura
 
 ## 2. Representação Arquitetural
 
-### 2.1. Diagrama de relação:
-### 2.2. Python Django:
+Esse diagrama mostra de uma forma mais ampla como o software irá trabalhar, mostrando como se relacionam o backend, fronted, usuário, banco de dados e API externa. com isso podemos ter uma visão ampla sobre dodo o processo que envolve todas essas camadas de software.  
 
-A ferramenta escolhida para compor o backend da aplicação é o python com o framework django que facilita principalmente quando trata-se das requisições. Essa ferramenta adota no backend a arquitetura MTV como padrão. As principais modelagens arquiteturais feitas envolvem essa ferramenta.
+Nesse diagrama temos os seguintes participantes:
+- **Usuário**: Responsável pelas ações que o sistema terá que lidar. Aqui nesse classe estão também os Administradores do site que irão gerenciar o site, mas também são usuário do site. 
+- **Frontend ReactJS**: É a primeira camada do software em relação ao usuário e é a única parte do sistema que client-side. Tem como principal função realizar a comunicação do sistema com o usuário por meio de páginas renderizadas e as interações e a partir disso realizar as requisições necessárias. 
+- **Backend Django Python**: É a primeira camada server-side e tem como função tratar as requisições, processar os dados, consultar os dados, consultar APIs externas e prover a modelagem em classes dos dados. É aqui onde ocorre a modelagem de dados.
+- **API externa de Mapas**: É uma API onde possa calcular as distâcias entre duas localizações para ser usada nos filtros de distância.
+- **Banco de Dados PostgreSQL**: Tem como função de armazenar e persistir os dados da aplicação. 
 
-### 2.3. ReactJS:
+![Diagrama1](./img/Entidade-relacionamento.png)
 
-Para o frontend, a equipe decidiu pela utilização do ReactJS, uma biblioteca JavaScript bastante popular e voltada a desenvolvimento web. As suas principais caracteristicas são:
+A seguir iremos explicar brevemente sobre cada uma das tecnologias escolhidas:
+
+### 2.1. Python Django:
+
+[Django](https://www.djangoproject.com/start/overview/) é um framework Python de alto nível que encorja o desenvolvimento rápido e um design límpo e pragmático. foi construido por desenvolvedores experientes e cuida de boa parte do trabalho para que o desenvolverdor possa cuidar do mais importante. Tem como principais caracteristicas:
+- Desenvolvido para ser rápido como for possível.
+- Inclui dezenas de extras que ajudam a resolver várias tarefas de desenvolvimento Web, como autenticação, RSS feed, entre outros...
+- Cuida da segurança de muito processos, como autenticação e acesso ao banco de dados.
+- É escalável para possíveis grandes demandas de requisições.
+- Muito versátipo
+
+### 2.2. ReactJS:
+
+Para o frontend, a equipe decidiu pela utilização do [ReactJS](https://pt-br.reactjs.org/), uma biblioteca JavaScript bastante popular e voltada a desenvolvimento web. As suas principais caracteristicas são:
  - Baseado em componentes 
  - Pode ser renderizado no servidor através do servidor.
  - Dados são passsados das classes mães para as classes filhas por meio das props. 
  - Um componente por usar plugins externos. 
 
+### 2.3. PostgreSQL:
 
-### 2.4. MySQL:
+[PostegreSQL](https://www.postgresql.org/about/) é uma poderosa ferramenta de banco de dados relacional de código aberto que usa e extende as liguagem SQL com algumas funcionalidades que escalam e dimensionam as cargas de dados mais complicadas. 
+
+Essa será a ferramenta usada para persistir os dados da aplicação.
 
 ## 3. Metas Arquiteturais e Restrições
 
@@ -61,6 +81,8 @@ Para o frontend, a equipe decidiu pela utilização do ReactJS, uma biblioteca J
 
 [1] Template do [documento de arquitetura de software](https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/files/6305164/Software.Architecture.Document.pdf). Disponibilizado no moodle da disciplina.
 [2] React: Uma biblioteca JavaScript para criar interfaces para usuários. Disponível em: <https://pt-br.reactjs.org/>. Aceso em 19 abr. 2021.
+[3] About PostgreSQL. Disponível em: <https://www.postgresql.org/about/>. Acesso em 20 abr. 2021
+[4] Django: the web framework for perfectionists with deadlines. Disponível em: <https://www.djangoproject.com/start/overview/>. Acesso em 20 abr. 2021. 
 
 ## Versionamento
 
@@ -69,3 +91,4 @@ Para o frontend, a equipe decidiu pela utilização do ReactJS, uma biblioteca J
 | 16/04/21 | Wagner Martins | Criação do documento | 0.1 |
 | 16/04/21 | Wagner Martins | Adição da finalidade | 0.2 |
 | 19/04/21 | João Pedro Carvalho | Adição da visão geral e das siglas  | 0.3 |
+| 20/04/21 | João Pedro Carvalho | Adição da respresentação arquitetural  | 0.4 |
