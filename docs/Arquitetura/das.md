@@ -138,3 +138,4 @@ Por fim é necesário destacar que essas estimativas são com base nos poucos da
 | 20/04/21 | João Pedro Carvalho | Adição das metas e restrições arquiteturais  | 0.5 |
 | 20/04/21 | Wagner Martins | Adição do diagrama de casos de uso | 0.6 |
 | 22/04/21 | Wagner Martins | Adição do diagrama de componentes na visão de implementação | 0.7 |
+| 22/04/21 | João Pedro Carvalho | Adição do tamanho e desempenho | 0.8 |
