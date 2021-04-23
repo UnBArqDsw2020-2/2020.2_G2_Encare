@@ -106,12 +106,23 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 
 ## 11. Qualidade
 
+A arquitetura descrita neste documento contribui com as seguintes características de qualidade[5]:
+
+|Característica|Definição|Contribuição|
+|----|----|----|
+|Manutenibilidade| A capacidade de um software comportar modificações, melhorias, correções ou adaptação a novos requisitos. | A arquitetura documentada pode ser modificada para se adequar às modificações, trazendo mais segurança para modificações no código.
+|Confiabilidade| A capacidade do software evitar falhas e manter um desempenho adequado quando elas acontecem, sob condições especificadas. | A modularização facilita o processo de testes, o que diminui o número de potenciais falhas.
+|Portabilidade| A capacidade de um software operar em diferentes ambientes | A separação de responsabilidades e camadas do software permite uma melhor adaptação para diferentes ambientes de hardware e software. Esta característica está diretamente relacionada com o [RNF02](../Modelagem/backlog/Backlog.md).
+|Eficiência de Desempenho| A capacidade do produto fornecer um desempenho apropriado, no que se trata de uso de recursos e tempo. | A modularização fornecida pelas modelagens contribui na avaliação de complexidade e uso de recursos.
+|Usabilidade| A facilidade de um usuário compreender, aprender, utilizar e apreciar o software, quando usado sob condições especificadas. | A arquitetura do software contribui ao facilitar a modificação de recursos que afetem a usabilidade, como por exemplo, melhorar a estética, ou a prevenção a erros do usuário. Essa característica está ligada ao [RNF01](../Modelagem/backlog/Backlog.md).
+
 ## Referências
 
 [1] Template do [documento de arquitetura de software](https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/files/6305164/Software.Architecture.Document.pdf). Disponibilizado no moodle da disciplina.
-[2] React: Uma biblioteca JavaScript para criar interfaces para usuários. Disponível em: <https://pt-br.reactjs.org/>. Aceso em 19 abr. 2021.
+[2] React: Uma biblioteca JavaScript para criar interfaces para usuários. Disponível em: <https://pt-br.reactjs.org/>. Acesso em 19 abr. 2021.
 [3] About PostgreSQL. Disponível em: <https://www.postgresql.org/about/>. Acesso em 20 abr. 2021
 [4] Django: the web framework for perfectionists with deadlines. Disponível em: <https://www.djangoproject.com/start/overview/>. Acesso em 20 abr. 2021. 
+[5] KOLBERG et al. Qualidade de Software. Disponível em: <https://www.inf.ufpr.br/lmperes/2019_1/ci221/trabalhos/trab3/atividadeA/aula_fatores_qualidade_geral_iso9126_25010.pdf>. Acesso em 23 abr. 2021.
 
 ## Versionamento
 
@@ -124,3 +135,4 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 | 20/04/21 | João Pedro Carvalho | Adição das metas e restrições arquiteturais  | 0.5 |
 | 20/04/21 | Wagner Martins | Adição do diagrama de casos de uso | 0.6 |
 | 22/04/21 | Wagner Martins | Adição do diagrama de componentes na visão de implementação | 0.7 |
+| 23/04/21 | Wagner Martins | Adição das especificações de qualidade | 0.8 |
