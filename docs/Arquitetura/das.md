@@ -94,6 +94,12 @@ A visão de casos de uso apresenta uma visão próxima do usuário, descrevendo 
 
 ## 8. Visão de Implementação
 
+A visão de implementação específica os componentes de código do projeto, como organização dos arquivos, dependências e pacotes em diferentes camadas e subcamadas. Essa visão é representada principalmente pelo diagrama de componentes.
+
+As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](../Modelagem/diagrama_componentes/diagrama_componentes.md).
+
+![Diagrama de Componentes v4](img/Diagrama_componentes_v4.png)
+
 ## 9. Visão de Dados (Opcional)
 
 ## 10. Tamanho e Desempenho
