@@ -2,19 +2,19 @@
 
 A reutilização de software baseia-se no uso de conceitos, produtos ou soluções previamentes elaboradas ou adiquiridas para a criação de um novo software, com o objetivo de melhorar a qualidade, produtividade e reduzir tempo e custos de projeto.
 
-Reusar um produto significa poder reutilizar partes (ou o todo) de um sistema desenvolvido anteriormente, como: especificações, módulos de um projeto, arquitetura e código fonte. 
+Reusar um produto significa poder reutilizar partes (ou o todo) de um sistema desenvolvido anteriormente, como: especificações, módulos de um projeto, arquitetura e código fonte.
 
 ## Docker
 
 Para a retulização no ambiente de desenvolvimento do projeto, adotamos o Docker. Trata-se uma plataforma que facilita o gerenciamento do desenvolvimento do software, padroniza e simplifica o fluxo de trabalho, aumentando a produtividade da equipe. Em termos de reutilização, o Docker possui uma quantidade significativa de Hot Spots e alguns pontuais Frozen Spots.
 
-- Hot Spots: são partes específicas de sistemas individuais, projetadas para serem genéricos e adaptáveis.
+- Hot-Spots: são partes específicas de sistemas individuais, projetadas para serem genéricos e adaptáveis.
     - Imagem Docker;
     - Dependências;
     - Comandos;
     - Variáveis de ambiente.
 
-- Frozen Spots: definem a arquitetura geral do sistema e seus componentes básicos, permanecem fixos em todas as instanciações.
+- Frozen-Spots: definem a arquitetura geral do sistema e seus componentes básicos, permanecem fixos em todas as instanciações.
     - Sistema de arquivos.
 
 ### Docker Front-end
@@ -25,7 +25,7 @@ Foi configurado um Docker com React JS para o desenvolvimento no front-end, util
 
 ### Docker Back-end
 
-Para o back-end, foi configurado um Docker com Django REST e as dependências que são necessárias para desenvolvimento, usando como base uma imagem Python predefinida. 
+Para o back-end, foi configurado um Docker com Django REST e as dependências que são necessárias para desenvolvimento, usando como base uma imagem Python predefinida.
 
 ![backend](imagens/docker_backend.png)
 
@@ -48,6 +48,6 @@ Docker Compose é o orquestrador de containers do Docker. No ambiente de desenvo
 
 ## Versionamento
 
-| Data | Nome | Detalhes | Versão |
-| ---- | ---- | -------- | ------ |
-| 21/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento de reutilização do ambiente de desenvolvimento | 0.1 |
+| Data       | Nome                                           | Detalhes                                                            | Versão |
+| ---------- | ---------------------------------------------- | ------------------------------------------------------------------- | ------ |
+| 21/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento de reutilização do ambiente de desenvolvimento | 0.1    |
