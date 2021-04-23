@@ -1,6 +1,6 @@
 # Sprint 4
 
-## Planning:
+## Planning(17/03):
 
 Para essa etapa do desenvolvimento foi testado um novo tipo de realizar a plannign de forma assíncrona. Para isso as issues foram pontuadas por meio de enquetes no grupo da equipe no telegram. Após isso era tirada a média dos pontos colocados pela equipe para atribuição na issue. Após isso foi realizada outra enquete sobre quem queria ficar em qual issue e por fim foi reajustado para o equilibrio da quantidade de pessoas em cada issue. 
 

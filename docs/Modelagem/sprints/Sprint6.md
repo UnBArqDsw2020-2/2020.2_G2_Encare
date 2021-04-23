@@ -1,6 +1,6 @@
 # Sprint 6
 
-## Planning
+## Planning(30/03)
 
 Analisando as issues para a entrega da disciplina, a equipe se dividiu para poder gerar a entrega. Por isso foi planejado poucas issues com a finalidade de concentrar em revisar os artefatos das entregas e outras issues para finalizar as entregas. Além da elaboração da apresentação das entregas. 
 
@@ -13,7 +13,7 @@ Analisando as issues para a entrega da disciplina, a equipe se dividiu para pode
 
 ## Review
 
-Alguns atrasos foram gerados, mas a equipe consiguiu lidar com o problema e entregar os artefatos necessários. e alinhar com a entrega da disciplina com relação a padrões de projeto.
+Alguns atrasos foram gerados, necessitando que a próxima issue fosse destinada apenas para a adequação dos artefatos para a entrega. 
 
 ## Versionamento
 
