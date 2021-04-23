@@ -123,3 +123,4 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 | 20/04/21 | João Pedro Carvalho | Adição da representação arquitetural  | 0.4 |
 | 20/04/21 | João Pedro Carvalho | Adição das metas e restrições arquiteturais  | 0.5 |
 | 20/04/21 | Wagner Martins | Adição do diagrama de casos de uso | 0.6 |
+| 22/04/21 | Wagner Martins | Adição do diagrama de componentes na visão de implementação | 0.7 |
