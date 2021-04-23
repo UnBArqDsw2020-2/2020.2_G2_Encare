@@ -39,11 +39,17 @@ nav:
           - Serverless: Padroes_de_projeto/Padroes_emergentes/serverless.md
           - Object-mock: Padroes_de_projeto/Padroes_emergentes/objeto_mock.md
           - Lazy Loading: Padroes_de_projeto/Padroes_emergentes/lazy_loading.md
+  - Arquitetura & Reutilização:
+      # - Arquitetura de Software:
+      - Reutilização de Software:
+          - Ambiente de Desenvolvimento: Reutilizacao/ambiente.md
+          - Front-end: Reutilizacao/frontend.md
+          - Back-end: Reutilizacao/backend.md
   - Iniciativas Extras:
       # - Documentação das Sprints:
-          # - Sprints: Modelagem/sprints/Sprints.md
+      # - Sprints: Modelagem/sprints/Sprints.md
       - Requisitos: Base/requisitos/requisitos.md
-      - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md
+      - Políticas de Contribuição: Base/iniciativas_extras/CONTRIBUTING.md
       - Guia de Estilo: Padroes/guia_de_estilo/guia_estilo.md
       - Protótipo de Alta Fidelidade: Padroes/prototipos/prototipo_alta.md
   - Apresentações:

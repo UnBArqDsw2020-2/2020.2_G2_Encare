@@ -95,6 +95,6 @@ A tabela a seguir exemplifica os _endpoints_ utilizados para a API REST de estab
 
 ## Versionamento
 
-| Data       | Nome                                           | Detalhes                                                            | Versão |
-| ---------- | ---------------------------------------------- | ------------------------------------------------------------------- | ------ |
-| 22/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento de reutilização do back-end de desenvolvimento | 0.1    |
+| Data       | Nome                                           | Detalhes                                         | Versão |
+| ---------- | ---------------------------------------------- | ------------------------------------------------ | ------ |
+| 22/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento de reutilização do back-end | 0.1    |
