@@ -2,7 +2,7 @@
 
 ## Planning(06/04)
 
-A plannign foi baseada em arquivos para entrega, como planejamento da apresentação, da avaliação por pares, entre outros. E portanto não foram geradas issues para essa Sprint.
+A planning foi baseada em arquivos para entrega, como planejamento da apresentação, da avaliação por pares, entre outros, e portanto não foram geradas issues para essa Sprint.
 
 ## Review
 
