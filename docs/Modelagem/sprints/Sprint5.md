@@ -17,7 +17,7 @@ Foi planejada as issues de acordo com as dívidas técnicas disponíveis e as no
 
 ## Review
 
-Todas as issue foram entregues, consiguindo assim alinhar com a entrega da disciplina. Na reunião da review foi relatado sobrecarga devido a quantidade grande de artefatos a serem gerados em um curto espaço de tempo. Por isso viu a necessidade de dividir melhor as tarefas entre os membros da equipe.
+Todas as issue foram entregues, consiguindo assim alinhar com a entrega da disciplina, necessitando apenas mais algumas issues para completar a entrega. Na reunião da review foi relatado sobrecarga devido a quantidade grande de artefatos a serem gerados em um curto espaço de tempo. Por isso viu a necessidade de dividir melhor as tarefas entre os membros da equipe.
 
 ## Versionamento
 
