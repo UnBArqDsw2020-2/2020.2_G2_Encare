@@ -104,6 +104,18 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 
 ## 10. Tamanho e Desempenho
 
+Segundo o SEBRAE, o Brasil possui aproximadamente 700 mil estabelecimentos de serviços voltados a beleza e estética. Outro dado interessante é que aproximadamente 42,3% dos consumidores desejam cuidados pessoais com a finalidade de ficarem mais bonitos.
+
+No ambiente do Distrito Federal, os estabeleciemntos de cuidados pessoais somam cerca de 8 mil estabelecimentos. 
+
+Tendo os dados acima, podemos estimar qual será o uso da plataforma do ponto de vista dos estabelecimentos. Como o planejado é o uso do sistema inicialmente no Distrito Federal, então o sistema terá que suportar o uso por 8 mil estabelecimentos e seus respectivos clientes. Assim podemos concluir que o uso da plataforma, no caso em que todos os estabelecimentos de beleza forem cadastrados, não será sobre carregado, vistoq ue esse número a nível computacional não é relevante para desempenho.
+
+Em nível nacional, o desempenho tem que ser avaliado, pois são mais de 700.000 estabelecimento, e então ness caso pode complicar por sem um número bem maior de estabelecimentos que estarão cadastrados e consequentemente mais usuários do tipo cliente.
+
+Sendo assim para avançar para nível nacional, o produto pode precisar passar por uma avaliação de desempenho para não oferecer um uso lento para o usuário (tanto dono de estabelecimento quanto cliente).
+
+Por fim é necesário destacar que essas estimativas são com base nos poucos dados disponíveis sobre possíveis usuários no Brasil e no Distrito Federal, findando em uma estimativa que pode ter uma diferenca para a real estimativa considerável. 
+
 ## 11. Qualidade
 
 ## Referências
@@ -112,6 +124,8 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 [2] React: Uma biblioteca JavaScript para criar interfaces para usuários. Disponível em: <https://pt-br.reactjs.org/>. Aceso em 19 abr. 2021.
 [3] About PostgreSQL. Disponível em: <https://www.postgresql.org/about/>. Acesso em 20 abr. 2021
 [4] Django: the web framework for perfectionists with deadlines. Disponível em: <https://www.djangoproject.com/start/overview/>. Acesso em 20 abr. 2021. 
+[5] Painel setorial de informações estratégicas - SEBRAE. Disponível em: <https://www.sebrae.com.br/Sebrae/Portal%20Sebrae/UFs/BA/Anexos/P06%20Servi%C3%A7os%20Beleza%20e%20Est%C3%A9tica%20rev01_04052018.pdf>. Acesso eme 22 abr. 2021.
+[6] Mercado da beleza cresce 8% no DF e movimenta R$ 350 milhoes por mês. Disponível em: <https://www.correiobraziliense.com.br/app/noticia/cidades/2015/07/01/interna_cidadesdf,488556/mercado-da-beleza-cresce-8-no-df-e-movimenta-r-350-milhoes-por-mes.shtml>. Acesso em 22 abr. 2021. 
 
 ## Versionamento
 
