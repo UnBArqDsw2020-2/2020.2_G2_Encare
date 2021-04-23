@@ -8,7 +8,7 @@ Reusar um produto significa poder reutilizar partes (ou o todo) de um sistema de
 
 ### Django
 
-Django é um _framework_ Python de alto nível que encorja o desenvolvimento rápido e um design límpo e pragmático. Construído por desenvolvedores experientes, ele cuida de grande parte do trabalho de desenvolvimento da Web, para que você possa se concentrar em escrever seu aplicativo sem precisar reinventar a roda. É gratuito e de código aberto. Principais características do _framework_:
+Django é um _framework_ Python de alto nível que encorja o desenvolvimento rápido e um design limpo e pragmático. Construído por desenvolvedores experientes, ele cuida de grande parte do trabalho de desenvolvimento da Web, para que você possa se concentrar em escrever seu aplicativo sem precisar reinventar a roda. É gratuito e de código aberto. Principais características do _framework_:
 
 - Projetado para acelerar o desenvolvimento;
 - Alta escalabilidade;
@@ -23,7 +23,7 @@ Django é um _framework_ Python de alto nível que encorja o desenvolvimento rá
 
 #### Frozen-Spots
 
-- [Referência de campos do Model](https://django-portuguese.readthedocs.io/en/1.0/ref/models/fields.html);
+- [Referência de campos das Models](https://django-portuguese.readthedocs.io/en/1.0/ref/models/fields.html);
 - [Objetos de requisição e resposta](https://django-portuguese.readthedocs.io/en/1.0/ref/request-response.html#django.http.HttpRequest);
 - Dentre outros objetos e funções nativos do django, como o [File](https://django-portuguese.readthedocs.io/en/1.0/ref/files/file.html).
 
@@ -69,14 +69,16 @@ class ProxyGoogleMaps():
 
 _Representational State Transfer_ (REST), em português Transferência Representacional de Estado, é um estilo de arquitetura de software que define um conjunto de restrições a serem usadas para a criação de _web services_(serviços Web). Principais características do REST:
 
-- Ele usa o protocolo HTTP (verbos, _accept_, _headers_, códigos de estado HTTP, _Content-Type_) de forma explícita e representativa para se comunicar. URIs são usados para expor a estrutura do serviço. Utiliza uma notação comum para transferência de dados como XML ou JSON.
+- Ele usa o protocolo HTTP (verbos, _accept_, _headers_, códigos de estado HTTP, _Content-Type_) de forma explícita e representativa para se comunicar. URIs são usados para expor a estrutura do serviço. Utiliza uma notação comum para transferência de dados como XML(_Extensible Markup Language_) ou JSON(_JavaScript Object Notation_).
 - Não possui estado entre essas comunicações, ou seja, cada comunicação é independente e uniforme (padronizada) precisando passar toda informação necessária.
 - Ele deve facilitar o cache de conteúdo no cliente.
 - Deve ter clara definição do que faz parte do cliente e do servidor. O cliente não precisa saber como o servidor armazena dados, por exemplo. Assim cada implementação não depende da outra e se torna mais escalável.
 
 #### Aplicação no Projeto
 
-A tabela a seguir exemplifica os _endpoints_ utilizados para a API REST de estabelecimentos da aplicação.
+A notação escolhida para tranferência de dados foi a JSON, pois essa notação é bastante simplificada e vem sendo amplamente utilizada em aplicações Web.
+
+A tabela a seguir exemplifica os _endpoints_ utilizados para a API REST de estabelecimentos da aplicação. 
 
 | _Endpoint_                               | Verbo Http | Descrição                                       |
 | ---------------------------------------- | ---------- | ----------------------------------------------- |
@@ -95,6 +97,7 @@ A tabela a seguir exemplifica os _endpoints_ utilizados para a API REST de estab
 
 ## Versionamento
 
-| Data       | Nome                                           | Detalhes                                         | Versão |
-| ---------- | ---------------------------------------------- | ------------------------------------------------ | ------ |
-| 22/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento de reutilização do back-end | 0.1    |
+| Data       | Nome                                           | Detalhes                                              | Versão |
+| ---------- | ---------------------------------------------- | ----------------------------------------------------- | ------ |
+| 22/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento de reutilização do back-end      | 0.1    |
+| 22/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Adição da notação de transferência de dados escolhida | 0.2    |
