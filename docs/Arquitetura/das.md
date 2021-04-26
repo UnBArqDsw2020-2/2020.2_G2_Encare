@@ -88,6 +88,19 @@ A visão de casos de uso apresenta uma visão próxima do usuário, descrevendo 
 
 ## 5. Visão Lógica
 
+A **visão lógica** oferece suporte aos requisitos funcionais, no que se refere aos serviços que o sistema disponibilizará para seus usuários. Nessa etapa o sistema é decomposto num conjunto de abstrações, visando a construção dos objetos, onde explora os níveis de abstração da solução, seu encapsulamento e suas relações de herança. 
+### 5.1 MTV
+
+Para representar a visão lógica desse projeto, usaremos uma estrutura bem similar ao MVC (Model-View-Controller), o MTV. O MVC é um padrão de arquitetura formulado na década de 1970, ele tem como objetivo facilitar o reuso de código e a separação de tarefas em camadas, onde a renderização dos dados e a interação com o usuários ficam separados dos métodos que interagem com os dados.
+
+#### Aplicação do MVC
+
+O MVC se tornou popular no desenvolvimento *web* e *mobile*, por seu fluxo de trabalho lidar bem com interfaces. Sua estrutura é compatível com linguagens como: PHP, Ruby, Javascript, Java e outras que possuem modelos adaptados da mesma. Dos componentes principais da estrutura MVC temos:
+
+* **Model** - A Model é responsável pela parte lógica do sistema, é o módulo que faz o gerenciamento do comportamento dos dados, lógicas e funções, obedecendo as regras de negócio. Sua implementação é desenhada para responder às requisições da *controller*.
+* **View** - A View é responsável por renderizar a saída dos dados, como tabelas e diagramas, por exemplo. Nela é possível programar comportamentos como a visualização de gráficos, tendo uma representação visual do que foi disponibilizado pela *Controller* a partir da *Model*.
+* **Controller** - O Controller é responsável por mediar a entrada/saída, comandando a *View* e a *Model* para que sejam alteradas de forma que respeite a solicitação do usuário. O foco desse componente é lidar com a ação do usuário, onde são manipulados os dados que o usuário insere, chamando em seguida a *Model* para executar o tratamento dos mesmos.
+
 ## 6. Visão de Processos
 
 ## 7. Visão de Implantação
@@ -147,4 +160,5 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 22/04/21 | Wagner Martins | Adição do diagrama de componentes na visão de implementação | 0.7 |
 | 22/04/21 | João Pedro Carvalho | Adição do tamanho e desempenho | 0.8 |
 | 23/04/21 | Wagner Martins | Adição das especificações de qualidade | 0.9 |
+| 26/04/21 | Hugo Aragão | Adiciona descrição do padrão MVC | 1.0 |
 
