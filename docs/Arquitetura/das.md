@@ -84,6 +84,8 @@ Essa será a ferramenta usada para persistir os dados da aplicação.
 
 A visão de casos de uso apresenta uma visão próxima do usuário, descrevendo cenários de uso da aplicação.
 
+A especificação dos casos de uso pode ser vista no documento de [especificação de casos de uso](especificacao_casos_uso.md).
+
 ![Diagrama de Casos de Uso](./img/diagrama_casos_uso_ne.png)
 
 ## 5. Visão Lógica
@@ -174,5 +176,5 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 23/04/21 | Wagner Martins | Adição das especificações de qualidade | 0.9 |
 | 26/04/21 | Hugo Aragão | Adiciona descrição do padrão MVC | 1.0 |
 | 27/04/21 | Hugo Aragão | Adiciona descrição do padrão MTV | 1.1 |
-
+| 27/04/21 | Wagner Martins | Adição do link para a especificação dos casos de uso | 1.2 |
 
