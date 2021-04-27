@@ -101,6 +101,18 @@ O MVC se tornou popular no desenvolvimento *web* e *mobile*, por seu fluxo de tr
 * **View** - A View é responsável por renderizar a saída dos dados, como tabelas e diagramas, por exemplo. Nela é possível programar comportamentos como a visualização de gráficos, tendo uma representação visual do que foi disponibilizado pela *Controller* a partir da *Model*.
 * **Controller** - O Controller é responsável por mediar a entrada/saída, comandando a *View* e a *Model* para que sejam alteradas de forma que respeite a solicitação do usuário. O foco desse componente é lidar com a ação do usuário, onde são manipulados os dados que o usuário insere, chamando em seguida a *Model* para executar o tratamento dos mesmos.
 
+![MVC](./img/mvc.png)
+#### MTV (Django)
+
+No *Django* o padrão MVC foi modificado, se tornando MTV (Model-Template-View). Das semelhanças e diferenças entre MVC e MTV temos:
+
+* Model - No MTV a Model possúi a mesma responsabilidade de lidar internamente com o banco de dados e manipular esses dados.
+* Template (View) - As duas possuem a mesma responsabilidade, lidando diretamente com usuário e exibindo informações.
+* View (Controller) - Aqui que o MTV apresenta suas direfenças, apesar de ter responsabilidades parecidas, aqui a View retorna algo a partir de uma solicitação, pois define apenas quais dados serão representados, não como serão mostrados. No geral, a *controller* nesse padrão se comporta a partir da própria estrutura do projeto, guiando os comandos a partir das configurações de rotas no Django.
+
+![MTV](./img/mtv.png)
+
+
 ## 6. Visão de Processos
 
 ## 7. Visão de Implantação
@@ -161,4 +173,6 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 22/04/21 | João Pedro Carvalho | Adição do tamanho e desempenho | 0.8 |
 | 23/04/21 | Wagner Martins | Adição das especificações de qualidade | 0.9 |
 | 26/04/21 | Hugo Aragão | Adiciona descrição do padrão MVC | 1.0 |
+| 27/04/21 | Hugo Aragão | Adiciona descrição do padrão MTV | 1.1 |
+
 
