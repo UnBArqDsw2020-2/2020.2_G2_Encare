@@ -158,6 +158,15 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 [5] Painel setorial de informações estratégicas - SEBRAE. Disponível em: <https://www.sebrae.com.br/Sebrae/Portal%20Sebrae/UFs/BA/Anexos/P06%20Servi%C3%A7os%20Beleza%20e%20Est%C3%A9tica%20rev01_04052018.pdf>. Acesso eme 22 abr. 2021.
 [6] Mercado da beleza cresce 8% no DF e movimenta R$ 350 milhoes por mês. Disponível em: <https://www.correiobraziliense.com.br/app/noticia/cidades/2015/07/01/interna_cidadesdf,488556/mercado-da-beleza-cresce-8-no-df-e-movimenta-r-350-milhoes-por-mes.shtml>. Acesso em 22 abr. 2021. 
 [7] KOLBERG et al. Qualidade de Software. Disponível em: <https://www.inf.ufpr.br/lmperes/2019_1/ci221/trabalhos/trab3/atividadeA/aula_fatores_qualidade_geral_iso9126_25010.pdf>. Acesso em 23 abr. 2021.
+[8] How Django Works (MVT Pattern). Code Stack, 2020. Acesso 26/04/2021. Disponível em: <https://www.youtube.com/watch?v=cyP4Uw2b2XM&ab_channel=CodeStack>
+[9] Entendendo a arquitetura do Django. Medium. Acesso 27/04/2021. Disponível em: <https://medium.com/@renatojlelis/entendendo-a-arquitetura-do-django-f4b505773c14>
+[10] A Complete Guide and comparition of MVC and MVVM. Nilay D, Nov. 2019. Disponível em: <https://www.intuz.com/blog/guide-on-mvc-vs-mvvm>. Acesso 27/04/2021.
+[11] Django's Structure - A Heretic's Eye View. The Django Book. Disponível em: <https://djangobook.com/mdj2-django-structure/>. Acesso 27/04/2021.
+[12] Introdução ao Padrão MVC. Higor, 2013. Disponível em: <https://www.devmedia.com.br/introducao-ao-padrao-mvc/29308>. Acesso 25/04/2021.
+[13] Entendendo o MTV do Django. Fagner Pinheiro, 24 de março de 2020. Disponível em: <https://www.treinaweb.com.br/blog/entendendo-o-mtv-do-django/>. Acesso 27/04/2021.
+[14] Arquitetura de Software. MONTEIRO, Marcos. Disponível em: <https://www.marcosmonteiro.com.br/mm/Cursos/Arquitetura_Software/Arquitetura_de_Software-marcosmonteiro.pdf>. Acesso: 25/04/2021
+[15] Architetctural Blueprints - The "4+1" View Model of Software Architecture. KRUCHTEN, Philippe. Published in IEEE Software 12 (6), November 1995, pp. 42-50.
+[16] MVC. Wikipedia. Disponível em: <https://pt.wikipedia.org/wiki/MVC>. Acesso 25/04/2021.
 
 ## Versionamento
 
