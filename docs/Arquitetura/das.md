@@ -131,7 +131,10 @@ pode ser que exista ainda o incentivo para realizar ações extras a partir diss
 como multiplas versões de um mesmo backend convivendo para evitar que quebras de
 funcionamento para o usuário final (algo como `www.encare.com/v4/get_establishments`).
 
-
+Sobre os custos, assumindo que será levantada como um serviço completamente monolítico,
+podemos considerar o EC2 AWS nos custos, com uma instância simples (capaz de sustentar
+tráfego até 100 pessoas simultâneas sem muito demora) em um computador de capacidade de
+processamento suficiente um preço que gira em torno de R$ 100,00 por mês. 
 
 
 ## 8. Visão de Implementação
