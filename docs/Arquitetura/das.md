@@ -230,3 +230,4 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 27/04/21 | Hugo Aragão | Adiciona descrição do padrão MTV | 1.1 |
 | 27/04/21 | Wagner Martins | Adição do link para a especificação dos casos de uso | 1.2 |
 | 28/04/21 | Renato Britto Araujo | Adição da visão de dados | 1.3 |
+| 28/04/21 | Renato Britto Araujo | Adição da visão de implantação | 1.4 |
