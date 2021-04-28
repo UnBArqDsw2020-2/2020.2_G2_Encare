@@ -118,6 +118,24 @@ No *Django* o padrão MVC foi modificado, se tornando MTV (Model-Template-View).
 ## 6. Visão de Processos
 
 ## 7. Visão de Implantação
+A implantação do Encare já está montada utilizando o AWS como carro chefe para
+todos os serviços. Esta implementação funciona de forma simples, na perspectiva
+do desenvolvedor, com um simples push para a branch correta. Pelo peso baixo da
+aplicação e baixíssimo tráfego esperado no começo, os custos são zero. Além disso
+é possível se extender com facilidade, a partir do GitHub Actions ou CircleCI, um
+sistema de continuous integration e deploy, com testes automatizados, linters e 
+outros.
+
+A implantação é algo barato, rápido e simples graças a serviços atuais. No futuro,
+pode ser que exista ainda o incentivo para realizar ações extras a partir disso,
+como multiplas versões de um mesmo backend convivendo para evitar que quebras de
+funcionamento para o usuário final (algo como `www.encare.com/v4/get_establishments`).
+
+Sobre os custos, assumindo que será levantada como um serviço completamente monolítico,
+podemos considerar o EC2 AWS nos custos, com uma instância simples (capaz de sustentar
+tráfego até 100 pessoas simultâneas sem muito demora) em um computador de capacidade de
+processamento suficiente um preço que gira em torno de R$ 100,00 por mês. 
+
 
 ## 8. Visão de Implementação
 
