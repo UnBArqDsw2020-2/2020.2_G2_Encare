@@ -137,6 +137,24 @@ Por fim, temos as interações diretas com o usuário no *frontend*, onde a *Int
 ## 6. Visão de Processos
 
 ## 7. Visão de Implantação
+A implantação do Encare já está montada utilizando o AWS como carro chefe para
+todos os serviços. Esta implementação funciona de forma simples, na perspectiva
+do desenvolvedor, com um simples push para a branch correta. Pelo peso baixo da
+aplicação e baixíssimo tráfego esperado no começo, os custos são zero. Além disso
+é possível se extender com facilidade, a partir do GitHub Actions ou CircleCI, um
+sistema de continuous integration e deploy, com testes automatizados, linters e 
+outros.
+
+A implantação é algo barato, rápido e simples graças a serviços atuais. No futuro,
+pode ser que exista ainda o incentivo para realizar ações extras a partir disso,
+como multiplas versões de um mesmo backend convivendo para evitar que quebras de
+funcionamento para o usuário final (algo como `www.encare.com/v4/get_establishments`).
+
+Sobre os custos, assumindo que será levantada como um serviço completamente monolítico,
+podemos considerar o EC2 AWS nos custos, com uma instância simples (capaz de sustentar
+tráfego até 100 pessoas simultâneas sem muito demora) em um computador de capacidade de
+processamento suficiente um preço que gira em torno de R$ 100,00 por mês. 
+
 
 ## 8. Visão de Implementação
 
@@ -147,6 +165,31 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 ![Diagrama de Componentes v4](img/Diagrama_componentes_v4.png)
 
 ## 9. Visão de Dados (Opcional)
+Assumindo uma que cada estabelecimento envolverá uma seleção de imagens mais 
+seus metadados, podemos fazer uma breve análise a partir de possíveis 
+candidados para termos noção da média. Numa visita rápida ao instagram de 
+alguns estabelecimentos locais, podemos notar que o numero de imagens 
+relevantes para o app giram em torno de 5 a 7. O parágrafo abaixo trás o 
+levantamento do teto limite para o app no Brasil, 700 mil estabelecimentos, 
+e com isso temos uma aproxiamação das imagens envolvidas. Podemos considerar 
+também o tamanho da imagem: em apps como o Tinder, que graficamente tem uma 
+proposta semelhante ao encare, temos que o tamanho das imagens giram em torno 
+de 1000x1000px em 3 canais RGB compressado JPEG (geralmente, o tipo de 
+compressão envolvida reduz em 70% o tamanho original). 
+
+Com isso, podemos calcular o tamanho médio de cada novo estabelecimento, em 
+bits, para o Encare: 5400000 bits. O teto máximo (700 mil estabelecimentos) 
+seria de 3.5 terabits. Levando em conta o preço de armazenamento em núvem de
+provedores comuns, temos uma média de 0.023 dólares por giga por mês, o que 
+dá uma grande total mensal de 500 reais por mês para todos os 
+estabelecimentos, cada um custando 0.07 centavo.
+
+Como é possível ver, o app, em termos absolutos, é bastante leve e barato
+quanto a questão de dados. Por um preço de apenas 500 reais por mês, é 
+possível servir a nação inteira. Difícilmente isso seria considerado "big 
+data". Neste sentido, a visão de dados é bem otimista, e utilizando sistemas 
+modernos para guardar tal informação, é possível ter custos e armazenamento
+quase perfeitamente escaláveis.
 
 ----
 ## 10. Tamanho e Desempenho
@@ -208,5 +251,6 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 26/04/21 | Hugo Aragão | Adiciona descrição do padrão MVC | 1.0 |
 | 27/04/21 | Hugo Aragão | Adiciona descrição do padrão MTV | 1.1 |
 | 27/04/21 | Wagner Martins | Adição do link para a especificação dos casos de uso | 1.2 |
-| 28/04/21 | Hugo Aragão | Adiciona implementação da visão lógica | 1.3 |
-
+| 28/04/21 | Renato Britto Araujo | Adição da visão de dados | 1.3 |
+| 28/04/21 | Renato Britto Araujo | Adição da visão de implantação | 1.4 |
+| 28/04/21 | Hugo Aragão | Adiciona implementação da visão lógica | 1.5 |
