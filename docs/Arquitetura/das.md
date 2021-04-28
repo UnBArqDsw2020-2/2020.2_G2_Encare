@@ -131,7 +131,7 @@ Observando de baixo pra cima, temos as informações do Banco de Dados sendo con
 
 Por fim, temos as interações diretas com o usuário no *frontend*, onde a *Interface* mantêm uma comunicação recíproca com a *Requests*.
 
-![Visao Logica](./img/visaologica.png)
+![Visao Logica](./img/visaologica2.png)
 
 ----
 ## 6. Visão de Processos
@@ -254,3 +254,4 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 28/04/21 | Renato Britto Araujo | Adição da visão de dados | 1.3 |
 | 28/04/21 | Renato Britto Araujo | Adição da visão de implantação | 1.4 |
 | 28/04/21 | Hugo Aragão | Adiciona implementação da visão lógica | 1.5 |
+| 28/04/21 | Hugo Aragão | Atualiza diagrama de visão lógica | 1.6 |
