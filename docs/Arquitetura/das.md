@@ -211,4 +211,4 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 26/04/21 | Hugo Aragão | Adiciona descrição do padrão MVC | 1.0 |
 | 27/04/21 | Hugo Aragão | Adiciona descrição do padrão MTV | 1.1 |
 | 27/04/21 | Wagner Martins | Adição do link para a especificação dos casos de uso | 1.2 |
-
+| 28/04/21 | Renato Britto Araujo | Adição da visão de dados | 1.3 |
