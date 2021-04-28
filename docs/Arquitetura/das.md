@@ -128,10 +128,31 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 ![Diagrama de Componentes v4](img/Diagrama_componentes_v4.png)
 
 ## 9. Visão de Dados (Opcional)
-Assumindo uma que cada estabelecimento envolverá uma seleção de imagens mais seus metadados, podemos fazer uma breve análise a partir de possíveis candidados para termos noção da média. Numa visita rápida ao instagram de alguns estabelecimentos locais, podemos notar que o numero de imagens relevantes para o app giram em torno de 5 a 7. O parágrafo abaixo trás o levantamento do teto limite para o app no Brasil, 700 mil estabelecimentos, e com isso temos uma aproxiamação das imagens envolvidas. Podemos considerar também o tamanho da imagem: em apps como o Tinder, que graficamente tem uma proposta semelhante ao encare, temos que o tamanho das imagens giram em torno de 1000x1000px em 3 canais RGB compressado JPEG (geralmente, o tipo de compressão envolvida reduz em 70% o tamanho original). 
+Assumindo uma que cada estabelecimento envolverá uma seleção de imagens mais 
+seus metadados, podemos fazer uma breve análise a partir de possíveis 
+candidados para termos noção da média. Numa visita rápida ao instagram de 
+alguns estabelecimentos locais, podemos notar que o numero de imagens 
+relevantes para o app giram em torno de 5 a 7. O parágrafo abaixo trás o 
+levantamento do teto limite para o app no Brasil, 700 mil estabelecimentos, 
+e com isso temos uma aproxiamação das imagens envolvidas. Podemos considerar 
+também o tamanho da imagem: em apps como o Tinder, que graficamente tem uma 
+proposta semelhante ao encare, temos que o tamanho das imagens giram em torno 
+de 1000x1000px em 3 canais RGB compressado JPEG (geralmente, o tipo de 
+compressão envolvida reduz em 70% o tamanho original). 
 
-Com isso, podemos calcular o tamanho médio de cada novo estabelecimento, em bits, para o Encare: 5400000 bits. O teto máximo (700 mil estabelecimentos) seria de 3.5 terabits. Levando em conta o preço de armazenamento em núvem de provedores comuns, temos uma média de 0.023 dólares por giga por mês, o que dá uma grande total mensal de 500 reais por mês para todos os estabelecimentos, cada um custando 0.07 centavo.
+Com isso, podemos calcular o tamanho médio de cada novo estabelecimento, em 
+bits, para o Encare: 5400000 bits. O teto máximo (700 mil estabelecimentos) 
+seria de 3.5 terabits. Levando em conta o preço de armazenamento em núvem de
+provedores comuns, temos uma média de 0.023 dólares por giga por mês, o que 
+dá uma grande total mensal de 500 reais por mês para todos os 
+estabelecimentos, cada um custando 0.07 centavo.
 
+Como é possível ver, o app, em termos absolutos, é bastante leve e barato
+quanto a questão de dados. Por um preço de apenas 500 reais por mês, é 
+possível servir a nação inteira. Difícilmente isso seria considerado "big 
+data". Neste sentido, a visão de dados é bem otimista, e utilizando sistemas 
+modernos para guardar tal informação, é possível ter custos e armazenamento
+quase perfeitamente escaláveis.
 
 ## 10. Tamanho e Desempenho
 
