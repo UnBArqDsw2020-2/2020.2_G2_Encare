@@ -21,6 +21,7 @@ O escopo desse documento de arquitetura abrange todo a arquitetura do software e
 
 O projeto trata de uma aplicação web que tem como objetivo facilitar a procura por serviços de cuidados pessoais. Para isso o projeto contará com uma API que utilizará o framework django e um frontend em ReactJS
 
+----
 ## 2. Representação Arquitetural
 
 Esse diagrama mostra de uma forma mais ampla como o software irá trabalhar, mostrando como se relacionam o backend, fronted, usuário, banco de dados e API externa. com isso podemos ter uma visão ampla sobre dodo o processo que envolve todas essas camadas de software.  
@@ -59,6 +60,7 @@ Para o frontend, a equipe decidiu pela utilização do [ReactJS](https://pt-br.r
 
 Essa será a ferramenta usada para persistir os dados da aplicação.
 
+----
 ## 3. Metas Arquiteturais e Restrições
 
 ### 3.1 Metas:
@@ -80,6 +82,7 @@ Essa será a ferramenta usada para persistir os dados da aplicação.
 |Deadline|A aplicação deverá ser finalizada até o fim da disciplina|
 |Hospedagem|Será usada uma conta básica na Amazon AMS|
 
+----
 ## 4. Visão de Casos de Uso
 
 A visão de casos de uso apresenta uma visão próxima do usuário, descrevendo cenários de uso da aplicação.
@@ -88,6 +91,7 @@ A especificação dos casos de uso pode ser vista no documento de [especificaç�
 
 ![Diagrama de Casos de Uso](./img/diagrama_casos_uso_ne.png)
 
+----
 ## 5. Visão Lógica
 
 A **visão lógica** oferece suporte aos requisitos funcionais, no que se refere aos serviços que o sistema disponibilizará para seus usuários. Nessa etapa o sistema é decomposto num conjunto de abstrações, visando a construção dos objetos, onde explora os níveis de abstração da solução, seu encapsulamento e suas relações de herança. 
@@ -114,7 +118,22 @@ No *Django* o padrão MVC foi modificado, se tornando MTV (Model-Template-View).
 
 ![MTV](./img/mtv.png)
 
+### 5.2 Aplicação no projeto
+#### 5.2.1 Diagrama de Pacotes
 
+O diagrama de pacortes a seguir visa mostrar as iterações lógicas entre os módulos do sistema, de forma que exponha de forma simplificada como a aplicação se comunica.
+
+Observando de baixo pra cima, temos as informações do Banco de Dados sendo consumidas e modeladas pela *Model*. A seguir, dentro do mesmo pacote *API*, também estão contidas as relações da *View*, *Template* e *Proxy* obedecendo as funções:
+
+* <strong>*View*</strong> sendo responsável pela comunicação com a *Model*
+* <strong>*Template*</strong> fazendo requisições à *View* e exercendo uma comunicação bilateral com a *Requests* (presente no *frontend*).
+* <strong>*Proxy*</strong> servindo como uma ferramenta de intermédio da comunicação com os serviços do módulo *Maps*.
+
+Por fim, temos as interações diretas com o usuário no *frontend*, onde a *Interface* mantêm uma comunicação recíproca com a *Requests*.
+
+![Visao Logica](./img/visaologica.png)
+
+----
 ## 6. Visão de Processos
 
 ## 7. Visão de Implantação
@@ -129,6 +148,7 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 
 ## 9. Visão de Dados (Opcional)
 
+----
 ## 10. Tamanho e Desempenho
 
 Segundo o SEBRAE, o Brasil possui aproximadamente 700 mil estabelecimentos de serviços voltados a beleza e estética. Outro dado interessante é que aproximadamente 42,3% dos consumidores desejam cuidados pessoais com a finalidade de ficarem mais bonitos. No ambiente do Distrito Federal, os estabeleciemntos de cuidados pessoais somam cerca de 8 mil estabelecimentos. 
@@ -139,6 +159,7 @@ Em nível nacional, o desempenho tem que ser avaliado mais ainda, pois são mais
 
 Por fim é necesário destacar que essas estimativas são com base nos poucos dados disponíveis sobre possíveis usuários no Brasil e no Distrito Federal, findando em uma estimativa que pode ter uma diferença considerável para a real estimativa. 
 
+----
 ## 11. Qualidade
 
 A arquitetura descrita neste documento contribui com as seguintes características de qualidade[7]:
@@ -151,24 +172,25 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 |Eficiência de Desempenho| A capacidade do produto fornecer um desempenho apropriado, no que se trata de uso de recursos e tempo. | A modularização fornecida pelas modelagens contribui na avaliação de complexidade e uso de recursos.
 |Usabilidade| A facilidade de um usuário compreender, aprender, utilizar e apreciar o software, quando usado sob condições especificadas. | A arquitetura do software contribui ao facilitar a modificação de recursos que afetem a usabilidade, como por exemplo, melhorar a estética, ou a prevenção a erros do usuário. Essa característica está ligada ao [RNF01](../Modelagem/backlog/Backlog.md).
 
+----
 ## Referências
 
-[1] Template do [documento de arquitetura de software](https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/files/6305164/Software.Architecture.Document.pdf). Disponibilizado no moodle da disciplina.
-[2] React: Uma biblioteca JavaScript para criar interfaces para usuários. Disponível em: <https://pt-br.reactjs.org/>. Acesso em 19 abr. 2021.
-[3] About PostgreSQL. Disponível em: <https://www.postgresql.org/about/>. Acesso em 20 abr. 2021
-[4] Django: the web framework for perfectionists with deadlines. Disponível em: <https://www.djangoproject.com/start/overview/>. Acesso em 20 abr. 2021. 
-[5] Painel setorial de informações estratégicas - SEBRAE. Disponível em: <https://www.sebrae.com.br/Sebrae/Portal%20Sebrae/UFs/BA/Anexos/P06%20Servi%C3%A7os%20Beleza%20e%20Est%C3%A9tica%20rev01_04052018.pdf>. Acesso eme 22 abr. 2021.
-[6] Mercado da beleza cresce 8% no DF e movimenta R$ 350 milhoes por mês. Disponível em: <https://www.correiobraziliense.com.br/app/noticia/cidades/2015/07/01/interna_cidadesdf,488556/mercado-da-beleza-cresce-8-no-df-e-movimenta-r-350-milhoes-por-mes.shtml>. Acesso em 22 abr. 2021. 
-[7] KOLBERG et al. Qualidade de Software. Disponível em: <https://www.inf.ufpr.br/lmperes/2019_1/ci221/trabalhos/trab3/atividadeA/aula_fatores_qualidade_geral_iso9126_25010.pdf>. Acesso em 23 abr. 2021.
-[8] How Django Works (MVT Pattern). Code Stack, 2020. Acesso 26/04/2021. Disponível em: <https://www.youtube.com/watch?v=cyP4Uw2b2XM&ab_channel=CodeStack>
-[9] Entendendo a arquitetura do Django. Medium. Acesso 27/04/2021. Disponível em: <https://medium.com/@renatojlelis/entendendo-a-arquitetura-do-django-f4b505773c14>
-[10] A Complete Guide and comparition of MVC and MVVM. Nilay D, Nov. 2019. Disponível em: <https://www.intuz.com/blog/guide-on-mvc-vs-mvvm>. Acesso 27/04/2021.
-[11] Django's Structure - A Heretic's Eye View. The Django Book. Disponível em: <https://djangobook.com/mdj2-django-structure/>. Acesso 27/04/2021.
-[12] Introdução ao Padrão MVC. Higor, 2013. Disponível em: <https://www.devmedia.com.br/introducao-ao-padrao-mvc/29308>. Acesso 25/04/2021.
-[13] Entendendo o MTV do Django. Fagner Pinheiro, 24 de março de 2020. Disponível em: <https://www.treinaweb.com.br/blog/entendendo-o-mtv-do-django/>. Acesso 27/04/2021.
-[14] Arquitetura de Software. MONTEIRO, Marcos. Disponível em: <https://www.marcosmonteiro.com.br/mm/Cursos/Arquitetura_Software/Arquitetura_de_Software-marcosmonteiro.pdf>. Acesso: 25/04/2021
-[15] Architetctural Blueprints - The "4+1" View Model of Software Architecture. KRUCHTEN, Philippe. Published in IEEE Software 12 (6), November 1995, pp. 42-50.
-[16] MVC. Wikipedia. Disponível em: <https://pt.wikipedia.org/wiki/MVC>. Acesso 25/04/2021.
+- [1] Template do [documento de arquitetura de software](https://github.com/UnBArqDsw2020-2/2020.2_G2_Encare/files/6305164/Software.Architecture.Document.pdf). Disponibilizado no moodle da disciplina.
+- [2] React: Uma biblioteca JavaScript para criar interfaces para usuários. Disponível em: <https://pt-br.reactjs.org/>. Acesso em 19 abr. 2021.
+- [3] About PostgreSQL. Disponível em: <https://www.postgresql.org/about/>. Acesso em 20 abr. 2021
+- [4] Django: the web framework for perfectionists with deadlines. Disponível em: <https://www.djangoproject.com/start/overview/>. Acesso em 20 abr. 2021. 
+- [5] Painel setorial de informações estratégicas - SEBRAE. Disponível em: <https://www.sebrae.com.br/Sebrae/Portal%20Sebrae/UFs/BA/Anexos/P06%20Servi%C3%A7os%20Beleza%20e%20Est%C3%A9tica%20rev01_04052018.pdf>. Acesso eme 22 abr. 2021.
+- [6] Mercado da beleza cresce 8% no DF e movimenta R$ 350 milhoes por mês. Disponível em: <https://www.correiobraziliense.com.br/app/noticia/cidades/2015/07/01/interna_cidadesdf,488556/mercado-da-beleza-cresce-8-no-df-e-movimenta-r-350-milhoes-por-mes.shtml>. Acesso em 22 abr. 2021. 
+- [7] KOLBERG et al. Qualidade de Software. Disponível em: <https://www.inf.ufpr.br/lmperes/2019_1/ci221/trabalhos/trab3/atividadeA/aula_fatores_qualidade_geral_iso9126_25010.pdf>. Acesso em 23 abr. 2021.
+- [8] How Django Works (MVT Pattern). Code Stack, 2020. Acesso 26/04/2021. Disponível em: <https://www.youtube.com/watch?v=cyP4Uw2b2XM&ab_channel=CodeStack>
+- [9] Entendendo a arquitetura do Django. Medium. Acesso 27/04/2021. Disponível em: <https://medium.com/@renatojlelis/entendendo-a-arquitetura-do-django-f4b505773c14>
+- [10] A Complete Guide and comparition of MVC and MVVM. Nilay D, Nov. 2019. Disponível em: <https://www.intuz.com/blog/guide-on-mvc-vs-mvvm>. Acesso 27/04/2021.
+- [11] Django's Structure - A Heretic's Eye View. The Django Book. Disponível em: <https://djangobook.com/mdj2-django-structure/>. Acesso 27/04/2021.
+- [12] Introdução ao Padrão MVC. Higor, 2013. Disponível em: <https://www.devmedia.com.br/introducao-ao-padrao-mvc/29308>. Acesso 25/04/2021.
+- [13] Entendendo o MTV do Django. Fagner Pinheiro, 24 de março de 2020. Disponível em: <https://www.treinaweb.com.br/blog/entendendo-o-mtv-do-django/>. Acesso 27/04/2021.
+- [14] Arquitetura de Software. MONTEIRO, Marcos. Disponível em: <https://www.marcosmonteiro.com.br/mm/Cursos/Arquitetura_Software/Arquitetura_de_Software-marcosmonteiro.pdf>. Acesso: 25/04/2021
+- [15] Architetctural Blueprints - The "4+1" View Model of Software Architecture. KRUCHTEN, Philippe. Published in IEEE Software 12 (6), November 1995, pp. 42-50.
+- [16] MVC. Wikipedia. Disponível em: <https://pt.wikipedia.org/wiki/MVC>. Acesso 25/04/2021.
 
 ## Versionamento
 
@@ -186,4 +208,5 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 26/04/21 | Hugo Aragão | Adiciona descrição do padrão MVC | 1.0 |
 | 27/04/21 | Hugo Aragão | Adiciona descrição do padrão MTV | 1.1 |
 | 27/04/21 | Wagner Martins | Adição do link para a especificação dos casos de uso | 1.2 |
+| 28/04/21 | Hugo Aragão | Adiciona implementação da visão lógica | 1.3 |
 
