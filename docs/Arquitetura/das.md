@@ -136,7 +136,20 @@ Por fim, temos as interações diretas com o usuário no *frontend*, onde a *Int
 ----
 ## 6. Visão de Processos
 
+A visão de Processos é entendida como a divisão do sistema em precessos e processadores, no qual o sistema é separado em linhas de execução as *threads*. 
+
+### 6.1 Diagrama de Sequência
+
+Feed de Estabelecimentos
+![Feed estabelecimentos](../Modelagem/diagrama_sequencia/imagens/Diagrama_de_sequencia.png)
+
+Informações do Estabelecimento
+![Informações de estabelecimento](../Modelagem/diagrama_sequencia/imagens/diagrama_de_sequencia_estab_info.png)
+
+Informações do Usuário
+![Informações do usuário](./img/sequenciausuario.png)
 ## 7. Visão de Implantação
+
 A implantação do Encare já está montada utilizando o AWS como carro chefe para
 todos os serviços. Esta implementação funciona de forma simples, na perspectiva
 do desenvolvedor, com um simples push para a branch correta. Pelo peso baixo da
@@ -165,6 +178,7 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 ![Diagrama de Componentes v4](img/Diagrama_componentes_v4.png)
 
 ## 9. Visão de Dados (Opcional)
+
 Assumindo uma que cada estabelecimento envolverá uma seleção de imagens mais 
 seus metadados, podemos fazer uma breve análise a partir de possíveis 
 candidados para termos noção da média. Numa visita rápida ao instagram de 
@@ -255,3 +269,4 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 28/04/21 | Renato Britto Araujo | Adição da visão de implantação | 1.4 |
 | 28/04/21 | Hugo Aragão | Adiciona implementação da visão lógica | 1.5 |
 | 28/04/21 | Hugo Aragão | Atualiza diagrama de visão lógica | 1.6 |
+| 28/04/21 | Hugo Aragão | Adição dos diagramas de Sequência | 1.7 |
