@@ -128,6 +128,7 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 ![Diagrama de Componentes v4](img/Diagrama_componentes_v4.png)
 
 ## 9. Visão de Dados (Opcional)
+Assumindo uma que cada estabelecimento envolverá uma seleção de imagens mais seus metadados, podemos fazer uma breve análise a partir de possíveis candidados para termos noção da média. Numa visita rápida ao instagram de alguns estabelecimentos locais, podemos notar que o numero de imagens relevantes para o app giram em torno de 5 a 7. O parágrafo abaixo trás o levantamento do teto limite para o app no Brasil, 700 mil estabelecimentos, e com isso temos uma aproxiamação das imagens envolvidas. Podemos considerar também o tamanho da imagem: em apps como o Tinder, que graficamente tem uma proposta semelhante ao encare, temos que o tamanho das imagens giram em torno de 1000x1000px. 
 
 ## 10. Tamanho e Desempenho
 
