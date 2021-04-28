@@ -130,6 +130,8 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 ## 9. Visão de Dados (Opcional)
 Assumindo uma que cada estabelecimento envolverá uma seleção de imagens mais seus metadados, podemos fazer uma breve análise a partir de possíveis candidados para termos noção da média. Numa visita rápida ao instagram de alguns estabelecimentos locais, podemos notar que o numero de imagens relevantes para o app giram em torno de 5 a 7. O parágrafo abaixo trás o levantamento do teto limite para o app no Brasil, 700 mil estabelecimentos, e com isso temos uma aproxiamação das imagens envolvidas. Podemos considerar também o tamanho da imagem: em apps como o Tinder, que graficamente tem uma proposta semelhante ao encare, temos que o tamanho das imagens giram em torno de 1000x1000px. 
 
+Com isso, podemos calcular o tamanho médio de cada novo estabelecimento, em bits, para o Encare: 5400000 bits. O teto máximo (700 mil estabelecimentos) seria de 3.5 terabits. Levando em conta o preço de armazenamento em núvem de provedores comuns, temos uma média de 0.023 dólares por giga por mês, o que dá uma grande total mensal de 500 reais por mês para todos os estabelecimentos, cada um custando 0.07 centavo.
+
 ## 10. Tamanho e Desempenho
 
 Segundo o SEBRAE, o Brasil possui aproximadamente 700 mil estabelecimentos de serviços voltados a beleza e estética. Outro dado interessante é que aproximadamente 42,3% dos consumidores desejam cuidados pessoais com a finalidade de ficarem mais bonitos. No ambiente do Distrito Federal, os estabeleciemntos de cuidados pessoais somam cerca de 8 mil estabelecimentos. 
