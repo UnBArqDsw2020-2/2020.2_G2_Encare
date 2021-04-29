@@ -136,17 +136,28 @@ Por fim, temos as interações diretas com o usuário no *frontend*, onde a *Int
 ----
 ## 6. Visão de Processos
 
-A visão de Processos é entendida como a divisão do sistema em precessos e processadores, no qual o sistema é separado em linhas de execução as *threads*. 
+A visão de Processos é entendida como a divisão do sistema em precessos e processadores, no qual o sistema é separado em linhas de execução as *threads*.  
 
 ### 6.1 Diagrama de Sequência
 
-Feed de Estabelecimentos
+Nessa implementação utilizamos o *diagrama de sequência* para mostrar os principais fluxos de atividades do sistema,
+
+#### Feed de Estabelecimentos
+
+No Feed de Estabelecimentos observamos o fluxo principal de trabalho do sistema, como a interação do usuário com o *frontend* que funciona como um intermediário entre as requisições que correspondem à busca de estabelecimentos e as relações com o *backend*.
+
 ![Feed estabelecimentos](../Modelagem/diagrama_sequencia/imagens/Diagrama_de_sequencia.png)
 
-Informações do Estabelecimento
+#### Informações do Estabelecimento
+
+O diagrama a seguir demonstra o fluxo de iterações do sistema com relação à tarefa de visualizar um estabelecimento.
+
 ![Informações de estabelecimento](../Modelagem/diagrama_sequencia/imagens/diagrama_de_sequencia_estab_info.png)
 
-Informações do Usuário
+#### Informações do Usuário
+
+Por fim, temos a lógica que define o armazenamento e visualização dos dados do cliente.
+
 ![Informações do usuário](./img/sequenciausuario.png)
 ## 7. Visão de Implantação
 
@@ -270,3 +281,4 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 28/04/21 | Hugo Aragão | Adiciona implementação da visão lógica | 1.5 |
 | 28/04/21 | Hugo Aragão | Atualiza diagrama de visão lógica | 1.6 |
 | 28/04/21 | Hugo Aragão | Adição dos diagramas de Sequência | 1.7 |
+| 28/04/21 | Hugo Aragão | Adição das descrições e definições dos diagramas de sequência | 1.8 |
