@@ -191,8 +191,13 @@ return(
 ```
 
 ## Componentes
-
-- se for utilizado/implementado algum
+Componentes permitem dividir a UI em partes independentes e reutilizáveis, tratando cada parte da aplicação como um bloco isolado, livre de outras dependências externas. São peças fundamentais no React.  
+Existem alguns componentes que serão fundamentais para o projeto :
+- **Componente para listagem de estabelecimentos**: Os estabelecimentos são o foco do projeto, o componente deverá conter, ao menos, as informações necessárias do estabelecimento e suas interações;
+- **Componente para detalhes do estabelecimento**: Componente que será o perfil do estabelecimento, contendo suas informações detalhadas;
+- **Componente para feed**: Nesse componente serão exibidos os componentes de estabelecimento;
+- **Componente para filtro**: Nesse componente serão aplicados filtros de busca para o feed;
+- **Cadastro e Login**: Componentes para o cadastro e login de usuário;
 
 ## Referências
 
@@ -207,5 +212,7 @@ return(
 | ---- | ---- | -------- | ------ |
 | 21/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento | 0.1 |
 | 30/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Adição do conteúdo | 0.2 |
+| 30/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Finalização da adição do conteúdo base | 0.3 |
+
 
 
