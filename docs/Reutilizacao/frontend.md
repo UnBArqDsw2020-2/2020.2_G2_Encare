@@ -128,9 +128,67 @@ export default function SignIn() {
   );
 }
 ```
-## Serviços
+### Axios
 
-- se for utilizado/implementado algum
+Axios é um cliente HTTP baseado em Promises para fazer requisições. Ele será usado para fazer a comunicação com o *backend*. Dentre suas características , ele intercepta requisições e respostas (request & response), cancela requisições, transforma os dados em JSON automaticamente, transforma os dados da requisição e da resposta e permite uma configuração reutilizável.
+
+#### Aplicação no projeto
+
+Os trechos a seguir irão demonstrar configuração e uso do axios no sistema.
+
+- Criação de uma URL base para ser utilizada em diversos locais
+
+```javascript
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: "https://encare.com.br",
+});
+
+export default api;
+```
+
+- Criação de requisições
+
+```javascript
+import api from './api'
+api.get("/establishments")
+      .then((response) => doSomething(response.data))
+      .catch((err) => {
+        console.error("Erro ao buscar estabelecimentos: " + err);
+     });
+```
+
+- Uso em componente React
+
+```javascript
+
+import React, {useState, useEffect} from 'react';
+import api from '...PATH/api';
+
+export default function Estabelecimentos() {
+
+const [estabelecimentos, setEstabelecimentos] = useState([]);
+    
+useEffect(() => {
+    Promise.all([
+      api.get("/establishments")
+    ]).then((response) => {
+      for (const res of response) {
+        const {
+          data: { nome, endereco, ...Outras informações... }
+        } = res;
+        setUsers((state) => [...state, { nome, endereco, ...Outras informações... }]);
+      }
+    });
+  }, []);
+
+return(
+    {...}
+    {...}
+)}
+
+```
 
 ## Componentes
 
