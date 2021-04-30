@@ -11,7 +11,7 @@ Os casos de uso especificados aqui são relacionados a usuários do tipo cliente
 |Descrição/Objetivo| Cadastrar usuário no Encare
 |-----|----|
 |**Ator**| Usuário que ainda não possui conta
-|**Fluxo Principal**| Usuário clica em cadastrar-se<br>Usuário preenche formulário<br>Usuário clica em cadastar<br>Sistema checa dados do formulário<br>Usuário é cadastrado
+|**Fluxo Principal**| Usuário clica em cadastrar-se<br>Usuário preenche formulário<br>Usuário clica em cadastrar<br>Sistema checa dados do formulário<br>Usuário é cadastrado
 |**Fluxo Alternativo 1**|Usuário clica em cadastrar-se<br>Usuário preenche formulário<br>Usuário clica em enviar<br>Sistema checa dados do formulário<br>Sistema exibe erro de cadastro<br>Sistema volta a tela do formulário
 |**Fluxo de exceção**| Servidor está indisponível ou usuário está sem internet
 
@@ -21,7 +21,7 @@ Os casos de uso especificados aqui são relacionados a usuários do tipo cliente
 |-----|----|
 |**Ator**| Usuário que possui cadastro no Encare
 |**Fluxo Principal**| Usuário clica em login<br>Usuário informa dados de login<br>Usuário é redirecionado para a página inicial com sessão ativa 
-|**Fluxo Alternativo 1**| Usuário clica em login<br> clica em esqueci a senha<br>Usuário recupera senha pelo email<br>Usuário tenta logar novamente
+|**Fluxo Alternativo 1**| Usuário clica em login<br> Clica em esqueci a senha<br>Usuário recupera senha pelo email<br>Usuário tenta logar novamente
 |**Fluxo de exceção**| Servidor está indisponível ou usuário sem internet.
 
 ## UC03 - Editar Perfil
@@ -107,3 +107,4 @@ Os casos de uso especificados aqui são relacionados a usuários do tipo cliente
 |----|---|---|---|
 | 27/04/21 | Wagner Martins | Criação do documento e adição dos casos de uso 01-05 | 0.1 |
 | 27/04/21 | Wagner Martins | Adição dos casos de uso 06-10 | 0.2 |
+| 30/04/21 | João Luis Baraky | Corrige erros de ortografia | 0.3 |

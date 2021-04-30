@@ -19,15 +19,15 @@ O escopo desse documento de arquitetura abrange todo a arquitetura do software e
 
 ### 1.4 Visão Geral
 
-O projeto trata de uma aplicação web que tem como objetivo facilitar a procura por serviços de cuidados pessoais. Para isso o projeto contará com uma API que utilizará o framework django e um frontend em ReactJS
+O projeto trata de uma aplicação web que tem como objetivo facilitar a procura por serviços de cuidados pessoais. Para isso o projeto contará com uma API que utilizará o framework Django e um frontend em ReactJS
 
 ----
 ## 2. Representação Arquitetural
 
-Esse diagrama mostra de uma forma mais ampla como o software irá trabalhar, mostrando como se relacionam o backend, fronted, usuário, banco de dados e API externa. com isso podemos ter uma visão ampla sobre dodo o processo que envolve todas essas camadas de software.  
+Esse diagrama mostra de uma forma mais ampla como o software irá trabalhar, mostrando como se relacionam o backend, fronted, usuário, banco de dados e API externa. Com isso podemos ter uma visão ampla sobre dodo o processo que envolve todas essas camadas de software.  
 
 Nesse diagrama temos os seguintes participantes:
-- **Usuário**: Responsável pelas ações que o sistema terá que lidar. Aqui nesse classe estão também os Administradores do site que irão gerenciar o site, mas também são usuário do site. 
+- **Usuário**: Responsável pelas ações que o sistema terá que lidar. Aqui, nessa classe, estão também os Administradores do site que irão gerenciar o site, mas também são usuário do site. 
 - **Frontend ReactJS**: É a primeira camada do software em relação ao usuário e é a única parte do sistema que client-side. Tem como principal função realizar a comunicação do sistema com o usuário por meio de páginas renderizadas e as interações e a partir disso realizar as requisições necessárias. 
 - **Backend Django Python**: É a primeira camada server-side e tem como função tratar as requisições, processar os dados, consultar os dados, consultar APIs externas e prover a modelagem em classes dos dados. É aqui onde ocorre a modelagem de dados.
 - **API externa de Mapas**: É uma API onde possa calcular as distâcias entre duas localizações para ser usada nos filtros de distância.
@@ -39,20 +39,20 @@ A seguir iremos explicar brevemente sobre cada uma das tecnologias escolhidas:
 
 ### 2.1. Python Django:
 
-[Django](https://www.djangoproject.com/start/overview/) é um framework Python de alto nível que encorja o desenvolvimento rápido e um design límpo e pragmático. foi construido por desenvolvedores experientes e cuida de boa parte do trabalho para que o desenvolverdor possa cuidar do mais importante. Tem como principais caracteristicas:
+[Django](https://www.djangoproject.com/start/overview/) é um framework Python de alto nível que encorja o desenvolvimento rápido e um design limpo e pragmático. Foi construido por desenvolvedores experientes e cuida de boa parte do trabalho para que o desenvolverdor possa cuidar do mais importante. Tem como principais características:
 - Desenvolvido para ser rápido como for possível.
 - Inclui dezenas de extras que ajudam a resolver várias tarefas de desenvolvimento Web, como autenticação, RSS feed, entre outros...
 - Cuida da segurança de muito processos, como autenticação e acesso ao banco de dados.
 - É escalável para possíveis grandes demandas de requisições.
-- Muito versátipo
+- Muito versátil
 
 ### 2.2. ReactJS:
 
-Para o frontend, a equipe decidiu pela utilização do [ReactJS](https://pt-br.reactjs.org/), uma biblioteca JavaScript bastante popular e voltada a desenvolvimento web. As suas principais caracteristicas são:
+Para o frontend, a equipe decidiu pela utilização do [ReactJS](https://pt-br.reactjs.org/), uma biblioteca JavaScript bastante popular e voltada a desenvolvimento web. As suas principais características são:
  - Baseado em componentes 
  - Pode ser renderizado no servidor através do servidor.
  - Dados são passsados das classes mães para as classes filhas por meio das props. 
- - Um componente por usar plugins externos. 
+ - Um componente pode usar plugins externos. 
 
 ### 2.3. PostgreSQL:
 
@@ -112,16 +112,16 @@ O MVC se tornou popular no desenvolvimento *web* e *mobile*, por seu fluxo de tr
 
 No *Django* o padrão MVC foi modificado, se tornando MTV (Model-Template-View). Das semelhanças e diferenças entre MVC e MTV temos:
 
-* Model - No MTV a Model possúi a mesma responsabilidade de lidar internamente com o banco de dados e manipular esses dados.
+* Model - No MTV a Model possui a mesma responsabilidade de lidar internamente com o banco de dados e manipular esses dados.
 * Template (View) - As duas possuem a mesma responsabilidade, lidando diretamente com usuário e exibindo informações.
-* View (Controller) - Aqui que o MTV apresenta suas direfenças, apesar de ter responsabilidades parecidas, aqui a View retorna algo a partir de uma solicitação, pois define apenas quais dados serão representados, não como serão mostrados. No geral, a *controller* nesse padrão se comporta a partir da própria estrutura do projeto, guiando os comandos a partir das configurações de rotas no Django.
+* View (Controller) - Aqui que o MTV apresenta suas diferenças, apesar de ter responsabilidades parecidas, aqui a View retorna algo a partir de uma solicitação, pois define apenas quais dados serão representados, não como serão mostrados. No geral, a *controller* nesse padrão se comporta a partir da própria estrutura do projeto, guiando os comandos a partir das configurações de rotas no Django.
 
 ![MTV](./img/mtv.png)
 
 ### 5.2 Aplicação no projeto
 #### 5.2.1 Diagrama de Pacotes
 
-O diagrama de pacortes a seguir visa mostrar as iterações lógicas entre os módulos do sistema, de forma que exponha de forma simplificada como a aplicação se comunica.
+O diagrama de pacotes a seguir visa mostrar as interações lógicas entre os módulos do sistema, de forma que exponha de forma simplificada como a aplicação se comunica.
 
 Observando de baixo pra cima, temos as informações do Banco de Dados sendo consumidas e modeladas pela *Model*. A seguir, dentro do mesmo pacote *API*, também estão contidas as relações da *View*, *Template* e *Proxy* obedecendo as funções:
 
@@ -140,7 +140,7 @@ A visão de Processos é entendida como a divisão do sistema em precessos e pro
 
 ### 6.1 Diagrama de Sequência
 
-Nessa implementação utilizamos o *diagrama de sequência* para mostrar os principais fluxos de atividades do sistema,
+Nessa implementação utilizamos o *diagrama de sequência* para mostrar os principais fluxos de atividades do sistema.
 
 #### Feed de Estabelecimentos
 
@@ -150,7 +150,7 @@ No Feed de Estabelecimentos observamos o fluxo principal de trabalho do sistema,
 
 #### Informações do Estabelecimento
 
-O diagrama a seguir demonstra o fluxo de iterações do sistema com relação à tarefa de visualizar um estabelecimento.
+O diagrama a seguir demonstra o fluxo de interações do sistema com relação à tarefa de visualizar um estabelecimento.
 
 ![Informações de estabelecimento](../Modelagem/diagrama_sequencia/imagens/diagrama_de_sequencia_estab_info.png)
 
@@ -161,7 +161,7 @@ Por fim, temos a lógica que define o armazenamento e visualização dos dados d
 ![Informações do usuário](./img/sequenciausuario.png)
 ## 7. Visão de Implantação
 
-A implantação do Encare já está montada utilizando o AWS como carro chefe para
+A implantação do Encare já está montada utilizando o AWS como carro-chefe para
 todos os serviços. Esta implementação funciona de forma simples, na perspectiva
 do desenvolvedor, com um simples push para a branch correta. Pelo peso baixo da
 aplicação e baixíssimo tráfego esperado no começo, os custos são zero. Além disso
@@ -198,7 +198,7 @@ relevantes para o app giram em torno de 5 a 7. O parágrafo abaixo trás o
 levantamento do teto limite para o app no Brasil, 700 mil estabelecimentos, 
 e com isso temos uma aproxiamação das imagens envolvidas. Podemos considerar 
 também o tamanho da imagem: em apps como o Tinder, que graficamente tem uma 
-proposta semelhante ao encare, temos que o tamanho das imagens giram em torno 
+proposta semelhante ao Encare, temos que o tamanho das imagens giram em torno 
 de 1000x1000px em 3 canais RGB compressado JPEG (geralmente, o tipo de 
 compressão envolvida reduz em 70% o tamanho original). 
 
@@ -221,7 +221,7 @@ quase perfeitamente escaláveis.
 
 Segundo o SEBRAE, o Brasil possui aproximadamente 700 mil estabelecimentos de serviços voltados a beleza e estética. Outro dado interessante é que aproximadamente 42,3% dos consumidores desejam cuidados pessoais com a finalidade de ficarem mais bonitos. No ambiente do Distrito Federal, os estabeleciemntos de cuidados pessoais somam cerca de 8 mil estabelecimentos. 
 
-Tendo os dados acima, podemos estimar qual será o uso da plataforma do ponto de vista dos estabelecimentos. Como o planejado é o uso do sistema inicialmente no Distrito Federal, então o sistema terá que suportar o uso por 8 mil estabelecimentos e seus respectivos clientes. Assim podemos concluir que o uso da plataforma, no caso em que todos os estabelecimentos de beleza forem cadastrados, não será sobrecarregado, visto que esse número, a nível computacional, não é relevante para desempenho. O que realmente pode pesar é o acesso simultâneo de clientes na plataforma, que, como é um número desconhecido, pode ser que interfira em um abom desempenho da aplicação. 
+Tendo os dados acima, podemos estimar qual será o uso da plataforma do ponto de vista dos estabelecimentos. Como o planejado é o uso do sistema inicialmente no Distrito Federal, então o sistema terá que suportar o uso por 8 mil estabelecimentos e seus respectivos clientes. Assim podemos concluir que o uso da plataforma, no caso em que todos os estabelecimentos de beleza forem cadastrados, não será sobrecarregado, visto que esse número, a nível computacional, não é relevante para desempenho. O que realmente pode pesar é o acesso simultâneo de clientes na plataforma, que, como é um número desconhecido, pode ser que interfira em um bom desempenho da aplicação. 
 
 Em nível nacional, o desempenho tem que ser avaliado mais ainda, pois são mais de 700.000 estabelecimento, e consequentemente nesse caso pode complicar por sem um número bem maior de estabelecimentos que estarão cadastrados e ainda mais usuários do tipo cliente. Sendo assim para avançar para nível nacional, o produto pode precisar passar por uma avaliação criteriosa de desempenho para não oferecer um uso lento para o usuário (tanto dono de estabelecimento quanto cliente) a fim de evitar possíveis problemas.
 
@@ -282,3 +282,4 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 28/04/21 | Hugo Aragão | Atualiza diagrama de visão lógica | 1.6 |
 | 28/04/21 | Hugo Aragão | Adição dos diagramas de Sequência | 1.7 |
 | 28/04/21 | Hugo Aragão | Adição das descrições e definições dos diagramas de sequência | 1.8 |
+| 30/04/21 | João Luis Baraky | Corrige erros de ortografia | 1.9 |
