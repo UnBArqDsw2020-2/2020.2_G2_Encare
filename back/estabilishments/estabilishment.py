@@ -3,34 +3,31 @@ from .models import EstabilishmentModel
 
 class Estabilishment:
 
-    def create(new_estabilishment):
+    queryset = EstabilishmentModel.objects.all()
 
-        estabilishment = EstabilishmentModel.objects.create(
-            name = new_estabilishment["name"], 
-            phone = new_estabilishment["phone"],
-            instagram = new_estabilishment["instagram"], 
-            open_time = new_estabilishment["open_time"], 
-            close_time = new_estabilishment["close_time"]
+    def create(self, data):
+
+        estabilishment = EstabilishmentModel(
+            name = data.get("name"), 
+            phone = data.get("phone"),
+            instagram = data.get("instagram"), 
+            open_time = data.get("open_time"), 
+            close_time = data.get("close_time")
         )
         
         estabilishment.save()
         return estabilishment
     
-    def get_all():
-        
-        all_estabilishments = EstabilishmentModel.objects.all()
-        return all_estabilishments
+    def get_all(self):
+        return self.queryset
 
-    def get_estabilishment(id=None):
-
-        queryset = EstabilishmentModel.objects.all()
-        estabilishment = get_object_or_404(queryset, id=id)
+    def get(self, id=None):
+        estabilishment = get_object_or_404(self.queryset, id=id)
         return estabilishment
 
-    def update(data, id=None):
-        
-        queryset = EstabilishmentModel.objects.all()
-        estabilishment = get_object_or_404(queryset, id=id)
+    def update(self, data, id=None):
+
+        estabilishment = get_object_or_404(self.queryset, id=id)
         
         estabilishment.name = data.get("name", estabilishment.name)
         estabilishment.phone = data.get("phone", estabilishment.phone)
@@ -41,9 +38,7 @@ class Estabilishment:
         estabilishment.save()
         return estabilishment
 
-    def delete(id=None):
-        
-        queryset = EstabilishmentModel.objects.all()
-        estabilishment = get_object_or_404(queryset, id=id)
+    def delete(self, id=None):
+        estabilishment = get_object_or_404(self.queryset, id=id)
         number = estabilishment.delete()
         return number[0]
