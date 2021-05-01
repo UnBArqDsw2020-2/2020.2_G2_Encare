@@ -76,6 +76,11 @@ A página de *Filtro Avançado* foi criada para permitir que o usuário pudesse 
 ![Filtro](imagens/Filtro.png)
 
 Página de Filtro Avançado - Hugo
+
+**Cadastro de Cliente**
+
+![Cadastro de Cliente](imagens/cadastrocostumer.png)
+Página de cadastro - Hugo
 ### Versão 1
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxJ49RxNyO7ulXwd86Gxbov%2FUntitled%3Fnode-id%3D2%253A17%26scaling%3Dscale-down" allowfullscreen></iframe>  
 
