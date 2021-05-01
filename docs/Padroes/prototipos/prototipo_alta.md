@@ -87,6 +87,11 @@ Página de cadastro - Hugo
 ![Cadastro de Dono](imagens/cadastrowner.png)
 Página de cadastro dono estabelecimento - Hugo
 
+**Página de Login**
+
+![Tela de Login](imagens/login.png)
+Página de Login - Hugo
+
 ### Versão 1
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxJ49RxNyO7ulXwd86Gxbov%2FUntitled%3Fnode-id%3D2%253A17%26scaling%3Dscale-down" allowfullscreen></iframe>  
 
@@ -117,3 +122,4 @@ Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/
 |08/04/2021| Adição da descrição do protótipo de baixa (Hugo) | Hugo | 1.0 |
 |01/05/2021| Adição da tela de cadastro do cliente | Hugo | 1.1 |
 |01/05/2021| Adição da tela de cadastro do dono | Hugo | 1.2 |
+|01/05/2021| Adição da tela de Login | Hugo | 1.3 |
