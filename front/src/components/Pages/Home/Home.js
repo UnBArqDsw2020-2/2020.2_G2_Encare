@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Components/Header/Header';
-import MudeSeuEstilo from './Components/MudeSeuEstilo/MudeSeuEstilo'
+import MudeSeuEstilo from './Components/MudeSeuEstilo/MudeSeuEstilo';
+import DescubraUmNovoEstilo from './Components/DescubraUmNovoEstilo/DescubraUmNovoEstilo';
 import Button from '@material-ui/core/Button';
 import './Home.css';
 import { makeStyles } from '@material-ui/core/styles';
@@ -36,6 +37,7 @@ function Home() {
 
    
         <MudeSeuEstilo />
+        <DescubraUmNovoEstilo/>
    
 
     </>

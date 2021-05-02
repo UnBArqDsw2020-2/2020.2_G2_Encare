@@ -1,7 +1,7 @@
 .conteudo{
     display: flex;
     flex-grow: 1;
-    background-image: url('./assets//images/bg-img.png');
+    background-image: url('./assets/images/bg-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 85vh;
