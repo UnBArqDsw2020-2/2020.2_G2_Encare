@@ -5,12 +5,9 @@ import './Styles.css';
 function Header(props) {
     return (
         <div className="header">
-            <div>
-                <span className="encare">Encare</span>
+            <div><span className="encare">Encare</span>
             </div>
-            <div>
-                {props.children}
-            </div>
+            <div>{props.children}</div>
         </div>
     )
 }
