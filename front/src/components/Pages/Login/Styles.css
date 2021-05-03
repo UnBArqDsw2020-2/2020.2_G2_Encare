@@ -1,0 +1,7 @@
+.image-side{
+    background-image: url('./Assets/images/bg-side.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
