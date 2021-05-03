@@ -4,7 +4,7 @@ from rest_framework import serializers
 
 class EstabilishmentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.EstabilishmentModel
+        model = models.Estabilishment
         fields = (
             'name',
             'phone',
