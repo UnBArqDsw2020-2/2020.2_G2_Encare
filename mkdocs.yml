@@ -70,6 +70,7 @@ nav:
       - Base: videos/base.md
       - Modelagem: videos/modelagem.md
       - Padrões de Projeto: videos/padroes.md
+      - Arquitetura e Reutilização: videos/arquitetura_e_reutilizacao.md
 
 # Configuration
 theme:
