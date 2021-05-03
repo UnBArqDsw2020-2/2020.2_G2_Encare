@@ -7,18 +7,75 @@ from .managers import CustomUserManager
 
 class CustomUser(AbstractUser):
     email = models.EmailField(
-        _('email address'),
+        _("email address"),
         unique=True,
         blank=False,
         error_messages={
-            'unique': 'A user with that email already exists.',
-        }
+            "unique": "A user with that email already exists.",
+        },
     )
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username']
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["username"]
 
     objects = CustomUserManager()
 
     def __str__(self):
         return self.email
+
+    def login(self, raw_password):
+        pass
+
+    def logout(self, password):
+        pass
+
+    def set_password(self, raw_password):
+        pass
+
+
+class Customer(CustomUser):
+    def chat_establishment(self):
+        pass
+
+    def rate_establishment(self):
+        pass
+
+    def get_geolocation(self):
+        pass
+
+    def set_establishment(self):
+        pass
+
+
+class Owner(CustomUser):
+    def create_establishment(self):
+        pass
+
+    def delete_establishment(self):
+        pass
+
+    def edit_establishment(self):
+        pass
+
+    def create_service(self):
+        pass
+
+    def delete_service(self):
+        pass
+
+    def edit_service(self):
+        pass
+
+
+class Admin(CustomUser):
+    def delete_user(self):
+        pass
+
+    def delete_establishment(self):
+        pass
+
+    def delete_service(self):
+        pass
+
+    def delete_rating(self):
+        pass
