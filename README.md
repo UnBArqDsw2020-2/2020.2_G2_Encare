@@ -73,9 +73,9 @@ Adicione o(s)s vídeo(s) da Entrega Final. -->
 
 ## Descritivo dos Principais Aspectos Técnicos 
 **Principal(is) Metodologia(s) Adotada(s)**: Scrum<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: Pretendidas : JavaScript e Python<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: A Definir<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: A Definir<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: JavaScript e Python<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: React e Django<br>
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: MTV - Model Template View<br>
 
 <!-- ## O Projeto está rodando?
 ( ) SIM
