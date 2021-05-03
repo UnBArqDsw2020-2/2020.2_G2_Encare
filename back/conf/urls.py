@@ -23,10 +23,7 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
-from points.views import PointViewSet
-# from estabilishments.views import EstabilishmentViewSet
-
-router = routers.DefaultRouter()
+# router = routers.DefaultRouter()
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -41,11 +38,7 @@ schema_view = get_schema_view(
    permission_classes=(permissions.AllowAny,),
 )
 
-router.register(r'Points', PointViewSet)
-# router.register(r'Estabilishments', EstabilishmentViewSet)
-
 urlpatterns = [
-    path('', include(router.urls)),
     path('', include('estabilishments.urls')),
     path('admin/', admin.site.urls),
     path('api-auth/',

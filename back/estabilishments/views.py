@@ -2,6 +2,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import viewsets
 
+from django.shortcuts import get_object_or_404
+
 from .models import Estabilishment
 from .serializers import EstabilishmentSerializer
 
@@ -26,6 +28,7 @@ class EstabilishmentViewSet(viewsets.ViewSet):
         return Response(serialized.data)
 
     def list(self, request):
+        queryset = Estabilishment.objects.all()
         serialized = EstabilishmentSerializer(queryset, many=True)
         return Response(serialized.data)
         
