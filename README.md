@@ -65,11 +65,23 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 
 [Apresentação GRASPs](https://youtu.be/8Oc10Y0dfGk)
 
-<!-- ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+## Screenshots Quarta Entrega (FINAL) &lt;&lt;FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL&gt;&gt
 
-## Vídeo(s) Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione o(s)s vídeo(s) da Entrega Final. -->
+![DAS](docs/Screenshots/DAS.png)
+
+![env](docs/Screenshots/Dev_env.png)
+
+![front](docs/Screenshots/front.png)
+
+![back](docs/Screenshots/back.png)
+
+## Vídeo(s) Quarta Entrega (FINAL) &lt;&lt;FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL&gt;&gt
+
+[Apresentação DAS](https://youtu.be/0rmFqtutVXw)
+
+[Apresentação Reutilização]()
+
+[Apresentação Iniciativas Extras]()
 
 ## Descritivo dos Principais Aspectos Técnicos 
 **Principal(is) Metodologia(s) Adotada(s)**: Scrum<br>
