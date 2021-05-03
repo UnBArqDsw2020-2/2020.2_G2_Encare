@@ -1,6 +1,6 @@
 # Reutilização no Back-end
 
-A reutilização de software baseia-se no uso de conceitos, produtos ou soluções previamentes elaboradas ou adiquiridas para a criação de um novo software, com o objetivo de melhorar a qualidade, produtividade e reduzir tempo e custos de projeto.
+A reutilização de software baseia-se no uso de conceitos, produtos ou soluções previamente elaboradas ou adquiridas para a criação de um novo software, com o objetivo de melhorar a qualidade, produtividade e reduzir tempo e custos de projeto.
 
 Reusar um produto significa poder reutilizar partes (ou o todo) de um sistema desenvolvido anteriormente, como: especificações, módulos de um projeto, arquitetura e código fonte.
 
@@ -8,7 +8,7 @@ Reusar um produto significa poder reutilizar partes (ou o todo) de um sistema de
 
 ### Django
 
-Django é um _framework_ Python de alto nível que encorja o desenvolvimento rápido e um design limpo e pragmático. Construído por desenvolvedores experientes, ele cuida de grande parte do trabalho de desenvolvimento da Web, para que você possa se concentrar em escrever seu aplicativo sem precisar reinventar a roda. É gratuito e de código aberto. Principais características do _framework_:
+Django é um _framework_ Python de alto nível que encoraja o desenvolvimento rápido e um design limpo e pragmático. Construído por desenvolvedores experientes, ele cuida de grande parte do trabalho de desenvolvimento da Web, para que você possa se concentrar em escrever seu aplicativo sem precisar reinventar a roda. É gratuito e de código aberto. Principais características do _framework_:
 
 - Projetado para acelerar o desenvolvimento;
 - Alta escalabilidade;
@@ -101,3 +101,4 @@ A tabela a seguir exemplifica os _endpoints_ utilizados para a API REST de estab
 | ---------- | ---------------------------------------------- | ----------------------------------------------------- | ------ |
 | 22/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento de reutilização do back-end      | 0.1    |
 | 22/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Adição da notação de transferência de dados escolhida | 0.2    |
+| 03/05/2021 | Wagner Martins                                 | Correção de erros ortográficos                        | 0.3    |
