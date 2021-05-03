@@ -1,6 +1,6 @@
 # Reutilização no Ambiente de Desenvolvimento
 
-A reutilização de software baseia-se no uso de conceitos, produtos ou soluções previamentes elaboradas ou adiquiridas para a criação de um novo software, com o objetivo de melhorar a qualidade, produtividade e reduzir tempo e custos de projeto.
+A reutilização de software baseia-se no uso de conceitos, produtos ou soluções previamente elaboradas ou adquiridas para a criação de um novo software, com o objetivo de melhorar a qualidade, produtividade e reduzir tempo e custos de projeto.
 
 Reusar um produto significa poder reutilizar partes (ou o todo) de um sistema desenvolvido anteriormente, como: especificações, módulos de um projeto, arquitetura e código fonte.
 
