@@ -6,7 +6,7 @@ Reusar um produto significa poder reutilizar partes (ou o todo) de um sistema de
 
 ## Docker
 
-Para a retulização no ambiente de desenvolvimento do projeto, adotamos o Docker. Trata-se uma plataforma que facilita o gerenciamento do desenvolvimento do software, padroniza e simplifica o fluxo de trabalho, aumentando a produtividade da equipe. Em termos de reutilização, o Docker possui uma quantidade significativa de Hot Spots e alguns pontuais Frozen Spots.
+Para a reutilização no ambiente de desenvolvimento do projeto, adotamos o Docker. Trata-se uma plataforma que facilita o gerenciamento do desenvolvimento do software, padroniza e simplifica o fluxo de trabalho e, portanto, aumentando a produtividade da equipe. Em termos de reutilização, o Docker possui uma quantidade significativa de Hot Spots e alguns pontuais Frozen Spots.
 
 - Hot-Spots: são partes específicas de sistemas individuais, projetadas para serem genéricos e adaptáveis.
     - Imagem Docker;
