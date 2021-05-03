@@ -37,7 +37,7 @@ Para o servidor Web, foi configurado um Docker com Nginx.
 
 ### Docker Compose
 
-Docker Compose é o orquestrador de containers do Docker. No ambiente de desenvovimento do projeto, ele organiza o funcionamento dos Dockers configurados, oferece praticidade e produtividade, podendo subir toda a aplicação com apenas um comando.
+Docker Compose é o orquestrador de containers do Docker. No ambiente de desenvolvimento do projeto, ele organiza o funcionamento dos Dockers configurados, oferece praticidade e produtividade, podendo subir toda a aplicação com apenas um comando.
 
 ![compose](imagens/docker_compose.png)
 
