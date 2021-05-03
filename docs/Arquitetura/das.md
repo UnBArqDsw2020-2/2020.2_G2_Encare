@@ -188,6 +188,10 @@ As versões anteriores do diagrama abaixo podem ser visualizadas em [Modelagem](
 
 ![Diagrama de Componentes v4](img/Diagrama_componentes_v4.png)
 
+Os componentes com a anotação <\<APP\>> têm estruturas semelhantes. O diagrama abaixo representa a aplicação de estabelecimentos:
+
+![Componente app Establishment](img/Componente-establishment.png)
+
 ## 9. Visão de Dados (Opcional)
 
 Assumindo uma que cada estabelecimento envolverá uma seleção de imagens mais 
@@ -283,3 +287,4 @@ A arquitetura descrita neste documento contribui com as seguintes característic
 | 28/04/21 | Hugo Aragão | Adição dos diagramas de Sequência | 1.7 |
 | 28/04/21 | Hugo Aragão | Adição das descrições e definições dos diagramas de sequência | 1.8 |
 | 30/04/21 | João Luis Baraky | Corrige erros de ortografia | 1.9 |
+| 03/04/21 | Wagner Martins | Correção na visão de implementação | 2.0 |
