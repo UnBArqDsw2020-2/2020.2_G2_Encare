@@ -15,6 +15,12 @@ class CustomUser(AbstractUser):
         },
     )
 
+    name = models.CharField(
+        _("Name"),
+        blank=False,
+        null=False,
+    )
+
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["username"]
 
@@ -22,15 +28,6 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.email
-
-    def login(self, raw_password):
-        pass
-
-    def logout(self, password):
-        pass
-
-    def set_password(self, raw_password):
-        pass
 
 
 class Customer(CustomUser):
