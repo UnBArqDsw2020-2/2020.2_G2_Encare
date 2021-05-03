@@ -5,6 +5,10 @@ from django.utils.translation import ugettext_lazy as _
 from .managers import CustomUserManager
 
 
+class Geolocation:
+    latitude = models.FloatField()
+
+
 class CustomUser(AbstractUser):
     email = models.EmailField(
         _("email address"),
@@ -17,6 +21,16 @@ class CustomUser(AbstractUser):
 
     name = models.CharField(
         _("Name"),
+        default="",
+        max_length=200,
+        blank=False,
+        null=False,
+    )
+
+    username = models.CharField(
+        _("Username"),
+        default="",
+        max_length=200,
         blank=False,
         null=False,
     )
