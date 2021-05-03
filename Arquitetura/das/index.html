@@ -1983,27 +1983,43 @@
 <hr />
 <h2 id="2-representacao-arquitetural">2. Representação Arquitetural</h2>
 <p>Esse diagrama mostra de uma forma mais ampla como o software irá trabalhar, mostrando como se relacionam o backend, fronted, usuário, banco de dados e API externa. Com isso podemos ter uma visão ampla sobre dodo o processo que envolve todas essas camadas de software.  </p>
-<p>Nesse diagrama temos os seguintes participantes:
-- <strong>Usuário</strong>: Responsável pelas ações que o sistema terá que lidar. Aqui, nessa classe, estão também os Administradores do site que irão gerenciar o site, mas também são usuário do site. 
-- <strong>Frontend ReactJS</strong>: É a primeira camada do software em relação ao usuário e é a única parte do sistema que client-side. Tem como principal função realizar a comunicação do sistema com o usuário por meio de páginas renderizadas e as interações e a partir disso realizar as requisições necessárias. 
-- <strong>Backend Django Python</strong>: É a primeira camada server-side e tem como função tratar as requisições, processar os dados, consultar os dados, consultar APIs externas e prover a modelagem em classes dos dados. É aqui onde ocorre a modelagem de dados.
-- <strong>API externa de Mapas</strong>: É uma API onde possa calcular as distâcias entre duas localizações para ser usada nos filtros de distância.
-- <strong>Banco de Dados PostgreSQL</strong>: Tem como função de armazenar e persistir os dados da aplicação. </p>
+<p>Nesse diagrama temos os seguintes participantes:</p>
+<ul>
+<li>
+<p><strong>Usuário</strong>: Responsável pelas ações que o sistema terá que lidar. Aqui, nessa classe, estão também os Administradores do site que irão gerenciar o site, mas também são usuário do site. </p>
+</li>
+<li>
+<p><strong>Frontend ReactJS</strong>: É a primeira camada do software em relação ao usuário e é a única parte do sistema que client-side. Tem como principal função realizar a comunicação do sistema com o usuário por meio de páginas renderizadas e as interações e a partir disso realizar as requisições necessárias. </p>
+</li>
+<li>
+<p><strong>Backend Django Python</strong>: É a primeira camada server-side e tem como função tratar as requisições, processar os dados, consultar os dados, consultar APIs externas e prover a modelagem em classes dos dados. É aqui onde ocorre a modelagem de dados.</p>
+</li>
+<li>
+<p><strong>API externa de Mapas</strong>: É uma API onde possa calcular as distâcias entre duas localizações para ser usada nos filtros de distância.</p>
+</li>
+<li>
+<p><strong>Banco de Dados PostgreSQL</strong>: Tem como função de armazenar e persistir os dados da aplicação. </p>
+</li>
+</ul>
 <p><img alt="Diagrama1" src="../img/Entidade-relacionamento.png" /></p>
 <p>A seguir iremos explicar brevemente sobre cada uma das tecnologias escolhidas:</p>
 <h3 id="21-python-django">2.1. Python Django:</h3>
-<p><a href="https://www.djangoproject.com/start/overview/">Django</a> é um framework Python de alto nível que encorja o desenvolvimento rápido e um design limpo e pragmático. Foi construido por desenvolvedores experientes e cuida de boa parte do trabalho para que o desenvolverdor possa cuidar do mais importante. Tem como principais características:
-- Desenvolvido para ser rápido como for possível.
-- Inclui dezenas de extras que ajudam a resolver várias tarefas de desenvolvimento Web, como autenticação, RSS feed, entre outros...
-- Cuida da segurança de muito processos, como autenticação e acesso ao banco de dados.
-- É escalável para possíveis grandes demandas de requisições.
-- Muito versátil</p>
+<p><a href="https://www.djangoproject.com/start/overview/">Django</a> é um framework Python de alto nível que encorja o desenvolvimento rápido e um design limpo e pragmático. Foi construido por desenvolvedores experientes e cuida de boa parte do trabalho para que o desenvolverdor possa cuidar do mais importante. Tem como principais características:</p>
+<ul>
+<li>Desenvolvido para ser rápido como for possível.</li>
+<li>Inclui dezenas de extras que ajudam a resolver várias tarefas de desenvolvimento Web, como autenticação, RSS feed, entre outros...</li>
+<li>Cuida da segurança de muito processos, como autenticação e acesso ao banco de dados.</li>
+<li>É escalável para possíveis grandes demandas de requisições.</li>
+<li>Muito versátil</li>
+</ul>
 <h3 id="22-reactjs">2.2. ReactJS:</h3>
-<p>Para o frontend, a equipe decidiu pela utilização do <a href="https://pt-br.reactjs.org/">ReactJS</a>, uma biblioteca JavaScript bastante popular e voltada a desenvolvimento web. As suas principais características são:
- - Baseado em componentes 
- - Pode ser renderizado no servidor através do servidor.
- - Dados são passsados das classes mães para as classes filhas por meio das props. 
- - Um componente pode usar plugins externos. </p>
+<p>Para o frontend, a equipe decidiu pela utilização do <a href="https://pt-br.reactjs.org/">ReactJS</a>, uma biblioteca JavaScript bastante popular e voltada a desenvolvimento web. As suas principais características são:</p>
+<ul>
+<li>Baseado em componentes </li>
+<li>Pode ser renderizado no servidor através do servidor.</li>
+<li>Dados são passsados das classes mães para as classes filhas por meio das props. </li>
+<li>Um componente pode usar plugins externos. </li>
+</ul>
 <h3 id="23-postgresql">2.3. PostgreSQL:</h3>
 <p><a href="https://www.postgresql.org/about/">PostegreSQL</a> é uma poderosa ferramenta de banco de dados relacional de código aberto que usa e extende as liguagem SQL com algumas funcionalidades que escalam e dimensionam as cargas de dados mais complicadas. </p>
 <p>Essa será a ferramenta usada para persistir os dados da aplicação.</p>
