@@ -27,10 +27,15 @@ O projeto trata de uma aplicação web que tem como objetivo facilitar a procura
 Esse diagrama mostra de uma forma mais ampla como o software irá trabalhar, mostrando como se relacionam o backend, fronted, usuário, banco de dados e API externa. Com isso podemos ter uma visão ampla sobre dodo o processo que envolve todas essas camadas de software.  
 
 Nesse diagrama temos os seguintes participantes:
+
 - **Usuário**: Responsável pelas ações que o sistema terá que lidar. Aqui, nessa classe, estão também os Administradores do site que irão gerenciar o site, mas também são usuário do site. 
+
 - **Frontend ReactJS**: É a primeira camada do software em relação ao usuário e é a única parte do sistema que client-side. Tem como principal função realizar a comunicação do sistema com o usuário por meio de páginas renderizadas e as interações e a partir disso realizar as requisições necessárias. 
+
 - **Backend Django Python**: É a primeira camada server-side e tem como função tratar as requisições, processar os dados, consultar os dados, consultar APIs externas e prover a modelagem em classes dos dados. É aqui onde ocorre a modelagem de dados.
+
 - **API externa de Mapas**: É uma API onde possa calcular as distâcias entre duas localizações para ser usada nos filtros de distância.
+
 - **Banco de Dados PostgreSQL**: Tem como função de armazenar e persistir os dados da aplicação. 
 
 ![Diagrama1](./img/Entidade-relacionamento.png)
@@ -40,6 +45,7 @@ A seguir iremos explicar brevemente sobre cada uma das tecnologias escolhidas:
 ### 2.1. Python Django:
 
 [Django](https://www.djangoproject.com/start/overview/) é um framework Python de alto nível que encorja o desenvolvimento rápido e um design limpo e pragmático. Foi construido por desenvolvedores experientes e cuida de boa parte do trabalho para que o desenvolverdor possa cuidar do mais importante. Tem como principais características:
+
 - Desenvolvido para ser rápido como for possível.
 - Inclui dezenas de extras que ajudam a resolver várias tarefas de desenvolvimento Web, como autenticação, RSS feed, entre outros...
 - Cuida da segurança de muito processos, como autenticação e acesso ao banco de dados.
@@ -49,6 +55,7 @@ A seguir iremos explicar brevemente sobre cada uma das tecnologias escolhidas:
 ### 2.2. ReactJS:
 
 Para o frontend, a equipe decidiu pela utilização do [ReactJS](https://pt-br.reactjs.org/), uma biblioteca JavaScript bastante popular e voltada a desenvolvimento web. As suas principais características são:
+
  - Baseado em componentes 
  - Pode ser renderizado no servidor através do servidor.
  - Dados são passsados das classes mães para as classes filhas por meio das props. 
