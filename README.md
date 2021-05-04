@@ -81,7 +81,7 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 
 [Apresentação Reutilização](https://youtu.be/aEn-r-2I5Pc)
 
-[Apresentação Iniciativas Extras]()
+[Apresentação Iniciativas Extras](https://youtu.be/R4vyuvwXqo4)
 
 ## Descritivo dos Principais Aspectos Técnicos 
 **Principal(is) Metodologia(s) Adotada(s)**: Scrum<br>
@@ -89,10 +89,10 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 **Principais Tecnologias Utilizadas e/ou Pretendidas**: React e Django<br>
 **Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: MTV - Model Template View<br>
 
-<!-- ## O Projeto está rodando?
+## O Projeto está rodando?
 ( ) SIM
-( ) NÃO
-Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.
+(x) NÃO
+<!-- Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto. -->
 
-## Informações Complementares 
+<!-- ## Informações Complementares 
 Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção. -->
