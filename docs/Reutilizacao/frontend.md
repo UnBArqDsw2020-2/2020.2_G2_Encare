@@ -1,0 +1,218 @@
+# Reutilização no Front-end
+
+A reutilização de software baseia-se no uso de conceitos, produtos ou soluções previamentes elaboradas ou adiquiridas para a criação de um novo software, com o objetivo de melhorar a qualidade, produtividade e reduzir tempo e custos de projeto.
+
+Reusar um produto significa poder reutilizar partes (ou o todo) de um sistema desenvolvido anteriormente, como: especificações, módulos de um projeto, arquitetura e código fonte.
+
+## _Frameworks_
+
+### React
+
+Como definido por seus criadores, React é “uma biblioteca JavaScript declarativa, eficiente e flexível para a criação de interfaces de usuário (UI)”.  
+Entre um de seus objetivos, temos o de facilitar a conexão entre diferentes partes de uma página, onde funcionamento acontece através de componentes.    
+
+### Next.js
+
+Next.js é um framework para React, busca reunir diversas funcionalidades como renderização hibrida e estática de conteúdo, suporte a TypeScript, pre-fetching, sistema de rotas e pacotes de funcionalidades. Caso seja implementado no projeto, será com o foco de Server Side Rendering.
+
+## Bibliotecas
+
+### Material-UI
+
+É alguma biblioteca de componentes React para um desenvolvimento, será utilizada para padronizar alguns componentes básicos, como por exemplo botões e ícones, que irão compor componentes mais complexos do sistema. 
+
+#### Aplicação no projeto
+
+O código a seguir é um exemplo de uma página de login, onde diversos componentes do Material-UI estão sendo usados para compor o componente de SignIn.
+
+```javascript
+import React from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Link from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    marginTop: theme.spacing(8),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
+  form: {
+    width: '100%',
+    marginTop: theme.spacing(1),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
+
+export default function SignIn() {
+  const classes = useStyles();
+
+  return (
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Sign in
+        </Typography>
+        <form className={classes.form} noValidate>
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+            autoFocus
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+          />
+          <FormControlLabel
+            control={<Checkbox value="remember" color="primary" />}
+            label="Remember me"
+          />
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
+          >
+            Sign In
+          </Button>
+          <Grid container>
+            <Grid item xs>
+              <Link href="#" variant="body2">
+                Forgot password?
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="#" variant="body2">
+                {"Don't have an account? Sign Up"}
+              </Link>
+            </Grid>
+          </Grid>
+        </form>
+      </div>
+    </Container>
+  );
+}
+```
+### Axios
+
+Axios é um cliente HTTP baseado em Promises para fazer requisições. Ele será usado para fazer a comunicação com o *backend*. Dentre suas características , ele intercepta requisições e respostas (request & response), cancela requisições, transforma os dados em JSON automaticamente, transforma os dados da requisição e da resposta e permite uma configuração reutilizável.
+
+#### Aplicação no projeto
+
+Os trechos a seguir irão demonstrar configuração e uso do axios no sistema.
+
+- Criação de uma URL base para ser utilizada em diversos locais
+
+```javascript
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: "https://encare.com.br",
+});
+
+export default api;
+```
+
+- Criação de requisições
+
+```javascript
+import api from './api'
+api.get("/establishments")
+      .then((response) => doSomething(response.data))
+      .catch((err) => {
+        console.error("Erro ao buscar estabelecimentos: " + err);
+     });
+```
+
+- Uso em componente React
+
+```javascript
+
+import React, {useState, useEffect} from 'react';
+import api from '...PATH/api';
+
+export default function Estabelecimentos() {
+
+const [estabelecimentos, setEstabelecimentos] = useState([]);
+    
+useEffect(() => {
+    Promise.all([
+      api.get("/establishments")
+    ]).then((response) => {
+      for (const res of response) {
+        const {
+          data: { nome, endereco, ...Outras informações... }
+        } = res;
+        setUsers((state) => [...state, { nome, endereco, ...Outras informações... }]);
+      }
+    });
+  }, []);
+
+return(
+    {...}
+    {...}
+)}
+
+```
+
+## Componentes
+Componentes permitem dividir a UI em partes independentes e reutilizáveis, tratando cada parte da aplicação como um bloco isolado, livre de outras dependências externas. São peças fundamentais no React.  
+Existem alguns componentes que serão fundamentais para o projeto :
+- **Componente para listagem de estabelecimentos**: Os estabelecimentos são o foco do projeto, o componente deverá conter, ao menos, as informações necessárias do estabelecimento e suas interações;
+- **Componente para detalhes do estabelecimento**: Componente que será o perfil do estabelecimento, contendo suas informações detalhadas;
+- **Componente para feed**: Nesse componente serão exibidos os componentes de estabelecimento;
+- **Componente para filtro**: Nesse componente serão aplicados filtros de busca para o feed;
+- **Cadastro e Login**: Componentes para o cadastro e login de usuário;
+
+## Referências
+
+- Reutilização de Software - Revista Engenharia de Software Magazine 39 . Disponível em: <https://www.devmedia.com.br/reutilizacao-de-software-revista-engenharia-de-software-magazine-39/21956>. Acesso em: 21 de abril de 2021.
+- React – Uma biblioteca JavaScript para criar interfaces de usuário. Disponível em: <https://pt-br.reactjs.org/>.
+- Material-UI: Um framework popular de React UI. Disponível em: <https://material-ui.com/pt/>.
+- Next.js by Vercel - The React Framework. Disponível em: <https://nextjs.org/>.‌
+
+## Versionamento
+
+| Data | Nome | Detalhes | Versão |
+| ---- | ---- | -------- | ------ |
+| 21/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Criação do documento | 0.1 |
+| 30/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Adição do conteúdo | 0.2 |
+| 30/04/2021 | João Baraky, Nícalo Ribeiro e Gustavo Nogueira | Finalização da adição do conteúdo base | 0.3 |
+
+
+
