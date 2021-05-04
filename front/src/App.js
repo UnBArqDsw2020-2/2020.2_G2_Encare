@@ -1,15 +1,11 @@
-import React from 'react';
-import './App.css';
-// import Home from './components/Pages/Home/Home'
-import Estabelecimento from './components/Pages/Home/Components/Estabelecimento/Estabelecimento'
-
+import React from "react";
+import "./App.css";
+import Profile from "./pages/Profile";
+import Feed from "./pages/Feed";
 
 function App() {
-  return (
-    <div className="App">
-      <Estabelecimento/>
-    </div>
-  );
+  // return <Profile />;
+  return <Feed />;
 }
 
 export default App;

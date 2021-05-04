@@ -39,17 +39,38 @@ nav:
           - Serverless: Padroes_de_projeto/Padroes_emergentes/serverless.md
           - Object-mock: Padroes_de_projeto/Padroes_emergentes/objeto_mock.md
           - Lazy Loading: Padroes_de_projeto/Padroes_emergentes/lazy_loading.md
+  - Arquitetura & Reutilização:
+      - Arquitetura de Software:
+        - Documento de Arquitetura de Software: Arquitetura/das.md
+        - Especificação dos Casos de Uso: Arquitetura/especificacao_casos_uso.md 
+      - Reutilização de Software:
+          - Ambiente de Desenvolvimento: Reutilizacao/ambiente.md
+          - Front-end: Reutilizacao/frontend.md
+          - Back-end: Reutilizacao/backend.md
   - Iniciativas Extras:
-      # - Documentação das Sprints:
-          # - Sprints: Modelagem/sprints/Sprints.md
+      - Documentação das Sprints:
+          - Pré Projeto: Modelagem/sprints/Pre_projeto.md
+          - Sprint 0: Modelagem/sprints/Sprint0.md
+          - Sprint 1: Modelagem/sprints/Sprint1.md
+          - Sprint 2: Modelagem/sprints/Sprint2.md
+          - Sprint 3: Modelagem/sprints/Sprint3.md
+          - Sprint 4: Modelagem/sprints/Sprint4.md
+          - Sprint 5: Modelagem/sprints/Sprint5.md
+          - Sprint 6: Modelagem/sprints/Sprint6.md
+          - Sprint 7: Modelagem/sprints/Sprint7.md
+          - Sprint 8: Modelagem/sprints/Sprint8.md
+          - Sprint 9: Modelagem/sprints/Sprint9.md
+          - Sprint 10: Modelagem/sprints/Sprint10.md
       - Requisitos: Base/requisitos/requisitos.md
-      - Politicas de contribuição: Base/iniciativas_extras/CONTRIBUTING.md
+      - Políticas de Contribuição: Base/iniciativas_extras/CONTRIBUTING.md
       - Guia de Estilo: Padroes/guia_de_estilo/guia_estilo.md
       - Protótipo de Alta Fidelidade: Padroes/prototipos/prototipo_alta.md
+      - Aumento de Escopo: Padroes_de_projeto/Escopo_aumentado.md
   - Apresentações:
       - Base: videos/base.md
       - Modelagem: videos/modelagem.md
       - Padrões de Projeto: videos/padroes.md
+      - Arquitetura e Reutilização: videos/arquitetura_e_reutilizacao.md
 
 # Configuration
 theme:
@@ -63,8 +84,8 @@ theme:
   font:
     text: Poppins
     code: Roboto Mono
-  logo: assets/images/logo-encare.svg
-  favicon: assets/images/favicon-encare.svg
+  logo: assets/images/encare_logo.png
+  favicon: assets/images/encare_logo_red.png
 
 markdown_extensions:
   - pymdownx.highlight

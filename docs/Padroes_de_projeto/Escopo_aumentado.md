@@ -32,8 +32,18 @@ Após uma reunião entre os integrantes do grupo, decidimos as características 
 ### Versão 3.0:
 ![Escopo Aumentado V3](./img/escopo_aumentado_v3.png)
 
-### Versão com padões de projeto 1.0:
+### Versão 4.0 (Padrões de projeto):
 ![Escopo Aumentado V3](./img/class-MAIN.png)
+
+### Versão 5.0
+
+Após uma reunião com toda equipe e com base nos aumentos de escopo anteriores foi decido que esse escopo será usado para codificação e para apresentação do entregável.
+
+A motivação para a utilização desse escopo ao invés do planejado inicialmente é para a implementação na prática dos padrões GRASPs e GOFs aplicados. Além disso com uma modelagem de tamanho maior é possível fazer uma análise mais profunda nos documentos de arquitetura e de reutilização culminando num aprendizagem melhor.
+
+Será levado em conta todos os artefatos gerados até então, entretanto como o prazo não permite uma refatoração completa , a equipe nessa mesma reunião decidiu dar mais prioridade em gerar o aplicativo final. 
+
+![Escopo Aumentado v4](./img/Sugestao.png)
 
 ## Diagrama de Casos de Uso
 
@@ -57,5 +67,7 @@ Com isso, acreditamos que a adição das novas classes e features ao projeto agr
 | João Luis Baraky | 30/03/2021 | Adiciona segunda versão do escopo final | 0.6 |
 | João Luis Baraky | 31/03/2021 | Adiciona terceira versão do escopo final | 0.7 |
 | João Luis Baraky | 31/03/2021 | Adiciona conclusão do documento | 1.0 |
-| Wagner Martins | 09/04/2021 | Adição do diagrama de casos de uso | 1.1 |
-| Todos | 09/04/2021 | Adicionando Modelagem com padrões de projeto | 2.0 |
+| Wagner Martins | 09/04/2021 | Adição do diagrama de casos de uso | 2.0 |
+| Todos | 09/04/2021 | Adicionando Modelagem com padrões de projeto | 3.0 |
+| João Pedro Carvalho | 16/04/2021 | Adição da modelagem  | 4.0 |
+| João Pedro Carvalho e Wagner Martins | 16/04/2021 | Adicionando revisão  | 4.1 |
