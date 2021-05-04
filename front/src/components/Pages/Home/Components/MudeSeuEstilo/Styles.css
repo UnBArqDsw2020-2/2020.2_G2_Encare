@@ -1,0 +1,39 @@
+.conteudo{
+    display: flex;
+    flex-grow: 1;
+    background-image: url('./assets/images/bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    padding:10px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 25px;
+    color: #FFB037;
+    margin-bottom: 0;
+}
+
+.descricao{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 470px;
+}
+
+@media screen and (min-width: 900px) {
+    .bloco {
+      margin-left: 120px;
+      margin-top: 200px;
+    }
+  }
