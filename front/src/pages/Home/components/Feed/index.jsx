@@ -7,7 +7,7 @@ import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 
 // Mocks
-import ESTABLISHMENTS_MOCKS from "../../mocks/establishments";
+import ESTABLISHMENTS_MOCKS from "../../../../mocks/establishments";
 
 // Styles
 import useStyles from "./styles";
