@@ -10,7 +10,7 @@ Trata-se de uma ferramenta da qualidade que ajuda a levantar as causas-raízes d
 
 BASTIANI, Jeison; MARTINS, Rosemary. Diagrama de Ishikawa. Blog da Qualidade. Disponível em: <https://blogdaqualidade.com.br/diagrama-de-ishikawa/>. Acesso em: 17 de fevereiro de 2021.
 
-## Histórico de versão
+## Versionamento
 
 | Versão | Data       | Comentários       | Autor(es)        |
 | ------ | ---------- | ----------------- | ---------------- |

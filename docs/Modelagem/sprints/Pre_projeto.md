@@ -18,4 +18,4 @@ Essa foi a primeira reunião da equipe e definiu muitos tópicos dentre eles:
 | Data | Nome | Detalhes | Versão |
 |-----|-------|---------|---------|
 | 01/03/2021 | João Pedro Silva de Carvalho | Início do documento | 0.1 |
-| 09/03/2021 | Nícalo Ribeiro | Revisão e formatacao | 0.6 |
+| 09/03/2021 | Nícalo Ribeiro | Revisão e formatacao | 1.0 |

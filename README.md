@@ -38,8 +38,8 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 ![Backlog](docs/Modelagem/imagens/screenshot_modelagem03.png)
 
 ## Vídeo(s) Segunda Entrega &lt;&lt;FOCO: DSW(Modelagem)&gt;&gt;  
-[Apresentação Modelagem Estática](https://youtu.be/LtufoTmp0eY)  
 
+[Apresentação Modelagem Estática](https://youtu.be/LtufoTmp0eY)  
 
 [Apresentação Modelagem Dinâmica](https://youtu.be/Jz1-VP2KhHM)  
 
@@ -47,23 +47,47 @@ O objetivo do projeto é facilitar a busca por procedimentos estéticos não-cir
 
 [Apresentação Iniciativas Extras](https://youtu.be/JcWaGilgkzo)
 
-<!-- ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
+## Screenshots Terceira Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
 
-## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
-Adicione o(s)s vídeo(s) da Terceira Entrega.
+![GOFS](docs/Padroes_de_projeto/img/screenshot1.png)
 
-## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+![GRASPS](docs/Padroes_de_projeto/img/screenshot2.png)
 
-## Vídeo(s) Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
-Adicione o(s)s vídeo(s) da Entrega Final. -->
+![Padroes Emergentes](docs/Padroes_de_projeto/img/screenshot3.png)
+
+## Vídeo(s) Terceira Entrega &lt;&lt;FOCO: DSW(Padrões de Projeto)&gt;&gt;  
+
+[Apresentação GOFs](https://youtu.be/oNzh8aOc1qU)  
+
+[Apresentação Padrões Emergentes](https://youtu.be/Eo-qLv7fTFk)  
+
+[Apresentação Iniciativas Extras](https://youtu.be/TiEyO3wagP0)  
+
+[Apresentação GRASPs](https://youtu.be/8Oc10Y0dfGk)
+
+## Screenshots Quarta Entrega (FINAL) &lt;&lt;FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL&gt;&gt;
+
+![DAS](docs/Screenshots/DAS.png)
+
+![env](docs/Screenshots/Dev_env.png)
+
+![front](docs/Screenshots/front.png)
+
+![back](docs/Screenshots/back.png)
+
+## Vídeo(s) Quarta Entrega (FINAL) &lt;&lt;FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL&gt;&gt;
+
+[Apresentação DAS](https://youtu.be/0rmFqtutVXw)
+
+[Apresentação Reutilização](https://youtu.be/aEn-r-2I5Pc)
+
+[Apresentação Iniciativas Extras]()
 
 ## Descritivo dos Principais Aspectos Técnicos 
 **Principal(is) Metodologia(s) Adotada(s)**: Scrum<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: Pretendidas : JavaScript e Python<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: A Definir<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: A Definir<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: JavaScript e Python<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: React e Django<br>
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: MTV - Model Template View<br>
 
 <!-- ## O Projeto está rodando?
 ( ) SIM

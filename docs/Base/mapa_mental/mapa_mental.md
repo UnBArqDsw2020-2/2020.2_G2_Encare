@@ -1,8 +1,9 @@
-# Mapa mental
+# Mapa Mental
 
 Esse mapa mental busca explicar uma visão geral sobre o que foi discutido sobre a ideia geral do projeto EnCare
 
 ![Mapa_Mental](imagens/mapa_mental.png)
+
 ## Versionamento
 
 | Data | Nome | Detalhe | Versão |

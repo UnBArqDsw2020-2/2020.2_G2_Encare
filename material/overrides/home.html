@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block tabs %}
+    {{ super() }}
+    <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+    <section id="section-home-logo">
+        <img src="assets/images/encare_logo.png" draggable="false" />
+        <p> Encare um novo estilo !</p>
+    </section>
+    <section id="section-home-about">
+        <h1>Sobre</h1>
+        <p> 
+            Será um projeto que tem como objetivo facilitar a busca por procedimentos estéticos não-cirurgicos, como cortes de cabelo, 
+            serviços de manicure e pedicure, maquiagem, entre outros. Para isso, o nosso projeto tem como proposta oferecer as ofertas 
+            disponíveis na região, de acordo com o serviço desejado e com a localização do usuário. 
+        </p>
+    </section>
+    <section id="section-home-team">
+        <h1>Equipe</h1>
+        <div class="container-members">
+            <div class="container-members-row">
+                <div class="member-card">
+                    <img src="assets/images/hugo.jpeg" class="member-card-img" draggable="false" />
+                    <div class="member-card-bar">
+                        <h2>Hugo Aragão</h2>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="assets/images/joao.jpeg" class="member-card-img" draggable="false" />
+                    <div class="member-card-bar">
+                        <h2>João Pedro</h2>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="assets/images/gustavo.jpeg" class="member-card-img" draggable="false" />
+                    <div class="member-card-bar">
+                        <h2>Gustavo Nogueira</h2>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="assets/images/renato.jpeg" class="member-card-img" draggable="false" />
+                    <div class="member-card-bar">
+                        <h2>Renato Britto</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container-members-row">
+                <div class="member-card">
+                    <img src="assets/images/wagner.jpeg" class="member-card-img" draggable="false" />
+                    <div class="member-card-bar">
+                        <h2>Wagner Martins</h2>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="assets/images/nicalo.jpeg" class="member-card-img" draggable="false" />
+                    <div class="member-card-bar">
+                        <h2>Nícalo Dourado</h2>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <img src="assets/images/baraky.jpeg" class="member-card-img" draggable="false" />
+                    <div class="member-card-bar">
+                        <h2>João Baraky</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-home-footer">
+        <img src="assets/images/unb-gama.png" draggable="false" />
+    </section> 
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %} 
