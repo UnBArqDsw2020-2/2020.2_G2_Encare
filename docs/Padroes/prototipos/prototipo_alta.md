@@ -96,10 +96,17 @@ Página de Login - Hugo
 
 ![Cadastro de Estabelecimento](imagens/cadastroestabelecimento.png)
 Cadastro de Estabelecimento - Hugo
-### Versão 1
+
+### Versão 1.0
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxJ49RxNyO7ulXwd86Gxbov%2FUntitled%3Fnode-id%3D2%253A17%26scaling%3Dscale-down" allowfullscreen></iframe>  
 
 Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/xJ49RxNyO7ulXwd86Gxbov/Untitled?node-id=2%3A17&scaling=min-zoom).
+
+### Versão 2.0
+
+O protótipo de Alta Fidelidade foi atualizado de acordo com a modelagem final dos Wireframes, se tornando a versão final do projeto.
+
+https://www.figma.com/proto/2P0B6tvj2IfXUSEpXhq78R/Encare?page-id=0%3A1&node-id=1%3A2&viewport=450%2C425%2C0.3713192641735077&scaling=min-zoom
 
 ## Referências
 
@@ -128,3 +135,4 @@ Caso haja problema na visualização, [Clicar aqui](https://www.figma.com/proto/
 |01/05/2021| Adição da tela de cadastro do dono | Hugo | 1.2 |
 |01/05/2021| Adição da tela de Login | Hugo | 1.3 |
 |01/05/2021| Adição da tela de cadastro de Estabelecimento | Hugo | 1.4 |
+|03/05/2021| Adição de protótipo de alta fidelidade 2.0 | Hugo | 1.5 |
